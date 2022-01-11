@@ -26,7 +26,8 @@ function Main(props) {
       <section className="landing-list">
         <ul>
           {props.menu.map((x) => (
-            <li style={{ backgroundImage: `url("${x.img})` }}>
+            // <li style={{ backgroundImage: `url(${x.img})` }}>
+            <li className={`landing-list__${x.class}`}>
               <h2>
                 <a href={x.url} target="_blank" rel="noreferrer">
                   {x.title}
