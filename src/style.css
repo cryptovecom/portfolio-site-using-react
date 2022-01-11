@@ -1061,7 +1061,6 @@ div #root, div .App {
 /* HEADER HEADER HEADER HEADER HEADER HEADER HEADER HEADER HEADER HEADER HEADER */
 header {
   margin-bottom: 1rem;
-  outline: 1rem solid var(--color-dark);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;

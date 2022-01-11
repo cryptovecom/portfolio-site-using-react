@@ -18,6 +18,18 @@ function Main(props) {
   //     </li>`;
   //   }
   // }
+
+  // (1) Maps over the menu item array of objects,
+  // (2) adds an id,
+  // (3) used as key prop further down.
+
+  const listItemsObjects = props.menu.map((o, i) => {
+    o.id = i;
+    return o;
+  });
+
+  console.log(listItemsObjects);
+
   return (
     <main>
       <section className="landing__banner">
@@ -25,9 +37,14 @@ function Main(props) {
       </section>
       <section className="landing-list">
         <ul>
-          {props.menu.map((x) => (
-            // <li style={{ backgroundImage: `url(${x.img})` }}>
-            <li className={`landing-list__${x.class}`}>
+          {listItemsObjects.map((x) => (
+            <li
+              className={`landing-list__${x.class}`}
+              key={x.id} // KEY PROP ADDED HERE!
+              // style={{
+              //   backgroundImage: `url(${x.img})`,
+              // }}
+            >
               <h2>
                 <a href={x.url} target="_blank" rel="noreferrer">
                   {x.title}
