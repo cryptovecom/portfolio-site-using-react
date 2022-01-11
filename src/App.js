@@ -6,11 +6,11 @@ import listItems from "./JSON";
 
 function App() {
   return (
-    <div className="App">
+    <>
       <Header />
       <Main menu={listItems} />
       <Footer />
-    </div>
+    </>
   );
 }
 
