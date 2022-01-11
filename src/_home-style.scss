@@ -27,6 +27,10 @@ main {
   display: grid;
   grid-gap: 1rem;
 
+  h2 {
+    text-align: left;
+  }
+
   li a {
   box-shadow: 0 0 1rem black;
   padding: 2rem;
@@ -100,6 +104,7 @@ img {
   }
 
   header {
+    background-color: red;
     grid-column: 1 / 3;
     grid-row: 1 / 2;
   }

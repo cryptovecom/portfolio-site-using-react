@@ -60,9 +60,18 @@ body {
   line-height: 1.5;
 }
 
+// Cntainers added through React.
+// Took some debugging to find why media queries were behaving weirdly!
+
+div #root, div .App {
+  height: 100vh;
+  width: 100vw;
+}
+
 /* HEADER HEADER HEADER HEADER HEADER HEADER HEADER HEADER HEADER HEADER HEADER */
 
 header {
+  margin-bottom: 1rem;
   outline: 1rem solid var(--color-dark);
 
   display: flex;
@@ -188,6 +197,7 @@ p {
 
 
 @media screen and (min-width: 64rem) {
+
   footer {
     height: auto;
     position: fixed;
