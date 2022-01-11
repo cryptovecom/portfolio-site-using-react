@@ -23,12 +23,10 @@ function Main(props) {
   // (2) adds an id,
   // (3) used as key prop further down.
 
-  const listItemsObjects = props.menu.map((o, i) => {
-    o.id = i;
-    return o;
+  const listItemsObjects = props.menu.map((object, i) => {
+    object.id = i;
+    return object;
   });
-
-  console.log(listItemsObjects);
 
   return (
     <main>
@@ -39,11 +37,11 @@ function Main(props) {
         <ul>
           {listItemsObjects.map((x) => (
             <li
-              className={`landing-list__${x.class}`}
+              className={`landing-list`}
               key={x.id} // KEY PROP ADDED HERE!
-              // style={{
-              //   backgroundImage: `url(${x.img})`,
-              // }}
+              style={{
+                backgroundImage: `url(../public/images/${x.img})`,
+              }}
             >
               <h2>
                 <a href={x.url} target="_blank" rel="noreferrer">

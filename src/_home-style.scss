@@ -8,7 +8,7 @@ main {
 
   background: 
     var(--color-blood) 
-    url(../images/stacked-waves-haikei.svg)
+    url(../public/images/stacked-waves-haikei.svg)
     no-repeat 
     center 
     center;
@@ -64,14 +64,14 @@ main {
 }
 
 .landing-list { background: var(--bg-pos); }
-.landing-list__hypnus { background: var(--bg-pos) url(../images/hypnus.jpg); }
-.landing-list__kabalion { background: var(--bg-pos) url(../images/kabalion.jpg); }
-.landing-list__aedi { background: var(--bg-pos) url(../images/aedi.jpg); }
-.landing-list__the-memoir { background: var(--bg-pos) url(../images/thememoir.jpg); }
-.landing-list__aether-mechanics { background: var(--bg-pos) url(../images/aethermechanics.jpg); }
-.landing-list__ntogn { background: var(--bg-pos) url(../images/ntogn.jpg); }
-.landing-list__slink { background: var(--bg-pos) url(../images/slink.jpg); }
-.landing-list__photography { background: var(--bg-pos) url(../images/photography.jpg); }
+// .landing-list__hypnus { background: var(--bg-pos) url(../images/hypnus.jpg); }
+// .landing-list__kabalion { background: var(--bg-pos) url(../images/kabalion.jpg); }
+// .landing-list__aedi { background: var(--bg-pos) url(../images/aedi.jpg); }
+// .landing-list__the-memoir { background: var(--bg-pos) url(../images/thememoir.jpg); }
+// .landing-list__aether-mechanics { background: var(--bg-pos) url(../images/aethermechanics.jpg); }
+// .landing-list__ntogn { background: var(--bg-pos) url(../images/ntogn.jpg); }
+// .landing-list__slink { background: var(--bg-pos) url(../images/slink.jpg); }
+// .landing-list__photography { background: var(--bg-pos) url(../images/photography.jpg); }
 
 /* CLASSES CLASSES CLASSES CLASSES CLASSES CLASSES CLASSES CLASSES CLASSES  */
 
@@ -84,7 +84,7 @@ img {
   width: 100%; 
   height: 36rem;
 
-  background-image: url('../images/michel.jpg'); 
+  background-image: url('../public/images/michel.jpg'); 
   background-position: center left 8rem;
   background-repeat: no-repeat; 
   background-size: cover; 
