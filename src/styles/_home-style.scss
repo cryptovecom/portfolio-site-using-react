@@ -8,7 +8,7 @@ main {
 
   background: 
     var(--color-blood) 
-    url(../public/images/stacked-waves-haikei.svg)
+    url(../../public/images/svg/stacked-waves-haikei.svg)
     no-repeat 
     center 
     center;
@@ -84,7 +84,7 @@ img {
   width: 100%; 
   height: 36rem;
 
-  background-image: url('../public/images/michel.jpg'); 
+  background-image: url('../../public/images/michel.jpg'); 
   background-position: center left 8rem;
   background-repeat: no-repeat; 
   background-size: cover; 

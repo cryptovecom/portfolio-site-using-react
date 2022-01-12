@@ -453,7 +453,7 @@ main {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  background: var(--color-yellow) url("../public/images/layered-waves-haikei.svg") no-repeat bottom center;
+  background: var(--color-yellow) url("../../public/images/svg/layered-waves-haikei.svg") no-repeat bottom center;
   background-size: cover;
   text-align: center;
 }
@@ -802,7 +802,7 @@ main {
 
 .landing__banner {
   padding: 2rem;
-  background: var(--color-blood) url(../public/images/stacked-waves-haikei.svg) no-repeat center center;
+  background: var(--color-blood) url(../../public/images/svg/stacked-waves-haikei.svg) no-repeat center center;
   background-size: cover;
   color: var(--color-white);
 }
@@ -866,7 +866,7 @@ img {
 .michel {
   width: 100%;
   height: 36rem;
-  background-image: url("../public/images/michel.jpg");
+  background-image: url("../../public/images/michel.jpg");
   background-position: center left 8rem;
   background-repeat: no-repeat;
   background-size: cover;

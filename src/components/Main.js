@@ -40,7 +40,7 @@ function Main(props) {
               className={`landing-list`}
               key={x.id} // KEY PROP ADDED HERE!
               style={{
-                backgroundImage: `url(../public/images/${x.img})`,
+                backgroundImage: `url(./images/${x.img})`,
               }}
             >
               <h2>
