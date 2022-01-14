@@ -1,16 +1,16 @@
-function Blog() {
-  function getThumbnails() {
-    fetch("./data/posts.json")
-      .then((response) => response.json())
-      .then((data) => {
-        for (let i = 0; i < data.length; i++) {
-          createThumbnail(data[i]); // Funcion call >>
-        }
-      });
-  }
+function getThumbnails() {
+  fetch("./data/posts.json")
+    .then((response) => response.json())
+    .then((data) => {
+      for (let i = 0; i < data.length; ++i) {
+        createThumbnail(data[i]); // Funcion call >>
+        console.log("Test: " + i);
+      }
+    });
+}
 
-  function createThumbnail(post) {
-    let thumbnail = `
+function createThumbnail(post) {
+  let thumbnail = `
     <article>
       <a href="../pages/blog-post.html?id=${post.id}">
         <img src="${post.previewImage}" alt="A randomly generated image" />
@@ -21,9 +21,14 @@ function Blog() {
       </a>
     </article>
     `;
-    return (document.querySelector(".blog__thumbnails").innerHTML += thumbnail);
-  }
+  return (document.querySelector(".blog__thumbnails").innerHTML += thumbnail);
+  // return thumbnail;
+}
 
+// BLOG FUNCTION
+
+function Blog() {
+  console.log("Test");
   return (
     <main>
       <section className="blog__banner">
@@ -41,7 +46,7 @@ function Blog() {
           queries!
         </h3>
       </section>
-      <section className="blog__thumbnails"></section>
+      <section className="blog__thumbnails">{getThumbnails()}</section>
       <aside>
         <p>
           A grid is nesting flexboxes, that's nesting a grid with another
