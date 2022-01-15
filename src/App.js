@@ -9,8 +9,8 @@ function App() {
   return (
     <>
       <Header />
-      {/* <Main menu={listItems} /> */}
-      <Blog />
+      <Main menu={listItems} />
+      {/* <Blog /> */}
       {/* <BlogPost /> */}
       <Footer />
     </>

@@ -23,6 +23,15 @@ function Main(props) {
   // (2) adds an id,
   // (3) used as key prop further down.
 
+  // Originally, the div.michel was created like this.
+
+  // function michelPortrait() {
+  //   const newDiv = document.createElement("div");
+
+  //   newDiv.classList.add("michel");
+  //   return document.querySelector(".landing-list").prepend(newDiv);
+  // }
+
   const listItemsObjects = props.menu.map((object, i) => {
     object.id = i;
     return object;
@@ -34,6 +43,7 @@ function Main(props) {
         <h1>I have here refactored my first school project using React.js.</h1>
       </section>
       <section className="landing-list">
+        <div className="michel"></div>
         <ul>
           {listItemsObjects.map((x) => (
             <li

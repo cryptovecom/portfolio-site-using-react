@@ -1,7 +1,9 @@
 function getThumbnails() {
+  console.log("RUNS ONCE");
   fetch("./data/posts.json")
     .then((response) => response.json())
     .then((data) => {
+      console.log("RUNS TWICE, WHY?");
       for (let i = 0; i < data.length; ++i) {
         createThumbnail(data[i]); // Funcion call >>
         console.log("Test: " + i);
@@ -28,7 +30,7 @@ function createThumbnail(post) {
 // BLOG FUNCTION
 
 function Blog() {
-  console.log("Test");
+  console.log("Blog function starts");
   return (
     <main>
       <section className="blog__banner">
