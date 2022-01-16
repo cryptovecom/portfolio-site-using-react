@@ -63,7 +63,10 @@ main {
   --bg-pos: left / contain no-repeat; 
 }
 
-.landing-list { background: var(--bg-pos); }
+.landing-list { 
+  background: var(--bg-pos); 
+  border-radius: .75rem;
+}
 
 /* CLASSES CLASSES CLASSES CLASSES CLASSES CLASSES CLASSES CLASSES CLASSES  */
 

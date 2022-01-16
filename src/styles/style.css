@@ -856,6 +856,7 @@ main {
 
 .landing-list {
   background: var(--bg-pos);
+  border-radius: .75rem;
 }
 
 /* CLASSES CLASSES CLASSES CLASSES CLASSES CLASSES CLASSES CLASSES CLASSES  */
