@@ -34,7 +34,7 @@ function createPost(post) {
 function getPostFromId() {
   // var id = JSON.parse(findQuery("id")); // Funcion call >>
   let id = 3;
-
+  console.log("Fetch starts!");
   fetch("./data/posts.json")
     .then((response) => response.json())
     .then((data) => {
@@ -46,13 +46,21 @@ function getPostFromId() {
     });
 }
 
+function darkMode(e) {
+  e.preventDefault(); // Added to prevent page reload on click.
+  console.log("Dark Mode");
+  document.querySelector("body").classList.toggle("dark-mode");
+}
+
+// REACT PART
+
 function BlogPost() {
   return (
     <main>
       <section className="landing__banner">
-        <button onclick="darkMode()">Dark Mode</button>
+        <button onClick={darkMode}>Dark Mode</button>
       </section>
-      <section className="blog__post"></section>
+      <section className="blog__post">{getPostFromId()}</section>
     </main>
   );
 }

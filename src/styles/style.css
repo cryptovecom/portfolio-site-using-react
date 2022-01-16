@@ -1023,6 +1023,7 @@ body {
 }
 
 #root {
+  background-color: #1e1e1e;
   height: 100vh;
   width: 100vw;
 }
@@ -1080,11 +1081,10 @@ footer {
       -ms-flex-pack: center;
           justify-content: center;
   z-index: 1;
-  background-color: var(--color-dark);
+  background-color: var(--color-grey);
   -webkit-box-shadow: 0 4px .5rem #1e1e1e;
           box-shadow: 0 4px .5rem #1e1e1e;
   min-width: 16.75rem;
-  color: var(--color-white);
   font-size: var(--h5);
   -webkit-transition: background-color var(--speed-slow) ease-out, border-radius var(--speed-slow);
   transition: background-color var(--speed-slow) ease-out, border-radius var(--speed-slow);
@@ -1098,7 +1098,7 @@ footer:hover {
 footer a,
 footer a:visited {
   padding: 2rem;
-  color: var(--color-white);
+  color: var(--color-dark);
   text-decoration: none;
 }
 
@@ -1174,7 +1174,7 @@ p:first-child {
     position: fixed;
     bottom: 2rem;
     left: 2rem;
-    border: 0.5rem solid var(--color-grey);
+    border: 0.5rem solid var(--color-dark);
     font-size: var(--base-font-size);
   }
   footer:active, footer:hover {

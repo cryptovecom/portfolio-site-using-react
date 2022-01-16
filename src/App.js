@@ -10,8 +10,8 @@ function App() {
     <>
       <Header />
       {/* <Main menu={listItems} /> */}
-      <Blog />
-      {/* <BlogPost /> */}
+      {/* <Blog /> */}
+      <BlogPost />
       <Footer />
     </>
   );
