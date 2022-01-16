@@ -1,6 +1,47 @@
 import Header from "./Header";
 import Footer from "./Footer";
 
+// VANILLA BIRTHDAY birthCalculatorYears
+
+// function birthdayCalculators() {
+//   let birth = "October 20, 1988 04:40:00 GMT";
+//   let born = new Date(birth);
+//   let now = new Date();
+//   let elapsed = now - born;
+
+//   var daysSinceBorn = Math.floor(elapsed / (1000 * 3600 * 24));
+
+//   function birthdayCalculator() {
+//     document.querySelector("#elapsed-days").innerHTML = daysSinceBorn;
+//   }
+
+//   function birthCalculatorYears() {
+//     let yearsSinceBorn = parseFloat(daysSinceBorn / 365).toFixed(2);
+
+//     document.querySelector("#elapsed-years").innerHTML = yearsSinceBorn;
+//   }
+
+//   birthdayCalculator();
+//   birthCalculatorYears();
+// }
+
+function birthdayCalculator() {
+  let birth = "October 20, 1988 04:40:00 GMT";
+  let born = new Date(birth);
+  let now = new Date();
+  let elapsed = now - born;
+
+  var daysSinceBorn = Math.floor(elapsed / (1000 * 3600 * 24));
+
+  return daysSinceBorn;
+}
+
+function birthCalculatorYears() {
+  let years = birthdayCalculator();
+
+  return parseFloat(years / 365).toFixed(2);
+}
+
 function getThumbnails() {
   console.log("Fetch starts");
   fetch("./data/posts.json")
@@ -71,9 +112,10 @@ function Blog() {
         </aside>
         <aside id="since-born">
           <p>
-            Today it's been <b id="elapsed-days"></b> days since I was born.{" "}
-            <br />
-            That's <b id="elapsed-years"></b> years! 🧙✨
+            Today it's been <b id="elapsed-days">{birthdayCalculator()}</b> days
+            since I was born. <br />
+            That's <b id="elapsed-years">{birthCalculatorYears()}</b> years!
+            🧙✨
           </p>
         </aside>
       </main>
