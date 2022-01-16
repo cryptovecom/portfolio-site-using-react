@@ -35,13 +35,13 @@ function Blog() {
     <main>
       <section className="blog__banner">
         <h1 className="dragon-text">
-          <span className="blog-animation">A</span>
+          <span className="blog-animation">A </span>
           <span className="blog-animation">
             resp
             <wbr />
             onsive
           </span>
-          <span className="blog-animation">exercise</span>
+          <span className="blog-animation"> exercise</span>
         </h1>
         <h3>
           Adapting with grid, flexbox and custom properties updated by media

@@ -5,7 +5,7 @@ function Header() {
       <nav>
         <ul>
           <li>
-            <a href="../pages/blog.html">Blog</a>
+            <a href="#">Blog</a>
           </li>
         </ul>
       </nav>
