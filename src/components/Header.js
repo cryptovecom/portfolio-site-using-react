@@ -1,4 +1,4 @@
-function Header() {
+const Header = () => {
   return (
     <header>
       <a href="../index.html">Michel Iseneld</a>
@@ -11,6 +11,6 @@ function Header() {
       </nav>
     </header>
   );
-}
+};
 
 export default Header;

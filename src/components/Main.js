@@ -1,3 +1,6 @@
+import Header from "./Header";
+import Footer from "./Footer";
+
 function Main(props) {
   // VANILLA CODE:
 
@@ -38,31 +41,37 @@ function Main(props) {
   });
 
   return (
-    <main>
-      <section className="landing__banner">
-        <h1>I have here refactored my first school project using React.js.</h1>
-      </section>
-      <section className="landing-list">
-        <div className="michel"></div>
-        <ul>
-          {listItemsObjects.map((x) => (
-            <li
-              className={`landing-list`}
-              key={x.id} // KEY PROP ADDED HERE!
-              style={{
-                backgroundImage: `url(./images/${x.img})`,
-              }}
-            >
-              <h2>
-                <a href={x.url} target="_blank" rel="noreferrer">
-                  {x.title}
-                </a>
-              </h2>
-            </li>
-          ))}
-        </ul>
-      </section>
-    </main>
+    <>
+      <Header />
+      <main>
+        <section className="landing__banner">
+          <h1>
+            I have here refactored my first school project using React.js.
+          </h1>
+        </section>
+        <section className="landing-list">
+          <div className="michel"></div>
+          <ul>
+            {listItemsObjects.map((x) => (
+              <li
+                className={`landing-list`}
+                key={x.id} // KEY PROP ADDED HERE!
+                style={{
+                  backgroundImage: `url(./images/${x.img})`,
+                }}
+              >
+                <h2>
+                  <a href={x.url} target="_blank" rel="noreferrer">
+                    {x.title}
+                  </a>
+                </h2>
+              </li>
+            ))}
+          </ul>
+        </section>
+      </main>
+      <Footer />
+    </>
   );
 }
 
