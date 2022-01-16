@@ -745,9 +745,6 @@ aside {
     -ms-grid-columns: (1fr)[3];
         grid-template-columns: repeat(3, 1fr);
   }
-  .blog__banner {
-    height: calc(100vh - 9rem);
-  }
   .blog__thumbnails {
     -ms-grid-column: 2;
     -ms-grid-column-span: 2;

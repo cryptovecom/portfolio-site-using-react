@@ -285,9 +285,9 @@ aside {
     grid-template-columns: repeat(3, 1fr);
   }
 
-  .blog__banner {
-    height: calc(100vh - 9rem);
-  }
+  // .blog__banner {
+  //   height: calc(100vh - 9rem);
+  // }
 
   .blog__thumbnails {
     grid-column: 2 / 4;

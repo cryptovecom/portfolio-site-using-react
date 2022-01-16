@@ -6,8 +6,8 @@ import listItems from "./components/landingList";
 function App() {
   return (
     <>
-      <Main menu={listItems} />
-      {/* <Blog /> */}
+      {/* <Main menu={listItems} /> */}
+      <Blog />
       {/* <BlogPost /> */}
     </>
   );
