@@ -1,7 +1,7 @@
-const Header = () => {
+function Header() {
   return (
     <header>
-      <a href="../index.html">Michel Iseneld</a>
+      <a href="#">Michel Iseneld</a>
       <nav>
         <ul>
           <li>
@@ -11,6 +11,6 @@ const Header = () => {
       </nav>
     </header>
   );
-};
+}
 
 export default Header;

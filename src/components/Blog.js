@@ -1,7 +1,8 @@
+import { useEffect, useState } from "react";
 import Header from "./Header";
 import Footer from "./Footer";
 
-// VANILLA BIRTHDAY birthCalculatorYears
+// VANILLA BIRTHDAY CALCULATOR
 
 // function birthdayCalculators() {
 //   let birth = "October 20, 1988 04:40:00 GMT";
@@ -50,7 +51,6 @@ function getThumbnails() {
       console.log("Parse data. Why does this run twice?");
       for (let i = 0; i < data.length; ++i) {
         createThumbnail(data[i]); // Funcion call >>
-        console.log("Test: " + i);
       }
     });
 }
@@ -74,7 +74,16 @@ function createThumbnail(post) {
 // BLOG FUNCTION
 
 function Blog() {
-  console.log("Blog function starts");
+  const [posts, setPosts] = useState();
+
+  useEffect(() => {
+    fetch("./data/posts.json")
+      .then((response) => response.json())
+      .then((data) => setPosts(data));
+  }, []);
+
+  console.log("Blog function starts", posts);
+
   return (
     <>
       <Header />
@@ -94,7 +103,20 @@ function Blog() {
             queries!
           </h3>
         </section>
-        <section className="blog__thumbnails">{getThumbnails()}</section>
+        <section className="blog__thumbnails">
+          {posts &&
+            posts.map((post) => (
+              <article key={post.id}>
+                <a href={`../pages/blog-post.html?id=${post.id}`}>
+                  <img src={post.previewImage} alt="Randomly generated" />
+                  <div>
+                    <h2>{post.title}</h2>
+                  </div>
+                  <p>{post.shortSummary}</p>
+                </a>
+              </article>
+            ))}
+        </section>
         <aside>
           <p>
             A grid is nesting flexboxes, that's nesting a grid with another
