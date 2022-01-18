@@ -1,11 +1,13 @@
+import { Link } from "react-router-dom";
+
 function Header() {
   return (
     <header>
-      <a href="#">Michel Iseneld</a>
+      <Link to="/">Michel Iseneld</Link>
       <nav>
         <ul>
           <li>
-            <a href="#">Blog</a>
+            <Link to="/blog">Blog</Link>
           </li>
         </ul>
       </nav>
