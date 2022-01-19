@@ -43,31 +43,30 @@ function birthCalculatorYears() {
   return parseFloat(years / 365).toFixed(2);
 }
 
-function getThumbnails() {
-  fetch("./data/posts.json")
-    .then((response) => response.json())
-    .then((data) => {
-      for (let i = 0; i < data.length; ++i) {
-        createThumbnail(data[i]); // Funcion call >>
-      }
-    });
-}
+// function getThumbnails() {
+//   fetch("./data/posts.json")
+//     .then((response) => response.json())
+//     .then((data) => {
+//       for (let i = 0; i < data.length; ++i) {
+//         createThumbnail(data[i]); // Funcion call >>
+//       }
+//     });
+// }
 
-function createThumbnail(post) {
-  let thumbnail = `
-    <article>
-      <a href="../pages/blog-post.html?id=${post.id}">
-        <img src="${post.previewImage}" alt="A randomly generated image" />
-        <div>
-          <h2>${post.title}</h2>
-        </div>
-        <p>${post.shortSummary}</p>
-      </a>
-    </article>
-    `;
-  return (document.querySelector(".blog__thumbnails").innerHTML += thumbnail);
-  // return thumbnail;
-}
+// function createThumbnail(post) {
+//   let thumbnail = `
+//     <article>
+//       <a href="../pages/blog-post.html?id=${post.id}">
+//         <img src="${post.previewImage}" alt="A randomly generated image" />
+//         <div>
+//           <h2>${post.title}</h2>
+//         </div>
+//         <p>${post.shortSummary}</p>
+//       </a>
+//     </article>
+//     `;
+//   return (document.querySelector(".blog__thumbnails").innerHTML += thumbnail);
+// }
 
 // BLOG FUNCTION
 
