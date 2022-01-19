@@ -44,11 +44,9 @@ function birthCalculatorYears() {
 }
 
 function getThumbnails() {
-  console.log("Fetch starts");
   fetch("./data/posts.json")
     .then((response) => response.json())
     .then((data) => {
-      console.log("Parse data. Why does this run twice?");
       for (let i = 0; i < data.length; ++i) {
         createThumbnail(data[i]); // Funcion call >>
       }
@@ -82,8 +80,6 @@ function Blog() {
       .then((data) => setPosts(data));
   }, []);
 
-  console.log("Blog function starts", posts);
-
   return (
     <>
       <Header />
@@ -107,7 +103,8 @@ function Blog() {
           {posts &&
             posts.map((post) => (
               <article key={post.id}>
-                <a href={`../pages/blog-post.html?id=${post.id}`}>
+                {/* <a href={`/blog-post-${post.id}`}> */}
+                <a href={`/blog-post`}>
                   <img src={post.previewImage} alt="Randomly generated" />
                   <div>
                     <h2>{post.title}</h2>

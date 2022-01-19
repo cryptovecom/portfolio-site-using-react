@@ -10,6 +10,7 @@ function App() {
       <Routes>
         <Route exact path="/" element={<Main menu={listItems} />} />
         <Route path="/blog" element={<Blog />} />
+        <Route path="/blog-post" element={<BlogPost />} />
       </Routes>
     </>
   );
