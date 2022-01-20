@@ -45,7 +45,6 @@ import { Link } from "react-router-dom";
 //   // It should get the post id dynamically.
 //   let id = 3;
 
-//   console.log("Fetch starts");
 //   fetch("./data/posts.json")
 //     .then((response) => response.json())
 //     .then((data) => {
@@ -59,7 +58,6 @@ import { Link } from "react-router-dom";
 
 function darkMode(e) {
   e.preventDefault(); // Added to prevent page reload on click.
-  console.log("Dark Mode");
   document.querySelector("body").classList.toggle("dark-mode");
 }
 
@@ -81,20 +79,18 @@ function BlogPost() {
         <section className="landing__banner">
           <button onClick={darkMode}>Dark Mode</button>
         </section>
-        <section className="blog__post">
-          {post && console.log(post[0])}
-          {/* {post.id === 4 ?? console.log(post.id)} */}
+        <article className="blog__post">
           {post && (
             <>
               <h2>{post[0].title}</h2>
               <h5>{post[0].fullSummary}</h5>
-              {post[0].content}
+              <section dangerouslySetInnerHTML={{__html:post[0].content}}></section>
               <p>
                 <Link to="/blog">Back to blog page</Link>
               </p>
             </>
           )}
-        </section>
+        </article>
       </main>
       <Footer />
     </>
