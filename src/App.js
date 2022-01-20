@@ -1,3 +1,4 @@
+import React from "react";
 import Main from "./components/Main";
 import Blog from "./components/Blog";
 import BlogPost from "./components/BlogPost";
