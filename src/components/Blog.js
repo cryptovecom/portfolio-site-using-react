@@ -102,13 +102,12 @@ function Blog() {
           {posts &&
             posts.map((post) => (
               <article key={post.id}>
-                {/* <a href={`/blog-post-${post.id}`}> */}
                 <a href={`/blog-post`}>
                   <img src={post.previewImage} alt="Randomly generated" />
                   <div>
                     <h2>{post.title}</h2>
+                    <p>{post.shortSummary}</p>
                   </div>
-                  <p>{post.shortSummary}</p>
                 </a>
               </article>
             ))}
