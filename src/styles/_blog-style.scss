@@ -73,22 +73,14 @@
 
       text-decoration: none;
 
-      div { 
-        width: 100vw;
-
-        display: flex;
-        flex-direction: column;
-      }
-
       &:focus,
       &:hover { 
         background-color: var(--color-blood);
         border-radius: 1rem;
-        transform: translateX(1rem);
+        transform: translateX(2.5rem);
         z-index: 1;
 
         transition: transform var(--speed-fast) ease-out, 
-          border-radius var(-speed-slow) ease-out,
           outline var(--speed-fast) ease-out;
       }
     }

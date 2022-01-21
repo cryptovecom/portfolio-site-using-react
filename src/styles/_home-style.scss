@@ -44,17 +44,17 @@ main {
   transition: 
     transform var(--speed-slow) cubic-bezier(0.81, 0.02, 0.92, 0.65),
     border-radius 0.2s 0.4s ease;
-}
 
-  li a:focus,
-  li a:hover {
+    &:focus,
+    &:hover {
     border-radius: 1rem 0 0 1rem;
-    transform: translateX(2.5em);
+    transform: translateX(1.5em);
 
     transition: 
     transform var(--speed-slow) cubic-bezier(0.28, 0.78, 0.6, 0.93), 
     border-radius 0.2s;
   }
+}
 }
 
 /* Background Images*/

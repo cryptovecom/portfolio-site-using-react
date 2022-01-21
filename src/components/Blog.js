@@ -98,7 +98,8 @@ function Blog() {
             queries!
           </h3>
         </section>
-        <section className="blog__thumbnails">
+
+        {/* <section className="blog__thumbnails">
           {posts &&
             posts.map((post) => (
               <article key={post.id}>
@@ -111,7 +112,30 @@ function Blog() {
                 </a>
               </article>
             ))}
+        </section> */}
+
+        <section className="landing-list">
+          <ul>
+            {posts &&
+              posts.map((post) => (
+                <li
+                  // className={`blog__thumbnails`}
+                  key={post.id} // KEY PROP ADDED HERE!
+                  style={{
+                    backgroundImage: `url(${post.previewImage})`,
+                  }}
+                >
+                  <h2>
+                    <a href={post.url} target="_blank" rel="noreferrer">
+                      {post.title}
+                    </a>
+                  </h2>
+                  {/* <p>{post.shortSummary}</p> */}
+                </li>
+              ))}
+          </ul>
         </section>
+
         <aside>
           <p>
             A grid is nesting flexboxes, that's nesting a grid with another
