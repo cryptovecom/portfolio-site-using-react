@@ -1,7 +1,7 @@
 [
   {
     "id": 4,
-    "title": "All blog posts are fetched from a JSON file",
+    "title": "Fetchy fetchy!",
     "previewImage": "https://source.unsplash.com/random/500x500",
     "shortSummary": "This is done with Javascript by looping through all objects in the file.",
     "fullSummary": "This is just a dummy post for JSON practice. So, get out of here!",
@@ -14,7 +14,7 @@
   },
   {
     "id": 2,
-    "title": "Approach to CSS",
+    "title": "All posts are fetched from a JSON file",
     "previewImage": "https://source.unsplash.com/random/500x500",
     "shortSummary": "Focus has been on responsiveness and selector experimentation.",
     "fullSummary": "The site has one global stylesheet plus one per individual page.",
@@ -39,7 +39,7 @@
    },
  {
    "id": 1,
-   "title": "My methods for this project",
+   "title": "These are just filler-uppers..",
    "previewImage": "https://source.unsplash.com/random/500x500",
    "shortSummary": "A brief insight into my approach to this school project!",
    "fullSummary": "My goal with this project has been to gain fluency with CSS targeting, flexbox, grid, and semantic HTML.",
