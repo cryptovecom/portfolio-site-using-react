@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
 import Header from "./Header";
 import Footer from "./Footer";
 
@@ -79,6 +80,10 @@ function Blog() {
       .then((data) => setPosts(data));
   }, []);
 
+  const handleSubmit = (event) => {
+    event.preventDefault();
+  };
+
   return (
     <>
       <Header />
@@ -93,10 +98,6 @@ function Blog() {
             </span>
             <span className="blog-animation"> exercise</span>
           </h1>
-          <h3>
-            Adapting with grid, flexbox and custom properties updated by media
-            queries!
-          </h3>
         </section>
 
         {/* <section className="blog__thumbnails">
@@ -126,9 +127,7 @@ function Blog() {
                   }}
                 >
                   <h2>
-                    <a href={`/blog-post`} target="_blank" rel="noreferrer">
-                      {post.title}
-                    </a>
+                    <Link to="/blog-post">{post.title}</Link>
                   </h2>
                   {/* <p>{post.shortSummary}</p> */}
                 </li>
@@ -138,17 +137,12 @@ function Blog() {
 
         <aside>
           <p>
-            A grid is nesting flexboxes, that's nesting a grid with another
-            flexbox inside to practice advanced responsive layouts.
+            This is a dummy site made as my first school project to practice
+            HTML, CSS, Javascript and http requests.
           </p>
           <p>
-            I've struggled making the thumbnail images sizing properly in all
-            window configurations.
-          </p>
-          <p>
-            Ideally, I'd like the image to stretch the full height of the
-            container, use the same width as height, and have the other blocks
-            resize accordingly.
+            It was later refactored using React.js and published to Netlify via
+            Github.
           </p>
         </aside>
         <aside id="since-born">

@@ -46,9 +46,7 @@ function Main(props) {
       <Header />
       <main>
         <section className="landing__banner">
-          <h1>
-            I have here refactored my first school project using React.js.
-          </h1>
+          <h1>This is my first school project using React.js</h1>
         </section>
         <section className="landing-list">
           <div className="michel"></div>
