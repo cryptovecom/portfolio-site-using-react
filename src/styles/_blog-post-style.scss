@@ -65,6 +65,10 @@ button {
   color: var(--color-dark);
 }
 
+body.dark-mode section.landing-list ul li a{
+  outline: 4px solid var(--color-dark);
+}
+
 /* MEDIA QUERIES MEDIA QUERIES MEDIA QUERIES MEDIA QUERIES MEDIA QUERIES */
 
 @media all and (max-width: 1023px) {
