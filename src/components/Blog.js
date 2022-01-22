@@ -80,10 +80,6 @@ function Blog() {
       .then((data) => setPosts(data));
   }, []);
 
-  const handleSubmit = (event) => {
-    event.preventDefault();
-  };
-
   return (
     <>
       <Header />
