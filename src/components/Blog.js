@@ -126,7 +126,7 @@ function Blog() {
                   }}
                 >
                   <h2>
-                    <a href={post.url} target="_blank" rel="noreferrer">
+                    <a href={`/blog-post`} target="_blank" rel="noreferrer">
                       {post.title}
                     </a>
                   </h2>
