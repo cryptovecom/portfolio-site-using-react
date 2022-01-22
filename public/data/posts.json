@@ -4,12 +4,12 @@
     "title": "All blog posts are fetched from a JSON file",
     "previewImage": "https://source.unsplash.com/random/500x500",
     "shortSummary": "This is done with Javascript by looping through all objects in the file.",
-    "fullSummary": "I've also experimented with doing this from a local server via the WordPress CMS. It worked beside some issues with media files. I suspect it might have something to do with my hard drive being in the cloud through Google Drive, and I chose not to spend too much time figuring it out during this module.",
+    "fullSummary": "This is just a dummy post for JSON practice. So, get out of here!",
     "content": [
-      "<p>Fusce feugiat aliquam felis, eget elementum nunc fringilla in. Praesent erat leo, posuere vitae viverra at, pulvinar vel diam. Proin mattis hendrerit leo, elementum vestibulum orci semper nec. Aenean pharetra in metus eget fermentum. Nunc et sodales eros. Phasellus a porta neque. Integer in sapien ut neque convallis cursus. Nam dapibus efficitur est id finibus. Ut sem elit, feugiat pretium nisi vel, consectetur mollis ante. Pellentesque gravida tempor massa, at scelerisque diam sollicitudin ut. In porta nunc nec elementum auctor. Donec metus turpis, blandit a purus venenatis, blandit tristique nibh. Mauris vulputate nunc dolor, sit amet consequat eros mattis a. Nunc fermentum malesuada ante, ut mollis dui iaculis a.</p>",
-      "<p>is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>",
+      "<p>You're staying? YOU'RE READING THIS!? Well, then have you ever read <a href='https://hipsum.co/' target='_blank'>Hipster Ipsum</a>? It's kind of funny, haha.</p> <p>Check it:</p><p> I'm a baby taco thundercat organic chicharrones vape. Readymade coffee fashion mixtape distillery mug. Sustainable man bun polaroid quinoa. Asymmetrical letterpress sriracha fanny pack, you probably haven't heard of them occupy. +1 organic, biodiesel street art bicycle rights tattooed woke whatever chillwave banjo.</p>",
       "<img src='https://source.unsplash.com/random/1000x500' alt='A randomly generated placeholder image' loading='lazy'/>",
-      "<p>is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>"
+      "<p>Subway tumblr listicle, etsy meditation deep blog pok pok. Trust fund try-hard and put a bird on it. Cray knausgaard art party shaman dreamcatcher. Kale chips flexitarian aesthetic wolf moon man ugh.</p>",
+      "<p>Now, seriously, GTFO.</p>"
     ]
   },
   {
