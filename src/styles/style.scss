@@ -61,8 +61,7 @@ body {
   line-height: 1.5;
 }
 
-// Cntainers added through React.
-// Took some debugging to find why media queries were behaving weirdly!
+// Container added by React App.
 
 #root {
   background-color: #1e1e1e;
@@ -126,13 +125,7 @@ footer {
 
   font-size: var(--h5);
 
-
-  transition: background-color var(--speed-slow) ease-out, border-radius var(--speed-slow);
-  
-  &:hover {
-    background-color: var(--color-blood);
-    color: var(--color-white);
-  }
+  transition:  border-radius var(--speed-slow);
 
   a,
   a:visited {
@@ -140,10 +133,6 @@ footer {
 
     color: var(--color-dark);
     text-decoration: none;
-
-    &:hover {
-      color: var(--color-white);
-    }
   }
 }
 

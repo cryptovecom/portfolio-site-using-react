@@ -407,8 +407,25 @@ button:active {
   color: var(--color-dark);
 }
 
-body.dark-mode section.landing-list ul li a {
-  outline: 4px solid var(--color-dark);
+:root *.dark-mode .landing__banner,
+:root *.dark-mode .landing-list ul li a,
+:root *.dark-mode .blog__banner, :root *.dark-mode aside,
+.dark-mode .blog__post .landing__banner,
+.dark-mode .blog__post .landing-list ul li a,
+.dark-mode .blog__post .blog__banner,
+.dark-mode .blog__post aside {
+  outline: 1rem solid var(--color-dark);
+}
+
+:root *.dark-mode .landing__banner, :root *.dark-mode .blog__banner,
+.dark-mode .blog__post .landing__banner,
+.dark-mode .blog__post .blog__banner {
+  color: var(--color-dark);
+}
+
+:root *.dark-mode .blog-animation,
+.dark-mode .blog__post .blog-animation {
+  color: #af3333;
 }
 
 /* MEDIA QUERIES MEDIA QUERIES MEDIA QUERIES MEDIA QUERIES MEDIA QUERIES */
@@ -913,13 +930,8 @@ footer {
           box-shadow: 0 4px .5rem #1e1e1e;
   min-width: 16.75rem;
   font-size: var(--h5);
-  -webkit-transition: background-color var(--speed-slow) ease-out, border-radius var(--speed-slow);
-  transition: background-color var(--speed-slow) ease-out, border-radius var(--speed-slow);
-}
-
-footer:hover {
-  background-color: var(--color-blood);
-  color: var(--color-white);
+  -webkit-transition: border-radius var(--speed-slow);
+  transition: border-radius var(--speed-slow);
 }
 
 footer a,
@@ -927,11 +939,6 @@ footer a:visited {
   padding: 2rem;
   color: var(--color-dark);
   text-decoration: none;
-}
-
-footer a:hover,
-footer a:visited:hover {
-  color: var(--color-white);
 }
 
 /* ELEMENTS ELEMENTS ELEMENTS ELEMENTS ELEMENTS ELEMENTS ELEMENTS ELEMENTS */

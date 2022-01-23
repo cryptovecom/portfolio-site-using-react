@@ -63,10 +63,20 @@ button {
   --color-grey: #1e1e1e;
 
   color: var(--color-dark);
-}
 
-body.dark-mode section.landing-list ul li a{
-  outline: 4px solid var(--color-dark);
+  .landing__banner, 
+  .landing-list ul li a, 
+  .blog__banner, aside {
+    outline: 1rem solid var(--color-dark); 
+  }
+
+  .landing__banner, .blog__banner {
+    color: var(--color-dark);
+  }
+
+  .blog-animation {
+    color: #af3333;
+  }
 }
 
 /* MEDIA QUERIES MEDIA QUERIES MEDIA QUERIES MEDIA QUERIES MEDIA QUERIES */
