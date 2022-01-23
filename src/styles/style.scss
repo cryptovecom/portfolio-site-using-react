@@ -155,10 +155,6 @@ a {
 
   transition: color var(--speed-fast);
 
-  &[target$="_blank"]::after {
-    content: " " url('/public/images/svg/open_in_new_black_24dp.svg');
-    vertical-align: middle;
-  }
   &:focus,
   &:hover {
     color: var(--color-blood);

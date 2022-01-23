@@ -70,11 +70,19 @@ function Blog() {
           <h6>WORK IN PROGRESS</h6>
           <p>
             This is a dummy site made as my first school project to practice
-            HTML, CSS, Javascript and http requests.
+            HTML, CSS and Javascript.
           </p>
           <p>
-            It was later refactored using React.js and published to Netlify via
-            Github.
+            It was later refactored using React.js and published to Netlify
+            via&nbsp;
+            <a
+              href="https://github.com/iseneld"
+              target="_blank"
+              rel="noreferrer"
+            >
+              Github
+            </a>
+            .
           </p>
         </aside>
         <aside id="since-born">
