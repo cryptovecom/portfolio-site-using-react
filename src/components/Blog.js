@@ -3,30 +3,6 @@ import { Link } from "react-router-dom";
 import Header from "./Header";
 import Footer from "./Footer";
 
-// VANILLA BIRTHDAY CALCULATOR
-
-// function birthdayCalculators() {
-//   let birth = "October 20, 1988 04:40:00 GMT";
-//   let born = new Date(birth);
-//   let now = new Date();
-//   let elapsed = now - born;
-
-//   var daysSinceBorn = Math.floor(elapsed / (1000 * 3600 * 24));
-
-//   function birthdayCalculator() {
-//     document.querySelector("#elapsed-days").innerHTML = daysSinceBorn;
-//   }
-
-//   function birthCalculatorYears() {
-//     let yearsSinceBorn = parseFloat(daysSinceBorn / 365).toFixed(2);
-
-//     document.querySelector("#elapsed-years").innerHTML = yearsSinceBorn;
-//   }
-
-//   birthdayCalculator();
-//   birthCalculatorYears();
-// }
-
 function birthdayCalculator() {
   let birth = "October 20, 1988 04:40:00 GMT";
   let born = new Date(birth);
@@ -43,31 +19,6 @@ function birthCalculatorYears() {
 
   return parseFloat(years / 365).toFixed(2);
 }
-
-// function getThumbnails() {
-//   fetch("./data/posts.json")
-//     .then((response) => response.json())
-//     .then((data) => {
-//       for (let i = 0; i < data.length; ++i) {
-//         createThumbnail(data[i]); // Funcion call >>
-//       }
-//     });
-// }
-
-// function createThumbnail(post) {
-//   let thumbnail = `
-//     <article>
-//       <a href="../pages/blog-post.html?id=${post.id}">
-//         <img src="${post.previewImage}" alt="A randomly generated image" />
-//         <div>
-//           <h2>${post.title}</h2>
-//         </div>
-//         <p>${post.shortSummary}</p>
-//       </a>
-//     </article>
-//     `;
-//   return (document.querySelector(".blog__thumbnails").innerHTML += thumbnail);
-// }
 
 // BLOG FUNCTION
 
@@ -96,28 +47,12 @@ function Blog() {
           </h1>
         </section>
 
-        {/* <section className="blog__thumbnails">
-          {posts &&
-            posts.map((post) => (
-              <article key={post.id}>
-                <a href={`/blog-post`}>
-                  <img src={post.previewImage} alt="Randomly generated" />
-                  <div>
-                    <h2>{post.title}</h2>
-                    <p>{post.shortSummary}</p>
-                  </div>
-                </a>
-              </article>
-            ))}
-        </section> */}
-
         <section className="landing-list">
           <ul>
             {posts &&
               posts.map((post) => (
                 <li
-                  // className={`blog__thumbnails`}
-                  key={post.id} // KEY PROP ADDED HERE!
+                  key={post.id}
                   style={{
                     backgroundImage: `url(${post.previewImage})`,
                   }}
