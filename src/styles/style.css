@@ -574,7 +574,7 @@ aside {
     max-width: 55rem;
   }
   .blog__banner {
-    min-height: calc(62vh - 8rem);
+    min-height: 100vh;
   }
   /* Thumbnails */
   .blog__thumbnails article a {
@@ -1038,6 +1038,11 @@ a {
   text-decoration: underline;
   -webkit-transition: color var(--speed-fast);
   transition: color var(--speed-fast);
+}
+
+a[target$="_blank"]::after {
+  content: " " url("/public/images/svg/open_in_new_black_24dp.svg");
+  vertical-align: middle;
 }
 
 a:focus, a:hover {

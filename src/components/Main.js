@@ -28,7 +28,7 @@ function Main(props) {
               >
                 <h2>
                   <a href={x.url} target="_blank" rel="noreferrer">
-                    {x.title}
+                    {x.title}{" "}
                   </a>
                 </h2>
               </li>
