@@ -67,6 +67,7 @@ function Blog() {
         </section>
 
         <aside>
+          <h6>WORK IN PROGRESS</h6>
           <p>
             This is a dummy site made as my first school project to practice
             HTML, CSS, Javascript and http requests.
@@ -77,6 +78,7 @@ function Blog() {
           </p>
         </aside>
         <aside id="since-born">
+          <h6>BIRTHDAY WIZARD</h6>
           <p>
             Today it's been <b id="elapsed-days">{birthdayCalculator()}</b> days
             since I was born. <br />

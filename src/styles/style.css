@@ -576,70 +576,11 @@ aside {
   .blog__banner {
     min-height: 32vh;
   }
-  /* Thumbnails */
-  .blog__thumbnails article a {
-    -ms-grid-columns: 1fr 2fr;
-        grid-template-columns: 1fr 2fr;
-  }
-  .blog__thumbnails article img {
-    display: block;
-    max-width: 100px;
-    -ms-grid-row: 2;
-    -ms-grid-row-span: 1;
-    grid-row: 2 / 3;
-  }
-  .blog__thumbnails article div {
-    grid-column: span 2;
-    -ms-grid-row: 1;
-    -ms-grid-row-span: 1;
-    grid-row: 1 / 2;
-  }
-  .blog__thumbnails article h2 {
-    font-size: calc(var(--h3));
-  }
-  .blog__thumbnails article p {
-    -ms-grid-column: 2;
-    -ms-grid-column-span: 1;
-    grid-column: 2 / 3;
-    -ms-grid-row: 2;
-    -ms-grid-row-span: 1;
-    grid-row: 2 / 3;
-  }
-}
-
-@media screen and (min-width: 50rem) {
-  .blog__banner {
-    min-height: calc(100vh - 7.5em);
-  }
-  .blog__thumbnails article img {
-    -ms-grid-row: 1;
-    -ms-grid-row-span: 2;
-    grid-row: 1 / 3;
-  }
-  .blog__thumbnails article div {
-    -ms-grid-column: 2;
-    -ms-grid-column-span: 1;
-    grid-column: 2 / 3;
-    -ms-grid-row: 1;
-    -ms-grid-row-span: 1;
-    grid-row: 1 / 2;
-  }
-  .blog__thumbnails article p {
-    -ms-grid-column: 2;
-    -ms-grid-column-span: 1;
-    grid-column: 2 / 3;
-    -ms-grid-row: 2;
-    -ms-grid-row-span: 1;
-    grid-row: 2 / 3;
-  }
 }
 
 @media screen and (min-width: 64rem) {
-  body {
-    -ms-grid-columns: 1fr 2fr;
-        grid-template-columns: 1fr 2fr;
-    -ms-grid-rows: 8rem 1fr;
-        grid-template-rows: 8rem 1fr;
+  .blog__banner {
+    min-height: calc(100vh - 7.5em);
   }
   header {
     -ms-grid-column: 1;
@@ -673,37 +614,6 @@ aside {
         -ms-flex-align: start;
             align-items: flex-start;
     text-align: left;
-  }
-  .blog__thumbnails {
-    -ms-grid-column: 2;
-    -ms-grid-column-span: 1;
-    grid-column: 2 / 3;
-    -ms-grid-row: 2;
-    -ms-grid-row-span: 4;
-    grid-row: 2 / 6;
-    z-index: 1;
-  }
-  .blog__thumbnails article img {
-    display: block;
-    -ms-grid-row: 1;
-    -ms-grid-row-span: 2;
-    grid-row: 1 / 3;
-  }
-  .blog__thumbnails article div {
-    -ms-grid-column: 2;
-    -ms-grid-column-span: 1;
-    grid-column: 2 / 3;
-    -ms-grid-row: 1;
-    -ms-grid-row-span: 1;
-    grid-row: 1 / 2;
-  }
-  .blog__thumbnails article p {
-    -ms-grid-column: 2;
-    -ms-grid-column-span: 1;
-    grid-column: 2 / 3;
-    -ms-grid-row: 2;
-    -ms-grid-row-span: 1;
-    grid-row: 2 / 3;
   }
 }
 
