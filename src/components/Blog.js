@@ -49,6 +49,12 @@ function Blog() {
 
         <section className="landing-list">
           <ul>
+            <li>
+              <h2>
+                <Link to="/cake">Celebrate Cake</Link>
+              </h2>
+            </li>
+            {/* LOOPING THROUGH POSTS IN JSON */}
             {posts &&
               posts.map((post) => (
                 <li
@@ -60,7 +66,6 @@ function Blog() {
                   <h2>
                     <Link to="/blog-post">{post.title}</Link>
                   </h2>
-                  {/* <p>{post.shortSummary}</p> */}
                 </li>
               ))}
           </ul>

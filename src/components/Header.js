@@ -7,7 +7,7 @@ function Header() {
       <nav>
         <ul>
           <li>
-            {/* <Link to="/blog">Blog</Link> */}
+            <Link to="/blog">Blog</Link>
           </li>
         </ul>
       </nav>
