@@ -228,36 +228,36 @@ function Cake() {
 
   // Create localStorage
 
-  function favouritesActive() {
-    const buttons = document.querySelectorAll("button");
+  // function favouritesActive() {
+  //   const buttons = document.querySelectorAll("button");
 
-    // Check if there's a favorite list
-    // if not: set it to be an empty array
+  //   // Check if there's a favorite list
+  //   // if not: set it to be an empty array
 
-    let favourites = JSON.parse(localStorage.getItem("favourites")) || [];
+  //   let favourites = JSON.parse(localStorage.getItem("favourites")) || [];
 
-    buttons.forEach((button) => {
-      button.addEventListener("click", () => {
-        //Check if button has the class selected
-        //if so: remove class
-        //and: remove from local storage
+  //   buttons.forEach((button) => {
+  //     button.addEventListener("click", () => {
+  //       //Check if button has the class selected
+  //       //if so: remove class
+  //       //and: remove from local storage
 
-        var id = this.event.target.getAttribute("id");
+  //       var id = this.event.target.getAttribute("id");
 
-        document
-          .getElementById(`list-${id}`)
-          .classList.toggle("favourite_selection");
+  //       document
+  //         .getElementById(`list-${id}`)
+  //         .classList.toggle("favourite_selection");
 
-        if (!favourites.includes(button.id)) {
-          favourites[button.id] = button.id;
-          localStorage.setItem("favourites", JSON.stringify(favourites));
-        } else {
-          delete favourites[button.id];
-          localStorage.setItem("favourites", JSON.stringify(favourites));
-        }
-      });
-    });
-  }
+  //       if (!favourites.includes(button.id)) {
+  //         favourites[button.id] = button.id;
+  //         localStorage.setItem("favourites", JSON.stringify(favourites));
+  //       } else {
+  //         delete favourites[button.id];
+  //         localStorage.setItem("favourites", JSON.stringify(favourites));
+  //       }
+  //     });
+  //   });
+  // }
 
   holidays && console.log(holidays);
 
