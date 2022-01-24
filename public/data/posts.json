@@ -2,6 +2,7 @@
   {
     "id": 4,
     "title": "Fetchy fetchy!",
+    "page": "/blog-post",
     "previewImage": "https://source.unsplash.com/random/500x500",
     "shortSummary": "This is done with Javascript by looping through all objects in the file.",
     "fullSummary": "This is just a dummy post for JSON practice. So, get out of here!",
