@@ -49,11 +49,6 @@ function Blog() {
 
         <section className="landing-list">
           <ul>
-            <li>
-              <h2>
-                <Link to="/cake">Celebrate Cake</Link>
-              </h2>
-            </li>
             {/* LOOPING THROUGH POSTS IN JSON */}
             {posts &&
               posts.map((post) => (
