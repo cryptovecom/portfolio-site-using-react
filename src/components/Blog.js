@@ -72,7 +72,7 @@ function Blog() {
         </section>
 
         <aside>
-          <h6>WORK IN PROGRESS - HMM IS THIS WORKING??</h6>
+          <h6>WORK IN PROGRESS</h6>
           <p>
             This is a dummy site made as my first school project to practice
             HTML, CSS and Javascript.
