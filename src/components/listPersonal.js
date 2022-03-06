@@ -31,7 +31,7 @@ const listItems = [
   },
   {
     title: "Ntogn",
-    url: "https://tomerecords.bandcamp.com/",
+    url: "https://soundcloud.com/ntogn",
     img: "ntogn.jpg",
     class: "ntogn",
   },
