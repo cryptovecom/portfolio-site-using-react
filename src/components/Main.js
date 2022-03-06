@@ -3,7 +3,12 @@ import Header from "./Header";
 import Footer from "./Footer";
 
 function Main(props) {
-  const listItemsObjects = props.menu.map((object, i) => {
+  const listPersonalObjects = props.listPersonal.map((object, i) => {
+    object.id = i;
+    return object;
+  });
+
+  const listEducationalObjects = props.listEducational.map((object, i) => {
     object.id = i;
     return object;
   });
@@ -17,24 +22,46 @@ function Main(props) {
         </section>
         <section className="landing-list">
           <div className="michel"></div>
-          <h1>Personal Projects</h1>
-          <ul>
-            {listItemsObjects.map((x) => (
-              <li
-                className={`landing-list`}
-                key={x.id} // KEY PROP ADDED HERE!
-                style={{
-                  backgroundImage: `url(./images/${x.img})`,
-                }}
-              >
-                <h2>
-                  <a href={x.url} target="_blank" rel="noreferrer">
-                    {x.title}{" "}
-                  </a>
-                </h2>
-              </li>
-            ))}
-          </ul>
+          <section>
+            <h1>🎓</h1>
+            <ul>
+              {listEducationalObjects.map((x) => (
+                <li
+                  className={`landing-list`}
+                  key={x.id} // KEY PROP ADDED HERE!
+                  style={{
+                    backgroundImage: `url(./images/${x.img})`,
+                  }}
+                >
+                  <h2>
+                    <a href={x.url} target="_blank" rel="noreferrer">
+                      {x.title}{" "}
+                    </a>
+                  </h2>
+                </li>
+              ))}
+            </ul>
+          </section>
+          <section>
+            <h1>💼</h1>
+            <ul>
+              {listPersonalObjects.map((x) => (
+                <li
+                  className={`landing-list`}
+                  key={x.id} // KEY PROP ADDED HERE!
+                  style={{
+                    backgroundImage: `url(./images/${x.img})`,
+                  }}
+                >
+                  <h2>
+                    <a href={x.url} target="_blank" rel="noreferrer">
+                      {x.title}{" "}
+                    </a>
+                  </h2>
+                </li>
+              ))}
+            </ul>
+          </section>
         </section>
       </main>
       <Footer />

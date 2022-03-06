@@ -1,5 +1,11 @@
 const listItems = [
   {
+    title: "Linkedin",
+    url: "https://www.linkedin.com/in/micheliseneld/",
+    img: "linkedin.png",
+    class: "linkedin",
+  },
+  {
     title: "Hypnus Records",
     url: "https://hypnusrecords.com/",
     img: "hypnus.jpg",
