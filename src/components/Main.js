@@ -17,6 +17,7 @@ function Main(props) {
         </section>
         <section className="landing-list">
           <div className="michel"></div>
+          <h1>Personal Projects</h1>
           <ul>
             {listItemsObjects.map((x) => (
               <li
