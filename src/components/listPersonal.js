@@ -35,24 +35,24 @@ const listItems = [
     img: "ntogn.jpg",
     class: "ntogn",
   },
-  {
-    title: "Photography",
-    url: "https://www.instagram.com/micheliseneld/",
-    img: "photography.jpg",
-    class: "photography",
-  },
-  {
-    title: "Aedi Records",
-    url: "https://aedirecords.bandcamp.com/",
-    img: "aedi.jpg",
-    class: "aedi",
-  },
-  {
-    title: "Kabalion Records",
-    url: "https://kabalion.bandcamp.com/",
-    img: "kabalion.jpg",
-    class: "kabalion",
-  },
+  // {
+  //   title: "Photography",
+  //   url: "https://www.instagram.com/micheliseneld/",
+  //   img: "photography.jpg",
+  //   class: "photography",
+  // },
+  // {
+  //   title: "Aedi Records",
+  //   url: "https://aedirecords.bandcamp.com/",
+  //   img: "aedi.jpg",
+  //   class: "aedi",
+  // },
+  // {
+  //   title: "Kabalion Records",
+  //   url: "https://kabalion.bandcamp.com/",
+  //   img: "kabalion.jpg",
+  //   class: "kabalion",
+  // },
 ];
 
 export default listItems;
