@@ -8,7 +8,7 @@
     center 
     center;
   background-size: cover;
-
+  border-right: 1rem solid var(--color-dark);
   color: var(--color-white);
 
   h1 {
@@ -21,7 +21,6 @@
 .landing-list {
   background: var(--bg-pos); 
   width: 100vw;
-  transform: translateX(.5rem);
   overflow-x: hidden;
 
   h1 { 
