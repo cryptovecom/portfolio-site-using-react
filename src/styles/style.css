@@ -356,9 +356,10 @@ template {
 /* LANDING PAGE LIST - LANDING PAGE LIST - LANDING PAGE LIST - LANDING PAGE LIST */
 .landing-list {
   background: var(--bg-pos);
-  width: 100%;
+  width: 100vw;
   -webkit-transform: translateX(0.5rem);
           transform: translateX(0.5rem);
+  overflow-x: hidden;
 }
 
 .landing-list h1 {
@@ -420,10 +421,10 @@ img {
   margin-bottom: -5em;
   position: -webkit-sticky;
   position: sticky;
-  top: 6rem;
-  z-index: 0;
+  -webkit-transform: scaleX(-1);
+          transform: scaleX(-1);
   background-image: url("../../public/images/michel.jpg");
-  background-position: center left 8rem;
+  background-position: center left 0rem;
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -611,7 +612,6 @@ main {
 
 /* FOOTER FOOTER FOOTER FOOTER FOOTER FOOTER FOOTER FOOTER FOOTER FOOTER FOOTER */
 footer {
-  margin-top: 1rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -702,6 +702,10 @@ p:first-child {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    width: 100%;
+  }
+  .michel {
+    background-position: center right -12rem;
   }
 }
 

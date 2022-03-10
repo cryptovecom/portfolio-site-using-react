@@ -120,14 +120,11 @@ main {
 /* FOOTER FOOTER FOOTER FOOTER FOOTER FOOTER FOOTER FOOTER FOOTER FOOTER FOOTER */
 
 footer {
-  margin-top: 1rem;
   display: flex;
   align-items: center;
   z-index: 1;
 
   background-color: var(--color-dark); 
-  // min-width: 16.75rem;
-
   font-size: var(--h5);
 
   transition:  border-radius var(--speed-slow);
@@ -194,6 +191,11 @@ p {
   main {
     display: flex;
     flex-direction: column;
+    width: 100%;
+  }
+
+  .michel {
+    background-position: center right -12rem;
   }
 }
 
@@ -208,7 +210,7 @@ p {
     background-color: var(--color-white);
     border: 0.5rem solid var(--color-dark);
     box-shadow: 0 4px .5rem #1e1e1e;
-    
+
     &:active,
     &:hover {        
       border-radius: 1rem;
