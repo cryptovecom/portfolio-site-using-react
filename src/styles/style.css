@@ -667,6 +667,11 @@ main {
   text-align: left;
 }
 
+.landing-list ul li {
+  z-index: 5;
+  mix-blend-mode: difference;
+}
+
 .landing-list ul li a {
   -webkit-box-shadow: 0 0 1rem black;
           box-shadow: 0 0 1rem black;
@@ -711,7 +716,11 @@ img {
 .michel {
   width: 100%;
   height: 36rem;
-  margin-bottom: -6em;
+  margin-bottom: -5em;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 6rem;
+  z-index: 0;
   background-image: url("../../public/images/michel.jpg");
   background-position: center left 8rem;
   background-repeat: no-repeat;
