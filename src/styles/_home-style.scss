@@ -20,8 +20,7 @@
 
 .landing-list {
   background: var(--bg-pos); 
-  width: 100vw;
-  overflow-x: hidden;
+  width: 100%;
 
   h1 { 
     color: rgb(228, 228, 228);
@@ -31,6 +30,7 @@
   ul {
     display: grid;
     grid-gap: 1rem;
+    mix-blend-mode: lighten;
 
     h2 {
       text-align: left;
@@ -83,6 +83,8 @@ img {
   margin-bottom: -5em;
 
   position: sticky;
+  top: 8.25rem;
+
   transform: scaleX(-1);
   // z-index: -1;
 

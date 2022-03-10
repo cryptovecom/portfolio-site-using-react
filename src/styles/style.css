@@ -357,8 +357,7 @@ template {
 /* LANDING PAGE LIST - LANDING PAGE LIST - LANDING PAGE LIST - LANDING PAGE LIST */
 .landing-list {
   background: var(--bg-pos);
-  width: 100vw;
-  overflow-x: hidden;
+  width: 100%;
 }
 
 .landing-list h1 {
@@ -370,6 +369,7 @@ template {
   display: -ms-grid;
   display: grid;
   grid-gap: 1rem;
+  mix-blend-mode: lighten;
 }
 
 .landing-list ul h2 {
@@ -420,6 +420,7 @@ img {
   margin-bottom: -5em;
   position: -webkit-sticky;
   position: sticky;
+  top: 8.25rem;
   -webkit-transform: scaleX(-1);
           transform: scaleX(-1);
   background-image: url("../../public/images/michel.jpg");
@@ -626,7 +627,7 @@ footer {
 
 footer a,
 footer a:visited {
-  padding: 2rem 3rem;
+  padding: 2rem 2rem;
   color: var(--color-grey);
   text-decoration: none;
 }

@@ -17,18 +17,18 @@ const listItems = [
     img: "linkedin.png",
     class: "linkedin",
   },
-  // {
-  //   title: "Hypnus Records",
-  //   url: "https://hypnusrecords.com/",
-  //   img: "hypnus.jpg",
-  //   class: "hypnus",
-  // },
-  // {
-  //   title: "Max for Live",
-  //   url: "https://hypnusrecords.com/shop",
-  //   img: "slink.jpg",
-  //   class: "slink",
-  // },
+  {
+    title: "Hypnus Records",
+    url: "https://hypnusrecords.com/",
+    img: "hypnus.jpg",
+    class: "hypnus",
+  },
+  {
+    title: "Max for Live",
+    url: "https://hypnusrecords.com/shop",
+    img: "slink.jpg",
+    class: "slink",
+  },
   // {
   //   title: "Aether Mechanics",
   //   url: "https://aethermechanics.bandcamp.com/",
