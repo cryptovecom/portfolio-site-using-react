@@ -352,6 +352,9 @@ template {
 
 .landing__banner h1 {
   margin-bottom: 6rem;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 12rem;
 }
 
 /* LANDING PAGE LIST - LANDING PAGE LIST - LANDING PAGE LIST - LANDING PAGE LIST */
