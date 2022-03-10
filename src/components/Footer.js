@@ -6,7 +6,7 @@ function Footer() {
         target="_blank"
         rel="noreferrer"
       >
-        Made by Michel Iseneld
+        Code and design by Michel Iseneld
       </a>
     </footer>
   );
