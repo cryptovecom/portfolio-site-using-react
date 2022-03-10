@@ -24,8 +24,8 @@ const listItems = [
     class: "hypnus",
   },
   {
-    title: "Max for Live",
-    url: "https://hypnusrecords.com/shop",
+    title: "Slink",
+    url: "https://www.ableton.com/en/packs/slink-devices/",
     img: "slink.jpg",
     class: "slink",
   },
