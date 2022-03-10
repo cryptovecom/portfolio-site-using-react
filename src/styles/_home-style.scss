@@ -26,7 +26,7 @@ main {
 .landing-list {
   section {
     // background-color: red;
-    transform: translateY(-7rem);
+    // transform: translateY(-7rem);
   }
   h1 { 
     color: rgb(228, 228, 228);
@@ -54,11 +54,6 @@ main {
       transition: 
         transform var(--speed-slow) cubic-bezier(0.81, 0.02, 0.92, 0.65),
         border-radius 0.2s 0.4s ease;
-
-        // &[target$="_blank"]::after {
-        //   content: " " url('/public/images/svg/open_in_new_black_24dp.svg');
-        //   vertical-align: middle;
-        // }
         
         &:focus,
         &:hover {
@@ -94,6 +89,8 @@ img {
 .michel {
   width: 100%; 
   height: 36rem;
+
+  margin-bottom: -6em;
 
   background-image: url('../../public/images/michel.jpg'); 
   background-position: center left 8rem;

@@ -1,5 +1,17 @@
 const listItems = [
   {
+    title: "Code Wars",
+    url: "https://www.codewars.com/users/iseneld",
+    img: "codewars.png",
+    class: "corewars",
+  },
+  {
+    title: "Github",
+    url: "https://github.com/iseneld",
+    img: "github.png",
+    class: "github",
+  },
+  {
     title: "Linkedin",
     url: "https://www.linkedin.com/in/micheliseneld/",
     img: "linkedin.png",
