@@ -1,0 +1,127 @@
+[
+    {
+        "id":"K1",
+        "description":"The web browser conditions, web standards and specifications.",
+        "status": "done"
+    },
+    {
+        "id":"K2",
+        "description":"The development methods and work processes, and above all agile system development methods.",
+        "status": "done"
+    },
+    {
+        "id":"K3",
+        "description":"The methods of quality assurance.",
+        "status": "done"
+    },
+    {
+        "id":"K4",
+        "description":"The development process for a front end developer.",
+        "status": "done"
+    },
+    {
+        "id":"K5",
+        "description":"How the student can choose work and project methodology according to requirement specifications against set quality requirements in delivery.",
+        "status": "done"
+    },
+    {
+        "id":"K6",
+        "description":"How to create efficient front end code.",
+        "status": "done"
+    },
+    {
+        "id":"K7",
+        "description":"Responsive web design and adaptation of graphics to web pages.",
+        "status": "done"
+    },
+    {
+        "id":"K8",
+        "description":"The development environments, programming languages, guidelines and conditions of the web languages (HTML5, CSS3 and Javascript).",
+        "status": "done"
+    },
+    {
+        "id":"K9",
+        "description":"Overview of other commonly used applications, programming languages and digital tools within the front end industry.",
+        "status": "done"
+    },
+    {
+        "id":"K10",
+        "description":"Overview of trends in relation to their own professional role within the front end industry.",
+        "status": "done"
+    },
+    {
+        "id":"K11",
+        "description":"How to create front end solutions for different user needs and how to build accessible and inclusive applications.",
+        "status": "done"
+    },
+    {
+        "id":"K12",
+        "description":"Tools, methods and tips and tricks to make your website look good.",
+        "status": "done"
+    },
+    {
+        "id":"S1",
+        "description":"Identify and plan out tasks needed to deliver user-interface based websites, services and applications.",
+        "status": "wip"
+    },
+    {
+        "id":"S2",
+        "description":"Create personal solutions for composite problems in digital communication, service and product development which requires an understanding and dimension of several different aspects such as a customer's business, user behavior, technical possibilities and limitations.",
+        "status": "wip"
+    },
+        {
+        "id":"S3",
+        "description":"Identify a complex problem, break it down and apply skills in design and development to solve it.",
+        "status": "wip"
+    },
+        {
+        "id":"S4",
+        "description":"Release and maintain a product. Have skills in programming, accessibility, publishing and debugging front end code.",
+        "status": "wip"
+    },
+        {
+        "id":"S5",
+        "description":"Problem solve and communication skills when working in a project with different disciplines both internally and with consultants. This can be for example UX designers, backend developers, testers, designers and product owners.",
+        "status": "wip"
+    },
+        {
+        "id":"S6",
+        "description":"Independently run and complete projects and communicate solutions effectively.",
+        "status": "wip"
+    },
+        {
+        "id":"S7",
+        "description":"Methods of online-remote working, the skills to be able to work online with regards to teams, individual work and client relations.",
+        "status": "wip"
+    },
+    {
+        "id":"C1",
+        "description":"Independently use adequate technologies required in the professional role of frontend developer to create frontend-solution.",
+        "status": "future"
+    },
+        {
+        "id":"C2",
+        "description":"Collaborating effectively as employees and leaders in the management and implementation of projects.",
+        "status": "future"
+    },
+        {
+        "id":"C3",
+        "description":"Independently be able to work methodically and flexibly in development projects and sub-processes.",
+        "status": "future"
+    },
+        {
+        "id":"C4",
+        "description":"Independently monitor work in teams and complete proposed projects.",
+        "status": "future"
+    },
+        {
+        "id":"C5",
+        "description":"Handle expectations of customers and stakeholders in such a way that it leads to further learning and completion of projects.",
+        "status": "future"
+    },
+        {
+        "id":"C6",
+        "description":"Applying core/fundamental/specialized knowledge within Frontend development for its own continuing learning and continuous professional development.",
+        "status": "future"
+    }
+]
