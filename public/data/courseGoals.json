@@ -69,27 +69,27 @@
         "description":"Create digital solutions with dimensions of different aspects such as user behavior, technical possibilities and limitations.",
         "status": "wip"
     },
-        {
+    {
         "id":"S3",
         "description":"Identify and solve a complex problem with skills in design and development.",
         "status": "wip"
     },
-        {
+    {
         "id":"S4",
         "description":"Release and maintain a product. Have skills in programming, accessibility, publishing and debugging frontend code.",
         "status": "done"
     },
-        {
+    {
         "id":"S5",
         "description":"Communication skills when working in a project with different disciplines both internally and with consultants.",
         "status": "wip"
     },
-        {
+    {
         "id":"S6",
         "description":"Independently run and complete projects and communicate solutions effectively.",
         "status": "wip"
     },
-        {
+    {
         "id":"S7",
         "description":"Methods of working online-remote in teams, individually and in client relations.",
         "status": "wip"
@@ -99,29 +99,34 @@
         "description":"Independently use adequate technologies required in the professional role of a frontend developer.",
         "status": "future"
     },
-        {
+    {
         "id":"C2",
         "description":"Collaborating effectively as employees and leaders in project management and implementation.",
         "status": "future"
     },
-        {
+    {
         "id":"C3",
         "description":"Independently work methodically and flexibly in development projects and sub-processes.",
         "status": "future"
     },
-        {
+    {
         "id":"C4",
         "description":"Independently monitor work in teams and complete proposed projects.",
         "status": "future"
     },
-        {
+    {
         "id":"C5",
         "description":"Handle expectations of customers and stakeholders so that it leads to further learning and completion of projects.",
         "status": "future"
     },
-        {
+    {
         "id":"C6",
         "description":"Applying specialized knowledge within frontend development for continued learning and professional development.",
         "status": "future"
+    },
+    {
+        "id":"FYI",
+        "description":"These card-thingies are fetched from a JSON-file in React hooks and looped with mad noob skillz etc.",
+        "status": "reass"
     }
 ]
