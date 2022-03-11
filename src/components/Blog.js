@@ -36,15 +36,7 @@ function Blog() {
       <Header />
       <main>
         <section className="blog__banner">
-          <h1 className="dragon-text">
-            <span className="blog-animation">A </span>
-            <span className="blog-animation">
-              resp
-              <wbr />
-              onsive
-            </span>
-            <span className="blog-animation"> exercise</span>
-          </h1>
+          <h1 className="dragon-text">You're not supposed to be here..</h1>
         </section>
 
         <section className="landing-list">

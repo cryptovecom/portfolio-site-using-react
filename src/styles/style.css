@@ -373,6 +373,10 @@ template {
   background-color: var(--color-white);
 }
 
+.sandbox {
+  background-color: var(--color-white);
+}
+
 .landing__banner {
   padding: 2rem;
   background: var(--color-blood) url(../../public/images/svg/stacked-waves-haikei.svg) no-repeat center center;
