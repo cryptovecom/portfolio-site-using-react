@@ -342,6 +342,37 @@ template {
   display: none;
 }
 
+.landing__top {
+  width: 100vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+}
+
+.landing__second {
+  border-top: 1rem solid var(--color-dark);
+  z-index: 1;
+}
+
+.landing__second div {
+  padding: 2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background-color: var(--color-white);
+}
+
 .landing__banner {
   padding: 2rem;
   background: var(--color-blood) url(../../public/images/svg/stacked-waves-haikei.svg) no-repeat center center;
@@ -567,8 +598,7 @@ body {
 
 /* HEADER HEADER HEADER HEADER HEADER HEADER HEADER HEADER HEADER HEADER HEADER */
 header {
-  margin-bottom: 1rem;
-  outline: 1rem solid var(--color-dark);
+  border-bottom: 1rem solid var(--color-dark);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -605,12 +635,15 @@ header ul li a:focus, header ul li a:hover {
   text-decoration: none;
 }
 
+/* MAIN MAIN MAIN MAIN MAIN MAIN MAIN MAIN MAIN MAIN MAIN MAIN MAIN MAIN MAIN */
 main {
-  width: 100vw;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  height: 100%;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 /* FOOTER FOOTER FOOTER FOOTER FOOTER FOOTER FOOTER FOOTER FOOTER FOOTER FOOTER */
@@ -697,7 +730,7 @@ p:first-child {
 
 /* MEDIA QUERIES MEDIA QUERIES MEDIA QUERIES MEDIA QUERIES MEDIA QUERIES MEDIA QUERIES */
 @media screen and (max-width: 64rem) {
-  main {
+  .landing__top {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;

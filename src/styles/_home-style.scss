@@ -1,3 +1,26 @@
+.landing__top {
+  width: 100vw;
+  display: flex;
+  height: 100%;
+}
+
+.landing__second {
+  border-top: 1rem solid var(--color-dark);
+  
+  z-index: 1;
+}
+
+.landing__second div {
+  padding: 2rem;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+
+  background-color: var(--color-white);
+}
+
 .landing__banner {
   padding: 2rem;
 
