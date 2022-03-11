@@ -44,7 +44,22 @@ function Main(props) {
         <section className="landing__second">
           <div>
             <h2>🚧 Under Construction 🚧</h2>
-            <p>Building publicly to get some fire under my butt</p>
+            <p>
+              I'm building this publicly to get some fire burning under my butt!
+            </p>
+            <p>
+              Below you see my progress with the course goals at Hyper Island's{" "}
+              <a href="https://www.hyperisland.com/programs-and-courses/frontend-developer">
+                frontend developer program
+              </a>
+              .
+            </p>
+            <p>
+              <span class="passed">Passed</span>{" "}
+              <span class="retest">Oopsie! 🥴</span>{" "}
+              <span class="wip">Learning</span>{" "}
+              <span class="future">Coming</span>
+            </p>
             <ul>
               <li></li>
             </ul>

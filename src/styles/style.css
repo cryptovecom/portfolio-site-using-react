@@ -373,6 +373,38 @@ template {
   background-color: var(--color-white);
 }
 
+.landing__second div span {
+  margin: .33rem;
+  border: 0.5rem solid var(--color-dark);
+  font-weight: bold;
+}
+
+.landing__second div span.passed {
+  padding: 1rem;
+  display: inline-block;
+  background-color: #5f874c;
+  color: var(--color-white);
+}
+
+.landing__second div span.retest {
+  padding: 1rem;
+  display: inline-block;
+  background-color: var(--color-blood);
+  color: var(--color-white);
+}
+
+.landing__second div span.wip {
+  padding: 1rem;
+  display: inline-block;
+  background-color: var(--color-yellow);
+}
+
+.landing__second div span.future {
+  padding: 1rem;
+  display: inline-block;
+  color: var(--color-dark);
+}
+
 .goals {
   background-color: var(--color-dark);
   margin-top: 1rem;
@@ -619,7 +651,7 @@ body {
       grid-template-rows: auto;
   overflow-x: hidden;
   /* Prevents scroll bar during animations */
-  color: var(--dark-color);
+  color: var(--color-dark);
   font-size: var(--base-font-size);
   line-height: 1.5;
 }

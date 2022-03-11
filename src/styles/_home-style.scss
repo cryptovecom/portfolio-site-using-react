@@ -19,6 +19,38 @@
   flex-direction: column;
 
   background-color: var(--color-white);
+
+  span {
+    margin: .33rem;
+    border: .5rem solid var(--color-dark);
+    font-weight: bold;
+
+    &.passed {
+      padding: 1rem;
+      display: inline-block;
+      background-color: #5f874c;
+      color: var(--color-white);
+    }
+
+    &.retest {
+      padding: 1rem;
+      display: inline-block;
+      background-color: var(--color-blood);
+      color: var(--color-white);
+    }
+
+    &.wip {
+      padding: 1rem;
+      display: inline-block;
+      background-color: var(--color-yellow);
+    }
+
+    &.future {
+      padding: 1rem;
+      display: inline-block;
+      color: var(--color-dark);
+    }
+  }
 }
 
 .goals {
