@@ -70,7 +70,7 @@ function Main(props) {
         <section className="landing__second">
           <div>
             <h2>🏗️ More Coming Soon 👷</h2>
-            <p>Idk wat 2 put, butt it'll b gr8!</p>
+            <p>Idk wat 2 put, butt it prolly b gr8!</p>
           </div>
         </section>
       </main>
