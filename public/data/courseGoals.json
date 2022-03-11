@@ -126,7 +126,12 @@
     },
     {
         "id":"FYI",
-        "description":"These card-thingies are fetched from a JSON-file in React hooks and looped with mad noob skillz etc.",
+        "description":"These card-thingies are fetched from a JSON-file in React hooks and looped using mad noob skillz.",
         "status": "reass"
+    },
+    {
+        "id":"Contact",
+        "description":"You may reach me through astral projection on weekends after 18 CEST.",
+        "status": "future"
     }
 ]
