@@ -437,18 +437,22 @@ template {
 .goals ul li {
   background-color: var(--color-white);
   padding: 2rem;
-  -webkit-transition: all 5s;
-  transition: all 5s;
+  -webkit-transition: 5s;
+  transition: 5s;
 }
 
 .goals ul li:hover {
   border-radius: 1rem;
-  -webkit-transition: all var(--speed-fast);
-  transition: all var(--speed-fast);
+  -webkit-transition: var(--speed-fast);
+  transition: var(--speed-fast);
 }
 
 .goals ul li:hover h6 {
   background-color: var(--color-white);
+  -webkit-box-shadow: -0.3rem 0.4rem 0.01rem rgba(0, 0, 0, 0.15);
+          box-shadow: -0.3rem 0.4rem 0.01rem rgba(0, 0, 0, 0.15);
+  -webkit-transition: var(--speed-fast);
+  transition: var(--speed-fast);
 }
 
 .goals ul li h6 {
@@ -459,9 +463,11 @@ template {
   background-color: var(--color-grey);
   border: 0.2rem solid var(--color-dark);
   border-radius: 0.5rem;
-  -webkit-box-shadow: -0.3rem 0.4rem 0.01rem rgba(0, 0, 0, 0.15);
-          box-shadow: -0.3rem 0.4rem 0.01rem rgba(0, 0, 0, 0.15);
+  -webkit-box-shadow: 0rem 0rem 0.01rem rgba(0, 0, 0, 0.15);
+          box-shadow: 0rem 0rem 0.01rem rgba(0, 0, 0, 0.15);
   color: black;
+  -webkit-transition: 1s;
+  transition: 1s;
 }
 
 .goals ul li.done {
