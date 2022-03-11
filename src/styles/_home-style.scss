@@ -25,6 +25,14 @@
     border: .5rem solid var(--color-dark);
     font-weight: bold;
 
+    transition: all 5s;
+    cursor: no-drop;
+
+    &:hover {
+      border-radius: 1rem;
+      transition: all var(--speed-fast);
+    }
+
     &.passed {
       padding: 1rem;
       display: inline-block;
@@ -76,10 +84,23 @@
       &:hover {
         border-radius: 1rem;
         transition: all var(--speed-fast);
+
+        h6 {
+          background-color: var(--color-white);
+        }
       }
 
       h6 {
         margin-bottom: 1rem;
+        margin-right: 1rem;
+        padding: 0.5rem;
+        display: inline-block;
+
+        background-color: var(--color-grey);
+        border: .2rem solid var(--color-dark);
+        border-radius: 0.5rem;
+        box-shadow: -0.3rem 0.4rem .01rem rgba(0, 0, 0, 0.15);
+        color: black;
       }
 
       &.done {

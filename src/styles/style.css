@@ -377,6 +377,15 @@ template {
   margin: .33rem;
   border: 0.5rem solid var(--color-dark);
   font-weight: bold;
+  -webkit-transition: all 5s;
+  transition: all 5s;
+  cursor: no-drop;
+}
+
+.landing__second div span:hover {
+  border-radius: 1rem;
+  -webkit-transition: all var(--speed-fast);
+  transition: all var(--speed-fast);
 }
 
 .landing__second div span.passed {
@@ -438,8 +447,21 @@ template {
   transition: all var(--speed-fast);
 }
 
+.goals ul li:hover h6 {
+  background-color: var(--color-white);
+}
+
 .goals ul li h6 {
   margin-bottom: 1rem;
+  margin-right: 1rem;
+  padding: 0.5rem;
+  display: inline-block;
+  background-color: var(--color-grey);
+  border: 0.2rem solid var(--color-dark);
+  border-radius: 0.5rem;
+  -webkit-box-shadow: -0.3rem 0.4rem 0.01rem rgba(0, 0, 0, 0.15);
+          box-shadow: -0.3rem 0.4rem 0.01rem rgba(0, 0, 0, 0.15);
+  color: black;
 }
 
 .goals ul li.done {
