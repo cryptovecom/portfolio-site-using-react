@@ -1,5 +1,6 @@
 import React from "react";
 import Header from "./Header";
+import Goals from "./Goals";
 import Footer from "./Footer";
 
 function Main(props) {
@@ -49,6 +50,7 @@ function Main(props) {
             </ul>
           </div>
         </section>
+        <Goals />
       </main>
       <Footer />
     </>

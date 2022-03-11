@@ -11,7 +11,7 @@ function Goals(props) {
 
   return (
     <>
-      <section className="sandbox">
+      <section className="goals">
         <ul>
           {/* LOOPING THROUGH POSTS IN JSON */}
           {goals &&

@@ -373,11 +373,12 @@ template {
   background-color: var(--color-white);
 }
 
-.sandbox {
+.goals {
   background-color: var(--color-dark);
+  margin-top: 1rem;
 }
 
-.sandbox ul {
+.goals ul {
   display: -ms-grid;
   display: grid;
   grid-gap: 1rem;
@@ -385,9 +386,34 @@ template {
       grid-template-columns: repeat(3, 1fr);
 }
 
-.sandbox ul li {
+@media screen and (max-width: 64rem) {
+  .goals ul {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+  }
+}
+
+.goals ul li {
   background-color: var(--color-white);
   padding: 2rem;
+}
+
+.goals ul li h6 {
+  margin-bottom: 1rem;
+}
+
+.goals ul li.done {
+  background-color: #5f874c;
+  color: var(--color-white);
+}
+
+.goals ul li.wip {
+  background-color: var(--color-yellow);
+}
+
+.goals ul li.reass {
+  background-color: var(--color-blood);
+  color: var(--color-white);
 }
 
 .landing__banner {

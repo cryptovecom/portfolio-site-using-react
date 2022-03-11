@@ -21,20 +21,44 @@
   background-color: var(--color-white);
 }
 
-.sandbox {
+.goals {
   background-color: var(--color-dark);
+  margin-top: 1rem;
 
   ul {
     display: grid;
     grid-gap: 1rem;
     grid-template-columns: repeat(3, 1fr);
 
+    @media screen and (max-width: 64rem) {
+    & {
+      grid-template-columns: 1fr;
+    }
+  }
+
     li {
-    background-color: var(--color-white);
-    padding: 2rem;
+      background-color: var(--color-white);
+      padding: 2rem;
+
+      h6 {
+        margin-bottom: 1rem;
+      }
+
+      &.done {
+        background-color: #5f874c;
+        color: var(--color-white);
+      }
+
+      &.wip {
+        background-color: var(--color-yellow);
+      }
+
+      &.reass {
+        background-color: var(--color-blood);
+        color: var(--color-white);
+      }
+    }
   }
-  }
-  
 }
 
 .landing__banner {
