@@ -20,10 +20,10 @@ function Sandbox(props) {
           {/* LOOPING THROUGH POSTS IN JSON */}
           {goals &&
             goals.map((post) => (
-              <li key={post.id}>
-                <h2>
+              <li key={post.id} className={post.status}>
+                <h5>
                   {post.id}: {post.description}
-                </h2>
+                </h5>
               </li>
             ))}
         </ul>

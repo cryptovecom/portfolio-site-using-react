@@ -374,7 +374,20 @@ template {
 }
 
 .sandbox {
+  background-color: var(--color-dark);
+}
+
+.sandbox ul {
+  display: -ms-grid;
+  display: grid;
+  grid-gap: 1rem;
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+}
+
+.sandbox ul li {
   background-color: var(--color-white);
+  padding: 2rem;
 }
 
 .landing__banner {

@@ -22,7 +22,19 @@
 }
 
 .sandbox {
-  background-color: var(--color-white);
+  background-color: var(--color-dark);
+
+  ul {
+    display: grid;
+    grid-gap: 1rem;
+    grid-template-columns: repeat(3, 1fr);
+
+    li {
+    background-color: var(--color-white);
+    padding: 2rem;
+  }
+  }
+  
 }
 
 .landing__banner {
