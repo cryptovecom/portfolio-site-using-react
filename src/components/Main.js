@@ -44,6 +44,9 @@ function Main(props) {
           <div>
             <h2>🚧 Under Construction 🚧</h2>
             <p>Building publicly to get some fire under my butt</p>
+            <ul>
+              <li></li>
+            </ul>
           </div>
         </section>
       </main>
