@@ -428,6 +428,14 @@ template {
 .goals ul li {
   background-color: var(--color-white);
   padding: 2rem;
+  -webkit-transition: all 5s;
+  transition: all 5s;
+}
+
+.goals ul li:hover {
+  border-radius: 1rem;
+  -webkit-transition: all var(--speed-fast);
+  transition: all var(--speed-fast);
 }
 
 .goals ul li h6 {

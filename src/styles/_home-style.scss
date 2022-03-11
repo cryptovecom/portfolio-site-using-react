@@ -71,6 +71,12 @@
     li {
       background-color: var(--color-white);
       padding: 2rem;
+      transition: all 5s;
+
+      &:hover {
+        border-radius: 1rem;
+        transition: all var(--speed-fast);
+      }
 
       h6 {
         margin-bottom: 1rem;
