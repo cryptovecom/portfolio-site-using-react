@@ -45,7 +45,8 @@ function Main(props) {
           <div>
             <h2>🚧 Under Construction 🚧</h2>
             <p>
-              I'm building this publicly to get some fire burning under my butt!
+              I'm pushing everything publicly tho to put some fire under my 'lil
+              butt!
             </p>
             <p>
               Below you see my progress with the course goals at Hyper Island's{" "}
