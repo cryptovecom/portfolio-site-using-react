@@ -1,6 +1,7 @@
 /* BANNER - BANNER - BANNER - BANNER - BANNER - BANNER - BANNER - BANNER - BANNER */
 
 .blog__banner {
+  min-width: 33vw;
   min-height: calc(42vh - 8rem);
   padding: 2rem;
   
@@ -111,29 +112,6 @@ aside {
 }
 
 /* MEDIA QUERIES - MEDIA QUERIES - MEDIA QUERIES - MEDIA QUERIES - MEDIA QUERIES */
-
-@media  screen and (min-width: 30rem) {
-
-  /* Thumbnails */
-
-    h2 { font-size: 1.5rem; }
-}
-
-@media screen and (min-width: 40rem) {
-
-  /* Banner */
-  
-  h1.dragon-text {
-    max-width: 55rem;
-  }
-
-  .blog__banner {
-    min-width: 33vw;
-    min-height: 32vh;
-    border-right: 1rem solid var(--color-dark);
-    
-  }
-}
 
 @media screen and (min-width: 64rem) {
 
