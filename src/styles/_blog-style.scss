@@ -14,8 +14,8 @@
     var(--color-yellow) 
     url('../../public/images/svg/blob-scene-haikei.svg')
     no-repeat 
-    bottom 
-    left;
+    top -10px
+    left -10px;
   background-size: cover;
   transition: filter 5s ease-in-out;
 
@@ -28,14 +28,15 @@
       mix-blend-mode: exclusion;
       filter: blur(7rem) opacity(0);
       transition: 1.5s ease-out; 
-      transition-delay: 6s;
+      transition-delay: 5.5s;
     }
 
     &:hover {
-      filter: hue-rotate(calc(666deg)) brightness(185%);
+      filter: hue-rotate(calc(666deg));
       transition: 0s;
 
       .dragon-text {
+        color: var(--color-white);
         cursor: not-allowed;
         filter: blur(0) opacity(1);
         transition: var(--speed-fast);

@@ -555,7 +555,7 @@ template {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  background: var(--color-yellow) url("../../public/images/svg/blob-scene-haikei.svg") no-repeat bottom left;
+  background: var(--color-yellow) url("../../public/images/svg/blob-scene-haikei.svg") no-repeat top -10px left -10px;
   background-size: cover;
   -webkit-transition: -webkit-filter 5s ease-in-out;
   transition: -webkit-filter 5s ease-in-out;
@@ -573,18 +573,19 @@ template {
           filter: blur(7rem) opacity(0);
   -webkit-transition: 1.5s ease-out;
   transition: 1.5s ease-out;
-  -webkit-transition-delay: 6s;
-          transition-delay: 6s;
+  -webkit-transition-delay: 5.5s;
+          transition-delay: 5.5s;
 }
 
 .blog__banner:hover {
-  -webkit-filter: hue-rotate(calc(666deg)) brightness(185%);
-          filter: hue-rotate(calc(666deg)) brightness(185%);
+  -webkit-filter: hue-rotate(calc(666deg));
+          filter: hue-rotate(calc(666deg));
   -webkit-transition: 0s;
   transition: 0s;
 }
 
 .blog__banner:hover .dragon-text {
+  color: var(--color-white);
   cursor: not-allowed;
   -webkit-filter: blur(0) opacity(1);
           filter: blur(0) opacity(1);
