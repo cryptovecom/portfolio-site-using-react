@@ -25,7 +25,7 @@ function BlogPost() {
       <main>
         <section className="landing__top">
           <section className="landing__banner">
-            <button onClick={darkMode}>Dark Mode</button>
+            <button onClick={darkMode}>Dark Mode (Beta)</button>
           </section>
           <section>
             <article className="blog__post">

@@ -56,7 +56,7 @@ function Blog() {
                   </li>
                 ))}
             </ul>
-            <aside>
+            <aside className="card">
               <h6>WORK IN PROGRESS</h6>
               <p>
                 This is a dummy site made as my very first school project to
@@ -75,7 +75,7 @@ function Blog() {
                 .
               </p>
             </aside>
-            <aside id="since-born">
+            <aside id="since-born" className="card">
               <h6>BIRTHDAY WIZARD</h6>
               <p>
                 Today it's been <b id="elapsed-days">{birthdayCalculator()}</b>{" "}

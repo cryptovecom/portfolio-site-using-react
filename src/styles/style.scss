@@ -169,10 +169,26 @@ h3 { font-size: var(--h3); }
 h4 { font-size: var(--h4); }
 h5 { font-size: var(--h5); }
 
+h6 {
+    margin-bottom: 1rem;
+    margin-right: 1rem;
+    padding: 0.5rem;
+    display: inline-block;
+
+    background-color: var(--color-grey);
+    border: .2rem solid var(--color-dark);
+    border-radius: 0.5rem;
+    box-shadow: 0rem 0rem .01rem rgba(0, 0, 0, 0.15);
+    color: black;
+
+    transition: 1s;
+}
+
+
 li { list-style-type: none; }
 
 p { 
-  margin: 2rem 0 0; 
+  margin: 1rem 0 2rem; 
 
   &:first-child { 
     margin-top: 0; 
@@ -181,6 +197,8 @@ p {
 
 
 /* CLASSES CLASSES CLASSES CLASSES CLASSES CLASSES CLASSES CLASSES CLASSES CLASSES */
+
+
 
 .dragon-text {
   /* Red gothic font style */
