@@ -1,11 +1,12 @@
 .landing__top {
   width: 100vw;
   display: flex;
+  gap: 1rem;
   height: 100%;
 }
 
 .landing__second {
-  border-top: 1rem solid var(--color-dark);
+  // border-top: 1rem solid var(--color-dark);
   
   z-index: 1;
 }
@@ -63,7 +64,6 @@
 
 .goals {
   background-color: var(--color-dark);
-  margin-top: 1rem;
 
   ul {
     display: grid;
@@ -125,6 +125,7 @@
 }
 
 .landing__banner {
+  min-width: 33vw;
   padding: 2rem;
 
   background: 
@@ -134,7 +135,6 @@
     center 
     center;
   background-size: cover;
-  border-right: 1rem solid var(--color-dark);
   color: var(--color-white);
 
   h1 {
@@ -199,11 +199,6 @@
 }
 
 /* CLASSES CLASSES CLASSES CLASSES CLASSES CLASSES CLASSES CLASSES CLASSES  */
-
-img {
-  border: 0;
-  outline: 0;
-}
 
 .michel {
   width: 100%; 

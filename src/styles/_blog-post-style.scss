@@ -3,9 +3,9 @@
 .blog__post {
   padding: 2rem 3rem 2rem 2rem;
 
-  display: grid;
-  grid-gap: 1rem;
-  grid-template-columns: 32rem;
+  // display: grid;
+  // grid-gap: 1rem;
+  // grid-template-columns: 32rem;
 
   background-color: var(--color-grey);
 
@@ -20,7 +20,7 @@
     border: var(--border-size) solid var(--color-dark);
     margin: 2rem 0 0;
 
-    transform: translateX(-32.5rem);
+    transform: translateX(-9rem);
   }
 }
 
@@ -70,7 +70,7 @@ button {
     outline: 1rem solid var(--color-dark); 
   }
 
-  .landing__banner, .blog__banner {
+  .landing__banner, .blog__banner, h6 {
     color: var(--color-dark);
   }
 
@@ -85,18 +85,5 @@ button {
   .blog__post img {
     width: 100%;
     transform: translateX(0px);
-  }
-}
-
-@media screen and (max-width: 36rem) {
-  .blog__post {
-    grid-template-columns: 1fr;
-
-    img {
-      transform: translateX(0px);
-      /* max-width: 100%; */
-      background-color: var(--color-blood);
-      border: 3vw solid var(--color-blood);
-    }
   }
 }

@@ -1,13 +1,7 @@
-  main {
-    display: grid;
-    grid-gap: 1rem;
-  }
-
 /* BANNER - BANNER - BANNER - BANNER - BANNER - BANNER - BANNER - BANNER - BANNER */
 
 .blog__banner {
   min-height: calc(42vh - 8rem);
-  width: 100%;
   padding: 2rem;
   
   display: flex;
@@ -134,8 +128,10 @@ aside {
   }
 
   .blog__banner {
-    border-right: 1rem solid var(--color-dark);
+    min-width: 33vw;
     min-height: 32vh;
+    border-right: 1rem solid var(--color-dark);
+    
   }
 }
 

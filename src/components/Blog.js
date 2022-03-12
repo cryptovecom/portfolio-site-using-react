@@ -59,8 +59,8 @@ function Blog() {
             <aside>
               <h6>WORK IN PROGRESS</h6>
               <p>
-                This is a dummy site made as my first school project to practice
-                HTML, CSS and Javascript.
+                This is a dummy site made as my very first school project to
+                practice HTML, CSS and Javascript.
               </p>
               <p>
                 It was later refactored using React.js and published to Netlify
