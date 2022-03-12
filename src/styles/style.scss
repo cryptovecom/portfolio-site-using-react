@@ -184,11 +184,10 @@ h6 {
     transition: 1s;
 }
 
-
 li { list-style-type: none; }
 
 p { 
-  margin: 1rem 0 2rem; 
+  margin: 1rem 0 1rem; 
 
   &:first-child { 
     margin-top: 0; 
@@ -198,7 +197,20 @@ p {
 
 /* CLASSES CLASSES CLASSES CLASSES CLASSES CLASSES CLASSES CLASSES CLASSES CLASSES */
 
+.card {
+  transition: 5s;
 
+  &:hover {
+    border-radius: 1rem;
+    transition: var(--speed-fast);
+
+    h6 {
+      background-color: var(--color-white);
+      box-shadow: -0.3rem 0.4rem .01rem rgba(0, 0, 0, 0.15);
+      transition: var(--speed-fast);
+    }
+  }
+}
 
 .dragon-text {
   /* Red gothic font style */

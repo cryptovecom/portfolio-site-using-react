@@ -1055,7 +1055,7 @@ li {
 }
 
 p {
-  margin: 1rem 0 2rem;
+  margin: 1rem 0 1rem;
 }
 
 p:first-child {
@@ -1063,6 +1063,25 @@ p:first-child {
 }
 
 /* CLASSES CLASSES CLASSES CLASSES CLASSES CLASSES CLASSES CLASSES CLASSES CLASSES */
+.card {
+  -webkit-transition: 5s;
+  transition: 5s;
+}
+
+.card:hover {
+  border-radius: 1rem;
+  -webkit-transition: var(--speed-fast);
+  transition: var(--speed-fast);
+}
+
+.card:hover h6 {
+  background-color: var(--color-white);
+  -webkit-box-shadow: -0.3rem 0.4rem 0.01rem rgba(0, 0, 0, 0.15);
+          box-shadow: -0.3rem 0.4rem 0.01rem rgba(0, 0, 0, 0.15);
+  -webkit-transition: var(--speed-fast);
+  transition: var(--speed-fast);
+}
+
 .dragon-text {
   /* Red gothic font style */
   color: var(--color-blood);
