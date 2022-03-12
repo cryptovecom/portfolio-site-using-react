@@ -555,13 +555,48 @@ template {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  background: var(--color-yellow) url("../../public/images/svg/layered-waves-haikei.svg") no-repeat bottom center;
+  background: var(--color-yellow) url("../../public/images/svg/blob-scene-haikei.svg") no-repeat bottom left;
   background-size: cover;
-  text-align: center;
+  -webkit-transition: -webkit-filter 5s ease-in-out;
+  transition: -webkit-filter 5s ease-in-out;
+  transition: filter 5s ease-in-out;
+  transition: filter 5s ease-in-out, -webkit-filter 5s ease-in-out;
 }
 
-.blog__banner h3 {
-  margin-top: 2rem;
+.blog__banner .dragon-text {
+  color: var(--color-yellow);
+  font-family: "UnifrakturMaguntia", "Times New Roman", serif;
+  font-size: calc(var(--h1) * 2.75);
+  line-height: .9em;
+  mix-blend-mode: exclusion;
+  -webkit-filter: blur(7rem) opacity(0);
+          filter: blur(7rem) opacity(0);
+  -webkit-transition: 1.5s ease-out;
+  transition: 1.5s ease-out;
+  -webkit-transition-delay: 6s;
+          transition-delay: 6s;
+}
+
+.blog__banner:hover {
+  -webkit-filter: hue-rotate(calc(666deg)) brightness(185%);
+          filter: hue-rotate(calc(666deg)) brightness(185%);
+  -webkit-transition: 0s;
+  transition: 0s;
+}
+
+.blog__banner:hover .dragon-text {
+  cursor: not-allowed;
+  -webkit-filter: blur(0) opacity(1);
+          filter: blur(0) opacity(1);
+  -webkit-transition: var(--speed-fast);
+  transition: var(--speed-fast);
+}
+
+@media screen and (max-width: 64rem) {
+  .blog__banner:hover .dragon-text {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
 }
 
 .blog-animation {
@@ -658,6 +693,7 @@ aside {
   background-color: var(--color-white);
 }
 
+/* CLASSES CLASSES CLASSES CLASSES CLASSES CLASSES CLASSES CLASSES */
 /* MEDIA QUERIES - MEDIA QUERIES - MEDIA QUERIES - MEDIA QUERIES - MEDIA QUERIES */
 @media screen and (min-width: 64rem) {
   .blog__banner {
@@ -866,7 +902,7 @@ svg {
   --border-size: 1rem;
   --golden-ratio: 38.2%;
   /* Color Palette */
-  --color-white: rgb(238, 238, 238);
+  --color-white: #eeeeee;
   --color-blood: #af3333;
   --color-dark: #1e1e1e;
   --color-grey: #d2d2ce;
@@ -1080,14 +1116,6 @@ p:first-child {
           box-shadow: -0.3rem 0.4rem 0.01rem rgba(0, 0, 0, 0.15);
   -webkit-transition: var(--speed-fast);
   transition: var(--speed-fast);
-}
-
-.dragon-text {
-  /* Red gothic font style */
-  color: var(--color-blood);
-  font-family: "UnifrakturMaguntia", "Times New Roman", serif;
-  font-size: calc(var(--h1) * 1.75);
-  line-height: 1em;
 }
 
 .hover {

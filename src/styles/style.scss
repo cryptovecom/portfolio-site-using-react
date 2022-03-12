@@ -15,7 +15,7 @@ $font-dragon: "UnifrakturMaguntia", "Times New Roman", serif;
 
   /* Color Palette */
 
-  --color-white: rgb(238, 238, 238);
+  --color-white: #eeeeee;
   --color-blood: #af3333;
   --color-dark: #1e1e1e;
   --color-grey: #d2d2ce;
@@ -210,14 +210,6 @@ p {
       transition: var(--speed-fast);
     }
   }
-}
-
-.dragon-text {
-  /* Red gothic font style */
-  color: var(--color-blood);
-  font-family: $font-dragon;
-  font-size: calc(var(--h1) * 1.75);
-  line-height: 1em;
 }
 
 .hover {

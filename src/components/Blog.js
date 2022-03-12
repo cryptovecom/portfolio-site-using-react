@@ -37,7 +37,7 @@ function Blog() {
       <main>
         <section className="landing__top">
           <section className="blog__banner">
-            <h1 className="dragon-text">You're not supposed to be here..</h1>
+            <h1 className="dragon-text">Free will is an illusion</h1>
           </section>
           <section className="landing-list">
             <ul>

@@ -12,17 +12,39 @@
 
   background: 
     var(--color-yellow) 
-    url('../../public/images/svg/layered-waves-haikei.svg')
+    url('../../public/images/svg/blob-scene-haikei.svg')
     no-repeat 
     bottom 
-    center;
+    left;
   background-size: cover;
+  transition: filter 5s ease-in-out;
 
-  text-align: center;
+    .dragon-text {
+      color: var(--color-yellow);
+      font-family: $font-dragon;
+      font-size: calc(var(--h1) * 2.75);
+      line-height: .9em;
 
-  h3 { 
-    margin-top: 2rem; 
-  }
+      mix-blend-mode: exclusion;
+      filter: blur(7rem) opacity(0);
+      transition: 1.5s ease-out; 
+      transition-delay: 6s;
+    }
+
+    &:hover {
+      filter: hue-rotate(calc(666deg)) brightness(185%);
+      transition: 0s;
+
+      .dragon-text {
+        cursor: not-allowed;
+        filter: blur(0) opacity(1);
+        transition: var(--speed-fast);
+        
+        @media screen and (max-width: 64rem) {
+          transform: rotate(0deg);
+        }
+      }
+    }
 }
 
 .blog-animation {
@@ -110,6 +132,9 @@ aside {
 
   background-color: var(--color-white);
 }
+
+
+/* CLASSES CLASSES CLASSES CLASSES CLASSES CLASSES CLASSES CLASSES */
 
 /* MEDIA QUERIES - MEDIA QUERIES - MEDIA QUERIES - MEDIA QUERIES - MEDIA QUERIES */
 
