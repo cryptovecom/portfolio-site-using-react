@@ -555,7 +555,7 @@ template {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  background: var(--color-yellow) url("../../public/images/svg/blob-scene-haikei.svg") no-repeat top -10px left -10px;
+  background: var(--color-yellow) url("../../public/images/svg/blob-scene-haikei.svg") no-repeat top left -10px;
   background-size: cover;
   -webkit-transition: -webkit-filter 5s ease-in-out;
   transition: -webkit-filter 5s ease-in-out;
