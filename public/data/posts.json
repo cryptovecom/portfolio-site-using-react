@@ -5,9 +5,9 @@
     "page": "/blog-post",
     "previewImage": "https://source.unsplash.com/random/500x500",
     "shortSummary": "This is done with Javascript by looping through all objects in the file.",
-    "fullSummary": "This is just a dummy post for JSON practice. So, get out of here!",
+    "fullSummary": "This was a dummy post for JSON practice, and now I'm still fiddling around with the CSS structure of the entire site.. so, get out of here!",
     "content": [
-      "<p>You're staying? YOU'RE READING THIS!? Well, then have you ever read <a href='https://hipsum.co/' target='_blank'>Hipster Ipsum</a>? It's kind of funny, haha.</p> <p>Check it:</p><p> I'm a baby taco thundercat organic chicharrones vape. Readymade coffee fashion mixtape distillery mug. Sustainable man bun polaroid quinoa. Asymmetrical letterpress sriracha fanny pack, you probably haven't heard of them occupy. +1 organic, biodiesel street art bicycle rights tattooed woke whatever chillwave banjo.</p>",
+      "<p>You're staying? YOU'RE READING THIS!? Well, then have you ever read <a href='https://hipsum.co/' target='_blank'>Hipster Ipsum</a>? It's kind of funny, haha.</p> <p>Check it (and don't mind the nooby commas I haven't been able to get rid of, yet):</p><p> I'm a baby taco thundercat organic chicharrones vape. Readymade coffee fashion mixtape distillery mug. Sustainable man bun polaroid quinoa. Asymmetrical letterpress sriracha fanny pack, you probably haven't heard of them occupy. +1 organic, biodiesel street art bicycle rights tattooed woke whatever chillwave banjo.</p>",
       "<img src='https://source.unsplash.com/random/1000x500' alt='A randomly generated placeholder image' loading='lazy'/>",
       "<p>Subway tumblr listicle, etsy meditation deep blog pok pok. Trust fund try-hard and put a bird on it. Cray knausgaard art party shaman dreamcatcher. Kale chips flexitarian aesthetic wolf moon man ugh.</p>",
       "<p>Now, seriously, GTFO.</p>"

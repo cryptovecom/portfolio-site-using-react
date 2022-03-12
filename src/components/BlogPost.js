@@ -23,21 +23,27 @@ function BlogPost() {
     <>
       <Header />
       <main>
-        <section className="landing__banner">
-          <button onClick={darkMode}>Dark Mode</button>
+        <section className="landing__top">
+          <section className="landing__banner">
+            <button onClick={darkMode}>Dark Mode</button>
+          </section>
+          <section>
+            <article className="blog__post">
+              {post && (
+                <>
+                  <h2>{post[0].title}</h2>
+                  <h5>{post[0].fullSummary}</h5>
+                  <section
+                    dangerouslySetInnerHTML={{ __html: post[0].content }}
+                  ></section>
+                  <p>
+                    <Link to="/blog">Back to blog page</Link>
+                  </p>
+                </>
+              )}
+            </article>
+          </section>
         </section>
-        <article className="blog__post">
-          {post && (
-            <>
-              <h2>{post[0].title}</h2>
-              <h5>{post[0].fullSummary}</h5>
-              <section dangerouslySetInnerHTML={{__html:post[0].content}}></section>
-              <p>
-                <Link to="/blog">Back to blog page</Link>
-              </p>
-            </>
-          )}
-        </article>
       </main>
       <Footer />
     </>
