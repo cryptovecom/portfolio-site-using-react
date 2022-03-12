@@ -50,7 +50,11 @@ function Main(props) {
             </p>
             <p>
               Below you see my progress with the course goals at Hyper Island's{" "}
-              <a href="https://www.hyperisland.com/programs-and-courses/frontend-developer">
+              <a
+                href="https://www.hyperisland.com/programs-and-courses/frontend-developer"
+                target="_blank"
+                rel="noreferrer"
+              >
                 frontend developer program
               </a>
               .

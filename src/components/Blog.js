@@ -35,57 +35,57 @@ function Blog() {
     <>
       <Header />
       <main>
-        <section className="blog__banner">
-          <h1 className="dragon-text">You're not supposed to be here..</h1>
-        </section>
-
-        <section className="landing-list">
-          <ul>
-            {/* LOOPING THROUGH POSTS IN JSON */}
-            {posts &&
-              posts.map((post) => (
-                <li
-                  key={post.id}
-                  style={{
-                    backgroundImage: `url(${post.previewImage})`,
-                  }}
+        <section className="landing__top">
+          <section className="blog__banner">
+            <h1 className="dragon-text">You're not supposed to be here..</h1>
+          </section>
+          <section className="landing-list">
+            <ul>
+              {/* LOOPING THROUGH POSTS IN JSON */}
+              {posts &&
+                posts.map((post) => (
+                  <li
+                    key={post.id}
+                    style={{
+                      backgroundImage: `url(${post.previewImage})`,
+                    }}
+                  >
+                    <h2>
+                      <Link to={`${post.page}`}>{post.title}</Link>
+                    </h2>
+                  </li>
+                ))}
+            </ul>
+            <aside>
+              <h6>WORK IN PROGRESS</h6>
+              <p>
+                This is a dummy site made as my first school project to practice
+                HTML, CSS and Javascript.
+              </p>
+              <p>
+                It was later refactored using React.js and published to Netlify
+                via&nbsp;
+                <a
+                  href="https://github.com/iseneld"
+                  target="_blank"
+                  rel="noreferrer"
                 >
-                  <h2>
-                    <Link to={`${post.page}`}>{post.title}</Link>
-                  </h2>
-                </li>
-              ))}
-          </ul>
+                  Github
+                </a>
+                .
+              </p>
+            </aside>
+            <aside id="since-born">
+              <h6>BIRTHDAY WIZARD</h6>
+              <p>
+                Today it's been <b id="elapsed-days">{birthdayCalculator()}</b>{" "}
+                days since I was born. <br />
+                That's <b id="elapsed-years">{birthCalculatorYears()}</b> years!
+                🧙✨
+              </p>
+            </aside>
+          </section>
         </section>
-
-        <aside>
-          <h6>WORK IN PROGRESS</h6>
-          <p>
-            This is a dummy site made as my first school project to practice
-            HTML, CSS and Javascript.
-          </p>
-          <p>
-            It was later refactored using React.js and published to Netlify
-            via&nbsp;
-            <a
-              href="https://github.com/iseneld"
-              target="_blank"
-              rel="noreferrer"
-            >
-              Github
-            </a>
-            .
-          </p>
-        </aside>
-        <aside id="since-born">
-          <h6>BIRTHDAY WIZARD</h6>
-          <p>
-            Today it's been <b id="elapsed-days">{birthdayCalculator()}</b> days
-            since I was born. <br />
-            That's <b id="elapsed-years">{birthCalculatorYears()}</b> years!
-            🧙✨
-          </p>
-        </aside>
       </main>
       <Footer />
     </>

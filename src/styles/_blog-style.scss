@@ -109,6 +109,7 @@
 /* ASIDE ASIDE ASIDE ASIDE ASIDE ASIDE ASIDE ASIDE ASIDE ASIDE ASIDE ASIDE ASIDE */
 
 aside {
+  margin-top: 1rem;
   padding: 2rem;
   align-self: start;
 
@@ -133,6 +134,7 @@ aside {
   }
 
   .blog__banner {
+    border-right: 1rem solid var(--color-dark);
     min-height: 32vh;
   }
 }
