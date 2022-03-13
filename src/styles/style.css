@@ -578,8 +578,8 @@ template {
 }
 
 .blog__banner:hover {
-  -webkit-filter: hue-rotate(calc(666deg));
-          filter: hue-rotate(calc(666deg));
+  -webkit-filter: hue-rotate(calc(350deg));
+          filter: hue-rotate(calc(350deg));
   -webkit-transition: 0s;
   transition: 0s;
 }

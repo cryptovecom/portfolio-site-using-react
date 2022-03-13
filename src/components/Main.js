@@ -60,10 +60,10 @@ function Main(props) {
               .
             </p>
             <p>
-              <span class="passed">Passed</span>{" "}
-              <span class="retest">Oopsie! 🥴</span>{" "}
-              <span class="wip">Learning</span>{" "}
-              <span class="future">Coming</span>
+              <span className="passed">Passed</span>{" "}
+              <span className="retest">Oopsie! 🥴</span>{" "}
+              <span className="wip">Learning</span>{" "}
+              <span className="future">Coming</span>
             </p>
             <ul>
               <li></li>
