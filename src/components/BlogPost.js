@@ -19,6 +19,8 @@ function BlogPost() {
       .then((data) => setPost(data));
   }, []);
 
+  console.log(post);
+
   return (
     <>
       <Header />

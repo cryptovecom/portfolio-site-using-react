@@ -1,5 +1,6 @@
 import React from "react";
 import Main from "./components/Main";
+import Streaming from "./components/Streaming";
 import Blog from "./components/Blog";
 import Cake from "./components/Cake";
 import Sandbox from "./components/Sandbox";
@@ -11,7 +12,8 @@ function App() {
   return (
     <>
       <Routes>
-        <Route exact path="/" element={<Main linkList={linkList} />} />
+        {/* <Route exact path="/" element={<Main linkList={linkList} />} /> */}
+        <Route exact path="/" element={<Streaming />} />
         <Route path="/blog" element={<Blog />} />
         <Route path="/blog-post" element={<BlogPost />} />
         <Route path="/cake" element={<Cake />} />
