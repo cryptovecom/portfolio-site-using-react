@@ -16,31 +16,31 @@ function Streaming() {
             <section>
               <ul>
                 <li>
-                  <h5>List of favorites</h5>
+                  <h5>Favorite</h5>
                   <button>🗑️</button>
                 </li>
                 <li>
-                  <h5>List of favorites</h5>
+                  <h5>Favorite</h5>
                   <button>🗑️</button>
                 </li>
                 <li>
-                  <h5>List of favorites</h5>
+                  <h5>Favorite</h5>
                   <button>🗑️</button>
                 </li>
                 <li>
-                  <h5>List of favorites</h5>
+                  <h5>Favorite</h5>
                   <button>🗑️</button>
                 </li>
                 <li>
-                  <h5>List of favorites</h5>
+                  <h5>Favorite</h5>
                   <button>🗑️</button>
                 </li>
                 <li>
-                  <h5>List of favorites</h5>
+                  <h5>Favorite</h5>
                   <button>🗑️</button>
                 </li>
                 <li>
-                  <h5>List of favorites</h5>
+                  <h5>Favorite</h5>
                   <button>🗑️</button>
                 </li>
               </ul>
@@ -63,12 +63,10 @@ function Streaming() {
                 <li>New users should be able to register</li>
                 <li>Admin users should be able to add new content</li>
                 <li>User should be able to find content</li>
+                <li>Users should be able to save content to a Favorite</li>
                 <li>
-                  Users should be able to save content to a list of favorites
-                </li>
-                <li>
-                  The list of favorites should be front and center throughout
-                  the entire experience
+                  The Favorite should be front and center throughout the entire
+                  experience
                 </li>
               </ul>
             </section>
