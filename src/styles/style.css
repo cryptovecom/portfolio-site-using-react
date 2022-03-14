@@ -964,6 +964,10 @@ button.dark-mode-button:active {
   font-weight: bold;
 }
 
+.streaming__main section div.toolbar input:active, .streaming__main section div.toolbar input:focus, .streaming__main section div.toolbar input:hover {
+  background-color: var(--color-white);
+}
+
 .streaming__main section div.toolbar input::-webkit-input-placeholder {
   color: grey;
   font-weight: normal;

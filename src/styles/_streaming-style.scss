@@ -112,6 +112,10 @@
 
         font-weight: bold;
 
+        &:active, &:focus, &:hover {
+          background-color: var(--color-white);
+        }
+
         &::placeholder {
           color: grey;
           font-weight: normal;
