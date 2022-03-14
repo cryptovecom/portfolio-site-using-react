@@ -43,13 +43,10 @@ function Main(props) {
         </section>
         <section className="landing__second">
           <div>
-            <h2>🚧 Under Construction 🚧</h2>
+            <h2>I'm learning!</h2>
             <p>
-              I'm pushing everything publicly tho to put some fire under my 'lil
-              butt!
-            </p>
-            <p>
-              Below you see my progress with the course goals at Hyper Island's{" "}
+              Below you see the progress I've made with the course goals at
+              Hyper Island's{" "}
               <a
                 href="https://www.hyperisland.com/programs-and-courses/frontend-developer"
                 target="_blank"
@@ -73,8 +70,8 @@ function Main(props) {
         <Goals />
         <section className="landing__second">
           <div>
-            <h2>🏗️ More Coming Soon 👷</h2>
-            <p>Idk wat 2 put, butt it prolly b gr8!</p>
+            <h2>🚧 Under Construction 🚧</h2>
+            <p>Moar coming! Idk wat 2 put, butt it prolly b gr8.</p>
           </div>
         </section>
       </main>
