@@ -95,6 +95,17 @@
       background-color: var(--color-blood);
       color: var(--color-white);
 
+      input {
+        background-color: var(--color-grey);
+        border: 0;
+        border-right: .25rem solid var(--color-dark);
+        padding: 2rem;
+
+        &::placeholder {
+          color: grey;
+        }
+      }
+
       ul {
         padding: 0;
         margin: 0;
@@ -103,7 +114,7 @@
         flex-direction: row;
         justify-content: space-between;
 
-        color: var(--color-yellow);
+        color: var(--color-grey);
 
         li {
           border: none;

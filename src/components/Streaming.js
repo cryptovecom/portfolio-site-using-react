@@ -28,14 +28,17 @@ function Streaming() {
           <section className="streaming__main">
             <section className="results">
               <div className="toolbar">
-                <h2>Search</h2>
+                <input
+                  type="text"
+                  placeholder="Search.."
+                  className="searchBar"
+                ></input>
                 <ul>
                   <li>Register</li>
                   <li>Log in</li>
                   <li>Add content</li>
                 </ul>
               </div>
-
               <ul>
                 <li>
                   <div>

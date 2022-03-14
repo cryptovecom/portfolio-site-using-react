@@ -946,6 +946,29 @@ button:active {
   color: var(--color-white);
 }
 
+.streaming__main section div.toolbar input {
+  background-color: var(--color-grey);
+  border: 0;
+  border-right: 0.25rem solid var(--color-dark);
+  padding: 2rem;
+}
+
+.streaming__main section div.toolbar input::-webkit-input-placeholder {
+  color: grey;
+}
+
+.streaming__main section div.toolbar input:-ms-input-placeholder {
+  color: grey;
+}
+
+.streaming__main section div.toolbar input::-ms-input-placeholder {
+  color: grey;
+}
+
+.streaming__main section div.toolbar input::placeholder {
+  color: grey;
+}
+
 .streaming__main section div.toolbar ul {
   padding: 0;
   margin: 0;
@@ -959,7 +982,7 @@ button:active {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  color: var(--color-yellow);
+  color: var(--color-grey);
 }
 
 .streaming__main section div.toolbar ul li {
