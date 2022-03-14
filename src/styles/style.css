@@ -1040,7 +1040,6 @@ button:active {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  gap: 1rem;
 }
 
 .streaming__main section.results ul.resultList li button {
@@ -1048,21 +1047,42 @@ button:active {
   height: 6rem;
   border: none;
   padding: 0.5rem 1rem;
-  background-color: var(--color-dark);
   -webkit-box-shadow: none;
           box-shadow: none;
   color: var(--button-color);
   font-size: var(--h6);
-  opacity: .15;
   -webkit-transition: calc(var(--speed-slow) * 3);
   transition: calc(var(--speed-slow) * 3);
 }
 
-.streaming__main section.results ul.resultList li button:hover {
+.streaming__main section.results ul.resultList li button.favButton {
+  background-color: var(--color-dark);
+  opacity: .15;
+}
+
+.streaming__main section.results ul.resultList li button.favButton:hover {
   background-color: var(--color-green);
+}
+
+.streaming__main section.results ul.resultList li button.trackButton {
+  padding: 2rem;
+  color: var(--color-dark);
+  text-align: left;
+  -webkit-box-flex: 3;
+      -ms-flex-positive: 3;
+          flex-grow: 3;
+}
+
+.streaming__main section.results ul.resultList li button.trackButton:hover {
+  background-color: var(--color-white);
+}
+
+.streaming__main section.results ul.resultList li button.trackButton:active {
+  scale: 1;
+}
+
+.streaming__main section.results ul.resultList li button:hover {
   border-radius: 0;
-  -webkit-box-shadow: 0rem 0.3rem 1px rgba(0, 0, 0, 0.25);
-          box-shadow: 0rem 0.3rem 1px rgba(0, 0, 0, 0.25);
   opacity: 1;
   -webkit-transition: calc(var(--speed-fast) / 2);
   transition: calc(var(--speed-fast) / 2);

@@ -41,18 +41,12 @@ function Streaming() {
               </div>
               <ul className="resultList">
                 <li>
-                  <div>
-                    <button>▶️</button>
-                    <h5>Result</h5>
-                  </div>
-                  <button>❤️</button>
+                  <button className="trackButton">Result</button>
+                  <button className="favButton">❤️</button>
                 </li>
                 <li>
-                  <div>
-                    <button>▶️</button>
-                    <h5>Result</h5>
-                  </div>
-                  <button>❤️</button>
+                  <button className="trackButton">Result</button>
+                  <button className="favButton">❤️</button>
                 </li>
               </ul>
             </section>
