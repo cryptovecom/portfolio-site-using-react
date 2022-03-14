@@ -15,12 +15,12 @@ function Streaming() {
             <section>
               <ul>
                 <li>
-                  <h5>Favorite</h5>
-                  <button>🗑️</button>
+                  <button className="favButton">Favourite</button>
+                  <button className="delButton">🗑️</button>
                 </li>
                 <li>
-                  <h5>Favorite</h5>
-                  <button>🗑️</button>
+                  <button className="favButton">Favourite</button>
+                  <button className="delButton">🗑️</button>
                 </li>
               </ul>
             </section>

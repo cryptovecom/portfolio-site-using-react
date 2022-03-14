@@ -38,26 +38,38 @@
         background-color: var(--color-grey);
 
         button {
-          --button-color: rgb(124, 124, 124);
-
           height: 6rem;
           border: none;  
           padding: 0.5rem 1rem;
           
-          background-color: var(--color-dark);
           box-shadow: none;
-          color: var(--button-color);
           font-size: var(--h6);
-          opacity: .15;
 
           transition: calc(var(--speed-slow) * 3);
 
-          &:hover {
-            background-color: var(--color-blood);
-            border-radius: 0;
-            box-shadow: 0rem .3rem 1px rgba(0, 0, 0, 0.25);
-            opacity: 1;
+          &.delButton {
+            background-color: var(--color-dark);
+            opacity: .15;
 
+            &:hover {
+              background-color: var(--color-blood);
+              opacity: 1;
+            }
+          }
+
+          &.favButton {
+            padding-left: 2rem;
+            flex-grow: 1;
+            color: var(--color-dark);
+            text-align: left;
+
+            &:hover {
+              background-color: var(--color-white);
+            }
+          }
+          
+          &:hover {
+            border-radius: 0;
             transition: calc(var(--speed-fast) / 2);
           }
 
@@ -65,10 +77,6 @@
             border-radius: 0;
             border: 0;
           }
-        }
-
-        h5 {
-          margin-left: 2rem;
         }
       }
     }

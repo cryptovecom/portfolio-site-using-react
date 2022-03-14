@@ -786,8 +786,6 @@ button:focus, button:hover {
 button:active {
   -webkit-box-shadow: none;
           box-shadow: none;
-  -webkit-transform: scale(95%);
-          transform: scale(95%);
 }
 
 :root *.dark-mode,
@@ -883,26 +881,41 @@ button:active {
 }
 
 .streaming__banner section:nth-child(2) ul li button {
-  --button-color: rgb(124, 124, 124);
   height: 6rem;
   border: none;
   padding: 0.5rem 1rem;
-  background-color: var(--color-dark);
   -webkit-box-shadow: none;
           box-shadow: none;
-  color: var(--button-color);
   font-size: var(--h6);
-  opacity: .15;
   -webkit-transition: calc(var(--speed-slow) * 3);
   transition: calc(var(--speed-slow) * 3);
 }
 
-.streaming__banner section:nth-child(2) ul li button:hover {
+.streaming__banner section:nth-child(2) ul li button.delButton {
+  background-color: var(--color-dark);
+  opacity: .15;
+}
+
+.streaming__banner section:nth-child(2) ul li button.delButton:hover {
   background-color: var(--color-blood);
-  border-radius: 0;
-  -webkit-box-shadow: 0rem 0.3rem 1px rgba(0, 0, 0, 0.25);
-          box-shadow: 0rem 0.3rem 1px rgba(0, 0, 0, 0.25);
   opacity: 1;
+}
+
+.streaming__banner section:nth-child(2) ul li button.favButton {
+  padding-left: 2rem;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  color: var(--color-dark);
+  text-align: left;
+}
+
+.streaming__banner section:nth-child(2) ul li button.favButton:hover {
+  background-color: var(--color-white);
+}
+
+.streaming__banner section:nth-child(2) ul li button:hover {
+  border-radius: 0;
   -webkit-transition: calc(var(--speed-fast) / 2);
   transition: calc(var(--speed-fast) / 2);
 }
@@ -910,10 +923,6 @@ button:active {
 .streaming__banner section:nth-child(2) ul li button:active, .streaming__banner section:nth-child(2) ul li button:focus {
   border-radius: 0;
   border: 0;
-}
-
-.streaming__banner section:nth-child(2) ul li h5 {
-  margin-left: 2rem;
 }
 
 .streaming__main {
