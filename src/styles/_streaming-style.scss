@@ -9,7 +9,7 @@
   gap: 1rem;
   
   & section:first-child {
-    min-height: 38%;
+    min-height: 13vh;
     position: sticky;
     top: 8.3rem;
 
@@ -24,7 +24,9 @@
   }
   
   section:nth-child(2) {
+    height: 75.5vh;
     background-color: var(--color-grey);
+    overflow-y: scroll;
     z-index: 1;
 
     ul {
@@ -91,7 +93,7 @@
   ul {
   --indent: 3rem;
   transform: translateX(var(--indent));
-  width: calc(66vw - calc(var(--indent) * 3));
+  width: calc(56vw - calc(var(--indent) * 3));
 
     li { 
       list-style-type: disc;

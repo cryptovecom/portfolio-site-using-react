@@ -850,7 +850,7 @@ button:active {
 }
 
 .streaming__banner section:first-child {
-  min-height: 38%;
+  min-height: 13vh;
   position: -webkit-sticky;
   position: sticky;
   top: 8.3rem;
@@ -859,7 +859,9 @@ button:active {
 }
 
 .streaming__banner section:nth-child(2) {
+  height: 75.5vh;
   background-color: var(--color-grey);
+  overflow-y: scroll;
   z-index: 1;
 }
 
@@ -940,7 +942,7 @@ button:active {
   --indent: 3rem;
   -webkit-transform: translateX(var(--indent));
           transform: translateX(var(--indent));
-  width: calc(66vw - calc(var(--indent) * 3));
+  width: calc(56vw - calc(var(--indent) * 3));
 }
 
 .streaming__main ul li {

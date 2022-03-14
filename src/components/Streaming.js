@@ -43,6 +43,26 @@ function Streaming() {
                   <h5>Favorite</h5>
                   <button>🗑️</button>
                 </li>
+                <li>
+                  <h5>Favorite</h5>
+                  <button>🗑️</button>
+                </li>
+                <li>
+                  <h5>Favorite</h5>
+                  <button>🗑️</button>
+                </li>
+                <li>
+                  <h5>Favorite</h5>
+                  <button>🗑️</button>
+                </li>
+                <li>
+                  <h5>Favorite</h5>
+                  <button>🗑️</button>
+                </li>
+                <li>
+                  <h5>Favorite</h5>
+                  <button>🗑️</button>
+                </li>
               </ul>
             </section>
           </section>
