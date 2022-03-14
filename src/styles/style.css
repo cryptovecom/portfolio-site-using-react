@@ -761,13 +761,12 @@ aside {
 }
 
 /* DARK MODE DARK MODE DARK MODE DARK MODE DARK MODE DARK MODE DARK MODE */
-button {
+button.dark-mode-button {
   position: -webkit-sticky;
   position: sticky;
   top: 2rem;
   border: 0.5rem solid var(--color-dark);
   padding: 1rem;
-  background-color: var(--color-grey);
   -webkit-box-shadow: 0 4px .5rem #1e1e1e;
           box-shadow: 0 4px .5rem #1e1e1e;
   color: var(--color-dark);
@@ -776,14 +775,13 @@ button {
   transition: border-radius var(--speed-slow);
 }
 
-button:focus, button:hover {
+button.dark-mode-button:focus, button.dark-mode-button:hover {
   border-radius: 1rem;
-  cursor: pointer;
   -webkit-transition: border-radius var(--speed-fast);
   transition: border-radius var(--speed-fast);
 }
 
-button:active {
+button.dark-mode-button:active {
   -webkit-box-shadow: none;
           box-shadow: none;
 }
@@ -1359,6 +1357,11 @@ a {
 a:focus, a:hover {
   color: var(--color-blood);
   text-decoration: none;
+}
+
+button {
+  background-color: var(--color-grey);
+  cursor: pointer;
 }
 
 h1 {

@@ -25,14 +25,13 @@
 
 /* DARK MODE DARK MODE DARK MODE DARK MODE DARK MODE DARK MODE DARK MODE */
 
-button {
+button.dark-mode-button {
   position: sticky;
   top: 2rem;
 
   border: 0.5rem solid var(--color-dark);
   padding: 1rem;
 
-  background-color: var(--color-grey);
   box-shadow: 0 4px .5rem #1e1e1e;
 
   color: var(--color-dark);
@@ -43,7 +42,6 @@ button {
   &:focus,
   &:hover {
     border-radius: 1rem;
-    cursor: pointer;
 
     transition: border-radius  var(--speed-fast);
   }

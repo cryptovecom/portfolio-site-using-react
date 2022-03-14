@@ -36,7 +36,9 @@ function Streaming() {
                 <ul>
                   <li>Register</li>
                   <li>Log in</li>
-                  <li>Add content</li>
+                  <li>
+                    <button>Add content</button>
+                  </li>
                 </ul>
               </div>
               <ul className="resultList">
