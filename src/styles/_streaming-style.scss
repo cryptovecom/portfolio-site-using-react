@@ -1,6 +1,5 @@
 .streaming__banner {
   min-width: 38vw;
-  min-height: calc(99vh - 8rem);
   
   display: flex;
   flex-direction: column;
@@ -22,21 +21,21 @@
   }
   
   section:nth-child(2) {
-    background-color: var(--color-grey);
     z-index: 1;
 
     ul {
       display: flex;
       flex-direction: column;
+      gap: .25rem;
 
       li {
         // padding: 2rem;
 
-        border-bottom: .25rem solid var(--color-dark);
-
         display: flex;
         align-items: center;
         justify-content: space-between;
+
+        background-color: var(--color-grey);
 
         button {
           --button-color: rgb(124, 124, 124);
@@ -83,7 +82,7 @@
   gap: 1rem;
 
   section {
-    background-color: var(--color-grey);
+    // background-color: var(--color-grey);
     padding: 2rem;
 
     div.toolbar {
@@ -91,14 +90,15 @@
 
       display: flex;
       justify-content: space-between;
-      
-      background-color: var(--color-blood);
+      flex-wrap: wrap;
+      gap: .25rem;
+
       color: var(--color-white);
 
       input {
+        flex-grow: 2;
         background-color: var(--color-grey);
         border: 0;
-        border-right: .25rem solid var(--color-dark);
         padding: 2rem;
 
         &::placeholder {
@@ -113,36 +113,48 @@
         display: flex;
         flex-direction: row;
         justify-content: space-between;
+        flex-grow: 1;
+        gap: .25rem;
 
         color: var(--color-grey);
 
         li {
           border: none;
-          padding: 2rem; 
+
+          flex-grow: 1;
+          padding: 2rem;
+
+          background-color: var(--color-blood);
+          
           list-style-type: none; 
+          text-align: center;
         }
       }
     }
 
     &.results { 
+      display: flex;
+      flex-direction: column;
+      gap: .25rem;
+
       padding: 0;
 
       h2 {
         padding: 2rem;
       }
 
-      ul {
+      ul.resultList {
         display: flex;
         flex-direction: column;
+        gap: .25rem;
 
         li {
           // padding: 2rem;
-
-          border-top: .25rem solid var(--color-dark);
-
+          background-color: var(--color-grey);
           display: flex;
           align-items: center;
           justify-content: space-between;
+          gap: 1rem;
 
           button {
             --button-color: rgb(124, 124, 124);

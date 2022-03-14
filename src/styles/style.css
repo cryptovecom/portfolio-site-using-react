@@ -832,7 +832,6 @@ button:active {
 
 .streaming__banner {
   min-width: 38vw;
-  min-height: calc(99vh - 8rem);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -856,7 +855,6 @@ button:active {
 }
 
 .streaming__banner section:nth-child(2) {
-  background-color: var(--color-grey);
   z-index: 1;
 }
 
@@ -868,10 +866,10 @@ button:active {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  gap: .25rem;
 }
 
 .streaming__banner section:nth-child(2) ul li {
-  border-bottom: 0.25rem solid var(--color-dark);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -881,6 +879,7 @@ button:active {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  background-color: var(--color-grey);
 }
 
 .streaming__banner section:nth-child(2) ul li button {
@@ -930,7 +929,6 @@ button:active {
 }
 
 .streaming__main section {
-  background-color: var(--color-grey);
   padding: 2rem;
 }
 
@@ -942,14 +940,18 @@ button:active {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  background-color: var(--color-blood);
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: .25rem;
   color: var(--color-white);
 }
 
 .streaming__main section div.toolbar input {
+  -webkit-box-flex: 2;
+      -ms-flex-positive: 2;
+          flex-grow: 2;
   background-color: var(--color-grey);
   border: 0;
-  border-right: 0.25rem solid var(--color-dark);
   padding: 2rem;
 }
 
@@ -982,24 +984,25 @@ button:active {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  gap: .25rem;
   color: var(--color-grey);
 }
 
 .streaming__main section div.toolbar ul li {
   border: none;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
   padding: 2rem;
+  background-color: var(--color-blood);
   list-style-type: none;
+  text-align: center;
 }
 
 .streaming__main section.results {
-  padding: 0;
-}
-
-.streaming__main section.results h2 {
-  padding: 2rem;
-}
-
-.streaming__main section.results ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1007,10 +1010,27 @@ button:active {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  gap: .25rem;
+  padding: 0;
 }
 
-.streaming__main section.results ul li {
-  border-top: 0.25rem solid var(--color-dark);
+.streaming__main section.results h2 {
+  padding: 2rem;
+}
+
+.streaming__main section.results ul.resultList {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: .25rem;
+}
+
+.streaming__main section.results ul.resultList li {
+  background-color: var(--color-grey);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1020,9 +1040,10 @@ button:active {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  gap: 1rem;
 }
 
-.streaming__main section.results ul li button {
+.streaming__main section.results ul.resultList li button {
   --button-color: rgb(124, 124, 124);
   height: 6rem;
   border: none;
@@ -1037,7 +1058,7 @@ button:active {
   transition: calc(var(--speed-slow) * 3);
 }
 
-.streaming__main section.results ul li button:hover {
+.streaming__main section.results ul.resultList li button:hover {
   background-color: var(--color-green);
   border-radius: 0;
   -webkit-box-shadow: 0rem 0.3rem 1px rgba(0, 0, 0, 0.25);
@@ -1047,12 +1068,12 @@ button:active {
   transition: calc(var(--speed-fast) / 2);
 }
 
-.streaming__main section.results ul li button:active, .streaming__main section.results ul li button:focus {
+.streaming__main section.results ul.resultList li button:active, .streaming__main section.results ul.resultList li button:focus {
   border-radius: 0;
   border: 0;
 }
 
-.streaming__main section.results ul li div {
+.streaming__main section.results ul.resultList li div {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1065,7 +1086,7 @@ button:active {
           flex-direction: row;
 }
 
-.streaming__main section.results ul li h5 {
+.streaming__main section.results ul.resultList li h5 {
   margin-left: 2rem;
 }
 

@@ -39,7 +39,14 @@ function Streaming() {
                   <li>Add content</li>
                 </ul>
               </div>
-              <ul>
+              <ul className="resultList">
+                <li>
+                  <div>
+                    <button>▶️</button>
+                    <h5>Result</h5>
+                  </div>
+                  <button>❤️</button>
+                </li>
                 <li>
                   <div>
                     <button>▶️</button>
