@@ -67,6 +67,13 @@ function Streaming() {
             </section>
           </section>
           <section className="streaming__main">
+            <section className="toolbar">
+              <ul>
+                <li>Register</li>
+                <li>Log in</li>
+                <li>Add content</li>
+              </ul>
+            </section>
             <section>
               <h1>Streaming</h1>
               <p>
@@ -79,7 +86,7 @@ function Streaming() {
                 to go when building something new and great as to support their
                 web, mobile and beyond.
               </p>
-              <ul>
+              <ul className="indent">
                 <li>New users should be able to register</li>
                 <li>Admin users should be able to add new content</li>
                 <li>User should be able to find content</li>
@@ -90,17 +97,46 @@ function Streaming() {
                 </li>
               </ul>
             </section>
-            <section>
-              <h2>Register</h2>
-              <h2>Log in</h2>
-            </section>
-            <section>
-              <h2>Add Content</h2>
-            </section>
-            <section>
-              <h2>Search Content</h2>
-              <h3>List of results</h3>
-              <h3>Add to favorites</h3>
+            <section className="results">
+              <h2>Search</h2>
+              <ul>
+                <li>
+                  <h5>Result</h5>
+                  <button>❤️</button>
+                </li>
+                <li>
+                  <h5>Result</h5>
+                  <button>❤️</button>
+                </li>
+                <li>
+                  <h5>Result</h5>
+                  <button>❤️</button>
+                </li>
+                <li>
+                  <h5>Result</h5>
+                  <button>❤️</button>
+                </li>
+                <li>
+                  <h5>Result</h5>
+                  <button>❤️</button>
+                </li>
+                <li>
+                  <h5>Result</h5>
+                  <button>❤️</button>
+                </li>
+                <li>
+                  <h5>Result</h5>
+                  <button>❤️</button>
+                </li>
+                <li>
+                  <h5>Result</h5>
+                  <button>❤️</button>
+                </li>
+                <li>
+                  <h5>Result</h5>
+                  <button>❤️</button>
+                </li>
+              </ul>
             </section>
           </section>
         </section>
