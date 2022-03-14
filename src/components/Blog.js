@@ -3,23 +3,6 @@ import { Link } from "react-router-dom";
 import Header from "./Header";
 import Footer from "./Footer";
 
-function birthdayCalculator() {
-  let birth = "October 20, 1988 04:40:00 GMT";
-  let born = new Date(birth);
-  let now = new Date();
-  let elapsed = now - born;
-
-  var daysSinceBorn = Math.floor(elapsed / (1000 * 3600 * 24));
-
-  return daysSinceBorn;
-}
-
-function birthCalculatorYears() {
-  let years = birthdayCalculator();
-
-  return parseFloat(years / 365).toFixed(2);
-}
-
 // BLOG FUNCTION
 
 function Blog() {
@@ -75,15 +58,6 @@ function Blog() {
                   </li>
                 ))}
             </ul>
-            <aside id="since-born" className="card">
-              <h6>BIRTHDAY WIZARD</h6>
-              <p>
-                Today it's been <b id="elapsed-days">{birthdayCalculator()}</b>{" "}
-                days since I was born. <br />
-                That's <b id="elapsed-years">{birthCalculatorYears()}</b> years!
-                🧙✨
-              </p>
-            </aside>
           </section>
         </section>
       </main>
