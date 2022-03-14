@@ -44,6 +44,7 @@
           
           box-shadow: none;
           font-size: var(--h6);
+          font-weight: bold;
 
           transition: calc(var(--speed-slow) * 3);
 
@@ -109,8 +110,11 @@
         border: 0;
         padding: 2rem;
 
+        font-weight: bold;
+
         &::placeholder {
           color: grey;
+          font-weight: normal;
         }
       }
 
@@ -125,6 +129,7 @@
         gap: .25rem;
 
         color: var(--color-grey);
+        font-weight: bold;
 
         li {
           border: none;
@@ -173,6 +178,7 @@
             box-shadow: none;
             color: var(--button-color);
             font-size: var(--h6);
+            font-weight: bold;
             
 
             transition: calc(var(--speed-slow) * 3);

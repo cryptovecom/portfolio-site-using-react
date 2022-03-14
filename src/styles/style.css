@@ -887,6 +887,7 @@ button:active {
   -webkit-box-shadow: none;
           box-shadow: none;
   font-size: var(--h6);
+  font-weight: bold;
   -webkit-transition: calc(var(--speed-slow) * 3);
   transition: calc(var(--speed-slow) * 3);
 }
@@ -962,22 +963,27 @@ button:active {
   background-color: var(--color-grey);
   border: 0;
   padding: 2rem;
+  font-weight: bold;
 }
 
 .streaming__main section div.toolbar input::-webkit-input-placeholder {
   color: grey;
+  font-weight: normal;
 }
 
 .streaming__main section div.toolbar input:-ms-input-placeholder {
   color: grey;
+  font-weight: normal;
 }
 
 .streaming__main section div.toolbar input::-ms-input-placeholder {
   color: grey;
+  font-weight: normal;
 }
 
 .streaming__main section div.toolbar input::placeholder {
   color: grey;
+  font-weight: normal;
 }
 
 .streaming__main section div.toolbar ul {
@@ -998,6 +1004,7 @@ button:active {
           flex-grow: 1;
   gap: .25rem;
   color: var(--color-grey);
+  font-weight: bold;
 }
 
 .streaming__main section div.toolbar ul li {
@@ -1060,6 +1067,7 @@ button:active {
           box-shadow: none;
   color: var(--button-color);
   font-size: var(--h6);
+  font-weight: bold;
   -webkit-transition: calc(var(--speed-slow) * 3);
   transition: calc(var(--speed-slow) * 3);
 }
