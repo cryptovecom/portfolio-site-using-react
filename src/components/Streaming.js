@@ -1,10 +1,30 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
+import * as config from "../config";
 import Header from "./Header";
 import Footer from "./Footer";
 
 // BLOG FUNCTION
 
 function Streaming() {
+  const [users, setUsers] = useState([]);
+
+  useEffect(() => {
+    fetch(`${config.API_BASE_URL}/streaming-api/users`, {
+      headers: {
+        "content-type": "application/json",
+      },
+    })
+      .then((response) => {
+        return response.json();
+      })
+      .then((result) => {
+        setUsers(result);
+      })
+      .catch((err) => {
+        console.error(err);
+      });
+  }, []);
+
   return (
     <>
       <Header />
@@ -22,6 +42,7 @@ function Streaming() {
                   <button className="favButton">Favourite</button>
                   <button className="delButton">🗑️</button>
                 </li>
+                <li>{users[1].user}</li>
               </ul>
             </section>
           </section>
