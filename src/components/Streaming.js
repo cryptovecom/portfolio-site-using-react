@@ -6,10 +6,10 @@ import Footer from "./Footer";
 // BLOG FUNCTION
 
 function Streaming() {
-  const [users, setUsers] = useState([]);
+  const [tracks, setTracks] = useState([]);
 
   useEffect(() => {
-    fetch(`${config.API_BASE_URL}/streaming-api/users`, {
+    fetch(`${config.API_BASE_URL}/streaming-api/tracks`, {
       headers: {
         "content-type": "application/json",
       },
@@ -18,7 +18,7 @@ function Streaming() {
         return response.json();
       })
       .then((result) => {
-        setUsers(result);
+        setTracks(result);
       })
       .catch((err) => {
         console.error(err);
@@ -42,7 +42,6 @@ function Streaming() {
                   <button className="favButton">Favourite</button>
                   <button className="delButton">🗑️</button>
                 </li>
-                <li>{users[1].user}</li>
               </ul>
             </section>
           </section>
@@ -63,14 +62,15 @@ function Streaming() {
                 </ul>
               </div>
               <ul className="resultList">
-                <li>
-                  <button className="trackButton">Result</button>
-                  <button className="favButton">❤️</button>
-                </li>
-                <li>
-                  <button className="trackButton">Result</button>
-                  <button className="favButton">❤️</button>
-                </li>
+                {tracks &&
+                  tracks.map((x) => {
+                    return (
+                      <li>
+                        <button className="trackButton">{x.artist}</button>
+                        <button className="favButton">❤️</button>
+                      </li>
+                    );
+                  })}
               </ul>
             </section>
           </section>
