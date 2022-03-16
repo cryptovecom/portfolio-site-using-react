@@ -37,8 +37,8 @@ function Streaming() {
                 {tracks &&
                   tracks.map((x) => {
                     return (
-                      <li>
-                        <button className="favButton">
+                      <li key={x._id + "x"}>
+                        <button className="trackButton">
                           {x.artist} {x.title}
                           <audio controls>
                             <source src={x.url} type="audio/mpeg" />

@@ -854,11 +854,11 @@ button.dark-mode-button:active {
   background-size: cover;
 }
 
-.streaming__banner section:nth-child(2) {
+section {
   z-index: 1;
 }
 
-.streaming__banner section:nth-child(2) ul {
+section ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -869,7 +869,7 @@ button.dark-mode-button:active {
   gap: .25rem;
 }
 
-.streaming__banner section:nth-child(2) ul li {
+section ul li {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -882,10 +882,11 @@ button.dark-mode-button:active {
   background-color: var(--color-grey);
 }
 
-.streaming__banner section:nth-child(2) ul li button {
+section ul li button {
   height: 6rem;
   border: none;
   padding: 0.5rem 1rem;
+  background-color: var(--color-blood);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -904,36 +905,55 @@ button.dark-mode-button:active {
   transition: calc(var(--speed-slow) * 3);
 }
 
-.streaming__banner section:nth-child(2) ul li button.delButton {
+section ul li button.delButton {
   background-color: var(--color-dark);
   opacity: .15;
 }
 
-.streaming__banner section:nth-child(2) ul li button.delButton:hover {
+section ul li button.delButton:hover {
   background-color: var(--color-blood);
   opacity: 1;
 }
 
-.streaming__banner section:nth-child(2) ul li button.favButton {
+section ul li button.favButton {
   padding-left: 2rem;
   -webkit-box-flex: 1;
       -ms-flex-positive: 1;
           flex-grow: 1;
   color: var(--color-dark);
+  opacity: .15;
   text-align: left;
 }
 
-.streaming__banner section:nth-child(2) ul li button.favButton:hover {
+section ul li button.favButton:hover {
+  background-color: var(--color-white);
+  opacity: 1;
+}
+
+section ul li button.trackButton {
+  padding: 2rem;
+  color: var(--color-dark);
+  text-align: left;
+  -webkit-box-flex: 3;
+      -ms-flex-positive: 3;
+          flex-grow: 3;
+}
+
+section ul li button.trackButton:hover {
   background-color: var(--color-white);
 }
 
-.streaming__banner section:nth-child(2) ul li button:hover {
+section ul li button.trackButton:active {
+  scale: 1;
+}
+
+section ul li button:hover {
   border-radius: 0;
   -webkit-transition: calc(var(--speed-fast) / 2);
   transition: calc(var(--speed-fast) / 2);
 }
 
-.streaming__banner section:nth-child(2) ul li button:active, .streaming__banner section:nth-child(2) ul li button:focus {
+section ul li button:active, section ul li button:focus {
   border-radius: 0;
   border: 0;
 }
@@ -1072,58 +1092,6 @@ button.dark-mode-button:active {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-}
-
-.streaming__main section.results ul.resultList li button {
-  --button-color: rgb(124, 124, 124);
-  height: 6rem;
-  border: none;
-  padding: 0.5rem 1rem;
-  -webkit-box-shadow: none;
-          box-shadow: none;
-  color: var(--button-color);
-  font-size: var(--h6);
-  font-weight: bold;
-  -webkit-transition: calc(var(--speed-slow) * 3);
-  transition: calc(var(--speed-slow) * 3);
-}
-
-.streaming__main section.results ul.resultList li button.favButton {
-  background-color: var(--color-dark);
-  opacity: .15;
-}
-
-.streaming__main section.results ul.resultList li button.favButton:hover {
-  background-color: var(--color-green);
-}
-
-.streaming__main section.results ul.resultList li button.trackButton {
-  padding: 2rem;
-  color: var(--color-dark);
-  text-align: left;
-  -webkit-box-flex: 3;
-      -ms-flex-positive: 3;
-          flex-grow: 3;
-}
-
-.streaming__main section.results ul.resultList li button.trackButton:hover {
-  background-color: var(--color-white);
-}
-
-.streaming__main section.results ul.resultList li button.trackButton:active {
-  scale: 1;
-}
-
-.streaming__main section.results ul.resultList li button:hover {
-  border-radius: 0;
-  opacity: 1;
-  -webkit-transition: calc(var(--speed-fast) / 2);
-  transition: calc(var(--speed-fast) / 2);
-}
-
-.streaming__main section.results ul.resultList li button:active, .streaming__main section.results ul.resultList li button:focus {
-  border-radius: 0;
-  border: 0;
 }
 
 .streaming__main section.results ul.resultList li div {
