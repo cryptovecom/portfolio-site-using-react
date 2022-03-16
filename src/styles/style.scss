@@ -113,6 +113,10 @@ header {
       color: var(--color-dark);
       text-decoration: none;
     }
+
+    &.streaming-link {
+      opacity: 0;
+    }
   }
 }
 

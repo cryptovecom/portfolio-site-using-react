@@ -1317,6 +1317,10 @@ header ul li a:focus, header ul li a:hover {
   text-decoration: none;
 }
 
+header ul li a.streaming-link {
+  opacity: 0;
+}
+
 /* MAIN MAIN MAIN MAIN MAIN MAIN MAIN MAIN MAIN MAIN MAIN MAIN MAIN MAIN MAIN */
 main {
   display: -webkit-box;
