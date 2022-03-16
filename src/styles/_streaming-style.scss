@@ -50,27 +50,12 @@
 
       transition: calc(var(--speed-slow) * 3);
 
-      &.delButton {
-        background-color: var(--color-dark);
-        opacity: .15;
-
-        &:hover {
-          background-color: var(--color-blood);
-          opacity: 1;
-        }
+      &:hover {
+        background-color: var(--color-white);
+        transition: calc(var(--speed-fast) / 2);
       }
 
-      &.favButton {
-        color: var(--color-dark);
-        opacity: .15;
-
-        &:hover {
-          background-color: var(--color-green);
-          opacity: 1;
-        }
-      }
-
-      &.trackButton {
+      &.button-play {
         width: 100%;
         padding: 2rem;
 
@@ -80,9 +65,21 @@
         text-align: left;
       }
 
-      &:hover {
-        background-color: var(--color-white);
-        transition: calc(var(--speed-fast) / 2);
+      &.button-do {
+        background-color: var(--color-dark);
+        opacity: .15;
+
+        &:hover {
+          opacity: 1;
+        }
+      }
+
+      &.button-del:hover {
+        background-color: var(--color-blood);
+      }
+
+      &.button-fav:hover {
+        background-color: var(--color-green);
       }
     }
   }
@@ -96,10 +93,8 @@
   flex-wrap: wrap;
   gap: .25rem;
 
-  color: var(--color-white);
-
   input {
-    flex-grow: 2;
+    flex-grow: 3;
     background-color: var(--color-grey);
     border: 0;
     padding: 2rem;
@@ -117,9 +112,6 @@
   }
 
   ul {
-    padding: 0;
-    margin: 0;
-
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -131,13 +123,11 @@
 
     li {
       border: none;
-
-      flex-grow: 1;
       padding: 2rem;
+      flex-grow: 1;
+      
 
       background-color: var(--color-blood);
-      
-      list-style-type: none; 
       text-align: center;
     }
   }

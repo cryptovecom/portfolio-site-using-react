@@ -38,14 +38,14 @@ function Streaming() {
                   tracks.map((x) => {
                     return (
                       <li key={x._id + "x"}>
-                        <button className="trackButton">
+                        <button className="button-play">
                           {x.artist} {x.title}
                           <audio controls>
                             <source src={x.url} type="audio/mpeg" />
                             Your browser does not support the audio element.
                           </audio>
                         </button>
-                        <button className="delButton">🗑️</button>
+                        <button className="button-do button-del">🗑️</button>
                       </li>
                     );
                   })}
@@ -73,14 +73,14 @@ function Streaming() {
                   tracks.map((x) => {
                     return (
                       <li key={x._id}>
-                        <button className="trackButton">
+                        <button className="button-play">
                           {x.artist} - {x.title}
                           <audio controls>
                             <source src={x.url} type="audio/mpeg" />
                             Your browser does not support the audio element.
                           </audio>
                         </button>
-                        <button className="favButton">❤️</button>
+                        <button className="button-do button-fav">❤️</button>
                       </li>
                     );
                   })}

@@ -902,27 +902,13 @@ button.dark-mode-button:active {
   transition: calc(var(--speed-slow) * 3);
 }
 
-.resultList li button.delButton {
-  background-color: var(--color-dark);
-  opacity: .15;
+.resultList li button:hover {
+  background-color: var(--color-white);
+  -webkit-transition: calc(var(--speed-fast) / 2);
+  transition: calc(var(--speed-fast) / 2);
 }
 
-.resultList li button.delButton:hover {
-  background-color: var(--color-blood);
-  opacity: 1;
-}
-
-.resultList li button.favButton {
-  color: var(--color-dark);
-  opacity: .15;
-}
-
-.resultList li button.favButton:hover {
-  background-color: var(--color-green);
-  opacity: 1;
-}
-
-.resultList li button.trackButton {
+.resultList li button.button-play {
   width: 100%;
   padding: 2rem;
   -ms-flex-line-pack: center;
@@ -931,10 +917,21 @@ button.dark-mode-button:active {
   text-align: left;
 }
 
-.resultList li button:hover {
-  background-color: var(--color-white);
-  -webkit-transition: calc(var(--speed-fast) / 2);
-  transition: calc(var(--speed-fast) / 2);
+.resultList li button.button-do {
+  background-color: var(--color-dark);
+  opacity: .15;
+}
+
+.resultList li button.button-do:hover {
+  opacity: 1;
+}
+
+.resultList li button.button-del:hover {
+  background-color: var(--color-blood);
+}
+
+.resultList li button.button-fav:hover {
+  background-color: var(--color-green);
 }
 
 .toolbar {
@@ -948,13 +945,12 @@ button.dark-mode-button:active {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   gap: .25rem;
-  color: var(--color-white);
 }
 
 .toolbar input {
-  -webkit-box-flex: 2;
-      -ms-flex-positive: 2;
-          flex-grow: 2;
+  -webkit-box-flex: 3;
+      -ms-flex-positive: 3;
+          flex-grow: 3;
   background-color: var(--color-grey);
   border: 0;
   padding: 2rem;
@@ -986,8 +982,6 @@ button.dark-mode-button:active {
 }
 
 .toolbar ul {
-  padding: 0;
-  margin: 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1008,12 +1002,11 @@ button.dark-mode-button:active {
 
 .toolbar ul li {
   border: none;
+  padding: 2rem;
   -webkit-box-flex: 1;
       -ms-flex-positive: 1;
           flex-grow: 1;
-  padding: 2rem;
   background-color: var(--color-blood);
-  list-style-type: none;
   text-align: center;
 }
 
