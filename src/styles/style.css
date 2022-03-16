@@ -839,18 +839,12 @@ button.dark-mode-button:active {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-align: stretch;
-      -ms-flex-align: stretch;
-          align-items: stretch;
-  -webkit-box-pack: top;
-      -ms-flex-pack: top;
-          justify-content: top;
   gap: 1rem;
 }
 
 .streaming__banner aside {
   min-height: 13vh;
-  background: var(--color-yellow) url("../../public/images/svg/blob-scene-haikei.svg") no-repeat top left;
+  background: url("../../public/images/svg/blob-scene-haikei.svg") no-repeat top left;
   background-size: cover;
 }
 
@@ -867,13 +861,9 @@ button.dark-mode-button:active {
 }
 
 .toolbar {
-  padding: 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   gap: .25rem;
@@ -921,9 +911,6 @@ button.dark-mode-button:active {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
   -webkit-box-flex: 1;
       -ms-flex-positive: 1;
           flex-grow: 1;
@@ -933,7 +920,6 @@ button.dark-mode-button:active {
 }
 
 .toolbar ul li {
-  border: none;
   padding: 2rem;
   -webkit-box-flex: 1;
       -ms-flex-positive: 1;
@@ -942,7 +928,7 @@ button.dark-mode-button:active {
   text-align: center;
 }
 
-.resultList {
+.streaming__results {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -953,7 +939,7 @@ button.dark-mode-button:active {
   gap: .25rem;
 }
 
-.resultList li {
+.streaming__results li {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -966,7 +952,7 @@ button.dark-mode-button:active {
   background-color: var(--color-grey);
 }
 
-.resultList li button {
+.streaming__results li button {
   height: 6rem;
   border: none;
   padding: 0.5rem 1rem;
@@ -990,17 +976,17 @@ button.dark-mode-button:active {
   transition: calc(var(--speed-slow) * 3);
 }
 
-.resultList li button audio {
+.streaming__results li button audio {
   width: 9rem;
 }
 
-.resultList li button:hover {
+.streaming__results li button:hover {
   background-color: var(--color-white);
   -webkit-transition: calc(var(--speed-fast) / 2);
   transition: calc(var(--speed-fast) / 2);
 }
 
-.resultList li button.button-play {
+.streaming__results li button.button-play {
   width: 100%;
   padding: 2rem;
   -ms-flex-line-pack: center;
@@ -1009,19 +995,19 @@ button.dark-mode-button:active {
   text-align: left;
 }
 
-.resultList li button.button-do {
+.streaming__results li button.button-do {
   background-color: #dfdfdf;
 }
 
-.resultList li button.button-do:hover {
+.streaming__results li button.button-do:hover {
   opacity: 1;
 }
 
-.resultList li button.button-del:hover {
+.streaming__results li button.button-del:hover {
   background-color: var(--color-blood);
 }
 
-.resultList li button.button-fav:hover {
+.streaming__results li button.button-fav:hover {
   background-color: var(--color-green);
 }
 
