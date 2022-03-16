@@ -31,9 +31,9 @@ function Streaming() {
       <main>
         <section className="landing__top">
           <section className="streaming__banner">
-            <section></section>
+            <aside></aside>
             <section className="streaming__list">
-              <ul>
+              <ul className="resultList">
                 {tracks &&
                   tracks.map((x) => {
                     return (
@@ -53,41 +53,39 @@ function Streaming() {
             </section>
           </section>
           <section className="streaming__main">
-            <section>
-              <div className="toolbar">
-                <input
-                  type="text"
-                  placeholder="Search.."
-                  className="searchBar"
-                ></input>
-                <ul>
-                  <li>Register</li>
-                  <li>Log in</li>
-                  <li>
-                    <button>Add content</button>
-                  </li>
-                </ul>
-              </div>
-              <div className="streaming__list">
-                <ul className="resultList">
-                  {tracks &&
-                    tracks.map((x) => {
-                      return (
-                        <li key={x._id}>
-                          <button className="trackButton">
-                            {x.artist} - {x.title}
-                            <audio controls>
-                              <source src={x.url} type="audio/mpeg" />
-                              Your browser does not support the audio element.
-                            </audio>
-                          </button>
-                          <button className="favButton">❤️</button>
-                        </li>
-                      );
-                    })}
-                </ul>
-              </div>
-            </section>
+            <div className="toolbar">
+              <input
+                type="text"
+                placeholder="Search.."
+                className="searchBar"
+              ></input>
+              <ul>
+                <li>Register</li>
+                <li>Log in</li>
+                <li>
+                  <button>Add content</button>
+                </li>
+              </ul>
+            </div>
+            <div className="streaming__list">
+              <ul className="resultList">
+                {tracks &&
+                  tracks.map((x) => {
+                    return (
+                      <li key={x._id}>
+                        <button className="trackButton">
+                          {x.artist} - {x.title}
+                          <audio controls>
+                            <source src={x.url} type="audio/mpeg" />
+                            Your browser does not support the audio element.
+                          </audio>
+                        </button>
+                        <button className="favButton">❤️</button>
+                      </li>
+                    );
+                  })}
+              </ul>
+            </div>
           </section>
         </section>
       </main>

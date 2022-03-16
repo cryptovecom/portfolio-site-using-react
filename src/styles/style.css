@@ -848,17 +848,13 @@ button.dark-mode-button:active {
   gap: 1rem;
 }
 
-.streaming__banner section:first-child {
+.streaming__banner aside {
   min-height: 13vh;
   background: var(--color-yellow) url("../../public/images/svg/blob-scene-haikei.svg") no-repeat top left;
   background-size: cover;
 }
 
-.streaming__list {
-  z-index: 1;
-}
-
-.streaming__list ul {
+.resultList {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -869,7 +865,7 @@ button.dark-mode-button:active {
   gap: .25rem;
 }
 
-.streaming__list ul li {
+.resultList li {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -882,14 +878,15 @@ button.dark-mode-button:active {
   background-color: var(--color-grey);
 }
 
-.streaming__list ul li button {
+.resultList li button {
   height: 6rem;
   border: none;
   padding: 0.5rem 1rem;
-  background-color: var(--color-blood);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
@@ -905,61 +902,39 @@ button.dark-mode-button:active {
   transition: calc(var(--speed-slow) * 3);
 }
 
-.streaming__list ul li button.delButton {
-  padding-left: 2rem;
+.resultList li button.delButton {
   background-color: var(--color-dark);
-  -webkit-box-flex: 1;
-      -ms-flex-positive: 1;
-          flex-grow: 1;
   opacity: .15;
 }
 
-.streaming__list ul li button.delButton:hover {
+.resultList li button.delButton:hover {
   background-color: var(--color-blood);
   opacity: 1;
 }
 
-.streaming__list ul li button.favButton {
-  padding-left: 2rem;
-  -webkit-box-flex: 1;
-      -ms-flex-positive: 1;
-          flex-grow: 1;
+.resultList li button.favButton {
   color: var(--color-dark);
   opacity: .15;
-  text-align: left;
 }
 
-.streaming__list ul li button.favButton:hover {
-  background-color: var(--color-white);
+.resultList li button.favButton:hover {
+  background-color: var(--color-green);
   opacity: 1;
 }
 
-.streaming__list ul li button.trackButton {
+.resultList li button.trackButton {
+  width: 100%;
   padding: 2rem;
+  -ms-flex-line-pack: center;
+      align-content: center;
   color: var(--color-dark);
   text-align: left;
-  -webkit-box-flex: 3;
-      -ms-flex-positive: 3;
-          flex-grow: 3;
 }
 
-.streaming__list ul li button.trackButton:hover {
+.resultList li button:hover {
   background-color: var(--color-white);
-}
-
-.streaming__list ul li button.trackButton:active {
-  scale: 1;
-}
-
-.streaming__list ul li button:hover {
-  border-radius: 0;
   -webkit-transition: calc(var(--speed-fast) / 2);
   transition: calc(var(--speed-fast) / 2);
-}
-
-.streaming__list ul li button:active, .streaming__list ul li button:focus {
-  border-radius: 0;
-  border: 0;
 }
 
 .toolbar {
@@ -1051,18 +1026,7 @@ button.dark-mode-button:active {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  gap: rem;
-}
-
-.streaming__main ul.resultList {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  gap: .25rem;
+  gap: 1rem;
 }
 
 /* BANNER */

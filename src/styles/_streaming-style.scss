@@ -7,7 +7,7 @@
   justify-content: top;
   gap: 1rem;
   
-  & section:first-child {
+  aside {
     min-height: 13vh;
 
     background: 
@@ -21,92 +21,72 @@
   }
 }
 
-.streaming__list {
-  z-index: 1;
+.resultList {
+  display: flex;
+  flex-direction: column;
+  gap: .25rem;
 
-  ul {
+  li {
     display: flex;
-    flex-direction: column;
-    gap: .25rem;
+    align-items: center;
+    justify-content: space-between;
 
-    li {
+    background-color: var(--color-grey);
+
+    button {
+      height: 6rem;
+      border: none;  
+      padding: 0.5rem 1rem;
+
       display: flex;
-      align-items: center;
+      flex-wrap: wrap;
       justify-content: space-between;
+      align-items: center;
+      gap: 1rem;
 
-      background-color: var(--color-grey);
+      box-shadow: none;
+      font-size: var(--h6);
+      font-weight: bold;
 
-      button {
-        height: 6rem;
-        border: none;  
-        padding: 0.5rem 1rem;
-        
-        background-color: var(--color-blood);
+      transition: calc(var(--speed-slow) * 3);
 
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        gap: 1rem;
+      &.delButton {
+        background-color: var(--color-dark);
+        opacity: .15;
 
-        box-shadow: none;
-        font-size: var(--h6);
-        font-weight: bold;
-
-        transition: calc(var(--speed-slow) * 3);
-
-          &.delButton {
-            padding-left: 2rem;
-            background-color: var(--color-dark);
-            flex-grow: 1;
-            opacity: .15;
-
-            &:hover {
-              background-color: var(--color-blood);
-              opacity: 1;
-            }
-          }
-
-          &.favButton {
-            padding-left: 2rem;
-            flex-grow: 1;
-            color: var(--color-dark);
-            opacity: .15;
-            text-align: left;
-
-            &:hover {
-              background-color: var(--color-white);
-              opacity: 1;
-            }
-          }
-
-          &.trackButton {
-            padding: 2rem;
-            color: var(--color-dark);
-            text-align: left;
-            flex-grow: 3;
-
-            &:hover {
-              background-color: var(--color-white);
-            }
-
-            &:active {
-              scale: 1;
-            }
-          }
-
-          &:hover {
-            border-radius: 0;
-            transition: calc(var(--speed-fast) / 2);
-          }
-
-          &:active, &:focus {
-            border-radius: 0;
-            border: 0;
-          }
+        &:hover {
+          background-color: var(--color-blood);
+          opacity: 1;
         }
+      }
+
+      &.favButton {
+        color: var(--color-dark);
+        opacity: .15;
+
+        &:hover {
+          background-color: var(--color-green);
+          opacity: 1;
+        }
+      }
+
+      &.trackButton {
+        width: 100%;
+        padding: 2rem;
+
+        align-content: center;
+
+        color: var(--color-dark);
+        text-align: left;
+      }
+
+      &:hover {
+        background-color: var(--color-white);
+        transition: calc(var(--speed-fast) / 2);
       }
     }
   }
+}
 
 .toolbar {
   padding: 0;
@@ -167,11 +147,5 @@
   width: 100%;
   display: flex;
   flex-direction: column;
-  gap: rem;
-
-  ul.resultList {
-    display: flex;
-    flex-direction: column;
-    gap: .25rem;
-  }
+  gap: 1rem;
 }
