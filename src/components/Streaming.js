@@ -34,14 +34,21 @@ function Streaming() {
             <section></section>
             <section>
               <ul>
-                <li>
-                  <button className="favButton">Favourite</button>
-                  <button className="delButton">🗑️</button>
-                </li>
-                <li>
-                  <button className="favButton">Favourite</button>
-                  <button className="delButton">🗑️</button>
-                </li>
+                {tracks &&
+                  tracks.map((x) => {
+                    return (
+                      <li>
+                        <button className="favButton">
+                          {x.artist} {x.title}
+                          <audio controls>
+                            <source src={x.url} type="audio/mpeg" />
+                            Your browser does not support the audio element.
+                          </audio>
+                        </button>
+                        <button className="delButton">🗑️</button>
+                      </li>
+                    );
+                  })}
               </ul>
             </section>
           </section>
@@ -66,7 +73,9 @@ function Streaming() {
                   tracks.map((x) => {
                     return (
                       <li key={x._id}>
-                        <button className="trackButton">{x.artist}</button>
+                        <button className="trackButton">
+                          {x.artist} - {x.title}
+                        </button>
                         <button className="favButton">❤️</button>
                       </li>
                     );
