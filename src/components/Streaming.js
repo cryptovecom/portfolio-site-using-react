@@ -32,7 +32,7 @@ function Streaming() {
         <section className="landing__top">
           <section className="streaming__banner">
             <section></section>
-            <section>
+            <section className="streaming__list">
               <ul>
                 {tracks &&
                   tracks.map((x) => {
@@ -53,7 +53,7 @@ function Streaming() {
             </section>
           </section>
           <section className="streaming__main">
-            <section className="results">
+            <section className="streaming__list">
               <div className="toolbar">
                 <input
                   type="text"

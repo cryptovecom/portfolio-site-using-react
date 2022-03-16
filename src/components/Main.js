@@ -21,7 +21,7 @@ function Main(props) {
             <div className="michel"></div>
             <section>
               <h1>🔗</h1>
-              <ul>
+              <ul className="home-list">
                 {linkList.map((x) => (
                   <li
                     className={`landing-list`}

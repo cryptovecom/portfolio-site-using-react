@@ -854,11 +854,11 @@ button.dark-mode-button:active {
   background-size: cover;
 }
 
-section {
+section.streaming__list {
   z-index: 1;
 }
 
-section ul {
+section.streaming__list ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -869,7 +869,7 @@ section ul {
   gap: .25rem;
 }
 
-section ul li {
+section.streaming__list ul li {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -882,7 +882,7 @@ section ul li {
   background-color: var(--color-grey);
 }
 
-section ul li button {
+section.streaming__list ul li button {
   height: 6rem;
   border: none;
   padding: 0.5rem 1rem;
@@ -905,17 +905,17 @@ section ul li button {
   transition: calc(var(--speed-slow) * 3);
 }
 
-section ul li button.delButton {
+section.streaming__list ul li button.delButton {
   background-color: var(--color-dark);
   opacity: .15;
 }
 
-section ul li button.delButton:hover {
+section.streaming__list ul li button.delButton:hover {
   background-color: var(--color-blood);
   opacity: 1;
 }
 
-section ul li button.favButton {
+section.streaming__list ul li button.favButton {
   padding-left: 2rem;
   -webkit-box-flex: 1;
       -ms-flex-positive: 1;
@@ -925,12 +925,12 @@ section ul li button.favButton {
   text-align: left;
 }
 
-section ul li button.favButton:hover {
+section.streaming__list ul li button.favButton:hover {
   background-color: var(--color-white);
   opacity: 1;
 }
 
-section ul li button.trackButton {
+section.streaming__list ul li button.trackButton {
   padding: 2rem;
   color: var(--color-dark);
   text-align: left;
@@ -939,21 +939,21 @@ section ul li button.trackButton {
           flex-grow: 3;
 }
 
-section ul li button.trackButton:hover {
+section.streaming__list ul li button.trackButton:hover {
   background-color: var(--color-white);
 }
 
-section ul li button.trackButton:active {
+section.streaming__list ul li button.trackButton:active {
   scale: 1;
 }
 
-section ul li button:hover {
+section.streaming__list ul li button:hover {
   border-radius: 0;
   -webkit-transition: calc(var(--speed-fast) / 2);
   transition: calc(var(--speed-fast) / 2);
 }
 
-section ul li button:active, section ul li button:focus {
+section.streaming__list ul li button:active, section.streaming__list ul li button:focus {
   border-radius: 0;
   border: 0;
 }
