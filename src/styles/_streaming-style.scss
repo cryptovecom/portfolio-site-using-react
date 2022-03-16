@@ -42,6 +42,11 @@
           border: none;  
           padding: 0.5rem 1rem;
           
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          gap: 1rem;
+
           box-shadow: none;
           font-size: var(--h6);
           font-weight: bold;

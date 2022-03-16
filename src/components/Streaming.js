@@ -75,6 +75,10 @@ function Streaming() {
                       <li key={x._id}>
                         <button className="trackButton">
                           {x.artist} - {x.title}
+                          <audio controls>
+                            <source src={x.url} type="audio/mpeg" />
+                            Your browser does not support the audio element.
+                          </audio>
                         </button>
                         <button className="favButton">❤️</button>
                       </li>
