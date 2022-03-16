@@ -854,11 +854,11 @@ button.dark-mode-button:active {
   background-size: cover;
 }
 
-section.streaming__list {
+.streaming__list {
   z-index: 1;
 }
 
-section.streaming__list ul {
+.streaming__list ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -869,7 +869,7 @@ section.streaming__list ul {
   gap: .25rem;
 }
 
-section.streaming__list ul li {
+.streaming__list ul li {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -882,7 +882,7 @@ section.streaming__list ul li {
   background-color: var(--color-grey);
 }
 
-section.streaming__list ul li button {
+.streaming__list ul li button {
   height: 6rem;
   border: none;
   padding: 0.5rem 1rem;
@@ -905,17 +905,21 @@ section.streaming__list ul li button {
   transition: calc(var(--speed-slow) * 3);
 }
 
-section.streaming__list ul li button.delButton {
+.streaming__list ul li button.delButton {
+  padding-left: 2rem;
   background-color: var(--color-dark);
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
   opacity: .15;
 }
 
-section.streaming__list ul li button.delButton:hover {
+.streaming__list ul li button.delButton:hover {
   background-color: var(--color-blood);
   opacity: 1;
 }
 
-section.streaming__list ul li button.favButton {
+.streaming__list ul li button.favButton {
   padding-left: 2rem;
   -webkit-box-flex: 1;
       -ms-flex-positive: 1;
@@ -925,12 +929,12 @@ section.streaming__list ul li button.favButton {
   text-align: left;
 }
 
-section.streaming__list ul li button.favButton:hover {
+.streaming__list ul li button.favButton:hover {
   background-color: var(--color-white);
   opacity: 1;
 }
 
-section.streaming__list ul li button.trackButton {
+.streaming__list ul li button.trackButton {
   padding: 2rem;
   color: var(--color-dark);
   text-align: left;
@@ -939,42 +943,26 @@ section.streaming__list ul li button.trackButton {
           flex-grow: 3;
 }
 
-section.streaming__list ul li button.trackButton:hover {
+.streaming__list ul li button.trackButton:hover {
   background-color: var(--color-white);
 }
 
-section.streaming__list ul li button.trackButton:active {
+.streaming__list ul li button.trackButton:active {
   scale: 1;
 }
 
-section.streaming__list ul li button:hover {
+.streaming__list ul li button:hover {
   border-radius: 0;
   -webkit-transition: calc(var(--speed-fast) / 2);
   transition: calc(var(--speed-fast) / 2);
 }
 
-section.streaming__list ul li button:active, section.streaming__list ul li button:focus {
+.streaming__list ul li button:active, .streaming__list ul li button:focus {
   border-radius: 0;
   border: 0;
 }
 
-.streaming__main {
-  width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  gap: 1rem;
-}
-
-.streaming__main section {
-  padding: 2rem;
-}
-
-.streaming__main section div.toolbar {
+.toolbar {
   padding: 0;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -988,7 +976,7 @@ section.streaming__list ul li button:active, section.streaming__list ul li butto
   color: var(--color-white);
 }
 
-.streaming__main section div.toolbar input {
+.toolbar input {
   -webkit-box-flex: 2;
       -ms-flex-positive: 2;
           flex-grow: 2;
@@ -998,31 +986,31 @@ section.streaming__list ul li button:active, section.streaming__list ul li butto
   font-weight: bold;
 }
 
-.streaming__main section div.toolbar input:active, .streaming__main section div.toolbar input:focus, .streaming__main section div.toolbar input:hover {
+.toolbar input:active, .toolbar input:focus, .toolbar input:hover {
   background-color: var(--color-white);
 }
 
-.streaming__main section div.toolbar input::-webkit-input-placeholder {
+.toolbar input::-webkit-input-placeholder {
   color: grey;
   font-weight: normal;
 }
 
-.streaming__main section div.toolbar input:-ms-input-placeholder {
+.toolbar input:-ms-input-placeholder {
   color: grey;
   font-weight: normal;
 }
 
-.streaming__main section div.toolbar input::-ms-input-placeholder {
+.toolbar input::-ms-input-placeholder {
   color: grey;
   font-weight: normal;
 }
 
-.streaming__main section div.toolbar input::placeholder {
+.toolbar input::placeholder {
   color: grey;
   font-weight: normal;
 }
 
-.streaming__main section div.toolbar ul {
+.toolbar ul {
   padding: 0;
   margin: 0;
   display: -webkit-box;
@@ -1043,7 +1031,7 @@ section.streaming__list ul li button:active, section.streaming__list ul li butto
   font-weight: bold;
 }
 
-.streaming__main section div.toolbar ul li {
+.toolbar ul li {
   border: none;
   -webkit-box-flex: 1;
       -ms-flex-positive: 1;
@@ -1054,7 +1042,19 @@ section.streaming__list ul li button:active, section.streaming__list ul li butto
   text-align: center;
 }
 
-.streaming__main section.results {
+.streaming__main {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: rem;
+}
+
+.streaming__main ul.resultList {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1063,63 +1063,6 @@ section.streaming__list ul li button:active, section.streaming__list ul li butto
       -ms-flex-direction: column;
           flex-direction: column;
   gap: .25rem;
-  padding: 0;
-}
-
-.streaming__main section.results h2 {
-  padding: 2rem;
-}
-
-.streaming__main section.results ul.resultList {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  gap: .25rem;
-}
-
-.streaming__main section.results ul.resultList li {
-  background-color: var(--color-grey);
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-}
-
-.streaming__main section.results ul.resultList li div {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-}
-
-.streaming__main section.results ul.resultList li h5 {
-  margin-left: 2rem;
-}
-
-.streaming__main ul.indent {
-  --indent: 3rem;
-  -webkit-transform: translateX(var(--indent));
-          transform: translateX(var(--indent));
-  width: calc(56vw - calc(var(--indent) * 3));
-}
-
-.streaming__main ul.indent li {
-  list-style-type: disc;
 }
 
 /* BANNER */

@@ -53,7 +53,7 @@ function Streaming() {
             </section>
           </section>
           <section className="streaming__main">
-            <section className="streaming__list">
+            <section>
               <div className="toolbar">
                 <input
                   type="text"
@@ -68,23 +68,25 @@ function Streaming() {
                   </li>
                 </ul>
               </div>
-              <ul className="resultList">
-                {tracks &&
-                  tracks.map((x) => {
-                    return (
-                      <li key={x._id}>
-                        <button className="trackButton">
-                          {x.artist} - {x.title}
-                          <audio controls>
-                            <source src={x.url} type="audio/mpeg" />
-                            Your browser does not support the audio element.
-                          </audio>
-                        </button>
-                        <button className="favButton">❤️</button>
-                      </li>
-                    );
-                  })}
-              </ul>
+              <div className="streaming__list">
+                <ul className="resultList">
+                  {tracks &&
+                    tracks.map((x) => {
+                      return (
+                        <li key={x._id}>
+                          <button className="trackButton">
+                            {x.artist} - {x.title}
+                            <audio controls>
+                              <source src={x.url} type="audio/mpeg" />
+                              Your browser does not support the audio element.
+                            </audio>
+                          </button>
+                          <button className="favButton">❤️</button>
+                        </li>
+                      );
+                    })}
+                </ul>
+              </div>
             </section>
           </section>
         </section>
