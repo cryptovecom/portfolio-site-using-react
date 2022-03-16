@@ -127,6 +127,6 @@
     {
         "id":"FYI",
         "description":"These card-thingies are fetched from a JSON-file in React hooks and looped using mad noob skillz.",
-        "status": "reass"
+        "status": "done"
     }
 ]

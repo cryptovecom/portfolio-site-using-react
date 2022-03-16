@@ -65,7 +65,7 @@ function Streaming() {
                 {tracks &&
                   tracks.map((x) => {
                     return (
-                      <li>
+                      <li key={x._id}>
                         <button className="trackButton">{x.artist}</button>
                         <button className="favButton">❤️</button>
                       </li>
