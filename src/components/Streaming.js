@@ -17,27 +17,29 @@ function httpPost(e) {
     headers: {
       "Content-Type": "application/json",
     },
-  }).then((res) => res.json());
+  });
 }
 
-function httpPatch(e) {
+function httpPatch(id) {
+  console.log(id);
   let databody = {
     fav: true,
   };
 
-  fetch(`${config.API_BASE_URL}/streaming-api/tracks/Posted`, {
+  fetch(`${config.API_BASE_URL}/streaming-api/tracks/${id}`, {
     method: "PATCH",
     body: JSON.stringify(databody),
     headers: {
       "Content-Type": "application/json",
     },
-  }).then((res) => res.json());
+  });
 }
 
 function httpDelete(e) {
+  console.log(e);
   fetch(`${config.API_BASE_URL}/streaming-api/tracks/Posted`, {
     method: "DELETE",
-  }).then((res) => res.json());
+  });
 }
 
 function Streaming() {
@@ -74,7 +76,7 @@ function Streaming() {
                     return (
                       <li key={x._id + "x"}>
                         <button className="button-play">
-                          {x.artist} - {x.title}
+                          {x._id} - {x.title}
                           <audio controls>
                             <source src={x.url} type="audio/mpeg" />
                             Your browser does not support the audio element.
@@ -113,7 +115,7 @@ function Streaming() {
                   return (
                     <li key={x._id}>
                       <button className="button-play">
-                        {x.artist} - {x.title}
+                        {x._id} - {x.title}
                         <audio controls>
                           <source src={x.url} type="audio/mpeg" />
                           Your browser does not support the audio element.
@@ -121,7 +123,7 @@ function Streaming() {
                       </button>
                       <button
                         className="button-do button-fav"
-                        onClick={httpPatch}
+                        onClick={() => httpPatch(x._id)}
                       >
                         ❤️
                       </button>
