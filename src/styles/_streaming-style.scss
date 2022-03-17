@@ -30,6 +30,25 @@
   flex-wrap: wrap;
   gap: .25rem;
 
+  .admin-panel {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: .25rem;
+
+    input {
+      background-color: rgb(143, 143, 143);
+
+      &:active, &:focus, &:hover {
+        background-color: rgb(129, 129, 129);
+      }
+      
+      &::placeholder {
+        color: var(--color-grey);
+      }
+    }
+  }
+
   input {
     border: 0;
     padding: 2rem;
@@ -134,4 +153,8 @@
       }
     }
   }
+}
+
+.fav-green {
+  background-color: var(--color-green);
 }

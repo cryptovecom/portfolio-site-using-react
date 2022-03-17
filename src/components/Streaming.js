@@ -20,11 +20,13 @@ function httpPost(e) {
   });
 }
 
-function httpPatch(id) {
+function httpFav(id, state) {
   console.log(id);
   let databody = {
     fav: true,
   };
+
+  state === "unfav" ? (databody.fav = false) : (databody.fav = true);
 
   fetch(`${config.API_BASE_URL}/streaming-api/tracks/${id}`, {
     method: "PATCH",
@@ -35,9 +37,9 @@ function httpPatch(id) {
   });
 }
 
-function httpDelete(e) {
-  console.log(e);
-  fetch(`${config.API_BASE_URL}/streaming-api/tracks/Posted`, {
+function httpDelete(id) {
+  console.log(id);
+  fetch(`${config.API_BASE_URL}/streaming-api/tracks/${id}`, {
     method: "DELETE",
   });
 }
@@ -70,28 +72,27 @@ function Streaming() {
           <section className="streaming__banner">
             <aside></aside>
             <ul className="streaming__results">
-              {tracks &&
-                tracks.map((x) => {
-                  if (x.fav) {
-                    return (
-                      <li key={x._id + "x"}>
-                        <button className="button-play">
-                          {x._id} - {x.title}
-                          <audio controls>
-                            <source src={x.url} type="audio/mpeg" />
-                            Your browser does not support the audio element.
-                          </audio>
-                        </button>
-                        <button
-                          className="button-do button-del"
-                          onClick={httpDelete}
-                        >
-                          🗑️
-                        </button>
-                      </li>
-                    );
-                  } else return;
-                })}
+              {tracks.map((x) => {
+                if (x.fav) {
+                  return (
+                    <li key={x._id + "x"}>
+                      <button className="button-play">
+                        {x._id}
+                        <audio controls>
+                          <source src={x.url} type="audio/mpeg" />
+                          Your browser does not support the audio element.
+                        </audio>
+                      </button>
+                      <button
+                        className="button-do button-fav"
+                        onClick={() => httpFav(x._id, "unfav")}
+                      >
+                        ❤️
+                      </button>
+                    </li>
+                  );
+                } else return;
+              })}
             </ul>
           </section>
           <section className="streaming__main">
@@ -105,31 +106,56 @@ function Streaming() {
                 <li>Register</li>
                 <li>Log in</li>
                 <li>
-                  <button onClick={httpPost}>Add content</button>
+                  <button onClick={() => httpPost()}>Add content</button>
                 </li>
               </ul>
+              <form className="admin-panel">
+                <input
+                  type="text"
+                  placeholder="Artist name.."
+                  className="searchBar"
+                ></input>
+                <input
+                  type="text"
+                  placeholder="Track title.."
+                  className="searchBar"
+                ></input>
+                <input
+                  type="text"
+                  placeholder="MP3 URL.."
+                  className="searchBar"
+                ></input>
+                <input type="submit"></input>
+              </form>
             </div>
             <ul className="streaming__results">
-              {tracks &&
-                tracks.map((x) => {
-                  return (
-                    <li key={x._id}>
-                      <button className="button-play">
-                        {x._id} - {x.title}
-                        <audio controls>
-                          <source src={x.url} type="audio/mpeg" />
-                          Your browser does not support the audio element.
-                        </audio>
-                      </button>
-                      <button
-                        className="button-do button-fav"
-                        onClick={() => httpPatch(x._id)}
-                      >
-                        ❤️
-                      </button>
-                    </li>
-                  );
-                })}
+              {tracks.map((x) => {
+                return (
+                  <li key={x._id}>
+                    <button
+                      className={`${x.fav ? "fav-green" : ""} button-play`}
+                    >
+                      {x._id}
+                      <audio controls>
+                        <source src={x.url} type="audio/mpeg" />
+                        Your browser does not support the audio element.
+                      </audio>
+                    </button>
+                    <button
+                      className="button-do button-fav"
+                      onClick={() => httpFav(x._id)}
+                    >
+                      ❤️
+                    </button>
+                    <button
+                      className="button-do button-del"
+                      onClick={() => httpDelete(x._id)}
+                    >
+                      🗑️
+                    </button>
+                  </li>
+                );
+              })}
             </ul>
           </section>
         </section>
