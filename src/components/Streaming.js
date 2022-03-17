@@ -3,14 +3,12 @@ import * as config from "../config";
 import Header from "./Header";
 import Footer from "./Footer";
 
-// BLOG FUNCTION
-
 function httpPost(e) {
-  // e.preventDefault();
   let databody = {
-    artist: "Michel",
-    title: "Track Title POST",
+    artist: "Posted",
+    title: "With HTTP",
     url: `${config.CLIENT_BASE_URL}/audio/audio.mp3`,
+    fav: false,
   };
 
   fetch(`${config.API_BASE_URL}/streaming-api/tracks`, {
@@ -19,24 +17,27 @@ function httpPost(e) {
     headers: {
       "Content-Type": "application/json",
     },
-  })
-    .then((res) => res.json())
-    .then((data) => console.log(data));
+  }).then((res) => res.json());
+}
+
+function httpPatch(e) {
+  let databody = {
+    fav: true,
+  };
+
+  fetch(`${config.API_BASE_URL}/streaming-api/tracks/Posted`, {
+    method: "PATCH",
+    body: JSON.stringify(databody),
+    headers: {
+      "Content-Type": "application/json",
+    },
+  }).then((res) => res.json());
 }
 
 function httpDelete(e) {
-  // // e.preventDefault();
-  // let databody = {
-  //   artist: "Michel",
-  //   title: "Track Title POST",
-  //   url: `${config.CLIENT_BASE_URL}/audio/audio.mp3`,
-  // };
-
-  fetch(`${config.API_BASE_URL}/streaming-api/tracks/Michel`, {
+  fetch(`${config.API_BASE_URL}/streaming-api/tracks/Posted`, {
     method: "DELETE",
-  })
-    .then((res) => res.json())
-    .then((data) => console.log(data));
+  }).then((res) => res.json());
 }
 
 function Streaming() {
@@ -69,23 +70,25 @@ function Streaming() {
             <ul className="streaming__results">
               {tracks &&
                 tracks.map((x) => {
-                  return (
-                    <li key={x._id + "x"}>
-                      <button className="button-play">
-                        {x.artist} - {x.title}
-                        <audio controls>
-                          <source src={x.url} type="audio/mpeg" />
-                          Your browser does not support the audio element.
-                        </audio>
-                      </button>
-                      <button
-                        className="button-do button-del"
-                        onClick={httpDelete}
-                      >
-                        🗑️
-                      </button>
-                    </li>
-                  );
+                  if (x.fav) {
+                    return (
+                      <li key={x._id + "x"}>
+                        <button className="button-play">
+                          {x.artist} - {x.title}
+                          <audio controls>
+                            <source src={x.url} type="audio/mpeg" />
+                            Your browser does not support the audio element.
+                          </audio>
+                        </button>
+                        <button
+                          className="button-do button-del"
+                          onClick={httpDelete}
+                        >
+                          🗑️
+                        </button>
+                      </li>
+                    );
+                  } else return;
                 })}
             </ul>
           </section>
@@ -116,7 +119,12 @@ function Streaming() {
                           Your browser does not support the audio element.
                         </audio>
                       </button>
-                      <button className="button-do button-fav">❤️</button>
+                      <button
+                        className="button-do button-fav"
+                        onClick={httpPatch}
+                      >
+                        ❤️
+                      </button>
                     </li>
                   );
                 })}
