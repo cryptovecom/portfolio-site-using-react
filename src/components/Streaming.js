@@ -36,22 +36,6 @@ function httpFav(id, state) {
     },
   });
 }
-
-function httpUnfav(id) {
-  console.log(id);
-  let databody = {
-    fav: false,
-  };
-
-  fetch(`${config.API_BASE_URL}/streaming-api/tracks/${id}`, {
-    method: "PATCH",
-    body: JSON.stringify(databody),
-    headers: {
-      "Content-Type": "application/json",
-    },
-  });
-}
-
 function httpDelete(id) {
   console.log(id);
   fetch(`${config.API_BASE_URL}/streaming-api/tracks/${id}`, {
