@@ -19,7 +19,6 @@ function httpPost(e) {
     },
   });
 }
-
 function httpFav(id, state) {
   console.log(id);
   let databody = {
@@ -41,6 +40,11 @@ function httpDelete(id) {
   fetch(`${config.API_BASE_URL}/streaming-api/tracks/${id}`, {
     method: "DELETE",
   });
+}
+function testSend(e) {
+  e.preventDefault();
+  console.log(e);
+  console.log(document.forms);
 }
 
 function Streaming() {
@@ -110,21 +114,24 @@ function Streaming() {
               </ul>
               <form className="admin-panel">
                 <input
+                  id="trackArtist"
                   type="text"
                   placeholder="Artist name.."
                   className="searchBar"
                 ></input>
                 <input
+                  id="trackTitle"
                   type="text"
                   placeholder="Track title.."
                   className="searchBar"
                 ></input>
                 <input
+                  id="trackURL"
                   type="text"
                   placeholder="MP3 URL.."
                   className="searchBar"
                 ></input>
-                <input type="submit"></input>
+                <input type="submit" onClick={testSend}></input>
               </form>
             </div>
             <ul className="streaming__results">
