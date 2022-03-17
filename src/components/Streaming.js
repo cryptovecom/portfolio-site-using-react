@@ -5,11 +5,8 @@ import Footer from "./Footer";
 
 // BLOG FUNCTION
 
-const post = function (e) {
-  if (!e) {
-    return;
-  }
-  e.preventDefault();
+function httpPost(e) {
+  // e.preventDefault();
   let databody = {
     artist: "Michel",
     title: "Track Title POST",
@@ -25,7 +22,22 @@ const post = function (e) {
   })
     .then((res) => res.json())
     .then((data) => console.log(data));
-};
+}
+
+function httpDelete(e) {
+  // // e.preventDefault();
+  // let databody = {
+  //   artist: "Michel",
+  //   title: "Track Title POST",
+  //   url: `${config.CLIENT_BASE_URL}/audio/audio.mp3`,
+  // };
+
+  fetch(`${config.API_BASE_URL}/streaming-api/tracks/Michel`, {
+    method: "DELETE",
+  })
+    .then((res) => res.json())
+    .then((data) => console.log(data));
+}
 
 function Streaming() {
   const [tracks, setTracks] = useState([]);
@@ -66,7 +78,12 @@ function Streaming() {
                           Your browser does not support the audio element.
                         </audio>
                       </button>
-                      <button className="button-do button-del">🗑️</button>
+                      <button
+                        className="button-do button-del"
+                        onClick={httpDelete}
+                      >
+                        🗑️
+                      </button>
                     </li>
                   );
                 })}
@@ -83,7 +100,7 @@ function Streaming() {
                 <li>Register</li>
                 <li>Log in</li>
                 <li>
-                  <button onClick={post}>Add content</button>
+                  <button onClick={httpPost}>Add content</button>
                 </li>
               </ul>
             </div>
