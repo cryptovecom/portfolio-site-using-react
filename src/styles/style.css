@@ -888,19 +888,23 @@ button.dark-mode-button:active {
 }
 
 .toolbar .admin-panel input::-webkit-input-placeholder {
-  color: var(--color-grey);
+  color: #525252;
 }
 
 .toolbar .admin-panel input:-ms-input-placeholder {
-  color: var(--color-grey);
+  color: #525252;
 }
 
 .toolbar .admin-panel input::-ms-input-placeholder {
-  color: var(--color-grey);
+  color: #525252;
 }
 
 .toolbar .admin-panel input::placeholder {
-  color: var(--color-grey);
+  color: #525252;
+}
+
+.toolbar .admin-panel input[type="submit"] {
+  cursor: pointer;
 }
 
 .toolbar input {
@@ -1010,6 +1014,10 @@ button.dark-mode-button:active {
   transition: calc(var(--speed-slow) * 3);
 }
 
+.streaming__results li button .fav-green {
+  background-color: var(--color-green);
+}
+
 .streaming__results li button audio {
   width: 9rem;
 }
@@ -1042,10 +1050,6 @@ button.dark-mode-button:active {
 }
 
 .streaming__results li button.button-fav:hover {
-  background-color: var(--color-green);
-}
-
-.fav-green {
   background-color: var(--color-green);
 }
 

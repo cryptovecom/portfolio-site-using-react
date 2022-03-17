@@ -44,8 +44,12 @@
       }
       
       &::placeholder {
-        color: var(--color-grey);
+        color: rgb(82, 82, 82);
       }
+    }
+
+    input[type="submit"] {
+      cursor: pointer;
     }
   }
 
@@ -117,6 +121,9 @@
 
       transition: calc(var(--speed-slow) * 3);
 
+      .fav-green {
+        background-color: var(--color-green);
+}
       audio {
         width: 9rem;
       }
@@ -153,8 +160,4 @@
       }
     }
   }
-}
-
-.fav-green {
-  background-color: var(--color-green);
 }
