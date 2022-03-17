@@ -79,7 +79,7 @@ function Streaming() {
                         {x._id}
                         <audio controls>
                           <source src={x.url} type="audio/mpeg" />
-                          Your browser does not support the audio element :(
+                          Your browser does not support the audio element.
                         </audio>
                       </button>
                       <button

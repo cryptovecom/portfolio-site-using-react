@@ -1014,7 +1014,7 @@ button.dark-mode-button:active {
   transition: calc(var(--speed-slow) * 3);
 }
 
-.streaming__results li button .fav-green {
+.streaming__results li button.fav-green {
   background-color: var(--color-green);
 }
 

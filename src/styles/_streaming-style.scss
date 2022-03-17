@@ -121,9 +121,10 @@
 
       transition: calc(var(--speed-slow) * 3);
 
-      .fav-green {
+      &.fav-green {
         background-color: var(--color-green);
-}
+      }
+
       audio {
         width: 9rem;
       }
