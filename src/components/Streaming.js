@@ -5,6 +5,28 @@ import Footer from "./Footer";
 
 // BLOG FUNCTION
 
+const post = function (e) {
+  if (!e) {
+    return;
+  }
+  e.preventDefault();
+  let databody = {
+    artist: "Michel",
+    title: "Track Title POST",
+    url: `${config.CLIENT_BASE_URL}/audio/audio.mp3`,
+  };
+
+  fetch(`${config.API_BASE_URL}/streaming-api/tracks`, {
+    method: "POST",
+    body: JSON.stringify(databody),
+    headers: {
+      "Content-Type": "application/json",
+    },
+  })
+    .then((res) => res.json())
+    .then((data) => console.log(data));
+};
+
 function Streaming() {
   const [tracks, setTracks] = useState([]);
 
@@ -61,7 +83,7 @@ function Streaming() {
                 <li>Register</li>
                 <li>Log in</li>
                 <li>
-                  <button>Add content</button>
+                  <button onClick={post}>Add content</button>
                 </li>
               </ul>
             </div>
