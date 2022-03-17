@@ -20,7 +20,7 @@ function httpPost(e) {
   });
 }
 
-function httpPatch(id) {
+function httpFav(id) {
   console.log(id);
   let databody = {
     fav: true,
@@ -35,9 +35,24 @@ function httpPatch(id) {
   });
 }
 
-function httpDelete(e) {
-  console.log(e);
-  fetch(`${config.API_BASE_URL}/streaming-api/tracks/Posted`, {
+function httpUnfav(id) {
+  console.log(id);
+  let databody = {
+    fav: false,
+  };
+
+  fetch(`${config.API_BASE_URL}/streaming-api/tracks/${id}`, {
+    method: "PATCH",
+    body: JSON.stringify(databody),
+    headers: {
+      "Content-Type": "application/json",
+    },
+  });
+}
+
+function httpDelete(id) {
+  console.log(id);
+  fetch(`${config.API_BASE_URL}/streaming-api/tracks/${id}`, {
     method: "DELETE",
   });
 }
@@ -76,15 +91,21 @@ function Streaming() {
                     return (
                       <li key={x._id + "x"}>
                         <button className="button-play">
-                          {x._id} - {x.title}
+                          {x._id}
                           <audio controls>
                             <source src={x.url} type="audio/mpeg" />
                             Your browser does not support the audio element.
                           </audio>
                         </button>
                         <button
+                          className="button-do button-fav"
+                          onClick={() => httpUnfav(x._id)}
+                        >
+                          ❤️
+                        </button>
+                        <button
                           className="button-do button-del"
-                          onClick={httpDelete}
+                          onClick={() => httpDelete(x._id)}
                         >
                           🗑️
                         </button>
@@ -105,7 +126,7 @@ function Streaming() {
                 <li>Register</li>
                 <li>Log in</li>
                 <li>
-                  <button onClick={httpPost}>Add content</button>
+                  <button onClick={() => httpPost()}>Add content</button>
                 </li>
               </ul>
             </div>
@@ -115,7 +136,7 @@ function Streaming() {
                   return (
                     <li key={x._id}>
                       <button className="button-play">
-                        {x._id} - {x.title}
+                        {x._id}
                         <audio controls>
                           <source src={x.url} type="audio/mpeg" />
                           Your browser does not support the audio element.
@@ -123,9 +144,15 @@ function Streaming() {
                       </button>
                       <button
                         className="button-do button-fav"
-                        onClick={() => httpPatch(x._id)}
+                        onClick={() => httpFav(x._id)}
                       >
                         ❤️
+                      </button>
+                      <button
+                        className="button-do button-del"
+                        onClick={() => httpDelete(x._id)}
+                      >
+                        🗑️
                       </button>
                     </li>
                   );
