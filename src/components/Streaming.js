@@ -3,50 +3,6 @@ import * as config from "../config";
 import Header from "./Header";
 import Footer from "./Footer";
 
-function httpPost(e) {
-  let databody = {
-    artist: "Posted",
-    title: "With HTTP",
-    url: `${config.CLIENT_BASE_URL}/audio/audio.mp3`,
-    fav: false,
-  };
-
-  fetch(`${config.API_BASE_URL}/streaming-api/tracks`, {
-    method: "POST",
-    body: JSON.stringify(databody),
-    headers: {
-      "Content-Type": "application/json",
-    },
-  });
-}
-function httpFav(id, state) {
-  console.log(id);
-  let databody = {
-    fav: true,
-  };
-
-  state === "unfav" ? (databody.fav = false) : (databody.fav = true);
-
-  fetch(`${config.API_BASE_URL}/streaming-api/tracks/${id}`, {
-    method: "PATCH",
-    body: JSON.stringify(databody),
-    headers: {
-      "Content-Type": "application/json",
-    },
-  });
-}
-function httpDelete(id) {
-  console.log(id);
-  fetch(`${config.API_BASE_URL}/streaming-api/tracks/${id}`, {
-    method: "DELETE",
-  });
-}
-function testSend(e) {
-  e.preventDefault();
-  console.log(e);
-  console.log(document.forms);
-}
-
 function Streaming() {
   const [tracks, setTracks] = useState([]);
 
@@ -66,6 +22,67 @@ function Streaming() {
         console.error(err);
       });
   }, []);
+
+  function httpPost() {
+    let databody = {
+      artist: "Posted",
+      title: "With HTTP",
+      url: `${config.CLIENT_BASE_URL}/audio/audio.mp3`,
+      fav: false,
+    };
+
+    fetch(`${config.API_BASE_URL}/streaming-api/tracks`, {
+      method: "POST",
+      body: JSON.stringify(databody),
+      headers: {
+        "Content-Type": "application/json",
+      },
+    });
+  }
+
+  function httpFav(id, state, callback) {
+    console.log(`Favourite: ` + id);
+
+    let databody = {
+      fav: true,
+    };
+
+    state === "unfav" ? (databody.fav = false) : (databody.fav = true);
+
+    fetch(`${config.API_BASE_URL}/streaming-api/tracks/${id}`, {
+      method: "PATCH",
+      body: JSON.stringify(databody),
+      headers: {
+        "Content-Type": "application/json",
+      },
+    });
+  }
+
+  function httpDelete(id) {
+    console.log(`Delete: ` + id);
+
+    let fresh = tracks.filter(idFilter);
+
+    function idFilter(x) {
+      return x._id !== id;
+    }
+
+    setTracks(fresh);
+
+    // let trackIndex = tracks.findIndex((track) => track._id === id);
+    // let fresh = tracks.splice(trackIndex, 1);
+
+    // console.log(fresh[0]._id === id);
+
+    fetch(`${config.API_BASE_URL}/streaming-api/tracks/${id}`, {
+      method: "DELETE",
+    });
+  }
+
+  function testSend(e) {
+    e.preventDefault();
+    console.log(e);
+  }
 
   return (
     <>
@@ -88,7 +105,7 @@ function Streaming() {
                       </button>
                       <button
                         className="button-do button-fav"
-                        onClick={() => httpFav(x._id, "unfav")}
+                        onClick={() => httpFav(x._id, "unfav", setTracks)}
                       >
                         ❤️
                       </button>
@@ -112,7 +129,7 @@ function Streaming() {
                   <button onClick={() => httpPost()}>Add content</button>
                 </li>
               </ul>
-              <form className="admin-panel">
+              <form className="admin-panel" onSubmit={testSend}>
                 <input
                   id="trackArtist"
                   type="text"
@@ -131,7 +148,7 @@ function Streaming() {
                   placeholder="MP3 URL.."
                   className="searchBar"
                 ></input>
-                <input type="submit" onClick={testSend}></input>
+                <input type="submit"></input>
               </form>
             </div>
             <ul className="streaming__results">
