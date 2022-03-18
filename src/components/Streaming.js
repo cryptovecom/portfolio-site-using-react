@@ -65,11 +65,12 @@ function Streaming() {
         x.fav = !x.fav;
         console.log(`After: ` + x.fav);
       }
+      return x;
     }
 
-    console.log(mappedArray);
+    // console.log(mappedArray);
 
-    // setTracks(mappedArray);
+    setTracks(mappedArray);
 
     fetch(`${config.API_BASE_URL}/streaming-api/tracks/${id}`, {
       method: "PATCH",
