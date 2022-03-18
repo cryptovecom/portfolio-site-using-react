@@ -37,10 +37,10 @@
     gap: .25rem;
 
     input {
-      background-color: rgb(143, 143, 143);
+      background-color: rgb(173, 173, 173);
 
       &:active, &:focus, &:hover {
-        background-color: rgb(129, 129, 129);
+        background-color: rgb(167, 167, 167);
       }
       
       &::placeholder {
@@ -49,6 +49,8 @@
     }
 
     input[type="submit"] {
+      background-color: var(--color-blood);
+      color: var(--color-grey);
       cursor: pointer;
     }
   }

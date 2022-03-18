@@ -31,6 +31,12 @@ function Streaming() {
       fav: false,
     };
 
+    // let addTrack = (databody) => {
+    //   setTracks((state) => [databody, ...state]);
+    // };
+
+    // addTrack();
+
     fetch(`${config.API_BASE_URL}/streaming-api/tracks`, {
       method: "POST",
       body: JSON.stringify(databody),
@@ -40,14 +46,30 @@ function Streaming() {
     });
   }
 
-  function httpFav(id, state, callback) {
+  function httpFav(id, favState) {
     console.log(`Favourite: ` + id);
 
     let databody = {
       fav: true,
     };
 
-    state === "unfav" ? (databody.fav = false) : (databody.fav = true);
+    favState === "unfav" ? (databody.fav = false) : (databody.fav = true);
+
+    let mappedArray = tracks.map(idMap);
+
+    function idMap(x) {
+      console.log(x);
+      if (x._id === id) {
+        console.log(`FOUND IT!`);
+        console.log(`Before: ` + x.fav);
+        x.fav = !x.fav;
+        console.log(`After: ` + x.fav);
+      }
+    }
+
+    console.log(mappedArray);
+
+    // setTracks(mappedArray);
 
     fetch(`${config.API_BASE_URL}/streaming-api/tracks/${id}`, {
       method: "PATCH",
@@ -61,18 +83,13 @@ function Streaming() {
   function httpDelete(id) {
     console.log(`Delete: ` + id);
 
-    let fresh = tracks.filter(idFilter);
+    let filteredArray = tracks.filter(idFilterer);
 
-    function idFilter(x) {
+    function idFilterer(x) {
       return x._id !== id;
     }
 
-    setTracks(fresh);
-
-    // let trackIndex = tracks.findIndex((track) => track._id === id);
-    // let fresh = tracks.splice(trackIndex, 1);
-
-    // console.log(fresh[0]._id === id);
+    setTracks(filteredArray);
 
     fetch(`${config.API_BASE_URL}/streaming-api/tracks/${id}`, {
       method: "DELETE",

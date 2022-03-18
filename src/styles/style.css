@@ -880,11 +880,11 @@ button.dark-mode-button:active {
 }
 
 .toolbar .admin-panel input {
-  background-color: #8f8f8f;
+  background-color: #adadad;
 }
 
 .toolbar .admin-panel input:active, .toolbar .admin-panel input:focus, .toolbar .admin-panel input:hover {
-  background-color: #818181;
+  background-color: #a7a7a7;
 }
 
 .toolbar .admin-panel input::-webkit-input-placeholder {
@@ -904,6 +904,8 @@ button.dark-mode-button:active {
 }
 
 .toolbar .admin-panel input[type="submit"] {
+  background-color: var(--color-blood);
+  color: var(--color-grey);
   cursor: pointer;
 }
 
