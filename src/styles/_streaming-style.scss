@@ -123,10 +123,6 @@
 
       transition: calc(var(--speed-slow) * 3);
 
-      &.fav-green {
-        background-color: var(--color-green);
-      }
-
       audio {
         width: 9rem;
       }
@@ -152,6 +148,11 @@
         &:hover {
           opacity: 1;
         }
+      }
+
+      &.fav-green {
+        background-color: var(--color-green);
+        transition: 0s;
       }
 
       &.button-del:hover {

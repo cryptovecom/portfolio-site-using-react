@@ -32,11 +32,8 @@ function Streaming() {
       fav: false,
     };
 
-    console.log(databody);
-
+    console.log(`Add: ` + databody._id);
     setTracks([...tracks, databody]);
-
-    console.log(tracks);
 
     fetch(`${config.API_BASE_URL}/streaming-api/tracks`, {
       method: "POST",
@@ -171,9 +168,7 @@ function Streaming() {
               {tracks.map((x) => {
                 return (
                   <li key={x._id}>
-                    <button
-                      className={`${x.fav ? "fav-green" : ""} button-play`}
-                    >
+                    <button className={`button-play`}>
                       {x._id}
                       <audio controls>
                         <source src={x.url} type="audio/mpeg" />
@@ -181,7 +176,9 @@ function Streaming() {
                       </audio>
                     </button>
                     <button
-                      className="button-do button-fav"
+                      className={`${
+                        x.fav ? "fav-green" : ""
+                      } button-do button-fav`}
                       onClick={() => httpFav(x._id)}
                     >
                       ❤️

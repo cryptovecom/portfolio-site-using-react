@@ -1016,10 +1016,6 @@ button.dark-mode-button:active {
   transition: calc(var(--speed-slow) * 3);
 }
 
-.streaming__results li button.fav-green {
-  background-color: var(--color-green);
-}
-
 .streaming__results li button audio {
   width: 9rem;
 }
@@ -1045,6 +1041,12 @@ button.dark-mode-button:active {
 
 .streaming__results li button.button-do:hover {
   opacity: 1;
+}
+
+.streaming__results li button.fav-green {
+  background-color: var(--color-green);
+  -webkit-transition: 0s;
+  transition: 0s;
 }
 
 .streaming__results li button.button-del:hover {
