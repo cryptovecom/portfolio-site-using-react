@@ -25,17 +25,18 @@ function Streaming() {
 
   function httpPost() {
     let databody = {
+      _id: `${Date.now()}`,
       artist: "Posted",
       title: "With HTTP",
       url: `${config.CLIENT_BASE_URL}/audio/audio.mp3`,
       fav: false,
     };
 
-    // let addTrack = (databody) => {
-    //   setTracks((state) => [databody, ...state]);
-    // };
+    console.log(databody);
 
-    // addTrack();
+    setTracks([...tracks, databody]);
+
+    console.log(tracks);
 
     fetch(`${config.API_BASE_URL}/streaming-api/tracks`, {
       method: "POST",
@@ -58,12 +59,9 @@ function Streaming() {
     let mappedArray = tracks.map(idMap);
 
     function idMap(x) {
-      console.log(x);
       if (x._id === id) {
-        console.log(`FOUND IT!`);
-        console.log(`Before: ` + x.fav);
         x.fav = !x.fav;
-        console.log(`After: ` + x.fav);
+        console.log(id + ` favorite state set to: ` + x.fav);
       }
       return x;
     }
