@@ -92,11 +92,6 @@ function Streaming() {
     });
   }
 
-  function testSend(e) {
-    e.preventDefault();
-    console.log(e.target[0].value + e.target[1].value + e.target[2].value);
-  }
-
   return (
     <>
       <Header />
@@ -138,9 +133,6 @@ function Streaming() {
               <ul>
                 <li>Register</li>
                 <li>Log in</li>
-                <li>
-                  <button onClick={() => httpPost()}>Add content</button>
-                </li>
               </ul>
               <form className="admin-panel" onSubmit={httpPost}>
                 <input
