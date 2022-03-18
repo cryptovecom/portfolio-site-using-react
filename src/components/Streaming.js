@@ -23,12 +23,12 @@ function Streaming() {
       });
   }, []);
 
-  function httpPost() {
+  function httpPost(e) {
     let databody = {
       _id: `${Date.now()}`,
-      artist: "Posted",
-      title: "With HTTP",
-      url: `${config.CLIENT_BASE_URL}/audio/audio.mp3`,
+      artist: `${e.target[0].value}`,
+      title: `${e.target[1].value}`,
+      url: `${config.CLIENT_BASE_URL}/audio/${e.target[2].value}.mp3`,
       fav: false,
     };
 
@@ -94,7 +94,7 @@ function Streaming() {
 
   function testSend(e) {
     e.preventDefault();
-    console.log(e);
+    console.log(e.target[0].value + e.target[1].value + e.target[2].value);
   }
 
   return (
@@ -142,7 +142,7 @@ function Streaming() {
                   <button onClick={() => httpPost()}>Add content</button>
                 </li>
               </ul>
-              <form className="admin-panel" onSubmit={testSend}>
+              <form className="admin-panel" onSubmit={httpPost}>
                 <input
                   id="trackArtist"
                   type="text"
@@ -169,7 +169,7 @@ function Streaming() {
                 return (
                   <li key={x._id}>
                     <button className={`button-play`}>
-                      {x._id}
+                      {x.artist} - {x.title}
                       <audio controls>
                         <source src={x.url} type="audio/mpeg" />
                         Your browser does not support the audio element.
