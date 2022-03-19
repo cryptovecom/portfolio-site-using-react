@@ -63,8 +63,6 @@ function Streaming() {
       return x;
     }
 
-    // console.log(mappedArray);
-
     setTracks(mappedArray);
 
     fetch(`${config.API_BASE_URL}/streaming-api/tracks/${id}`, {
@@ -131,8 +129,8 @@ function Streaming() {
                 className="searchBar"
               ></input>
               <ul>
-                <li>Register</li>
-                <li>Log in</li>
+                <li>User</li>
+                <li>Admin</li>
               </ul>
               <form className="admin-panel" onSubmit={httpPost}>
                 <input
