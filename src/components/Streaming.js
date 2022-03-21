@@ -94,22 +94,24 @@ function Streaming() {
   function httpGetUser(e) {
     e.preventDefault();
     let userRole = e.nativeEvent.submitter.value;
-    console.log(`GetUser: `, userRole);
+    console.log(`GET requested for: `, userRole);
 
-    // fetch(`${config.API_BASE_URL}/streaming-api/users/${userRole}`, {
-    //   headers: {
-    //     "content-type": "application/json",
-    //   },
-    // })
-    //   .then((response) => {
-    //     return response.json();
-    //   })
-    //   .then((result) => {
-    //     setUser(result);
-    //   })
-    //   .catch((err) => {
-    //     console.error(err);
-    //   });
+    fetch(`${config.API_BASE_URL}/streaming-api/users/${userRole}`, {
+      headers: {
+        "content-type": "application/json",
+      },
+    })
+      .then((response) => {
+        return response.json();
+      })
+      .then((result) => {
+        setUser(result);
+      })
+      .catch((err) => {
+        console.error(err);
+      });
+
+    console.log(`User state: `, user[0].role);
   }
 
   return (
