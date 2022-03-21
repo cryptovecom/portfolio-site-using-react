@@ -5,6 +5,7 @@ import Footer from "./Footer";
 
 function Streaming() {
   const [tracks, setTracks] = useState([]);
+  const [user, setUser] = useState([]);
 
   useEffect(() => {
     fetch(`${config.API_BASE_URL}/streaming-api/tracks`, {
@@ -90,6 +91,27 @@ function Streaming() {
     });
   }
 
+  function httpGetUser(e) {
+    e.preventDefault();
+    let userRole = e.nativeEvent.submitter.value;
+    console.log(`GetUser: `, userRole);
+
+    // fetch(`${config.API_BASE_URL}/streaming-api/users/${userRole}`, {
+    //   headers: {
+    //     "content-type": "application/json",
+    //   },
+    // })
+    //   .then((response) => {
+    //     return response.json();
+    //   })
+    //   .then((result) => {
+    //     setUser(result);
+    //   })
+    //   .catch((err) => {
+    //     console.error(err);
+    //   });
+  }
+
   return (
     <>
       <Header />
@@ -97,7 +119,7 @@ function Streaming() {
         <section className="landing__top">
           <section className="streaming__banner">
             <aside>
-              <h1>Admin</h1>
+              <h1>{user.role}</h1>
             </aside>
             <ul className="streaming__results">
               {tracks.map((x) => {
@@ -125,7 +147,7 @@ function Streaming() {
           </section>
           <section className="streaming__main">
             <div className="toolbar">
-              <form className="user-panel">
+              <form className="user-panel" onSubmit={httpGetUser}>
                 <input
                   type="text"
                   placeholder="Search.."
