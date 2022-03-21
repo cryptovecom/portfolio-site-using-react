@@ -395,13 +395,6 @@ template {
   color: var(--color-white);
 }
 
-.landing__second div span.retest {
-  padding: 1rem;
-  display: inline-block;
-  background-color: var(--color-blood);
-  color: var(--color-white);
-}
-
 .landing__second div span.wip {
   padding: 1rem;
   display: inline-block;
@@ -846,6 +839,7 @@ button.dark-mode-button:active {
   min-height: 13vh;
   background: url("../../public/images/svg/blob-scene-haikei.svg") no-repeat top left;
   background-size: cover;
+  color: var(--color-grey);
 }
 
 .streaming__main {
@@ -879,34 +873,24 @@ button.dark-mode-button:active {
   gap: .25rem;
 }
 
-.toolbar .admin-panel input {
-  background-color: #adadad;
+.toolbar .user-panel {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  gap: .25rem;
 }
 
-.toolbar .admin-panel input:active, .toolbar .admin-panel input:focus, .toolbar .admin-panel input:hover {
-  background-color: #a7a7a7;
-}
-
-.toolbar .admin-panel input::-webkit-input-placeholder {
-  color: #525252;
-}
-
-.toolbar .admin-panel input:-ms-input-placeholder {
-  color: #525252;
-}
-
-.toolbar .admin-panel input::-ms-input-placeholder {
-  color: #525252;
-}
-
-.toolbar .admin-panel input::placeholder {
-  color: #525252;
-}
-
-.toolbar .admin-panel input[type="submit"] {
-  background-color: var(--color-blood);
-  color: var(--color-grey);
-  cursor: pointer;
+.toolbar .user-panel input {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
 }
 
 .toolbar input {
@@ -919,53 +903,59 @@ button.dark-mode-button:active {
   font-weight: bold;
 }
 
-.toolbar input:active, .toolbar input:focus, .toolbar input:hover {
+.toolbar input[type="submit"] {
+  background-color: var(--color-blood);
+  color: var(--color-grey);
+  cursor: pointer;
+}
+
+.toolbar input[type="submit"]:active, .toolbar input[type="submit"]:focus, .toolbar input[type="submit"]:hover {
+  background-color: #aa3232;
+}
+
+.toolbar input[type="submit"]::-webkit-input-placeholder {
+  color: #525252;
+}
+
+.toolbar input[type="submit"]:-ms-input-placeholder {
+  color: #525252;
+}
+
+.toolbar input[type="submit"]::-ms-input-placeholder {
+  color: #525252;
+}
+
+.toolbar input[type="submit"]::placeholder {
+  color: #525252;
+}
+
+.toolbar input[type="text"] {
+  color: var(--color-grey);
+  font-weight: normal;
+}
+
+.toolbar input[type="text"]:active, .toolbar input[type="text"]:focus, .toolbar input[type="text"]:hover {
   background-color: var(--color-white);
 }
 
-.toolbar input::-webkit-input-placeholder {
+.toolbar input[type="text"]::-webkit-input-placeholder {
   color: grey;
   font-weight: normal;
 }
 
-.toolbar input:-ms-input-placeholder {
+.toolbar input[type="text"]:-ms-input-placeholder {
   color: grey;
   font-weight: normal;
 }
 
-.toolbar input::-ms-input-placeholder {
+.toolbar input[type="text"]::-ms-input-placeholder {
   color: grey;
   font-weight: normal;
 }
 
-.toolbar input::placeholder {
+.toolbar input[type="text"]::placeholder {
   color: grey;
   font-weight: normal;
-}
-
-.toolbar ul {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-flex: 1;
-      -ms-flex-positive: 1;
-          flex-grow: 1;
-  gap: .25rem;
-  color: var(--color-grey);
-  font-weight: bold;
-}
-
-.toolbar ul li {
-  padding: 2rem;
-  -webkit-box-flex: 1;
-      -ms-flex-positive: 1;
-          flex-grow: 1;
-  background-color: var(--color-blood);
-  text-align: center;
 }
 
 .streaming__results {

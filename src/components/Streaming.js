@@ -96,7 +96,9 @@ function Streaming() {
       <main>
         <section className="landing__top">
           <section className="streaming__banner">
-            <aside></aside>
+            <aside>
+              <h1>Admin</h1>
+            </aside>
             <ul className="streaming__results">
               {tracks.map((x) => {
                 if (x.fav) {
@@ -123,15 +125,15 @@ function Streaming() {
           </section>
           <section className="streaming__main">
             <div className="toolbar">
-              <input
-                type="text"
-                placeholder="Search.."
-                className="searchBar"
-              ></input>
-              <ul>
-                <li>User</li>
-                <li>Admin</li>
-              </ul>
+              <form className="user-panel">
+                <input
+                  type="text"
+                  placeholder="Search.."
+                  className="searchBar"
+                ></input>
+                <input type="submit" value="User"></input>
+                <input type="submit" value="Admin"></input>
+              </form>
               <form className="admin-panel" onSubmit={httpPost}>
                 <input
                   id="trackArtist"
@@ -151,7 +153,7 @@ function Streaming() {
                   placeholder="MP3 URL.."
                   className="searchBar"
                 ></input>
-                <input type="submit"></input>
+                <input type="submit" value="Upload"></input>
               </form>
             </div>
             <ul className="streaming__results">

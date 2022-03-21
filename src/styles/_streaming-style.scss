@@ -13,8 +13,9 @@
     no-repeat 
     top 
     left;
-
     background-size: cover;
+
+    color: var(--color-grey);
   }
 }
 
@@ -36,22 +37,17 @@
     flex-wrap: wrap;
     gap: .25rem;
 
+    
+  }
+
+  .user-panel {
+    display: flex;
+    flex-direction: row;
+    flex-grow: 1;
+    gap: .25rem;
+
     input {
-      background-color: rgb(173, 173, 173);
-
-      &:active, &:focus, &:hover {
-        background-color: rgb(167, 167, 167);
-      }
-      
-      &::placeholder {
-        color: rgb(82, 82, 82);
-      }
-    }
-
-    input[type="submit"] {
-      background-color: var(--color-blood);
-      color: var(--color-grey);
-      cursor: pointer;
+      flex-grow: 1;
     }
   }
 
@@ -64,32 +60,33 @@
     
     font-weight: bold;
 
-    &:active, &:focus, &:hover {
-      background-color: var(--color-white);
-    }
-
-    &::placeholder {
-      color: grey;
-      font-weight: normal;
-    }
-  }
-
-  ul {
-    display: flex;
-    flex-direction: row;
-    flex-grow: 1;
-    gap: .25rem;
-
-    color: var(--color-grey);
-    font-weight: bold;
-
-    li {
-      padding: 2rem;
-
-      flex-grow: 1;
-
+    &[type="submit"] {
       background-color: var(--color-blood);
-      text-align: center;
+      color: var(--color-grey);
+      cursor: pointer;
+
+      &:active, &:focus, &:hover {
+        background-color: #aa3232;
+      }
+      
+      &::placeholder {
+        color: rgb(82, 82, 82);
+      }
+    }
+
+    &[type="text"] {
+      color: var(--color-grey);
+      
+      font-weight: normal;
+
+      &:active, &:focus, &:hover {
+        background-color: var(--color-white);
+      }
+
+      &::placeholder {
+        color: grey;
+        font-weight: normal;
+      }
     }
   }
 }
