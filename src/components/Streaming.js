@@ -103,7 +103,7 @@ function Streaming() {
                   return (
                     <li key={x._id + "x"}>
                       <button className="button-play">
-                        {x._id}
+                        {x.artist} - {x.title}
                         <audio controls>
                           <source src={x.url} type="audio/mpeg" />
                           Your browser does not support the audio element.

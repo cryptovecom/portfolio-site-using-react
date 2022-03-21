@@ -58,13 +58,9 @@ function Main(props) {
             </p>
             <p>
               <span className="passed">Passed</span>{" "}
-              <span className="retest">Oopsie! 🥴</span>{" "}
               <span className="wip">Learning</span>{" "}
-              <span className="future">Coming</span>
+              <span className="future">Soon</span>
             </p>
-            <ul>
-              <li></li>
-            </ul>
           </div>
         </section>
         <Goals />
