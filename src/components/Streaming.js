@@ -83,6 +83,17 @@ function Streaming() {
         "Content-Type": "application/json",
       },
     });
+
+    console.log(`User info: `, user);
+    console.log(`User info: `, user[0].role);
+
+    fetch(`${config.API_BASE_URL}/streaming-api/users/${user[0].role}`, {
+      method: "PATCH",
+      body: JSON.stringify({ favs: `[${id}]` }),
+      headers: {
+        "Content-Type": "application/json",
+      },
+    });
   }
 
   function httpDelete(id) {
