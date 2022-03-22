@@ -46,13 +46,22 @@ function Streaming() {
   }
 
   function httpFav(id, favState) {
-    console.log(`Favourite: ` + id);
+    console.log(`Favourite: `, id);
+    console.log(`favState: `, favState);
 
-    let databody = {
-      fav: true,
-    };
+    let databody = {};
 
-    favState === "unfav" ? (databody.fav = false) : (databody.fav = true);
+    if (favState === "unfav") {
+      databody = {
+        fav: false,
+      };
+    } else {
+      databody = {
+        fav: true,
+      };
+    }
+
+    // FRONTEND FAVOURITES
 
     let mappedArray = tracks.map(idMap);
 
@@ -110,8 +119,6 @@ function Streaming() {
       .catch((err) => {
         console.error(err);
       });
-
-    console.log(`User state: `, user[0].role);
   }
 
   return (
@@ -158,6 +165,7 @@ function Streaming() {
                 <input type="submit" value="User"></input>
                 <input type="submit" value="Admin"></input>
               </form>
+
               <form className="admin-panel" onSubmit={httpPost}>
                 <input
                   id="trackArtist"
@@ -195,7 +203,7 @@ function Streaming() {
                       className={`${
                         x.fav ? "fav-green" : ""
                       } button-do button-fav`}
-                      onClick={() => httpFav(x._id)}
+                      onClick={() => httpFav(x._id, "fav")}
                     >
                       ❤️
                     </button>
