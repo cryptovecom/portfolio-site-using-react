@@ -36,8 +36,6 @@
     display: flex;
     flex-wrap: wrap;
     gap: .25rem;
-
-    
   }
 
   .user-panel {
@@ -75,9 +73,9 @@
     }
 
     &[type="text"] {
-      color: var(--color-grey);
+      color: var(--color-dark);
       
-      font-weight: normal;
+      font-weight: bold;
 
       &:active, &:focus, &:hover {
         background-color: var(--color-white);

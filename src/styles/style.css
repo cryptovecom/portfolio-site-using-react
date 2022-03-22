@@ -930,8 +930,8 @@ button.dark-mode-button:active {
 }
 
 .toolbar input[type="text"] {
-  color: var(--color-grey);
-  font-weight: normal;
+  color: var(--color-dark);
+  font-weight: bold;
 }
 
 .toolbar input[type="text"]:active, .toolbar input[type="text"]:focus, .toolbar input[type="text"]:hover {
