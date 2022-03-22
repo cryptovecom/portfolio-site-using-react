@@ -6,6 +6,7 @@ import Footer from "./Footer";
 function Streaming() {
   const [tracks, setTracks] = useState([]);
   const [user, setUser] = useState([]);
+  const [favs, setFavs] = useState([]);
 
   useEffect(() => {
     fetch(`${config.API_BASE_URL}/streaming-api/tracks`, {
@@ -87,9 +88,12 @@ function Streaming() {
     console.log(`User info: `, user);
     console.log(`User info: `, user[0].role);
 
-    fetch(`${config.API_BASE_URL}/streaming-api/users/${user[0].role}`, {
+    // ADD TRACK ID TO FAVOURITES
+    // CURRENTLY NOT EVEN RUNNING !?!?
+
+    fetch(`${config.API_BASE_URL}/streaming-api/users/User`, {
       method: "PATCH",
-      body: JSON.stringify({ favs: `[${id}]` }),
+      body: JSON.stringify({ favs: id }),
       headers: {
         "Content-Type": "application/json",
       },
@@ -127,6 +131,10 @@ function Streaming() {
       })
       .then((result) => {
         setUser(result);
+        setFavs(result);
+      })
+      .then(() => {
+        console.log(`Favs: `, favs);
       })
       .catch((err) => {
         console.error(err);
@@ -138,9 +146,10 @@ function Streaming() {
       <Header />
       <main>
         <section className="landing__top">
+          {/* LEFT SECTION - LEFT SECTION - LEFT SECTION */}
           <section className="streaming__banner">
             <aside>
-              <h1>{user.role}</h1>
+              <h1>User here</h1>
             </aside>
             <ul className="streaming__results">
               {tracks.map((x) => {
@@ -166,6 +175,7 @@ function Streaming() {
               })}
             </ul>
           </section>
+          {/* RIGHT SECTION - RIGHT SECTION - RIGHT SECTION */}
           <section className="streaming__main">
             <div className="toolbar">
               <form className="user-panel" onSubmit={httpGetUser}>
