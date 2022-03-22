@@ -25,6 +25,7 @@ function Streaming() {
   }, []);
 
   function httpPost(e) {
+    e.preventDefault();
     let databody = {
       _id: `${Date.now()}`,
       artist: `${e.target[0].value}`,
