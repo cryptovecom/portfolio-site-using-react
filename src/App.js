@@ -2,6 +2,7 @@ import React from "react";
 import Main from "./components/Main";
 import Streaming from "./components/Streaming";
 import Blog from "./components/Blog";
+import Page404 from "./components/Page404";
 import Cake from "./components/Cake";
 import Sandbox from "./components/Sandbox";
 import BlogPost from "./components/BlogPost";
@@ -18,6 +19,7 @@ function App() {
         <Route path="/blog/:post" element={<BlogPost />} />
         <Route path="/cake" element={<Cake />} />
         <Route path="/sandbox" element={<Sandbox />} />
+        <Route path="*" element={<Page404 />} />
       </Routes>
     </>
   );

@@ -24,13 +24,16 @@ function Blog() {
           </section>
           <section className="landing-list">
             <aside className="card">
-              <h6>WORK IN PROGRESS</h6>
+              <h6>MAR 2022</h6>
               <p>
-                This is a dummy site made as my very first school project to
-                practice HTML, CSS and Javascript.
+                Adding MERN-stack structure to explore Javascript backend
+                technologies.
               </p>
+            </aside>
+            <aside className="card">
+              <h6>JAN 2022</h6>
               <p>
-                It was later refactored using React.js and published to Netlify
+                The site was refactored using React.js and published to Netlify
                 via&nbsp;
                 <a
                   href="https://github.com/iseneld"
@@ -40,6 +43,13 @@ function Blog() {
                   Github
                 </a>
                 .
+              </p>
+            </aside>
+            <aside className="card">
+              <h6>SEP 2021</h6>
+              <p>
+                This is a dummy site made as my very first school project to
+                practice HTML, CSS and Javascript.
               </p>
             </aside>
             <ul>
