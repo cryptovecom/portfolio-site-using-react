@@ -1,16 +1,14 @@
 import React, { useEffect, useState } from "react";
 import Header from "./Header";
 import Footer from "./Footer";
-import { Link } from "react-router-dom";
+import { Link, useParams } from "react-router-dom";
 
-function darkMode(e) {
-  e.preventDefault(); // Added to prevent page reload on click.
-  document.querySelector("body").classList.toggle("dark-mode");
-}
+const BlogPost = () => {
+  function darkMode(e) {
+    e.preventDefault(); // Added to prevent page reload on click.
+    document.querySelector("body").classList.toggle("dark-mode");
+  }
 
-// REACT PART
-
-function BlogPost() {
   const [post, setPost] = useState();
 
   useEffect(() => {
@@ -19,7 +17,9 @@ function BlogPost() {
       .then((data) => setPost(data));
   }, []);
 
-  console.log(post);
+  const match = useParams();
+
+  console.log(match);
 
   return (
     <>
@@ -27,12 +27,13 @@ function BlogPost() {
       <main>
         <section className="landing__top">
           <section className="landing__banner">
-            <button class="dark-mode-button" onClick={darkMode}>
+            <button className="dark-mode-button" onClick={darkMode}>
               Dark Mode (Beta)
             </button>
           </section>
           <section>
             <article className="blog__post">
+              <h1>{match.post}</h1>
               {post && (
                 <>
                   <h2>{post[0].title}</h2>
@@ -52,6 +53,6 @@ function BlogPost() {
       <Footer />
     </>
   );
-}
+};
 
 export default BlogPost;

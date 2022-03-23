@@ -2,7 +2,7 @@
   {
     "id": 1,
     "title": "Fetchy fetchy!",
-    "page": "/blog-post",
+    "page": "fetchy-fetchy",
     "previewImage": "https://source.unsplash.com/random/500x500",
     "shortSummary": "This is done with Javascript by looping through all objects in the file.",
     "fullSummary": "This is a dummy post created for previous JSON practice, and now I'm still fiddling around with the CSS structure of the entire site.. so, get out of here!",
@@ -16,7 +16,7 @@
   {
     "id": 2,
     "title": "All posts are fetched from a JSON file",
-    "page": "/blog-post",
+    "page": "json-fetch",
     "previewImage": "https://source.unsplash.com/random/500x500",
     "shortSummary": "Focus has been on responsiveness and selector experimentation.",
     "fullSummary": "The site has one global stylesheet plus one per individual page.",
@@ -30,7 +30,7 @@
    {
      "id": 3,
      "title": "Optimizing for page speed is more fun than it sounds!",
-     "page": "/blog-post",
+     "page": "speed-optimization",
      "previewImage": "https://source.unsplash.com/random/500x500",
      "shortSummary": "I got my page loading speed down by 45% with two simple steps.",
      "fullSummary": "I’ve spent time in the browser’s Network tab, simulating page loads on slow connections without the use of cache. This has been educational on the loading mechanisms of browsers and gives a clear view of the importance of compressed images and documents.",
@@ -43,7 +43,7 @@
  {
    "id": 4,
    "title": "These are just filler-uppers..",
-   "page": "/blog-post",
+   "page": "filler",
    "previewImage": "https://source.unsplash.com/random/500x500",
    "shortSummary": "A brief insight into my approach to this school project!",
    "fullSummary": "My goal with this project has been to gain fluency with CSS targeting, flexbox, grid, and semantic HTML.",

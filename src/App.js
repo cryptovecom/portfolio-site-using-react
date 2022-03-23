@@ -15,7 +15,7 @@ function App() {
         <Route exact path="/" element={<Main linkList={linkList} />} />
         <Route exact path="/streaming" element={<Streaming />} />
         <Route path="/blog" element={<Blog />} />
-        <Route path="/blog-post" element={<BlogPost />} />
+        <Route path="/blog/:post" element={<BlogPost />} />
         <Route path="/cake" element={<Cake />} />
         <Route path="/sandbox" element={<Sandbox />} />
       </Routes>

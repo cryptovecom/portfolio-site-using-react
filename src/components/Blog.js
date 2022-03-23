@@ -53,7 +53,7 @@ function Blog() {
                     }}
                   >
                     <h2>
-                      <Link to={`${post.page}`}>{post.title}</Link>
+                      <Link to={`/blog/${post.page}`}>{post.title}</Link>
                     </h2>
                   </li>
                 ))}
