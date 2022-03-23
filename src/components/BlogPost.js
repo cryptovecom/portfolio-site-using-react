@@ -3,23 +3,23 @@ import Header from "./Header";
 import Footer from "./Footer";
 import { Link, useParams } from "react-router-dom";
 
-const BlogPost = () => {
+const BlogPost = ({ postarray }) => {
   function darkMode(e) {
     e.preventDefault(); // Added to prevent page reload on click.
     document.querySelector("body").classList.toggle("dark-mode");
   }
 
   const [post, setPost] = useState();
-
-  useEffect(() => {
-    fetch("./data/posts.json")
-      .then((response) => response.json())
-      .then((data) => setPost(data));
-  }, []);
-
   const match = useParams();
 
-  console.log(match);
+  useEffect(() => {
+    fetch("../data/posts.json")
+      .then((response) => response.json())
+      .then((data) => {
+        return data.filter((x) => x.page === match.post);
+      })
+      .then((end) => setPost(end));
+  }, []);
 
   return (
     <>
@@ -33,7 +33,6 @@ const BlogPost = () => {
           </section>
           <section>
             <article className="blog__post">
-              <h1>{match.post}</h1>
               {post && (
                 <>
                   <h2>{post[0].title}</h2>

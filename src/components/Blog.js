@@ -53,7 +53,9 @@ function Blog() {
                     }}
                   >
                     <h2>
-                      <Link to={`/blog/${post.page}`}>{post.title}</Link>
+                      <Link to={`/blog/${post.page}`} postarray={posts}>
+                        {post.title}
+                      </Link>
                     </h2>
                   </li>
                 ))}
