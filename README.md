@@ -2,6 +2,8 @@
 
 I am working continously to refactor and upghrade this project as I learn new technologies, techniques and find some spare time to add content for further exercise.
 
+It is published to [https://micheliseneld.com](https://micheliseneld.com)
+
 ## It was made using Create React App
 
 In the project directory, you can run:
