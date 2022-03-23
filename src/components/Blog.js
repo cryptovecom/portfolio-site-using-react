@@ -23,6 +23,22 @@ function Blog() {
             <h1 className="dragon-text">Free will is an illusion</h1>
           </section>
           <section className="landing-list">
+            <ul>
+              {/* LOOPING THROUGH POSTS IN JSON */}
+              {posts &&
+                posts.map((post) => (
+                  <li
+                    key={post.id}
+                    style={{
+                      backgroundImage: `url(${post.previewImage})`,
+                    }}
+                  >
+                    <h2>
+                      <Link to={`/blog/${post.page}`}>{post.title}</Link>
+                    </h2>
+                  </li>
+                ))}
+            </ul>
             <aside className="card">
               <h6>MAR 2022</h6>
               <p>
@@ -52,24 +68,6 @@ function Blog() {
                 practice HTML, CSS and Javascript.
               </p>
             </aside>
-            <ul>
-              {/* LOOPING THROUGH POSTS IN JSON */}
-              {posts &&
-                posts.map((post) => (
-                  <li
-                    key={post.id}
-                    style={{
-                      backgroundImage: `url(${post.previewImage})`,
-                    }}
-                  >
-                    <h2>
-                      <Link to={`/blog/${post.page}`} postarray={posts}>
-                        {post.title}
-                      </Link>
-                    </h2>
-                  </li>
-                ))}
-            </ul>
           </section>
         </section>
       </main>

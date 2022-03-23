@@ -3,7 +3,7 @@ import Header from "./Header";
 import Footer from "./Footer";
 import { Link, useParams } from "react-router-dom";
 
-const BlogPost = ({ postarray }) => {
+const BlogPost = () => {
   function darkMode(e) {
     e.preventDefault(); // Added to prevent page reload on click.
     document.querySelector("body").classList.toggle("dark-mode");
@@ -19,7 +19,7 @@ const BlogPost = ({ postarray }) => {
         return data.filter((x) => x.page === match.post);
       })
       .then((end) => setPost(end));
-  }, []);
+  }, [match.post]);
 
   return (
     <>
