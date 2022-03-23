@@ -15,7 +15,7 @@ function Main(props) {
       <main>
         <section className="landing__top">
           <section className="landing__banner">
-            <h1>This is my first school project using React.js</h1>
+            <h1>I built this school project using Sass and the MERN stack.</h1>
           </section>
           <section className="landing-list">
             <div className="michel"></div>
