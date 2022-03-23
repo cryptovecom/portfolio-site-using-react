@@ -1,8 +1,10 @@
-# Getting Started with Create React App
+# My portfolio
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+I am working continously to refactor and upghrade this project as I learn new technologies, techniques and find some spare time to add content for further exercise.
 
-## Available Scripts
+It is published to [https://micheliseneld.com](https://micheliseneld.com)
+
+## It was made using Create React App
 
 In the project directory, you can run:
 
@@ -41,21 +43,9 @@ You don't have to ever use `eject`. The curated feature set is suitable for smal
 
 ## Learn More
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+### Technologies Used
 
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+The site is made using HTML, CSS, Sass, Javascript, React.js, Express and MongoDB.
 
 ### Advanced Configuration
 
