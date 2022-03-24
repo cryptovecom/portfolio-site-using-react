@@ -147,30 +147,31 @@ function Streaming() {
           {/* LEFT SECTION - LEFT SECTION - LEFT SECTION */}
           <section className="streaming__banner">
             <aside>
-              <h1>User here</h1>
+              <h1>{user && user.user ? user.role : `Hello!`}</h1>
             </aside>
             <ul className="streaming__results">
-              {tracks.map((x) => {
-                if (x.fav) {
-                  return (
-                    <li key={x._id + "x"}>
-                      <button className="button-play">
-                        {x.artist} - {x.title}
-                        <audio controls>
-                          <source src={x.url} type="audio/mpeg" />
-                          Your browser does not support the audio element.
-                        </audio>
-                      </button>
-                      <button
-                        className="button-do button-fav"
-                        onClick={() => httpFav(x._id, "unfav", setTracks)}
-                      >
-                        ❤️
-                      </button>
-                    </li>
-                  );
-                } else return;
-              })}
+              {user &&
+                tracks.map((x) => {
+                  if (x.fav) {
+                    return (
+                      <li key={x._id + "x"}>
+                        <button className="button-play">
+                          {x.artist} - {x.title}
+                          <audio controls>
+                            <source src={x.url} type="audio/mpeg" />
+                            Your browser does not support the audio element.
+                          </audio>
+                        </button>
+                        <button
+                          className="button-do button-fav"
+                          onClick={() => httpFav(x._id, "unfav", setTracks)}
+                        >
+                          ❤️
+                        </button>
+                      </li>
+                    );
+                  } else return;
+                })}
             </ul>
           </section>
           {/* RIGHT SECTION - RIGHT SECTION - RIGHT SECTION */}
