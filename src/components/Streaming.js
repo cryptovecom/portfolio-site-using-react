@@ -48,8 +48,7 @@ function Streaming() {
   }
 
   function httpFav(id, favState) {
-    console.log(`Favourite: `, id);
-    console.log(`favState: `, favState);
+    console.log(id, ` is `, favState);
 
     let databody = {};
 
@@ -70,7 +69,7 @@ function Streaming() {
     function idMap(track) {
       if (track._id === id) {
         track.fav = !track.fav;
-        console.log(id + ` favorite state set to: ` + track.fav);
+        console.log(id + ` now ` + track.fav);
       }
       return track;
     }
@@ -186,7 +185,7 @@ function Streaming() {
                 <input type="submit" value="Admin"></input>
               </form>
 
-              {
+              {user && user.role === "Admin" && (
                 <form className="admin-panel" onSubmit={httpPost}>
                   <input
                     id="trackArtist"
@@ -208,7 +207,7 @@ function Streaming() {
                   ></input>
                   <input type="submit" value="Upload"></input>
                 </form>
-              }
+              )}
             </div>
             <ul className="streaming__results">
               {tracks.map((x) => {
