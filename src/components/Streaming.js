@@ -149,8 +149,11 @@ function Streaming() {
             </aside>
             <ul className="streaming__results">
               {user &&
-                tracks.map((track) => {
-                  if (track.fav) {
+                tracks
+                  .filter((track) => {
+                    return track._id === "1647941147864";
+                  })
+                  .map((track) => {
                     return (
                       <li key={track._id + "x"}>
                         <button className="button-play">
@@ -168,8 +171,7 @@ function Streaming() {
                         </button>
                       </li>
                     );
-                  } else return null;
-                })}
+                  })}
             </ul>
           </section>
           {/* RIGHT SECTION - RIGHT SECTION - RIGHT SECTION */}
@@ -210,22 +212,22 @@ function Streaming() {
               )}
             </div>
             <ul className="streaming__results">
-              {tracks.map((x) => {
+              {tracks.map((track) => {
                 return (
-                  <li key={x._id}>
+                  <li key={track._id}>
                     <button className={`button-play`}>
-                      {x.artist} - {x.title}
+                      {track.artist} - {track.title}
                       <audio controls>
-                        <source src={x.url} type="audio/mpeg" />
+                        <source src={track.url} type="audio/mpeg" />
                         Your browser does not support the audio element.
                       </audio>
                     </button>
                     {user && (
                       <button
                         className={`${
-                          x.fav ? "fav-green" : ""
+                          track.fav ? "fav-green" : ""
                         } button-do button-fav`}
-                        onClick={() => httpFav(x._id, "fav")}
+                        onClick={() => httpFav(track._id, "fav")}
                       >
                         ❤️
                       </button>
@@ -233,7 +235,7 @@ function Streaming() {
                     {user && user.role === "Admin" && (
                       <button
                         className="button-do button-del"
-                        onClick={() => httpDelete(x._id)}
+                        onClick={() => httpDelete(track._id)}
                       >
                         🗑️
                       </button>
