@@ -230,13 +230,14 @@ function Streaming() {
                         ❤️
                       </button>
                     )}
-
-                    <button
-                      className="button-do button-del"
-                      onClick={() => httpDelete(x._id)}
-                    >
-                      🗑️
-                    </button>
+                    {user && user.role === "Admin" && (
+                      <button
+                        className="button-do button-del"
+                        onClick={() => httpDelete(x._id)}
+                      >
+                        🗑️
+                      </button>
+                    )}
                   </li>
                 );
               })}
