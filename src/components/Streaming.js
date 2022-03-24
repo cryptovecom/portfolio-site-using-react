@@ -67,12 +67,12 @@ function Streaming() {
 
     let mappedArray = tracks.map(idMap);
 
-    function idMap(x) {
-      if (x._id === id) {
-        x.fav = !x.fav;
-        console.log(id + ` favorite state set to: ` + x.fav);
+    function idMap(track) {
+      if (track._id === id) {
+        track.fav = !track.fav;
+        console.log(id + ` favorite state set to: ` + track.fav);
       }
-      return x;
+      return track;
     }
 
     setTracks(mappedArray);
@@ -86,7 +86,6 @@ function Streaming() {
     });
 
     console.log(`User info: `, user);
-    console.log(`User info: `, user[0].role);
 
     // ADD TRACK ID TO FAVOURITES
     // CURRENTLY NOT EVEN RUNNING !?!?
@@ -151,26 +150,26 @@ function Streaming() {
             </aside>
             <ul className="streaming__results">
               {user &&
-                tracks.map((x) => {
-                  if (x.fav) {
+                tracks.map((track) => {
+                  if (track.fav) {
                     return (
-                      <li key={x._id + "x"}>
+                      <li key={track._id + "x"}>
                         <button className="button-play">
-                          {x.artist} - {x.title}
+                          {track.artist} - {track.title}
                           <audio controls>
-                            <source src={x.url} type="audio/mpeg" />
+                            <source src={track.url} type="audio/mpeg" />
                             Your browser does not support the audio element.
                           </audio>
                         </button>
                         <button
                           className="button-do button-fav"
-                          onClick={() => httpFav(x._id, "unfav", setTracks)}
+                          onClick={() => httpFav(track._id, "unfav", setTracks)}
                         >
                           ❤️
                         </button>
                       </li>
                     );
-                  } else return;
+                  } else return null;
                 })}
             </ul>
           </section>
@@ -187,27 +186,29 @@ function Streaming() {
                 <input type="submit" value="Admin"></input>
               </form>
 
-              <form className="admin-panel" onSubmit={httpPost}>
-                <input
-                  id="trackArtist"
-                  type="text"
-                  placeholder="Artist name.."
-                  className="searchBar"
-                ></input>
-                <input
-                  id="trackTitle"
-                  type="text"
-                  placeholder="Track title.."
-                  className="searchBar"
-                ></input>
-                <input
-                  id="trackURL"
-                  type="text"
-                  placeholder="MP3 URL.."
-                  className="searchBar"
-                ></input>
-                <input type="submit" value="Upload"></input>
-              </form>
+              {
+                <form className="admin-panel" onSubmit={httpPost}>
+                  <input
+                    id="trackArtist"
+                    type="text"
+                    placeholder="Artist name.."
+                    className="searchBar"
+                  ></input>
+                  <input
+                    id="trackTitle"
+                    type="text"
+                    placeholder="Track title.."
+                    className="searchBar"
+                  ></input>
+                  <input
+                    id="trackURL"
+                    type="text"
+                    placeholder="MP3 URL.."
+                    className="searchBar"
+                  ></input>
+                  <input type="submit" value="Upload"></input>
+                </form>
+              }
             </div>
             <ul className="streaming__results">
               {tracks.map((x) => {
