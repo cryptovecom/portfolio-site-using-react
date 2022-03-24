@@ -5,8 +5,8 @@ import Footer from "./Footer";
 
 function Streaming() {
   const [tracks, setTracks] = useState([]);
-  const [user, setUser] = useState([]);
-  const [favs, setFavs] = useState([]);
+  const [user, setUser] = useState(null);
+  // const [favs, setFavs] = useState([]);
 
   useEffect(() => {
     fetch(`${config.API_BASE_URL}/streaming-api/tracks`, {
@@ -119,7 +119,8 @@ function Streaming() {
   function httpGetUser(e) {
     e.preventDefault();
     let userRole = e.nativeEvent.submitter.value;
-    console.log(`GET requested for: `, userRole);
+
+    console.log(`GET req: `, userRole);
 
     fetch(`${config.API_BASE_URL}/streaming-api/users/${userRole}`, {
       headers: {
@@ -130,11 +131,8 @@ function Streaming() {
         return response.json();
       })
       .then((result) => {
-        setUser(result);
-        setFavs(result);
-      })
-      .then(() => {
-        console.log(`Favs: `, favs);
+        setUser(result[0]);
+        console.log(`Fetched user: `, result[0]);
       })
       .catch((err) => {
         console.error(err);
