@@ -151,7 +151,7 @@ function Streaming() {
               {user &&
                 tracks
                   .filter((track) => {
-                    return track._id === "1647941147864";
+                    return track._id === user.favs;
                   })
                   .map((track) => {
                     return (
