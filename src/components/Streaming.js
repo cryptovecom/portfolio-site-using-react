@@ -145,13 +145,13 @@ function Streaming() {
           {/* LEFT SECTION - LEFT SECTION - LEFT SECTION */}
           <section className="streaming__banner">
             <aside>
-              <h1>{user && user.user ? user.role : `Hello!`}</h1>
+              <h1>{user && user.user ? user.role : `Please log in!`}</h1>
             </aside>
             <ul className="streaming__results">
               {user &&
                 tracks
                   .filter((track) => {
-                    return track._id === user.favs;
+                    return user.favs.indexOf(track._id) !== -1;
                   })
                   .map((track) => {
                     return (

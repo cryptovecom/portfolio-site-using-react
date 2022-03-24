@@ -871,6 +871,8 @@ button.dark-mode-button:active {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   gap: .25rem;
+  -webkit-transition: 5s;
+  transition: 5s;
 }
 
 .toolbar .user-panel {
