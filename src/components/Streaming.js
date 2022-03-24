@@ -220,14 +220,17 @@ function Streaming() {
                         Your browser does not support the audio element.
                       </audio>
                     </button>
-                    <button
-                      className={`${
-                        x.fav ? "fav-green" : ""
-                      } button-do button-fav`}
-                      onClick={() => httpFav(x._id, "fav")}
-                    >
-                      ❤️
-                    </button>
+                    {user && (
+                      <button
+                        className={`${
+                          x.fav ? "fav-green" : ""
+                        } button-do button-fav`}
+                        onClick={() => httpFav(x._id, "fav")}
+                      >
+                        ❤️
+                      </button>
+                    )}
+
                     <button
                       className="button-do button-del"
                       onClick={() => httpDelete(x._id)}
