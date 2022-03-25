@@ -4,7 +4,7 @@ import * as config from "../config";
 export default function Streaming() {
   const [tracks, setTracks] = useState([]);
   const [user, setUser] = useState(null);
-  // const [favs, setFavs] = useState([]);
+  const [favs, setFavs] = useState([]);
 
   useEffect(() => {
     fetch(`${config.API_BASE_URL}/streaming-api/tracks`, {
@@ -45,47 +45,8 @@ export default function Streaming() {
     });
   }
 
-  function httpFav(id, favState) {
-    console.log(id, ` is `, favState);
-
-    let databody = {};
-
-    if (favState === "unfav") {
-      databody = {
-        fav: false,
-      };
-    } else {
-      databody = {
-        fav: true,
-      };
-    }
-
-    // FRONTEND FAVOURITES
-
-    let mappedArray = tracks.map(idMap);
-
-    function idMap(track) {
-      if (track._id === id) {
-        track.fav = !track.fav;
-        console.log(id + ` now ` + track.fav);
-      }
-      return track;
-    }
-
-    setTracks(mappedArray);
-
-    fetch(`${config.API_BASE_URL}/streaming-api/tracks/${id}`, {
-      method: "PATCH",
-      body: JSON.stringify(databody),
-      headers: {
-        "Content-Type": "application/json",
-      },
-    });
-
+  function httpFav(id) {
     console.log(`User info: `, user);
-
-    // ADD TRACK ID TO FAVOURITES
-    // CURRENTLY NOT EVEN RUNNING !?!?
 
     fetch(`${config.API_BASE_URL}/streaming-api/users/${user.role}`, {
       method: "PATCH",
@@ -129,6 +90,11 @@ export default function Streaming() {
       .then((result) => {
         setUser(result[0]);
         console.log(`Fetched user: `, result[0]);
+        setFavs(
+          tracks.filter((track) => {
+            return result[0].favs.indexOf(track._id) !== -1;
+          })
+        );
       })
       .catch((err) => {
         console.error(err);
@@ -146,29 +112,26 @@ export default function Streaming() {
             </aside>
             <ul className="streaming__results">
               {user &&
-                tracks
-                  .filter((track) => {
-                    return user.favs.indexOf(track._id) !== -1;
-                  })
-                  .map((track) => {
-                    return (
-                      <li key={track._id + "x"}>
-                        <button className="button-play">
-                          {track.artist} - {track.title}
-                          <audio controls>
-                            <source src={track.url} type="audio/mpeg" />
-                            Your browser does not support the audio element.
-                          </audio>
-                        </button>
-                        <button
-                          className="button-do button-fav"
-                          onClick={() => httpFav(track._id, "unfav")}
-                        >
-                          ❤️
-                        </button>
-                      </li>
-                    );
-                  })}
+                user.role &&
+                favs.map((track) => {
+                  return (
+                    <li key={track._id + "x"}>
+                      <button className="button-play">
+                        {track.artist} - {track.title}
+                        <audio controls>
+                          <source src={track.url} type="audio/mpeg" />
+                          Your browser does not support the audio element.
+                        </audio>
+                      </button>
+                      <button
+                        className="button-do button-fav"
+                        onClick={() => httpFav(track._id)}
+                      >
+                        ❤️
+                      </button>
+                    </li>
+                  );
+                })}
             </ul>
           </section>
           {/* RIGHT SECTION - RIGHT SECTION - RIGHT SECTION */}
@@ -224,7 +187,7 @@ export default function Streaming() {
                         className={`${
                           track.fav ? "fav-green" : ""
                         } button-do button-fav`}
-                        onClick={() => httpFav(track._id, "fav")}
+                        onClick={() => httpFav(track._id)}
                       >
                         ❤️
                       </button>
