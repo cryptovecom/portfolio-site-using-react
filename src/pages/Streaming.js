@@ -150,7 +150,11 @@ export default function Streaming() {
           {/* LEFT SECTION - LEFT SECTION - LEFT SECTION */}
           <section className="streaming__banner">
             <aside>
-              <h1>{user && user.user ? user.role : `Please log in!`}</h1>
+              <h1>
+                {user && user.user
+                  ? `${user.role}: ${user.user}`
+                  : `Please log in!`}
+              </h1>
             </aside>
             <ul className="streaming__results">
               {user &&
