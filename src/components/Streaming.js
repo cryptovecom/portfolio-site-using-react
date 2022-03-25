@@ -1,7 +1,5 @@
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import * as config from "../config";
-import Header from "./Header";
-import Footer from "./Footer";
 
 function Streaming() {
   const [tracks, setTracks] = useState([]);
@@ -89,7 +87,7 @@ function Streaming() {
     // ADD TRACK ID TO FAVOURITES
     // CURRENTLY NOT EVEN RUNNING !?!?
 
-    fetch(`${config.API_BASE_URL}/streaming-api/users/User`, {
+    fetch(`${config.API_BASE_URL}/streaming-api/users/${user.role}`, {
       method: "PATCH",
       body: JSON.stringify({ favs: id }),
       headers: {
@@ -139,7 +137,6 @@ function Streaming() {
 
   return (
     <>
-      <Header />
       <main>
         <section className="landing__top">
           {/* LEFT SECTION - LEFT SECTION - LEFT SECTION */}
@@ -165,7 +162,7 @@ function Streaming() {
                         </button>
                         <button
                           className="button-do button-fav"
-                          onClick={() => httpFav(track._id, "unfav", setTracks)}
+                          onClick={() => httpFav(track._id, "unfav")}
                         >
                           ❤️
                         </button>
@@ -247,7 +244,6 @@ function Streaming() {
           </section>
         </section>
       </main>
-      <Footer />
     </>
   );
 }

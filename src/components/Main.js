@@ -1,7 +1,4 @@
-import React from "react";
-import Header from "./Header";
 import Goals from "./Goals";
-import Footer from "./Footer";
 
 function Main(props) {
   const linkList = props.linkList.map((object, i) => {
@@ -11,7 +8,6 @@ function Main(props) {
 
   return (
     <>
-      <Header />
       <main>
         <section className="landing__top">
           <section className="landing__banner">
@@ -70,7 +66,6 @@ function Main(props) {
           </div>
         </section>
       </main>
-      <Footer />
     </>
   );
 }

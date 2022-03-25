@@ -1,4 +1,6 @@
 import React from "react";
+import Header from "./components/Header";
+import Footer from "./components/Footer";
 import Main from "./components/Main";
 import Streaming from "./components/Streaming";
 import Blog from "./components/Blog";
@@ -12,6 +14,7 @@ import { Routes, Route } from "react-router-dom";
 function App() {
   return (
     <>
+      <Header />
       <Routes>
         <Route exact path="/" element={<Main linkList={linkList} />} />
         <Route exact path="/streaming" element={<Streaming />} />
@@ -21,6 +24,7 @@ function App() {
         <Route path="/sandbox" element={<Sandbox />} />
         <Route path="*" element={<Page404 />} />
       </Routes>
+      <Footer />
     </>
   );
 }

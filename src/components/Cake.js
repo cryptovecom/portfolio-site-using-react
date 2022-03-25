@@ -1,6 +1,4 @@
-import React, { useEffect, useState } from "react";
-import Header from "./Header";
-import Footer from "./Footer";
+import { useEffect, useState } from "react";
 
 function Cake() {
   const [holidays, setHolidays] = useState();
@@ -263,7 +261,6 @@ function Cake() {
 
   return (
     <>
-      <Header />
       <main>
         <section className="blog__banner">
           <h1 className="dragon-text">Celebrate</h1>
@@ -275,7 +272,6 @@ function Cake() {
           <h6>WORK IN PROGRESS</h6>
         </aside>
       </main>
-      <Footer />
     </>
   );
 }

@@ -1,11 +1,8 @@
 import React from "react";
-import Header from "./Header";
-import Footer from "./Footer";
 
 function Page404() {
   return (
     <>
-      <Header />
       <main>
         <section className="landing__top">
           <section className="landing__banner">
@@ -18,7 +15,6 @@ function Page404() {
           </section>
         </section>
         <section className="landing__second"></section>
-        <Footer />
       </main>
     </>
   );

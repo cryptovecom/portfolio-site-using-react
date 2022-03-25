@@ -1,6 +1,4 @@
-import React, { useEffect, useState } from "react";
-import Header from "./Header";
-import Footer from "./Footer";
+import { useEffect, useState } from "react";
 import { Link, useParams } from "react-router-dom";
 
 const BlogPost = () => {
@@ -23,7 +21,6 @@ const BlogPost = () => {
 
   return (
     <>
-      <Header />
       <main>
         <section className="landing__top">
           <section className="landing__banner">
@@ -49,7 +46,6 @@ const BlogPost = () => {
           </section>
         </section>
       </main>
-      <Footer />
     </>
   );
 };

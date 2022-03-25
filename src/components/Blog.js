@@ -1,7 +1,5 @@
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
-import Header from "./Header";
-import Footer from "./Footer";
 
 // BLOG FUNCTION
 
@@ -16,7 +14,6 @@ function Blog() {
 
   return (
     <>
-      <Header />
       <main>
         <section className="landing__top">
           <section className="blog__banner">
@@ -71,7 +68,6 @@ function Blog() {
           </section>
         </section>
       </main>
-      <Footer />
     </>
   );
 }
