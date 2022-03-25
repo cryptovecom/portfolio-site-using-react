@@ -100,29 +100,33 @@ export default function Streaming() {
 
   function httpGetUser(e) {
     e.preventDefault();
-    let userRole = e.nativeEvent.submitter.value;
+    let buttonValue = e.nativeEvent.submitter.value;
+    let textValue = e.nativeEvent.target[0].value;
 
-    console.log(`GET req: `, userRole);
+    console.log(`Text: `, textValue);
+    console.log(`Button: `, buttonValue);
 
-    fetch(`${config.API_BASE_URL}/streaming-api/users/${userRole}`, {
-      headers: {
-        "content-type": "application/json",
-      },
-    })
-      .then((response) => {
-        return response.json();
+    if (buttonValue === "Login") {
+      fetch(`${config.API_BASE_URL}/streaming-api/users/${textValue}`, {
+        headers: {
+          "content-type": "application/json",
+        },
       })
-      .then((result) => {
-        setUser(result[0]);
-        setFavs(
-          tracks.filter((track) => {
-            return result[0].favs.indexOf(track._id) !== -1;
-          })
-        );
-      })
-      .catch((err) => {
-        console.error(err);
-      });
+        .then((response) => {
+          return response.json();
+        })
+        .then((result) => {
+          setUser(result[0]);
+          setFavs(
+            tracks.filter((track) => {
+              return result[0].favs.indexOf(track._id) !== -1;
+            })
+          );
+        })
+        .catch((err) => {
+          console.error(err);
+        });
+    }
   }
 
   return (
@@ -164,11 +168,11 @@ export default function Streaming() {
               <form className="user-panel" onSubmit={httpGetUser}>
                 <input
                   type="text"
-                  placeholder="Search.."
+                  placeholder="Enter username.."
                   className="searchBar"
                 ></input>
-                <input type="submit" value="User"></input>
-                <input type="submit" value="Admin"></input>
+                <input type="submit" value="Login"></input>
+                <input type="submit" value="Register"></input>
               </form>
 
               {user && user.role === "Admin" && (
