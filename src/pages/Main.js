@@ -1,6 +1,6 @@
-import Goals from "./Goals";
+import Goals from "../components/Goals";
 
-function Main(props) {
+export default function Main(props) {
   const linkList = props.linkList.map((object, i) => {
     object.id = i;
     return object;
@@ -69,5 +69,3 @@ function Main(props) {
     </>
   );
 }
-
-export default Main;

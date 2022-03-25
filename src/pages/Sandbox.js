@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 
-function Goals(props) {
+export default function Goals(props) {
   const [goals, setGoals] = useState();
 
   useEffect(() => {
@@ -26,5 +26,3 @@ function Goals(props) {
     </>
   );
 }
-
-export default Goals;

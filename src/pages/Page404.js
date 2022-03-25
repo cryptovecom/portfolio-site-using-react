@@ -1,6 +1,6 @@
 import React from "react";
 
-function Page404() {
+export default function Page404() {
   return (
     <>
       <main>
@@ -19,5 +19,3 @@ function Page404() {
     </>
   );
 }
-
-export default Page404;

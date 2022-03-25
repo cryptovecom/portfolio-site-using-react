@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import { Link, useParams } from "react-router-dom";
 
-const BlogPost = () => {
+export default function BlogPost() {
   function darkMode(e) {
     e.preventDefault(); // Added to prevent page reload on click.
     document.querySelector("body").classList.toggle("dark-mode");
@@ -48,6 +48,4 @@ const BlogPost = () => {
       </main>
     </>
   );
-};
-
-export default BlogPost;
+}

@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 
-function Cake() {
+export default function Cake() {
   const [holidays, setHolidays] = useState();
 
   useEffect(() => {
@@ -275,5 +275,3 @@ function Cake() {
     </>
   );
 }
-
-export default Cake;

@@ -1,13 +1,13 @@
 import React from "react";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
-import Main from "./components/Main";
-import Streaming from "./components/Streaming";
-import Blog from "./components/Blog";
-import Page404 from "./components/Page404";
-import Cake from "./components/Cake";
-import Sandbox from "./components/Sandbox";
-import BlogPost from "./components/BlogPost";
+import Main from "./pages/Main";
+import Streaming from "./pages/Streaming";
+import Blog from "./pages/Blog";
+import Page404 from "./pages/Page404";
+import Cake from "./pages/Cake";
+import Sandbox from "./pages/Sandbox";
+import BlogPost from "./pages/BlogPost";
 import linkList from "./components/linkList";
 import { Routes, Route } from "react-router-dom";
 

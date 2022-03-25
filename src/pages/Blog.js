@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 // BLOG FUNCTION
 
-function Blog() {
+export default function Blog() {
   const [posts, setPosts] = useState();
 
   useEffect(() => {
@@ -71,5 +71,3 @@ function Blog() {
     </>
   );
 }
-
-export default Blog;

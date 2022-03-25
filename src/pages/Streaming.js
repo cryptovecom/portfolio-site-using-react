@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import * as config from "../config";
 
-function Streaming() {
+export default function Streaming() {
   const [tracks, setTracks] = useState([]);
   const [user, setUser] = useState(null);
   // const [favs, setFavs] = useState([]);
@@ -247,5 +247,3 @@ function Streaming() {
     </>
   );
 }
-
-export default Streaming;
