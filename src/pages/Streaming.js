@@ -55,6 +55,16 @@ export default function Streaming() {
         "Content-Type": "application/json",
       },
     });
+
+    // ADD FUNCTION THAT UPDATES FAVS
+
+    let favTrack = tracks.filter((track) => {
+      return track._id === id;
+    });
+
+    console.log(`Favtrack: `, favTrack);
+
+    setFavs([...favs, ...favTrack]);
   }
 
   function httpUnfav(id) {
