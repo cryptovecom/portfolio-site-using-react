@@ -57,6 +57,21 @@ export default function Streaming() {
     });
   }
 
+  function httpUnfav(id) {
+    fetch(`${config.API_BASE_URL}/streaming-api/users/${user._id}&${id}`, {
+      method: "PATCH",
+      headers: {
+        "Content-Type": "application/json",
+      },
+    });
+
+    setFavs(
+      favs.filter((track) => {
+        return track._id !== id;
+      })
+    );
+  }
+
   function httpDelete(id) {
     console.log(`Delete: ` + id);
 
@@ -89,7 +104,6 @@ export default function Streaming() {
       })
       .then((result) => {
         setUser(result[0]);
-        console.log(`Fetched user: `, result[0]);
         setFavs(
           tracks.filter((track) => {
             return result[0].favs.indexOf(track._id) !== -1;
@@ -125,7 +139,7 @@ export default function Streaming() {
                       </button>
                       <button
                         className="button-do button-fav"
-                        onClick={() => httpFav(track._id)}
+                        onClick={() => httpUnfav(track._id)}
                       >
                         ❤️
                       </button>
