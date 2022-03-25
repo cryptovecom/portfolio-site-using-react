@@ -47,7 +47,7 @@ export default function Streaming() {
   function httpFav(id) {
     console.log(`User info: `, user);
 
-    fetch(`${config.API_BASE_URL}/streaming-api/users/${user.user}/fav`, {
+    fetch(`${config.API_BASE_URL}/streaming-api/users/${user._id}/fav`, {
       method: "PATCH",
       body: JSON.stringify({ favs: id }),
       headers: {
