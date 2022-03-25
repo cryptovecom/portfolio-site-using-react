@@ -30,7 +30,6 @@ export default function Streaming() {
       artist: `${e.target[0].value}`,
       title: `${e.target[1].value}`,
       url: `${config.CLIENT_BASE_URL}/audio/${e.target[2].value}.mp3`,
-      fav: false,
     };
 
     console.log(`Add: ` + databody._id);
@@ -126,6 +125,21 @@ export default function Streaming() {
         .catch((err) => {
           console.error(err);
         });
+    } else {
+      let databody = {
+        _id: `${Date.now()}`,
+        user: textValue,
+        role: `User`,
+        favs: [],
+      };
+
+      fetch(`${config.API_BASE_URL}/streaming-api/users/register`, {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(databody),
+      });
     }
   }
 
