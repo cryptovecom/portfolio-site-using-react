@@ -181,16 +181,31 @@ export default function Streaming() {
             </ul>
           </section>
           {/* RIGHT SECTION - RIGHT SECTION - RIGHT SECTION */}
+
           <section className="streaming__main">
             <div className="toolbar">
               <form className="user-panel" onSubmit={httpGetUser}>
-                <input
-                  type="text"
-                  placeholder="Enter username.."
-                  className="searchBar"
-                ></input>
-                <input type="submit" value="Login"></input>
-                <input type="submit" value="Register"></input>
+                {user && user.role ? (
+                  <>
+                    <input
+                      type="text"
+                      placeholder="Enter username.."
+                      className="searchBar"
+                    ></input>
+                    <input type="submit" value="Search"></input>
+                    <input type="submit" value="Log out"></input>
+                  </>
+                ) : (
+                  <>
+                    <input
+                      type="text"
+                      placeholder="Enter username.."
+                      className="searchBar"
+                    ></input>
+                    <input type="submit" value="Login"></input>
+                    <input type="submit" value="Register"></input>
+                  </>
+                )}
               </form>
 
               {user && user.role === "Admin" && (
@@ -217,6 +232,7 @@ export default function Streaming() {
                 </form>
               )}
             </div>
+
             <ul className="streaming__results">
               {tracks.map((track) => {
                 return (
