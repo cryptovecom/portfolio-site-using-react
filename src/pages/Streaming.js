@@ -3,6 +3,7 @@ import * as config from "../config";
 
 export default function Streaming() {
   const [tracks, setTracks] = useState([]);
+  const [filter, setFilter] = useState([]);
   const [user, setUser] = useState(null);
   const [favs, setFavs] = useState([]);
 
@@ -17,6 +18,7 @@ export default function Streaming() {
       })
       .then((result) => {
         setTracks(result);
+        setFilter(result);
       })
       .catch((err) => {
         console.error(err);
@@ -147,6 +149,18 @@ export default function Streaming() {
     }
   }
 
+  function searchFn(e) {
+    e.preventDefault();
+    let searchValue = e.nativeEvent.target.value;
+    console.log(searchValue);
+
+    let filteredArray = tracks.filter((track) => {
+      return track.artist.indexOf(searchValue) !== -1;
+    });
+
+    setFilter(filteredArray);
+  }
+
   return (
     <>
       <main>
@@ -195,8 +209,11 @@ export default function Streaming() {
                       type="text"
                       placeholder="Search..."
                       className="searchBar"
+                      onChange={(e) => {
+                        searchFn(e);
+                      }}
                     ></input>
-                    <input type="submit" value="Search" id="search"></input>
+                    <input type="submit" value="Search"></input>
                     <input type="submit" value="Log out"></input>
                   </>
                 ) : (
@@ -238,7 +255,7 @@ export default function Streaming() {
             </div>
 
             <ul className="streaming__results">
-              {tracks.map((track) => {
+              {filter.map((track) => {
                 return (
                   <li key={track._id}>
                     <button className={`button-play`}>
