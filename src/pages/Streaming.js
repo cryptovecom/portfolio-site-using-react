@@ -196,7 +196,7 @@ export default function Streaming() {
                       placeholder="Search..."
                       className="searchBar"
                     ></input>
-                    <input type="submit" value="Search"></input>
+                    <input type="submit" value="Search" id="search"></input>
                     <input type="submit" value="Log out"></input>
                   </>
                 ) : (
@@ -251,7 +251,7 @@ export default function Streaming() {
                     {user && user.role && (
                       <button
                         className={`${
-                          track.fav ? "fav-green" : ""
+                          user.favs.indexOf(track._id) !== -1 ? "fav-green" : ""
                         } button-do button-fav`}
                         onClick={() => httpFav(track._id)}
                       >
