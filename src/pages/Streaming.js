@@ -193,7 +193,7 @@ export default function Streaming() {
                   <>
                     <input
                       type="text"
-                      placeholder="Enter username.."
+                      placeholder="Search..."
                       className="searchBar"
                     ></input>
                     <input type="submit" value="Search"></input>
@@ -248,7 +248,7 @@ export default function Streaming() {
                         Your browser does not support the audio element.
                       </audio>
                     </button>
-                    {user && (
+                    {user && user.role && (
                       <button
                         className={`${
                           track.fav ? "fav-green" : ""
