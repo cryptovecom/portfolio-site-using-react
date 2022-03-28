@@ -125,7 +125,7 @@ export default function Streaming() {
         .catch((err) => {
           console.error(err);
         });
-    } else {
+    } else if (buttonValue === "Register") {
       let databody = {
         _id: `${Date.now()}`,
         user: textValue,
@@ -140,6 +140,10 @@ export default function Streaming() {
         },
         body: JSON.stringify(databody),
       });
+    } else if (buttonValue === "Log out") {
+      setUser([]);
+    } else {
+      console.log("Login error");
     }
   }
 
