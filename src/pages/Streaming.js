@@ -242,7 +242,7 @@ export default function Streaming() {
                   <>
                     <input
                       type="text"
-                      placeholder="Search..."
+                      placeholder="Search artists..."
                       className="searchBar"
                       onChange={(e) => {
                         searchFn(e);
