@@ -16,6 +16,25 @@
     background-size: cover;
 
     color: var(--color-grey);
+
+    h1 {
+      color: var(--color-dark);
+    }
+
+    ol {
+      padding-left: 2rem;
+      
+      li {
+        list-style-type: decimal; 
+      }
+    }
+
+    &.how-to {
+      background: var(--color-grey);
+      color: var(--color-dark);
+  }
+
+  
   }
 }
 

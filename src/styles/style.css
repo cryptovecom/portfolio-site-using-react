@@ -842,6 +842,23 @@ button.dark-mode-button:active {
   color: var(--color-grey);
 }
 
+.streaming__banner aside h1 {
+  color: var(--color-dark);
+}
+
+.streaming__banner aside ol {
+  padding-left: 2rem;
+}
+
+.streaming__banner aside ol li {
+  list-style-type: decimal;
+}
+
+.streaming__banner aside.how-to {
+  background: var(--color-grey);
+  color: var(--color-dark);
+}
+
 .streaming__main {
   width: 100%;
   display: -webkit-box;

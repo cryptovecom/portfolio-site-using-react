@@ -172,7 +172,7 @@ export default function Streaming() {
               <h1>
                 {user && user.user
                   ? `${user.role}: ${user.user}`
-                  : `Please log in!`}
+                  : `⚡ Please log in! `}
               </h1>
             </aside>
             <ul className="streaming__results">
@@ -198,6 +198,36 @@ export default function Streaming() {
                   );
                 })}
             </ul>
+            <aside className="card how-to">
+              <h6>HOW TO USE</h6>
+              <ol>
+                <li>
+                  Enter a username and click <strong>Register</strong>.
+                </li>
+                <li>
+                  Enter your username and click <strong>Login</strong>.
+                </li>
+                <li>You may now save favourites with the ❤️-button.</li>
+                <li>
+                  You can remove favourites with the ❤️-button on the list
+                  above.
+                </li>
+                <li>That's it, lol.</li>
+              </ol>
+            </aside>
+            <aside className="card how-to">
+              <h6>ABOUT THIS PROJECT</h6>
+              <p>
+                I built this app during the <strong>Data Interaction</strong>{" "}
+                module at Hyper Island.
+              </p>
+              <p>
+                The frontend was made in React and deployed through a pipeline
+                between Github and Netlify. The Node.js API I built is hosted on
+                Heroku and the MongoDB database is running as a MongoDB Atlas
+                cluster.
+              </p>
+            </aside>
           </section>
           {/* RIGHT SECTION - RIGHT SECTION - RIGHT SECTION */}
 
