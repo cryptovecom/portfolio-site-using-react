@@ -223,7 +223,7 @@ export default function Streaming() {
               <h6>ABOUT THIS PROJECT</h6>
               <p>
                 I built this app during the <strong>Data Interaction</strong>{" "}
-                module at Hyper Island.
+                module at Hyper Island in March, 2022.
               </p>
               <p>
                 The frontend was made in React and deployed through a pipeline
