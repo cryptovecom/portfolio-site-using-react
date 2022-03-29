@@ -847,10 +847,11 @@ button.dark-mode-button:active {
 }
 
 .streaming__banner aside ol {
-  padding-left: 2rem;
+  padding-left: 1.5rem;
 }
 
 .streaming__banner aside ol li {
+  padding-left: .5rem;
   list-style-type: decimal;
 }
 
