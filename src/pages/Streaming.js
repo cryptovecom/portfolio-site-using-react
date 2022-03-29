@@ -154,7 +154,9 @@ export default function Streaming() {
     let searchValue = e.nativeEvent.target.value;
 
     let filteredArray = tracks.filter((track) => {
-      return track.artist.indexOf(searchValue) !== -1;
+      return (
+        track.artist.toUpperCase().indexOf(searchValue.toUpperCase()) !== -1
+      );
     });
 
     setSearch(filteredArray);
