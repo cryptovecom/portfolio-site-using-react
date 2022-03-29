@@ -152,7 +152,6 @@ export default function Streaming() {
   function searchFn(e) {
     e.preventDefault();
     let searchValue = e.nativeEvent.target.value;
-    console.log(searchValue);
 
     let filteredArray = tracks.filter((track) => {
       return track.artist.indexOf(searchValue) !== -1;
