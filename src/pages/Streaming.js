@@ -212,6 +212,10 @@ export default function Streaming() {
                   You can remove favourites with the ❤️-button on the list
                   above.
                 </li>
+                <li>
+                  Audio doesn't work, yet, and there are still a few bugs
+                  lurking!
+                </li>
                 <li>That's it, lol.</li>
               </ol>
             </aside>
