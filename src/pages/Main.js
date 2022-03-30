@@ -128,7 +128,7 @@ export default function Main(props) {
             <p>
               <span className="passed">Passed</span>{" "}
               <span className="wip">Learning</span>{" "}
-              <span className="future">Soon</span>
+              <span className="future">Internship Goalz</span>
             </p>
           </div>
         </section>
