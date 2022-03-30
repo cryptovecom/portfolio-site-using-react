@@ -214,6 +214,10 @@ export default function Streaming() {
                       .. and remove them with the 💔-buttons on the list above.
                     </li>
                     <li>
+                      To search for artists, clear your username and start
+                      typing!
+                    </li>
+                    <li>
                       Audio doesn't work, yet, and there are still a few bugs
                       lurking!
                     </li>
