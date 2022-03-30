@@ -83,34 +83,42 @@ export default function Main(props) {
               <img
                 src="./images/icons/html5.png"
                 alt="HTML5 Icon"
-                class="icon"
+                className="icon"
               />
-              <img src="./images/icons/css3.png" alt="CSS3 Icon" class="icon" />
+              <img
+                src="./images/icons/css3.png"
+                alt="CSS3 Icon"
+                className="icon"
+              />
               <img
                 src="./images/icons/js.png"
                 alt="Javascript Icon"
-                class="icon"
+                className="icon"
               />
-              <img src="./images/icons/sass.png" alt="Sass Icon" class="icon" />
+              <img
+                src="./images/icons/sass.png"
+                alt="Sass Icon"
+                className="icon"
+              />
               <img
                 src="./images/icons/react.png"
                 alt="React.js Icon"
-                class="icon"
+                className="icon"
               />
               <img
                 src="./images/icons/node.png"
                 alt="Node.js Icon"
-                class="icon"
+                className="icon"
               />
               <img
                 src="./images/icons/express.png"
                 alt="Express Icon"
-                class="icon"
+                className="icon"
               />
               <img
                 src="./images/icons/mongodb.png"
                 alt="MongoDB Icon"
-                class="icon"
+                className="icon"
               />
             </p>
             <p>
