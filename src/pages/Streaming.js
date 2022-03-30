@@ -48,6 +48,7 @@ export default function Streaming() {
 
   function httpFav(id) {
     console.log(`User info: `, user);
+    console.log(`favs: `, favs);
 
     fetch(`${config.API_BASE_URL}/streaming-api/users/${user._id}/fav`, {
       method: "PATCH",
@@ -56,8 +57,6 @@ export default function Streaming() {
         "Content-Type": "application/json",
       },
     });
-
-    // ADD FUNCTION THAT UPDATES FAVS
 
     let favTrack = tracks.filter((track) => {
       return track._id === id;
@@ -330,10 +329,14 @@ export default function Streaming() {
                       </audio>
                     </button>
                     {user && user.role && (
+                      // <button
+                      //   className={`${
+                      //     user.favs.indexOf(track._id) !== -1 ? "fav-green" : ""
+                      //   } button-do button-fav`}
+                      //   onClick={() => httpFav(track._id)}
+                      // >
                       <button
-                        className={`${
-                          user.favs.indexOf(track._id) !== -1 ? "fav-green" : ""
-                        } button-do button-fav`}
+                        className={`button-do button-fav`}
                         onClick={() => httpFav(track._id)}
                       >
                         ❤️
