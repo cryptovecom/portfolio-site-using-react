@@ -475,6 +475,7 @@ template {
 }
 
 .landing-list .school-project {
+  background-color: var(--color-white);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -510,8 +511,16 @@ template {
 .landing-list ul li a {
   padding: 2rem;
   width: 100%;
-  background-color: var(--color-white);
-  display: inline-block;
+  background-color: var(--color-grey);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   text-decoration: none;
   -webkit-transition: border-radius 0.2s 0.4s ease, -webkit-transform var(--speed-slow) cubic-bezier(0.81, 0.02, 0.92, 0.65);
   transition: border-radius 0.2s 0.4s ease, -webkit-transform var(--speed-slow) cubic-bezier(0.81, 0.02, 0.92, 0.65);

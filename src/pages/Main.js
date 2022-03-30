@@ -60,11 +60,16 @@ export default function Main(props) {
                       backgroundImage: `url(./images/${x.img})`,
                     }}
                   >
-                    <h2>
-                      <a href={x.url} target="_blank" rel="noreferrer">
-                        {x.title}{" "}
-                      </a>
-                    </h2>
+                    <a href={x.url} target="_blank" rel="noreferrer">
+                      <h2>{x.title} </h2>{" "}
+                      {x.class !== "none" && (
+                        <img
+                          src={`/images/icons/${x.class}.png`}
+                          alt={`${x.title} Icon`}
+                          className="icon"
+                        />
+                      )}
+                    </a>
                   </li>
                 ))}
               </ul>

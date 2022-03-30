@@ -119,6 +119,7 @@
   width: 100%;
 
   .school-project {
+    background-color: var(--color-white);
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -144,8 +145,10 @@
       padding: 2rem;
       width: 100%;
 
-      background-color: var(--color-white);
-      display: inline-block;
+      background-color: var(--color-grey);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
 
       text-decoration: none;
 

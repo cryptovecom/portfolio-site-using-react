@@ -15,7 +15,7 @@ const listItems = [
     title: "Instagram",
     url: "https://www.instagram.com/micheliseneld/",
     img: "photography.jpg",
-    class: "photography",
+    class: "instagram",
   },
   {
     title: "Linkedin",
@@ -27,25 +27,25 @@ const listItems = [
     title: "Hypnus Records",
     url: "https://hypnusrecords.com/",
     img: "hypnus.jpg",
-    class: "hypnus",
+    class: "none",
   },
   {
     title: "Slink",
     url: "https://www.ableton.com/en/packs/slink-devices/",
     img: "slink.jpg",
-    class: "slink",
+    class: "none",
   },
   {
     title: "Aether Mechanics",
     url: "https://aethermechanics.bandcamp.com/",
     img: "aethermechanics.jpg",
-    class: "aether-mechanics",
+    class: "none",
   },
   {
     title: "Ntogn",
     url: "https://soundcloud.com/ntogn",
     img: "ntogn.jpg",
-    class: "ntogn",
+    class: "none",
   },
   // {
   //   title: "Aedi Records",
