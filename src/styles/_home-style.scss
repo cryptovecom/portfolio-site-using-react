@@ -118,6 +118,12 @@
   background: var(--bg-pos); 
   width: 100%;
 
+  .school-project {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
   h1 { 
     color: rgb(228, 228, 228);
     padding: .25rem 1.5rem 0rem 1.5rem;

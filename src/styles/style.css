@@ -474,6 +474,19 @@ template {
   width: 100%;
 }
 
+.landing-list .school-project {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
 .landing-list h1 {
   color: #e4e4e4;
   padding: .25rem 1.5rem 0rem 1.5rem;

@@ -1,4 +1,5 @@
 import Goals from "../components/Goals";
+import { Link } from "react-router-dom";
 
 export default function Main(props) {
   const linkList = props.linkList.map((object, i) => {
@@ -17,6 +18,40 @@ export default function Main(props) {
             <div className="michel"></div>
             <section>
               <ul className="home-list">
+                <li
+                  style={{
+                    background: `#af3333`,
+                  }}
+                >
+                  <Link
+                    to="/streaming"
+                    className={`landing-list school-project`}
+                  >
+                    <h2>Data Interaction</h2>
+                    <div>
+                      <img
+                        src="./images/icons/react.png"
+                        alt="React Icon"
+                        className="icon"
+                      />
+                      <img
+                        src="./images/icons/node.png"
+                        alt="Node Icon"
+                        className="icon"
+                      />
+                      <img
+                        src="./images/icons/express.png"
+                        alt="Express Icon"
+                        className="icon"
+                      />
+                      <img
+                        src="./images/icons/mongodb.png"
+                        alt="MongoDB Icon"
+                        className="icon"
+                      />
+                    </div>
+                  </Link>
+                </li>
                 {linkList.map((x) => (
                   <li
                     className={`landing-list`}

@@ -7,9 +7,6 @@ function Header() {
       <nav>
         <ul>
           <li>
-            <Link to="/streaming" className="streaming-link">
-              *
-            </Link>
             <Link to="/blog">Blog</Link>
           </li>
         </ul>
