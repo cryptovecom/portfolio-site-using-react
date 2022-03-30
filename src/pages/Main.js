@@ -40,6 +40,35 @@ export default function Main(props) {
           <div>
             <h2>I'm learning!</h2>
             <p>
+              <img
+                src="./images/icons/html5.png"
+                alt="HTML5 Icon"
+                class="icon"
+              />
+              <img src="./images/icons/css3.png" alt="CSS3 Icon" class="icon" />
+              <img
+                src="./images/icons/js.png"
+                alt="Javascript Icon"
+                class="icon"
+              />
+              <img src="./images/icons/sass.png" alt="Sass Icon" class="icon" />
+              <img
+                src="./images/icons/react.png"
+                alt="React.js Icon"
+                class="icon"
+              />
+              <img
+                src="./images/icons/express.png"
+                alt="Express Icon"
+                class="icon"
+              />
+              <img
+                src="./images/icons/mongodb.png"
+                alt="MongoDB Icon"
+                class="icon"
+              />
+            </p>
+            <p>
               Below you see the progress I've made with the course goals at
               Hyper Island's{" "}
               <a

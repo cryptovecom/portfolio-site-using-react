@@ -1364,6 +1364,11 @@ p:first-child {
   transition: var(--speed-fast);
 }
 
+.icon {
+  width: 3rem;
+  margin-right: 1rem;
+}
+
 .hover {
   border-radius: 1rem;
   -webkit-transition: border-radius var(--speed-fast) ease-out;

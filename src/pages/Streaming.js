@@ -209,7 +209,7 @@ export default function Streaming() {
                 </li>
                 <li>You may now save favourites with the ❤️-button.</li>
                 <li>
-                  You can remove favourites with the ❤️-button on the list
+                  You can remove favourites with the 💔-button on the list
                   above.
                 </li>
                 <li>
@@ -230,6 +230,38 @@ export default function Streaming() {
                 between Github and Netlify. The Node.js API I built is hosted on
                 Heroku and the MongoDB database is running as a MongoDB Atlas
                 cluster.
+              </p>
+              <p>
+                <img
+                  src="./images/icons/sass.png"
+                  alt="Sass Icon"
+                  className="icon"
+                />
+                <img
+                  src="./images/icons/js.png"
+                  alt="Sass Icon"
+                  className="icon"
+                />
+                <img
+                  src="./images/icons/react.png"
+                  alt="Sass Icon"
+                  className="icon"
+                />
+                <img
+                  src="./images/icons/node.png"
+                  alt="Sass Icon"
+                  className="icon"
+                />
+                <img
+                  src="./images/icons/express.png"
+                  alt="Sass Icon"
+                  className="icon"
+                />
+                <img
+                  src="./images/icons/mongodb.png"
+                  alt="Sass Icon"
+                  className="icon"
+                />
               </p>
             </aside>
           </section>

@@ -223,6 +223,11 @@ p {
   }
 }
 
+.icon {
+  width: 3rem;
+  margin-right: 1rem;
+}
+
 .hover {
   border-radius: 1rem;
   transition: border-radius var(--speed-fast) ease-out;
