@@ -192,7 +192,7 @@ export default function Streaming() {
                         className="button-do button-fav"
                         onClick={() => httpUnfav(track._id)}
                       >
-                        ❤️
+                        💔
                       </button>
                     </li>
                   );
