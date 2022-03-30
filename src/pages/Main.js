@@ -58,6 +58,11 @@ export default function Main(props) {
                 class="icon"
               />
               <img
+                src="./images/icons/node.png"
+                alt="Node.js Icon"
+                class="icon"
+              />
+              <img
                 src="./images/icons/express.png"
                 alt="Express Icon"
                 class="icon"
