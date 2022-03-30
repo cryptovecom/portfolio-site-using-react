@@ -207,16 +207,19 @@ export default function Streaming() {
                 <li>
                   Enter your username and click <strong>Login</strong>.
                 </li>
-                <li>You may now save favourites with the ❤️-button.</li>
-                <li>
-                  You can remove favourites with the 💔-button on the list
-                  above.
-                </li>
-                <li>
-                  Audio doesn't work, yet, and there are still a few bugs
-                  lurking!
-                </li>
-                <li>That's it, lol.</li>
+                {user && user.user && (
+                  <>
+                    <li>You may now save favourites with the ❤️-buttons.</li>
+                    <li>
+                      .. and remove them with the 💔-buttons on the list above.
+                    </li>
+                    <li>
+                      Audio doesn't work, yet, and there are still a few bugs
+                      lurking!
+                    </li>
+                    <li>That's it, lel.</li>
+                  </>
+                )}
               </ol>
             </aside>
             <aside className="card how-to">
@@ -232,16 +235,6 @@ export default function Streaming() {
                 cluster.
               </p>
               <p>
-                <img
-                  src="./images/icons/sass.png"
-                  alt="Sass Icon"
-                  className="icon"
-                />
-                <img
-                  src="./images/icons/js.png"
-                  alt="Sass Icon"
-                  className="icon"
-                />
                 <img
                   src="./images/icons/react.png"
                   alt="Sass Icon"

@@ -856,7 +856,7 @@ button.dark-mode-button:active {
 }
 
 .streaming__banner aside.how-to {
-  background: var(--color-grey);
+  background: var(--color-white);
   color: var(--color-dark);
 }
 
