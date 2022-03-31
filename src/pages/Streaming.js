@@ -6,6 +6,7 @@ export default function Streaming() {
   const [search, setSearch] = useState([]);
   const [user, setUser] = useState(null);
   const [favs, setFavs] = useState([]);
+  const [sort, setSort] = useState(true);
 
   useEffect(() => {
     fetch(`${config.API_BASE_URL}/streaming-api/tracks`, {
@@ -161,6 +162,11 @@ export default function Streaming() {
     setSearch(filteredArray);
   }
 
+  function sortFn(e) {
+    e.preventDefault();
+    setSort(!sort);
+  }
+
   return (
     <>
       <main>
@@ -179,7 +185,11 @@ export default function Streaming() {
                 user.role &&
                 favs
                   .sort((a, b) => {
-                    return a.artist < b.artist ? -1 : 1;
+                    if (sort) {
+                      return a.artist < b.artist ? -1 : 1;
+                    } else {
+                      return a.artist > b.artist ? -1 : 1;
+                    }
                   })
                   .map((track) => {
                     return (
@@ -280,8 +290,9 @@ export default function Streaming() {
                       }}
                     ></input>
                     <div>
-                      <input type="submit" value="Search"></input>
-                      <input type="submit" value="Log out"></input>
+                      <input type="submit" value="Search" />
+                      <input type="button" value="Sort" onClick={sortFn} />
+                      <input type="submit" value="Log out" />
                     </div>
                   </>
                 ) : (
@@ -290,10 +301,10 @@ export default function Streaming() {
                       type="text"
                       placeholder="Enter username.."
                       className="searchBar"
-                    ></input>
+                    />
                     <div>
-                      <input type="submit" value="Login"></input>
-                      <input type="submit" value="Register"></input>
+                      <input type="submit" value="Login" />
+                      <input type="submit" value="Register" />
                     </div>
                   </>
                 )}
@@ -306,20 +317,20 @@ export default function Streaming() {
                     type="text"
                     placeholder="Artist name.."
                     className="searchBar"
-                  ></input>
+                  />
                   <input
                     id="trackTitle"
                     type="text"
                     placeholder="Track title.."
                     className="searchBar"
-                  ></input>
+                  />
                   <input
                     id="trackURL"
                     type="text"
                     placeholder="MP3 URL.."
                     className="searchBar"
-                  ></input>
-                  <input type="submit" value="Upload"></input>
+                  />
+                  <input type="submit" value="Upload" />
                 </form>
               )}
             </div>
@@ -327,7 +338,11 @@ export default function Streaming() {
             <ul className="streaming__results">
               {search
                 .sort((a, b) => {
-                  return a.artist < b.artist ? -1 : 1;
+                  if (sort) {
+                    return a.artist < b.artist ? -1 : 1;
+                  } else {
+                    return a.artist > b.artist ? -1 : 1;
+                  }
                 })
                 .map((track) => {
                   return (

@@ -86,7 +86,7 @@
     
     font-weight: bold;
 
-    &[type="submit"] {
+    &[type="submit"], &[type="button"] {
       background-color: var(--color-blood);
       color: var(--color-grey);
       cursor: pointer;

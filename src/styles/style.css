@@ -959,29 +959,29 @@ button.dark-mode-button:active {
   font-weight: bold;
 }
 
-.toolbar input[type="submit"] {
+.toolbar input[type="submit"], .toolbar input[type="button"] {
   background-color: var(--color-blood);
   color: var(--color-grey);
   cursor: pointer;
 }
 
-.toolbar input[type="submit"]:active, .toolbar input[type="submit"]:focus, .toolbar input[type="submit"]:hover {
+.toolbar input[type="submit"]:active, .toolbar input[type="submit"]:focus, .toolbar input[type="submit"]:hover, .toolbar input[type="button"]:active, .toolbar input[type="button"]:focus, .toolbar input[type="button"]:hover {
   background-color: #aa3232;
 }
 
-.toolbar input[type="submit"]::-webkit-input-placeholder {
+.toolbar input[type="submit"]::-webkit-input-placeholder, .toolbar input[type="button"]::-webkit-input-placeholder {
   color: #525252;
 }
 
-.toolbar input[type="submit"]:-ms-input-placeholder {
+.toolbar input[type="submit"]:-ms-input-placeholder, .toolbar input[type="button"]:-ms-input-placeholder {
   color: #525252;
 }
 
-.toolbar input[type="submit"]::-ms-input-placeholder {
+.toolbar input[type="submit"]::-ms-input-placeholder, .toolbar input[type="button"]::-ms-input-placeholder {
   color: #525252;
 }
 
-.toolbar input[type="submit"]::placeholder {
+.toolbar input[type="submit"]::placeholder, .toolbar input[type="button"]::placeholder {
   color: #525252;
 }
 
