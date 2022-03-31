@@ -50,22 +50,25 @@ export default function Streaming() {
   function httpFav(id) {
     console.log(`User info: `, user);
     console.log(`favs: `, favs);
+    
+    if (favs.map((track) => track._id).indexOf(id) === -1) {
+      fetch(`${config.API_BASE_URL}/streaming-api/users/${user._id}/fav`, {
+        method: "PATCH",
+        body: JSON.stringify({ favs: id }),
+        headers: {
+          "Content-Type": "application/json",
+        },
+      });
 
-    fetch(`${config.API_BASE_URL}/streaming-api/users/${user._id}/fav`, {
-      method: "PATCH",
-      body: JSON.stringify({ favs: id }),
-      headers: {
-        "Content-Type": "application/json",
-      },
-    });
+      let favTrack = tracks.filter((track) => {
+        return track._id === id;
+      });
 
-    let favTrack = tracks.filter((track) => {
-      return track._id === id;
-    });
+      console.log(`Favtrack: `, favTrack);
 
-    console.log(`Favtrack: `, favTrack);
-
-    setFavs([...favs, ...favTrack]);
+      setFavs([...favs, ...favTrack]);
+    }
+    
   }
 
   function httpUnfav(id) {
