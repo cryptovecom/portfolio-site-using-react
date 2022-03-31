@@ -4,6 +4,7 @@ import * as config from "../config";
 export default function Streaming() {
 
     const [favs, setFavs] = useState([]);
+    const [play, setPlay] = useState(false);
     const [search, setSearch] = useState([]);
     const [sort, setSort] = useState(true);
     const [tracks, setTracks] = useState([]);
@@ -172,7 +173,16 @@ export default function Streaming() {
 
     function playPause(e) {
       var selector = document.getElementById(e);
-      selector.play();
+
+      if (!play) {
+        selector.play();
+        setPlay(!play);
+        console.log(`Play: `, play);
+      } else {
+        selector.pause();
+        setPlay(!play);
+        console.log(`Pause: `, play);
+      }
     }
 
     return (
