@@ -4,7 +4,10 @@ import * as config from "../config";
 export default function Streaming() {
 
     const [favs, setFavs] = useState([]);
-    const [play, setPlay] = useState(false);
+    const [play, setPlay] = useState({
+      id: null,
+      playing: false,
+    });
     const [search, setSearch] = useState([]);
     const [sort, setSort] = useState(true);
     const [tracks, setTracks] = useState([]);
@@ -171,16 +174,23 @@ export default function Streaming() {
       setSort(!sort);
     }
 
-    function playPause(e) {
-      var selector = document.getElementById(e);
+    function playPause(audioId) {
+      var selector = document.getElementById(audioId);
+      var selector2 = document.getElementById(play.id);
 
-      if (!play) {
+      if (!play.playing || audioId !== play.id) {
         selector.play();
-        setPlay(!play);
-        console.log(`Play: `, play);
+        play && play.id && selector2.pause();
+        setPlay({
+          id: audioId,
+          playing: !play.playing,
+        });
       } else {
         selector.pause();
-        setPlay(!play);
+        setPlay({
+          id: null,
+          playing: !play.playing,
+        });
         console.log(`Pause: `, play);
       }
     }
