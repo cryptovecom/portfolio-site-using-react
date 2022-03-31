@@ -321,41 +321,39 @@ export default function Streaming() {
             </div>
 
             <ul className="streaming__results">
-              {search.map((track) => {
-                return (
-                  <li key={track._id}>
-                    <button className={`button-play`}>
-                      {track.artist} - {track.title}
-                      <audio controls>
-                        <source src={track.url} type="audio/mpeg" />
-                        Your browser does not support the audio element.
-                      </audio>
-                    </button>
-                    {user && user.role && (
-                      // <button
-                      //   className={`${
-                      //     user.favs.indexOf(track._id) !== -1 ? "fav-green" : ""
-                      //   } button-do button-fav`}
-                      //   onClick={() => httpFav(track._id)}
-                      // >
-                      <button
-                        className={`button-do button-fav`}
-                        onClick={() => httpFav(track._id)}
-                      >
-                        ❤️
+              {search
+                .sort((a, b) => {
+                  return a.artist < b.artist ? -1 : 1;
+                })
+                .map((track) => {
+                  return (
+                    <li key={track._id}>
+                      <button className={`button-play`}>
+                        {track.artist} - {track.title}
+                        <audio controls>
+                          <source src={track.url} type="audio/mpeg" />
+                          Your browser does not support the audio element.
+                        </audio>
                       </button>
-                    )}
-                    {user && user.role === "Admin" && (
-                      <button
-                        className="button-do button-del"
-                        onClick={() => httpDelete(track._id)}
-                      >
-                        🗑️
-                      </button>
-                    )}
-                  </li>
-                );
-              })}
+                      {user && user.role && (
+                        <button
+                          className={`button-do button-fav`}
+                          onClick={() => httpFav(track._id)}
+                        >
+                          ❤️
+                        </button>
+                      )}
+                      {user && user.role === "Admin" && (
+                        <button
+                          className="button-do button-del"
+                          onClick={() => httpDelete(track._id)}
+                        >
+                          🗑️
+                        </button>
+                      )}
+                    </li>
+                  );
+                })}
             </ul>
           </section>
         </section>
