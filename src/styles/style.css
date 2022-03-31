@@ -924,6 +924,22 @@ button.dark-mode-button:active {
   -webkit-box-flex: 1;
       -ms-flex-positive: 1;
           flex-grow: 1;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: .25rem;
+}
+
+.toolbar .user-panel div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
   gap: .25rem;
 }
 

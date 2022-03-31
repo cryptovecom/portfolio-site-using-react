@@ -220,7 +220,7 @@ export default function Streaming() {
                       Audio doesn't work, yet, and there are still a few bugs
                       lurking!
                     </li>
-                    <li>That's it, lel.</li>
+                    <li>That's it!</li>
                   </>
                 )}
               </ol>
@@ -232,10 +232,9 @@ export default function Streaming() {
                 module at Hyper Island in March, 2022.
               </p>
               <p>
-                The frontend was made in React and deployed through a pipeline
-                between Github and Netlify. The Node.js API I built is hosted on
-                Heroku and the MongoDB database is running as a MongoDB Atlas
-                cluster.
+                The frontend was made with React.js and deployed through a on
+                Netlify throug Github. The Node.js API I built is hosted on
+                Heroku and the MongoDB database is running as an Atlas cluster.
               </p>
               <p>
                 <img
@@ -276,8 +275,10 @@ export default function Streaming() {
                         searchFn(e);
                       }}
                     ></input>
-                    <input type="submit" value="Search"></input>
-                    <input type="submit" value="Log out"></input>
+                    <div>
+                      <input type="submit" value="Search"></input>
+                      <input type="submit" value="Log out"></input>
+                    </div>
                   </>
                 ) : (
                   <>
@@ -286,8 +287,10 @@ export default function Streaming() {
                       placeholder="Enter username.."
                       className="searchBar"
                     ></input>
-                    <input type="submit" value="Login"></input>
-                    <input type="submit" value="Register"></input>
+                    <div>
+                      <input type="submit" value="Login"></input>
+                      <input type="submit" value="Register"></input>
+                    </div>
                   </>
                 )}
               </form>

@@ -62,7 +62,15 @@
     display: flex;
     flex-direction: row;
     flex-grow: 1;
+    flex-wrap: wrap;
     gap: .25rem;
+
+    div {
+      display: flex;
+      flex-direction: row;
+      flex-grow: 1;
+      gap: .25rem;
+    }
 
     input {
       flex-grow: 1;
