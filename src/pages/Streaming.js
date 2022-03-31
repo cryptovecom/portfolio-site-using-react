@@ -222,9 +222,12 @@ export default function Streaming() {
                     .map((track) => {
                       return (
                         <li key={track._id + "x"}>
-                          <button className="button-play">
+                          <button
+                            className="button-play"
+                            onClick={() => playPause(`fav-${track._id}`)}
+                          >
                             {track.artist} - {track.title}
-                            <audio controls>
+                            <audio id={`fav-${track._id}`} controls>
                               <source src={track.url} type="audio/mpeg" />
                               Your browser does not support the audio element.
                             </audio>
