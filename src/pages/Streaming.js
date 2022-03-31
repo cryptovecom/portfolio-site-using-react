@@ -291,7 +291,11 @@ export default function Streaming() {
                     ></input>
                     <div>
                       <input type="submit" value="Search" />
-                      <input type="button" value="Sort" onClick={sortFn} />
+                      <input
+                        type="button"
+                        value={sort ? "A : Z" : "Z : A"}
+                        onClick={sortFn}
+                      />
                       <input type="submit" value="Log out" />
                     </div>
                   </>
