@@ -1058,8 +1058,6 @@ button.dark-mode-button:active {
           box-shadow: none;
   font-size: var(--h6);
   font-weight: bold;
-  -webkit-transition: calc(var(--speed-slow) * 3);
-  transition: calc(var(--speed-slow) * 3);
 }
 
 .streaming__results li button audio {
@@ -1068,8 +1066,8 @@ button.dark-mode-button:active {
 
 .streaming__results li button:hover {
   background-color: var(--color-white);
-  -webkit-transition: calc(var(--speed-fast) / 2);
-  transition: calc(var(--speed-fast) / 2);
+  -webkit-transition: 0s;
+  transition: 0s;
 }
 
 .streaming__results li button.button-play {
@@ -1082,17 +1080,11 @@ button.dark-mode-button:active {
 }
 
 .streaming__results li button.button-do {
-  background-color: #dfdfdf;
-}
-
-.streaming__results li button.button-do:hover {
-  opacity: 1;
+  background-color: var(--color-white);
 }
 
 .streaming__results li button.fav-green {
   background-color: var(--color-green);
-  -webkit-transition: 0s;
-  transition: 0s;
 }
 
 .streaming__results li button.button-del:hover {
@@ -1100,7 +1092,7 @@ button.dark-mode-button:active {
 }
 
 .streaming__results li button.button-fav:hover {
-  background-color: var(--color-green);
+  background-color: var(--color-yellow);
 }
 
 /* BANNER */
