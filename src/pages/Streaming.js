@@ -177,25 +177,29 @@ export default function Streaming() {
             <ul className="streaming__results">
               {user &&
                 user.role &&
-                favs.map((track) => {
-                  return (
-                    <li key={track._id + "x"}>
-                      <button className="button-play">
-                        {track.artist} - {track.title}
-                        <audio controls>
-                          <source src={track.url} type="audio/mpeg" />
-                          Your browser does not support the audio element.
-                        </audio>
-                      </button>
-                      <button
-                        className="button-do button-fav"
-                        onClick={() => httpUnfav(track._id)}
-                      >
-                        💔
-                      </button>
-                    </li>
-                  );
-                })}
+                favs
+                  .sort((a, b) => {
+                    return a.artist < b.artist ? -1 : 1;
+                  })
+                  .map((track) => {
+                    return (
+                      <li key={track._id + "x"}>
+                        <button className="button-play">
+                          {track.artist} - {track.title}
+                          <audio controls>
+                            <source src={track.url} type="audio/mpeg" />
+                            Your browser does not support the audio element.
+                          </audio>
+                        </button>
+                        <button
+                          className="button-do button-fav"
+                          onClick={() => httpUnfav(track._id)}
+                        >
+                          💔
+                        </button>
+                      </li>
+                    );
+                  })}
             </ul>
             <aside className="card how-to">
               <h6>HOW TO USE</h6>
