@@ -29,7 +29,7 @@ export default function Streaming() {
         .catch((err) => {
           console.error(err);
         });
-    }, []);
+    }, [tracks]);
 
     function httpPost(e) {
       e.preventDefault();
