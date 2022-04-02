@@ -148,6 +148,13 @@
         width: 9rem;
       }
 
+      &.playing {
+        background-color: var(--color-yellow);
+      
+        &:hover {
+          background-color: var(--color-orange);
+        }
+      }
       &:hover {
         background-color: var(--color-white);
         transition: 0s;

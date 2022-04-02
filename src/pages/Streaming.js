@@ -174,21 +174,28 @@ export default function Streaming() {
       setSort(!sort);
     }
 
-    function playPause(audioId) {
+    function playPause(audioId, btnId) {
       var selector = document.getElementById(audioId);
       var selector2 = document.getElementById(play.id);
+      var btnSelector1 = document.getElementById(btnId);
+      var btnSelector2 = document.getElementById(play.btn);
 
       if (!play.playing || audioId !== play.id) {
         selector.play();
+        btnSelector1.classList.toggle("playing");
         play && play.id && selector2.pause();
+        play && play.btn && btnSelector2.classList.toggle("playing");
         setPlay({
           id: audioId,
+          btn: btnId,
           playing: !play.playing,
         });
       } else {
         selector.pause();
+        btnSelector1.classList.toggle("playing");
         setPlay({
           id: null,
+          btn: null,
           playing: !play.playing,
         });
         console.log(`Pause: `, play);
@@ -224,7 +231,13 @@ export default function Streaming() {
                         <li key={track._id + "x"}>
                           <button
                             className="button-play"
-                            onClick={() => playPause(`fav-${track._id}`)}
+                            id={`fav-btn-${track._id}`}
+                            onClick={() =>
+                              playPause(
+                                `fav-${track._id}`,
+                                `fav-btn-${track._id}`
+                              )
+                            }
                           >
                             {track.artist} - {track.title}
                             <audio id={`fav-${track._id}`} controls>

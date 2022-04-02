@@ -1064,6 +1064,14 @@ button.dark-mode-button:active {
   width: 9rem;
 }
 
+.streaming__results li button.playing {
+  background-color: var(--color-yellow);
+}
+
+.streaming__results li button.playing:hover {
+  background-color: var(--color-orange);
+}
+
 .streaming__results li button:hover {
   background-color: var(--color-white);
   -webkit-transition: 0s;
