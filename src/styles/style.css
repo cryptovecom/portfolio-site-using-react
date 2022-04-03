@@ -1061,6 +1061,7 @@ button.dark-mode-button:active {
 }
 
 .streaming__results li button audio {
+  visibility: hidden;
   width: 9rem;
 }
 
