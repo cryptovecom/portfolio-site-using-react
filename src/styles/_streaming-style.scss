@@ -145,18 +145,33 @@
       font-weight: bold;
 
       audio {
-        // display: none;
         visibility: hidden;
         width: 9rem;
       }
 
       &.playing {
         background-color: var(--color-yellow);
+        animation: playing 2s ease-out infinite;
+        
+        @keyframes playing {
+          0% {
+            background-color: var(--color-grey);
+          }
+        
+          50% {
+            background-color: var(--color-white);
+          }
+        
+          100% {
+            background-color: var(--color-grey);
+          }
+        }
       
         &:hover {
           background-color: var(--color-orange);
         }
       }
+
       &:hover {
         background-color: var(--color-white);
         transition: 0s;

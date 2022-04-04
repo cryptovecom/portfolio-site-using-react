@@ -1067,6 +1067,32 @@ button.dark-mode-button:active {
 
 .streaming__results li button.playing {
   background-color: var(--color-yellow);
+  -webkit-animation: playing 2s ease-out infinite;
+          animation: playing 2s ease-out infinite;
+}
+
+@-webkit-keyframes playing {
+  0% {
+    background-color: var(--color-grey);
+  }
+  50% {
+    background-color: var(--color-white);
+  }
+  100% {
+    background-color: var(--color-grey);
+  }
+}
+
+@keyframes playing {
+  0% {
+    background-color: var(--color-grey);
+  }
+  50% {
+    background-color: var(--color-white);
+  }
+  100% {
+    background-color: var(--color-grey);
+  }
 }
 
 .streaming__results li button.playing:hover {

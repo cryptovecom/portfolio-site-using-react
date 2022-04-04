@@ -399,7 +399,13 @@ export default function Streaming() {
                       <li key={track._id}>
                         <button
                           className={`button-play`}
-                          onClick={() => playPause(`track-${track._id}`)}
+                          id={`track-btn-${track._id}`}
+                          onClick={() =>
+                            playPause(
+                              `track-${track._id}`,
+                              `track-btn-${track._id}`
+                            )
+                          }
                         >
                           {track.artist} - {track.title}
                           <audio id={`track-${track._id}`} controls>
