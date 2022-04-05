@@ -1061,11 +1061,12 @@ button.dark-mode-button:active {
 }
 
 .streaming__results li button audio {
-  visibility: hidden;
+  display: none;
   width: 9rem;
 }
 
 .streaming__results li button.playing {
+  z-index: 1;
   background-color: var(--color-yellow);
   -webkit-animation: playing 2s ease-out infinite;
           animation: playing 2s ease-out infinite;
@@ -1073,10 +1074,10 @@ button.dark-mode-button:active {
 
 @-webkit-keyframes playing {
   0% {
-    background-color: var(--color-grey);
+    background-color: var(--color-orange);
   }
   50% {
-    background-color: var(--color-white);
+    background-color: var(--color-yellow);
   }
   100% {
     background-color: var(--color-grey);
@@ -1085,10 +1086,10 @@ button.dark-mode-button:active {
 
 @keyframes playing {
   0% {
-    background-color: var(--color-grey);
+    background-color: var(--color-orange);
   }
   50% {
-    background-color: var(--color-white);
+    background-color: var(--color-yellow);
   }
   100% {
     background-color: var(--color-grey);
@@ -1405,7 +1406,7 @@ p:first-child {
   margin-top: 0;
 }
 
-/* CLASSES CLASSES CLASSES CLASSES CLASSES CLASSES CLASSES CLASSES CLASSES CLASSES */
+/* CLASSES CLASSES CLASSES CLASSES CLASSES CLASSES CLASSES CLASSES CLASSES */
 .card {
   -webkit-transition: 5s;
   transition: 5s;

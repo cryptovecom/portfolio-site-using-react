@@ -14,21 +14,20 @@ export default function Streaming() {
     const [user, setUser] = useState(null);
 
     useEffect(() => {
-      fetch(`${config.API_BASE_URL}/streaming-api/tracks`, {
-        headers: {
-          "content-type": "application/json",
-        },
-      })
-        .then((response) => {
-          return response.json();
-        })
-        .then((result) => {
-          setTracks(result);
-          setSearch(result);
-        })
-        .catch((err) => {
-          console.error(err);
-        });
+      const fetchTracks = async () => {
+        const result = await fetch(
+          `${config.API_BASE_URL}/streaming-api/tracks`,
+          {
+            headers: {
+              "content-type": "application/json",
+            },
+          }
+        );
+        const body = await result.json();
+        setTracks(body);
+        setSearch(body);
+      };
+      fetchTracks();
     }, []);
 
     function httpPost(e) {
