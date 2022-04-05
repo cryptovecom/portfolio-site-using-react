@@ -151,22 +151,19 @@
       }
 
       &.playing {
-        // outline: .5rem solid var(--color-yellow);
         z-index: 1;
-        background-color: var(--color-yellow);
-        animation: playing 2s ease-out infinite;
+        animation: playing 1.618s ease-out infinite;
         
         @keyframes playing {
           0% {
-            background-color: var(--color-orange);
-          }
-        
-          50% {
             background-color: var(--color-yellow);
           }
+          // 50% {
+          //   background-color: var(--color-yellow);
+          // }
         
           100% {
-            background-color: var(--color-grey);
+            background-color: var(--color-white);
           }
         }
       

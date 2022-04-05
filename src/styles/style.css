@@ -1067,32 +1067,25 @@ button.dark-mode-button:active {
 
 .streaming__results li button.playing {
   z-index: 1;
-  background-color: var(--color-yellow);
-  -webkit-animation: playing 2s ease-out infinite;
-          animation: playing 2s ease-out infinite;
+  -webkit-animation: playing 1.618s ease-out infinite;
+          animation: playing 1.618s ease-out infinite;
 }
 
 @-webkit-keyframes playing {
   0% {
-    background-color: var(--color-orange);
-  }
-  50% {
     background-color: var(--color-yellow);
   }
   100% {
-    background-color: var(--color-grey);
+    background-color: var(--color-white);
   }
 }
 
 @keyframes playing {
   0% {
-    background-color: var(--color-orange);
-  }
-  50% {
     background-color: var(--color-yellow);
   }
   100% {
-    background-color: var(--color-grey);
+    background-color: var(--color-white);
   }
 }
 
