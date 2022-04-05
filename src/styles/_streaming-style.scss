@@ -127,7 +127,7 @@
     align-items: center;
     justify-content: space-between;
 
-    background-color: var(--color-grey);
+    // background-color: var(--color-grey);
 
     button {
       height: 6rem;
@@ -145,25 +145,23 @@
       font-weight: bold;
 
       audio {
-        // visibility: hidden;
         display: none;
         width: 9rem;
       }
 
       &.playing {
+        background: var(--color-dark);
+        transform: translateX(1rem);
         z-index: 1;
-        animation: playing 1.618s ease-out infinite;
+        animation: playing 1.618s ease-in infinite;
         
         @keyframes playing {
-          0% {
-            background-color: var(--color-yellow);
+          from {
+            background: var(--color-white);
           }
-          // 50% {
-          //   background-color: var(--color-yellow);
-          // }
-        
-          100% {
-            background-color: var(--color-white);
+          
+          to {
+            background: var(--color-grey);
           }
         }
       
@@ -185,6 +183,7 @@
 
         color: var(--color-dark);
         text-align: left;
+        transition: var(--speed-fast) ease-out;
       }
 
       &.button-do {
