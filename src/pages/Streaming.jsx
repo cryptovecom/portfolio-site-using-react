@@ -282,11 +282,26 @@ export default function Streaming() {
               </ol>
             </aside>
             <aside className="card how-to">
-              <h6>ABOUT THIS PROJECT</h6>
+              <h6>THE BRIEF</h6>
               <p>
                 I built this app during the <strong>Data Interaction</strong>{" "}
                 module at Hyper Island in March, 2022.
               </p>
+              <p>
+                The new focus of this brief is purely around what you choose to be invested in. No algorithms, no big data, just you and your favorite content.
+                They require a new platform, and know that API first is the way to go when building something new and great as to support their web, mobile and beyond.
+              </p>
+              <ul>
+                <li>New users should be able to register</li>
+                <li>Admin users should be able to add new content</li>
+                <li>User should be able to find content</li>
+                <li>Users should be able to save content to a list of favorites</li>
+                <li>The list of favorites should be front and center throughout the entire experience</li>
+              </ul>
+            </aside>
+            <aside className="card how-to">
+              <h6>MY SOLUTION</h6>
+              
               <p>
                 The frontend was made with React.js and deployed through a on
                 Netlify throug Github. The Node.js API I built is hosted on
@@ -316,6 +331,8 @@ export default function Streaming() {
               </p>
             </aside>
           </section>
+            
+            
           {/* RIGHT SECTION - RIGHT SECTION - RIGHT SECTION */}
 
           <section className="streaming__main">
