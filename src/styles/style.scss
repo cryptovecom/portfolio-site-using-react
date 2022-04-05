@@ -220,6 +220,10 @@ p {
       box-shadow: -0.3rem 0.4rem .01rem rgba(0, 0, 0, 0.15);
       transition: var(--speed-fast);
     }
+    &.how-to blockquote {
+      border-radius: 1rem;
+      transition: var(--speed-fast);
+    }
   }
 }
 

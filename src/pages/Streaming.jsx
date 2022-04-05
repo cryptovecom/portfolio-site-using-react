@@ -287,17 +287,20 @@ export default function Streaming() {
                 I built this app during the <strong>Data Interaction</strong>{" "}
                 module at Hyper Island in March, 2022.
               </p>
-              <p>
-                The new focus of this brief is purely around what you choose to be invested in. No algorithms, no big data, just you and your favorite content.
-                They require a new platform, and know that API first is the way to go when building something new and great as to support their web, mobile and beyond.
-              </p>
-              <ul>
-                <li>New users should be able to register</li>
-                <li>Admin users should be able to add new content</li>
-                <li>User should be able to find content</li>
-                <li>Users should be able to save content to a list of favorites</li>
-                <li>The list of favorites should be front and center throughout the entire experience</li>
-              </ul>
+              <blockquote>
+                <p>
+                  The new focus of this brief is purely around what you choose to be invested in. No algorithms, no big data, just you and your favorite content.
+                  They require a new platform, and know that API first is the way to go when building something new and great as to support their web, mobile and beyond.
+                </p>
+                <ul>
+                  <li>New users should be able to register</li>
+                  <li>Admin users should be able to add new content</li>
+                  <li>User should be able to find content</li>
+                  <li>Users should be able to save content to a list of favorites</li>
+                  <li>The list of favorites should be front and center throughout the entire experience</li>
+                </ul>
+              </blockquote>
+              
             </aside>
             <aside className="card how-to">
               <h6>MY SOLUTION</h6>

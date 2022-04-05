@@ -20,7 +20,15 @@
     h1 {
       color: var(--color-dark);
     }
-
+    
+    ul {
+      padding-left: 1.5rem;
+    
+      li {
+        list-style: disc;
+        padding-left: .5rem;
+      }
+    }
     ol {
       padding-left: 1.5rem;
       
@@ -33,9 +41,13 @@
     &.how-to {
       background: var(--color-white);
       color: var(--color-dark);
-  }
-
-  
+      blockquote {
+        padding: 2rem;
+        background-color: rgb(225, 225, 225);
+      
+        transition: 5s;
+      }
+    }
   }
 }
 

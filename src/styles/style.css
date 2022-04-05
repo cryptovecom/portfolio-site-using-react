@@ -868,6 +868,15 @@ button.dark-mode-button:active {
   color: var(--color-dark);
 }
 
+.streaming__banner aside ul {
+  padding-left: 1.5rem;
+}
+
+.streaming__banner aside ul li {
+  list-style: disc;
+  padding-left: .5rem;
+}
+
 .streaming__banner aside ol {
   padding-left: 1.5rem;
 }
@@ -880,6 +889,13 @@ button.dark-mode-button:active {
 .streaming__banner aside.how-to {
   background: var(--color-white);
   color: var(--color-dark);
+}
+
+.streaming__banner aside.how-to blockquote {
+  padding: 2rem;
+  background-color: #e1e1e1;
+  -webkit-transition: 5s;
+  transition: 5s;
 }
 
 .streaming__main {
@@ -1419,6 +1435,12 @@ p:first-child {
   background-color: var(--color-white);
   -webkit-box-shadow: -0.3rem 0.4rem 0.01rem rgba(0, 0, 0, 0.15);
           box-shadow: -0.3rem 0.4rem 0.01rem rgba(0, 0, 0, 0.15);
+  -webkit-transition: var(--speed-fast);
+  transition: var(--speed-fast);
+}
+
+.card:hover.how-to blockquote {
+  border-radius: 1rem;
   -webkit-transition: var(--speed-fast);
   transition: var(--speed-fast);
 }
