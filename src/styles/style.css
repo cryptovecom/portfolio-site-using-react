@@ -1082,9 +1082,10 @@ button.dark-mode-button:active {
 
 .streaming__results li button.playing {
   background: var(--color-dark);
+  border-radius: 1rem 0 0 1rem;
   -webkit-transform: translateX(1rem);
           transform: translateX(1rem);
-  z-index: 1;
+  z-index: 0;
   -webkit-animation: playing 1.618s ease-in infinite;
           animation: playing 1.618s ease-in infinite;
 }
@@ -1124,6 +1125,15 @@ button.dark-mode-button:active {
       align-content: center;
   color: var(--color-dark);
   text-align: left;
+  -webkit-transition: var(--speed-fast) ease-out;
+  transition: var(--speed-fast) ease-out;
+}
+
+.streaming__results li button.button-play:hover {
+  border-radius: 1rem 0 0 1rem;
+  color: var(--color-dark);
+  -webkit-transform: translateX(1rem);
+          transform: translateX(1rem);
   -webkit-transition: var(--speed-fast) ease-out;
   transition: var(--speed-fast) ease-out;
 }

@@ -44,7 +44,7 @@
       blockquote {
         padding: 2rem;
         background-color: rgb(225, 225, 225);
-      
+        
         transition: 5s;
       }
     }
@@ -139,8 +139,6 @@
     align-items: center;
     justify-content: space-between;
 
-    // background-color: var(--color-grey);
-
     button {
       height: 6rem;
       border: none;  
@@ -163,8 +161,9 @@
 
       &.playing {
         background: var(--color-dark);
+        border-radius: 1rem 0 0 1rem;
         transform: translateX(1rem);
-        z-index: 1;
+        z-index: 0;
         animation: playing 1.618s ease-in infinite;
         
         @keyframes playing {
@@ -196,6 +195,12 @@
         color: var(--color-dark);
         text-align: left;
         transition: var(--speed-fast) ease-out;
+        &:hover {
+          border-radius: 1rem 0 0 1rem;
+          color: var(--color-dark);
+          transform: translateX(1rem);
+          transition: var(--speed-fast) ease-out;
+        }
       }
 
       &.button-do {

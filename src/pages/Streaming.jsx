@@ -287,9 +287,10 @@ export default function Streaming() {
                 I built this app during the <strong>Data Interaction</strong>{" "}
                 module at Hyper Island in March, 2022.
               </p>
+              <p>These were the instructions:</p>
               <blockquote>
                 <p>
-                  The new focus of this brief is purely around what you choose to be invested in. No algorithms, no big data, just you and your favorite content.
+                  Great Media Group has decided to relaunch, the new focus is purely around what you choose to be invested in. No algorithms, no big data, just you and your favorite content.
                   They require a new platform, and know that API first is the way to go when building something new and great as to support their web, mobile and beyond.
                 </p>
                 <ul>
