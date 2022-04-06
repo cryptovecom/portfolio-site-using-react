@@ -846,7 +846,7 @@ button.dark-mode-button:active {
 }
 
 .streaming__banner {
-  min-width: 42vw;
+  max-width: 38vw;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
