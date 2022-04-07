@@ -357,7 +357,8 @@ template {
 }
 
 .landing__second div {
-  padding: 2rem;
+  height: 90vh;
+  padding: 6rem 2rem 6rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -449,6 +450,7 @@ template {
 .landing__banner {
   min-width: 33vw;
   padding: 2rem;
+  border-top: 1rem solid var(--color-dar);
   background: var(--color-blood) url(../../public/images/svg/stacked-waves-haikei.svg) no-repeat center center;
   background-size: cover;
   color: var(--color-white);
@@ -1254,6 +1256,7 @@ svg {
 }
 
 body {
+  background-color: var(--color-dark);
   min-width: 280px;
   width: 100vw;
   position: relative;

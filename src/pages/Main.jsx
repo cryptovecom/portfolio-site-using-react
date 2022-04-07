@@ -92,13 +92,13 @@ export default function Main(props) {
                 className="icon"
               />
               <img
-                src="./images/icons/js.png"
-                alt="Javascript Icon"
+                src="./images/icons/sass.png"
+                alt="Sass Icon"
                 className="icon"
               />
               <img
-                src="./images/icons/sass.png"
-                alt="Sass Icon"
+                src="./images/icons/js.png"
+                alt="Javascript Icon"
                 className="icon"
               />
               <img

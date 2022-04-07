@@ -9,10 +9,12 @@
 .landing__second {
   // z-index: 1;
   background-color: var(--color-dark);
+
 }
 
 .landing__second div {
-  padding: 2rem;
+  height: 90vh;
+  padding: 6rem 2rem 6rem;
 
   display: flex;
   align-items: center;
@@ -93,6 +95,7 @@
 .landing__banner {
   min-width: 33vw;
   padding: 2rem;
+  border-top: 1rem solid var(--color-dar);
 
   background: 
     var(--color-blood) 
