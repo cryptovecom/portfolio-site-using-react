@@ -5,7 +5,6 @@ import Main from "./pages/Main";
 import Streaming from "./pages/Streaming";
 import Blog from "./pages/Blog";
 import Page404 from "./pages/Page404";
-import Cake from "./pages/Cake";
 import Sandbox from "./pages/Sandbox";
 import BlogPost from "./pages/BlogPost";
 import linkList from "./components/linkList";
@@ -20,7 +19,6 @@ function App() {
         <Route exact path="/streaming" element={<Streaming />} />
         <Route path="/blog" element={<Blog />} />
         <Route path="/blog/:post" element={<BlogPost />} />
-        <Route path="/cake" element={<Cake />} />
         <Route path="/sandbox" element={<Sandbox />} />
         <Route path="*" element={<Page404 />} />
       </Routes>

@@ -10,12 +10,13 @@ export default function Main(props) {
   return (
     <>
       <main>
+        <section className="michel"></section>
         <section className="landing__top">
+          
           <section className="landing__banner">
             <h1>This school project was build using the MERN stack.</h1>
           </section>
           <section className="landing-list">
-            <div className="michel"></div>
             <section>
               <ul className="home-list">
                 <li
