@@ -4,6 +4,8 @@
   gap: 1rem;
   height: 100%;
   background-color: var(--color-dark);
+  border-top: 1rem solid var(--color-dark);
+  box-shadow: 0 -6rem 6rem var(--color-dark);
 }
 
 .landing__second {
@@ -21,7 +23,7 @@
   justify-content: center;
   flex-direction: column;
 
-  background-color: var(--color-white);
+  background-color: var(--color-grey);
 
   span {
     margin: .33rem;

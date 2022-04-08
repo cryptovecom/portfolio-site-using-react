@@ -14,7 +14,7 @@ export default function Main(props) {
         <section className="landing__top">
           
           <section className="landing__banner">
-            <h1>This school project was build using the MERN stack.</h1>
+            <h1>This school project runs on the MERN stack.</h1>
           </section>
           <section className="landing-list">
             <section>

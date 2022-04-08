@@ -350,6 +350,9 @@ template {
   gap: 1rem;
   height: 100%;
   background-color: var(--color-dark);
+  border-top: 1rem solid var(--color-dark);
+  -webkit-box-shadow: 0 -6rem 6rem var(--color-dark);
+          box-shadow: 0 -6rem 6rem var(--color-dark);
 }
 
 .landing__second {
@@ -372,7 +375,7 @@ template {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  background-color: var(--color-white);
+  background-color: var(--color-grey);
 }
 
 .landing__second div span {
