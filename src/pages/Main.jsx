@@ -11,7 +11,7 @@ export default function Main(props) {
     <>
       <main>
         <section className="michel"></section>
-        <section className="landing__top">
+        <section className="landing__top border__top">
           
           <section className="landing__banner">
             <h1>This school project runs on the MERN stack.</h1>
