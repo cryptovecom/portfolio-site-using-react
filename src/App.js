@@ -1,7 +1,7 @@
 import React from "react";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
-import Main from "./pages/Main";
+import Home from "./pages/Home";
 import Streaming from "./pages/Streaming";
 import Blog from "./pages/Blog";
 import Page404 from "./pages/Page404";
@@ -15,7 +15,7 @@ function App() {
     <>
       <Header />
       <Routes>
-        <Route exact path="/" element={<Main linkList={linkList} />} />
+        <Route exact path="/" element={<Home linkList={linkList} />} />
         <Route exact path="/streaming" element={<Streaming />} />
         <Route path="/blog" element={<Blog />} />
         <Route path="/blog/:post" element={<BlogPost />} />

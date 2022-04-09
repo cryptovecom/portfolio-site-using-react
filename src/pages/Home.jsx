@@ -1,7 +1,7 @@
 import Goals from "../components/Goals";
 import { Link } from "react-router-dom";
 
-export default function Main(props) {
+export default function Home(props) {
   const linkList = props.linkList.map((object, i) => {
     object.id = i;
     return object;
@@ -10,11 +10,13 @@ export default function Main(props) {
   return (
     <>
       <main>
-        <section className="michel"></section>
-        <section className="landing__top border__top">
-          
+        <section className="michel">
+          <h2>Creative generalist exploring consciousness through art and technology.</h2>
+        </section>
+        <section className="landing__top">
+            
           <section className="landing__banner">
-            <h1>This school project runs on the MERN stack.</h1>
+            <h2>I am currently studying frontend web development at Hyper Island.</h2>
           </section>
           <section className="landing-list">
             <section>
@@ -29,6 +31,7 @@ export default function Main(props) {
                     className={`landing-list school-project`}
                   >
                     <h2>Data Interaction</h2>
+
                     <div>
                       <img
                         src="./images/icons/react.png"
@@ -80,6 +83,7 @@ export default function Main(props) {
         <section className="landing__second">
           <div>
             <h2>I'm learning!</h2>
+            <br />
             <p>
               <img
                 src="./images/icons/html5.png"
@@ -123,21 +127,12 @@ export default function Main(props) {
               />
             </p>
             <p>
-              Below you see the progress I've made with the course goals at
-              Hyper Island's{" "}
-              <a
-                href="https://www.hyperisland.com/programs-and-courses/frontend-developer"
-                target="_blank"
-                rel="noreferrer"
-              >
-                frontend developer program
-              </a>
-              .
+              Below you see the progress I've made with my course goalz.
             </p>
             <p>
               <span className="passed">Passed</span>{" "}
               <span className="wip">Learning</span>{" "}
-              <span className="future">Internship Goalz</span>
+              <span className="future">Future</span>
             </p>
           </div>
         </section>
