@@ -1271,8 +1271,6 @@ body {
   row-gap: 1rem;
   -ms-grid-rows: auto;
       grid-template-rows: auto;
-  overflow-x: hidden;
-  /* Prevents scroll bar during animations */
   color: var(--color-dark);
   font-size: var(--base-font-size);
   line-height: 1.5;
@@ -1290,6 +1288,7 @@ body {
       align-content: stretch;
   min-height: 100vh;
   width: 100vw;
+  overflow-x: hidden;
 }
 
 /* HEADER HEADER HEADER HEADER HEADER HEADER HEADER HEADER HEADER HEADER HEADER */
@@ -1475,6 +1474,12 @@ p:first-child {
 }
 
 /* MEDIA QUERIES MEDIA QUERIES MEDIA QUERIES MEDIA QUERIES MEDIA QUERIES MEDIA QUERIES */
+@media screen and (max-width: 375px) {
+  :root {
+    --base-font-size: 1rem;
+  }
+}
+
 @media screen and (max-width: 64rem) {
   .landing__top {
     display: -webkit-box;
