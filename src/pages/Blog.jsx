@@ -15,7 +15,7 @@ export default function Blog() {
   return (
     <>
       <main>
-        <section className="landing__top">
+        <section className="blog__top">
           <section className="blog__banner">
             <h1 className="dragon-text">Free will is an illusion</h1>
           </section>
@@ -36,36 +36,44 @@ export default function Blog() {
                   </li>
                 ))}
             </ul>
-            <aside className="card">
-              <h6>MAR 2022</h6>
-              <p>
-                Adding MERN-stack structure to explore Javascript backend
-                technologies.
-              </p>
-            </aside>
-            <aside className="card">
-              <h6>JAN 2022</h6>
-              <p>
-                The site was refactored using React.js and published to Netlify
-                via&nbsp;
-                <a
-                  href="https://github.com/iseneld"
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  Github
-                </a>
-                .
-              </p>
-            </aside>
-            <aside className="card">
-              <h6>SEP 2021</h6>
-              <p>
-                This is a dummy site made as my very first school project to
-                practice HTML, CSS and Javascript.
-              </p>
-            </aside>
           </section>
+        </section>
+        <section className="blog__cards">
+          <aside className="card">
+            <h6>APR 2022</h6>
+            <p>
+              CSS has been cleaned up and made a big mess again. 
+            </p>
+          </aside>
+          <aside className="card">
+            <h6>MAR 2022</h6>
+            <p>
+              Adding MERN-stack structure to explore Javascript backend
+              technologies.
+            </p>
+          </aside>
+          <aside className="card">
+            <h6>JAN 2022</h6>
+            <p>
+              The site was refactored using React.js and published to Netlify
+              via&nbsp;
+              <a
+                href="https://github.com/iseneld"
+                target="_blank"
+                rel="noreferrer"
+              >
+                Github
+              </a>
+              .
+            </p>
+          </aside>
+          <aside className="card">
+            <h6>SEP 2021</h6>
+            <p>
+              This is a dummy site made as my very first school project to
+              practice HTML, CSS and Javascript.
+            </p>
+          </aside>
         </section>
       </main>
     </>
