@@ -1415,6 +1415,15 @@ button {
   cursor: pointer;
 }
 
+details {
+  cursor: pointer;
+}
+
+details p,
+details blockquote {
+  cursor: text;
+}
+
 h1 {
   font-size: var(--h1);
 }

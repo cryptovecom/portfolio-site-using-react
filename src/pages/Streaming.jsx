@@ -287,20 +287,23 @@ export default function Streaming() {
                 I built this app during the <strong>Data Interaction</strong>{" "}
                 module at Hyper Island in March, 2022.
               </p>
-              <p>These were the instructions:</p>
-              <blockquote>
-                <p>
-                  Great Media Group has decided to relaunch, the new focus is purely around what you choose to be invested in. No algorithms, no big data, just you and your favorite content.
-                  They require a new platform, and know that API first is the way to go when building something new and great as to support their web, mobile and beyond.
-                </p>
-                <ul>
-                  <li>New users should be able to register</li>
-                  <li>Admin users should be able to add new content</li>
-                  <li>User should be able to find content</li>
-                  <li>Users should be able to save content to a list of favorites</li>
-                  <li>The list of favorites should be front and center throughout the entire experience</li>
-                </ul>
-              </blockquote>
+              <details>
+                <summary>The brief:</summary>
+                <blockquote>
+                  <p>
+                    Great Media Group has decided to relaunch, the new focus is purely around what you choose to be invested in. No algorithms, no big data, just you and your favorite content.
+                    They require a new platform, and know that API first is the way to go when building something new and great as to support their web, mobile and beyond.
+                  </p>
+                  <ul>
+                    <li>New users should be able to register</li>
+                    <li>Admin users should be able to add new content</li>
+                    <li>User should be able to find content</li>
+                    <li>Users should be able to save content to a list of favorites</li>
+                    <li>The list of favorites should be front and center throughout the entire experience</li>
+                  </ul>
+                </blockquote>
+              </details>
+              
               
             </aside>
             <aside className="card how-to">

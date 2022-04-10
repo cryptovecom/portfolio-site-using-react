@@ -175,6 +175,14 @@ button {
   cursor: pointer;
 }
 
+details {
+  cursor: pointer;
+
+  p,
+  blockquote {
+    cursor: text;
+  }
+}
 h1 { font-size: var(--h1); }
 h2 { font-size: var(--h2); }
 h3 { font-size: var(--h3); }
