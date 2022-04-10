@@ -13,7 +13,7 @@ export default function Home(props) {
         <section className="michel">
           <h2>Creative generalist exploring consciousness through art and technology.</h2>
         </section>
-        <section className="landing__top">
+        <section className="landing__top home__top">
             
           <section className="landing__banner">
             <h2>I am currently studying frontend development at Hyper Island.</h2>

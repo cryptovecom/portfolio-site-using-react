@@ -151,8 +151,6 @@ aside {
   main {
     grid-column: span 2;
 
-    display: grid;
-    grid-gap: 1rem;
     grid-template-columns: 38.2% 1fr; /* 38.2% = Golden Ratio */
   }
 
