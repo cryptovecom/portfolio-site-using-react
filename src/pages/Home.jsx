@@ -16,7 +16,7 @@ export default function Home(props) {
         <section className="landing__top">
             
           <section className="landing__banner">
-            <h2>I am currently studying frontend web development at Hyper Island.</h2>
+            <h2>I am currently studying frontend development at Hyper Island.</h2>
           </section>
           <section className="landing-list">
             <section>
