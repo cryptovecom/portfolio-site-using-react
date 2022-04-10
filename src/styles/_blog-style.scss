@@ -24,9 +24,7 @@
   background: 
     var(--color-yellow) 
     url('../../public/images/svg/blob-scene-haikei.svg')
-    no-repeat 
-    top 
-    left -10px;
+    no-repeat;
   background-size: cover;
   transition: filter 5s ease-in-out;
 
