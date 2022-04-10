@@ -6,7 +6,7 @@ function Footer() {
         target="_blank"
         rel="noreferrer"
       >
-        Code and design by Michel Iseneld
+        Code, design and photography by Michel Iseneld
       </a>
     </footer>
   );

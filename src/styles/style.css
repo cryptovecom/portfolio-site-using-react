@@ -706,6 +706,12 @@ template {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   gap: 1rem;
   z-index: 1;
 }
@@ -728,7 +734,7 @@ aside {
   position: sticky;
   top: 8.5rem;
   z-index: 2;
-  background-image: url("../../public/images/michel2.jpg");
+  background-image: url("../../public/images/michel3.jpg");
   background-size: cover;
 }
 

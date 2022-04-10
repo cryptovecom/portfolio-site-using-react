@@ -79,6 +79,8 @@
   background-color: var(--color-dark);
   border-top: 1rem solid var(--color-dark);
   display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
   gap: 1rem;
   z-index: 1;
 
@@ -107,7 +109,7 @@ aside {
   top: 8.5rem;
   z-index: 2;
 
-  background-image: url('../../public/images/michel2.jpg');
+  background-image: url('../../public/images/michel3.jpg');
   background-size: cover;
 
   h2 {
