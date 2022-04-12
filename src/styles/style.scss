@@ -6,7 +6,8 @@ $font-dragon: "UnifrakturMaguntia", "Times New Roman", serif;
 @import "_blog-style";
 @import "_blog-post-style";
 @import "_streaming-style";
-@import "_svg-style";
+@import "_classes";
+@import "_media-queries";
 @import url('https://fonts.googleapis.com/css2?family=UnifrakturMaguntia&display=swap');
 
 :root {
@@ -68,7 +69,6 @@ body {
   min-height: 100vh;
   width: 100vw;
   scrollbar-gutter: stable;
-  top: 0;
 }
 
 /* HEADER HEADER HEADER HEADER HEADER HEADER HEADER HEADER HEADER HEADER HEADER */
@@ -79,7 +79,7 @@ header {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  z-index: 5;
+  z-index: 10;
 
   position: sticky;
   top: 0;
@@ -108,18 +108,12 @@ header {
       color: var(--color-dark);
       text-decoration: none;
     }
-
-    &.streaming-link {
-      opacity: 0;
-    }
   }
 }
 
 /* MAIN MAIN MAIN MAIN MAIN MAIN MAIN MAIN MAIN MAIN MAIN MAIN MAIN MAIN MAIN */
 
 main {
-  position: sticky;
-  top: 0;
   display: flex;
   flex-direction: column;
 }
@@ -129,17 +123,16 @@ main {
 footer {
   display: flex;
   align-items: center;
-  position: relative;
-  top: 7rem;
 
   background-color: var(--color-dark); 
   font-size: var(--h5);
 
-  transition:  border-radius var(--speed-slow);
+  transition: border-radius var(--speed-slow);
 
   a,
   a:visited {
-    padding: 2rem 2rem;
+    padding: 2rem;
+    width: 100%;
 
     color: var(--color-grey);
     text-decoration: none;
@@ -148,7 +141,8 @@ footer {
 
 /* ELEMENTS ELEMENTS ELEMENTS ELEMENTS ELEMENTS ELEMENTS ELEMENTS ELEMENTS */
 
-a {
+a,
+a:visited {
   color: var(--color-dark);
   text-decoration: underline;
 
@@ -162,12 +156,13 @@ a {
 }
 
 button {
-  background-color: var(--color-grey);
+  background-color: var(--color-white);
   cursor: pointer;
 }
 
 details {
   cursor: pointer;
+  padding: 1rem 0;
 
   p,
   blockquote {
@@ -202,80 +197,5 @@ p {
 
   &:first-child { 
     margin-top: 0; 
-  }
-}
-
-
-/* CLASSES CLASSES CLASSES CLASSES CLASSES CLASSES CLASSES CLASSES CLASSES */
-
-.card {
-  transition: 5s;
-
-  &:hover {
-    border-radius: 1rem;
-    transition: var(--speed-fast);
-
-    h6 {
-      background-color: var(--color-white);
-      box-shadow: -0.3rem 0.4rem .01rem rgba(0, 0, 0, 0.15);
-      transition: var(--speed-fast);
-    }
-    &.how-to blockquote {
-      border-radius: 1rem;
-      transition: var(--speed-fast);
-    }
-  }
-}
-
-.icon {
-  width: 3rem;
-  margin-right: 1rem;
-}
-
-.hover {
-  border-radius: 1rem;
-  transition: border-radius var(--speed-fast) ease-out;
-}
-
-/* MEDIA QUERIES MEDIA QUERIES MEDIA QUERIES MEDIA QUERIES MEDIA QUERIES MEDIA QUERIES */
-
-
-@media screen and (max-width: 64rem) {
-  .landing__top {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    top: -21rem;
-  }
-
-  .streaming__banner {
-    max-width: 100vw;
-  }
-}
-@media all and (max-width: 391px) {
-  :root {
-    --base-font-size: 1rem;
-  }
-
-  main,
-  .blog__cards {
-    top: 0;
-    position: relative;
-  }
-  
-  .blog__top {
-    flex-direction: column;
-    // position: relative;
-    top: -12rem;
-  }
-  .landing__top {
-    top: -37rem;
-  }
-
-  .landing__second {
-    top: 6rem;
-  }
-  footer {
-    top: 0;
   }
 }

@@ -1,0 +1,80 @@
+/* CLASSES CLASSES CLASSES CLASSES CLASSES CLASSES CLASSES CLASSES CLASSES  */
+
+.card {
+  transition: 5s;
+
+  &:hover {
+    transition: var(--speed-fast);
+
+    h6 {
+      background-color: var(--color-white);
+      box-shadow: -0.3rem 0.4rem .01rem rgba(0, 0, 0, 0.15);
+      transition: var(--speed-fast);
+    }
+  }
+}
+
+.tech-icon {
+  width: 2.5rem;
+  margin-right: 1rem;
+
+  &:last-child {
+    margin-right: 0;
+  }
+}
+
+@mixin photo-default {
+  border-top: 1rem solid var(--color-dark);
+  min-height: 89vh;
+
+  position: sticky;
+  top: 6rem;
+  z-index: 2;
+
+  background-size: cover;
+}
+
+.photo-1 {
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+  align-items: flex-start;
+
+  width: 100%;
+  min-height: 89vh;
+
+  position: sticky;
+  top: 8.3rem;
+
+  background-image: url('../../public/images/michel.jpg');
+  background-size: cover;
+  background-position: center;
+
+  h2 {
+    color: var(--color-white);
+    text-align: left;
+
+    max-width: 30rem;
+  }
+}
+
+.photo-2 {
+  @include photo-default;
+
+  background-image: url('../../public/images/michel2.jpg');
+}
+
+.photo-3 {
+  @include photo-default;
+
+  background-image: url('../../public/images/michel3.jpg');
+  background-position: center top;
+}
+
+.photo-4 {
+  @include photo-default;
+
+  background-image: url('../../public/images/michel4.jpg');
+  background-position: center center;
+}

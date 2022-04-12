@@ -11,11 +11,10 @@ export default function Home(props) {
     <>
      
       <main>
-        <section className="michel">
+        <section className="photo-1">
           <h2>Creative generalist exploring consciousness through art and technology.</h2>
         </section>
         <section className="landing__top home__top">
-            
           <section className="landing__banner">
             <h2>I am currently studying frontend development at Hyper Island.</h2>
           </section>
@@ -37,22 +36,22 @@ export default function Home(props) {
                       <img
                         src="./images/icons/react.png"
                         alt="React Icon"
-                        className="icon"
+                        className="tech-icon"
                       />
                       <img
                         src="./images/icons/node.png"
                         alt="Node Icon"
-                        className="icon"
+                        className="tech-icon"
                       />
                       <img
                         src="./images/icons/express.png"
                         alt="Express Icon"
-                        className="icon"
+                        className="tech-icon"
                       />
                       <img
                         src="./images/icons/mongodb.png"
                         alt="MongoDB Icon"
-                        className="icon"
+                        className="tech-icon"
                       />
                     </div>
                   </Link>
@@ -71,7 +70,7 @@ export default function Home(props) {
                         <img
                           src={`/images/icons/${x.class}.png`}
                           alt={`${x.title} Icon`}
-                          className="icon"
+                          className="tech-icon"
                         />
                       )}
                     </a>
@@ -81,7 +80,7 @@ export default function Home(props) {
             </section>
           </section>
         </section>
-        <section className="michel2">
+        <section className="photo-2">
         </section>
         <section className="landing__second">
           <div>
@@ -91,42 +90,42 @@ export default function Home(props) {
               <img
                 src="./images/icons/html5.png"
                 alt="HTML5 Icon"
-                className="icon"
+                className="tech-icon"
               />
               <img
                 src="./images/icons/css3.png"
                 alt="CSS3 Icon"
-                className="icon"
+                className="tech-icon"
               />
               <img
                 src="./images/icons/sass.png"
                 alt="Sass Icon"
-                className="icon"
+                className="tech-icon"
               />
               <img
                 src="./images/icons/js.png"
                 alt="Javascript Icon"
-                className="icon"
+                className="tech-icon"
               />
               <img
                 src="./images/icons/react.png"
                 alt="React.js Icon"
-                className="icon"
+                className="tech-icon"
               />
               <img
                 src="./images/icons/node.png"
                 alt="Node.js Icon"
-                className="icon"
+                className="tech-icon"
               />
               <img
                 src="./images/icons/express.png"
                 alt="Express Icon"
-                className="icon"
+                className="tech-icon"
               />
               <img
                 src="./images/icons/mongodb.png"
                 alt="MongoDB Icon"
-                className="icon"
+                className="tech-icon"
               />
             </p>
             <p>
@@ -140,7 +139,7 @@ export default function Home(props) {
           </div>
         </section>
         <Goals />
-        <section className="michel3">
+        <section className="photo-3">
         </section>
         <section className="landing__second">
           <div>

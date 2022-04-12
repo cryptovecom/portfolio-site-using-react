@@ -167,10 +167,8 @@ nav.side {
     justify-content: space-between;
     div {
       display: flex;
-      flex-direction: row-reverse;
       flex-wrap: wrap;
       align-items: right;
-      // justify-content: space-between;
       flex-shrink: 1;
     }
   }
@@ -225,78 +223,4 @@ nav.side {
 
 :root { /* Positioning of list background images */
   --bg-pos: left / contain no-repeat; 
-}
-
-/* CLASSES CLASSES CLASSES CLASSES CLASSES CLASSES CLASSES CLASSES CLASSES  */
-
-.michel {
-  padding: 2rem;
-  display: flex;
-  flex-direction: column;
-  justify-content: left;
-  align-items: flex-start;
-  
-  width: 100%; 
-  min-height: 89vh;
-
-  position: sticky;
-  top: 8.5rem;
-  z-index: -1;
-
-  background-image: url('../../public/images/michel.jpg');
-  background-size: cover; 
-  h2 {
-    color: var(--color-white);
-    text-align: left;
-  
-    max-width: 30rem;
-  }
-}
-.michel2,
-.michel3 {
-  border-top: 1rem solid var(--color-dark);
-  padding: 2rem;
-
-  min-height: 89vh;
-
-  position: sticky;
-  top: 6rem;
-  z-index: 2;
-
-  background-image: url('../../public/images/michel2.jpg');
-  background-size: cover;
-
-  h2 {
-    color: var(--color-white);
-    text-align: left;
-
-    max-width: 30rem;
-  }
-}
-
-.michel3 {
-  border-top: 1rem solid var(--color-dark);
-
-  min-height: 69vh;
-
-  position: sticky;
-  top: 6rem;
-  z-index: 2;
-
-  background-image: url('../../public/images/michel3.jpg');
-  background-size: cover;
-  background-position: center top;
-  }
-  
-.michel4 {
-  border-top: 1rem solid var(--color-dark);
-  min-height: 89vh;
-
-  position: sticky;
-  top: 6rem;
-  z-index: 2;
-
-  background-image: url('../../public/images/michel4.jpg');
-  background-size: cover;
-  background-position: center center;
 }

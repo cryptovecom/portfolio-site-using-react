@@ -318,22 +318,22 @@ export default function Streaming() {
                 <img
                   src="./images/icons/react.png"
                   alt="React Icon"
-                  className="icon"
+                  className="tech-icon"
                 />
                 <img
                   src="./images/icons/node.png"
                   alt="Node Icon"
-                  className="icon"
+                  className="tech-icon"
                 />
                 <img
                   src="./images/icons/express.png"
                   alt="Express Icon"
-                  className="icon"
+                  className="tech-icon"
                 />
                 <img
                   src="./images/icons/mongodb.png"
                   alt="MongoDB Icon"
-                  className="icon"
+                  className="tech-icon"
                 />
               </p>
             </aside>
