@@ -638,7 +638,7 @@ nav.side li {
   min-height: 89vh;
   position: -webkit-sticky;
   position: sticky;
-  top: 7.5rem;
+  top: 6rem;
   z-index: 2;
   background-image: url("../../public/images/michel2.jpg");
   background-size: cover;
@@ -656,7 +656,7 @@ nav.side li {
   min-height: 69vh;
   position: -webkit-sticky;
   position: sticky;
-  top: 7.5rem;
+  top: 6rem;
   z-index: 2;
   background-image: url("../../public/images/michel3.jpg");
   background-size: cover;
@@ -1562,6 +1562,9 @@ p:first-child {
   }
   .landing__second {
     top: 6rem;
+  }
+  .michel {
+    top: 7.5rem;
   }
 }
 /*# sourceMappingURL=style.css.map */

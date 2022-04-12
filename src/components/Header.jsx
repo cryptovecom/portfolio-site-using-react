@@ -13,7 +13,7 @@ function Header() {
             </li>
           </ul>
         </nav>
-        <Nav />
+        {/* <Nav /> */}
       </header>
       
     </>
