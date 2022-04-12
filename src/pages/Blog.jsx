@@ -42,7 +42,7 @@ export default function Blog() {
           <aside className="card">
             <h6>APR 2022</h6>
             <p>
-              CSS has been cleaned up and made a big mess again. 
+              CSS has been cleaned up and made a big mess again. Probably worse than before.
             </p>
           </aside>
           <aside className="card">
