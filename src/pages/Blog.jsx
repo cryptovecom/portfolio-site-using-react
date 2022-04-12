@@ -75,7 +75,7 @@ export default function Blog() {
             </p>
           </aside>
         </section>
-        <section className="michel2">
+        <section className="michel4">
         </section>
       </main>
     </>

@@ -632,7 +632,8 @@ nav.side li {
   max-width: 30rem;
 }
 
-.michel2 {
+.michel2,
+.michel3 {
   border-top: 1rem solid var(--color-dark);
   padding: 2rem;
   min-height: 89vh;
@@ -644,7 +645,8 @@ nav.side li {
   background-size: cover;
 }
 
-.michel2 h2 {
+.michel2 h2,
+.michel3 h2 {
   color: var(--color-white);
   text-align: left;
   max-width: 30rem;
@@ -652,7 +654,6 @@ nav.side li {
 
 .michel3 {
   border-top: 1rem solid var(--color-dark);
-  padding: 2rem;
   min-height: 69vh;
   position: -webkit-sticky;
   position: sticky;
@@ -660,12 +661,19 @@ nav.side li {
   z-index: 2;
   background-image: url("../../public/images/michel3.jpg");
   background-size: cover;
+  background-position: center top;
 }
 
-.michel3 h2 {
-  color: var(--color-white);
-  text-align: left;
-  max-width: 30rem;
+.michel4 {
+  border-top: 1rem solid var(--color-dark);
+  min-height: 89vh;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 6rem;
+  z-index: 2;
+  background-image: url("../../public/images/michel4.jpg");
+  background-size: cover;
+  background-position: center center;
 }
 
 /* BANNER - BANNER - BANNER - BANNER - BANNER - BANNER - BANNER - BANNER - BANNER */
