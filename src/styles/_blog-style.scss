@@ -98,25 +98,7 @@ aside {
 
 /* CLASSES CLASSES CLASSES CLASSES CLASSES CLASSES CLASSES CLASSES */
 
-.michel2 {
-  border-top: 1rem solid var(--color-dark);
 
-  min-height: 89vh;
-
-  position: sticky;
-  top: 8.5rem;
-  z-index: 2;
-
-  background-image: url('../../public/images/michel3.jpg');
-  background-size: cover;
-
-  h2 {
-    color: var(--color-white);
-    text-align: left;
-
-    max-width: 30rem;
-  }
-}
 /* MEDIA QUERIES - MEDIA QUERIES - MEDIA QUERIES - MEDIA QUERIES - MEDIA QUERIES */
 
 @media screen and (min-width: 64rem) {

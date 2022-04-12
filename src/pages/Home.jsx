@@ -81,6 +81,8 @@ export default function Home(props) {
             </section>
           </section>
         </section>
+        <section className="michel2">
+        </section>
         <section className="landing__second">
           <div>
             <h2>I'm learning!</h2>
@@ -138,6 +140,8 @@ export default function Home(props) {
           </div>
         </section>
         <Goals />
+        <section className="michel3">
+        </section>
         <section className="landing__second">
           <div>
             <h2>🚧 Under Construction 🚧</h2>
