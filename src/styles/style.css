@@ -342,6 +342,28 @@ template {
   display: none;
 }
 
+nav.side {
+  height: 92vh;
+  width: 30rem;
+  border: 1rem solid var(--color-dark);
+  padding: 1rem;
+  position: absolute;
+  top: 7.5rem;
+  right: 0;
+  background-color: var(--color-white);
+  color: var(--color-dark);
+  font-size: var(--h6);
+  z-index: 3;
+  -webkit-transition: var(--speed-slow) ease-in-out;
+  transition: var(--speed-slow) ease-in-out;
+  -webkit-transform: translateX(38rem);
+          transform: translateX(38rem);
+}
+
+nav.side li {
+  padding: 1rem;
+}
+
 .landing__top {
   width: 100vw;
   height: 100%;

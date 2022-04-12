@@ -9,6 +9,7 @@ export default function Home(props) {
 
   return (
     <>
+     
       <main>
         <section className="michel">
           <h2>Creative generalist exploring consciousness through art and technology.</h2>
