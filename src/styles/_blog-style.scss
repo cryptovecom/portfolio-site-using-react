@@ -80,6 +80,8 @@
   flex-direction: row;
   flex-wrap: wrap;
   gap: 1rem;
+  position: sticky;
+  top: 7rem;
   z-index: 1;
 
   aside {

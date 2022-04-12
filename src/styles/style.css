@@ -446,7 +446,7 @@ nav.side li {
 .goals {
   border-top: 1rem solid var(--color-dark);
   background-color: var(--color-dark);
-  z-index: 3;
+  z-index: 2;
 }
 
 .goals ul {
@@ -779,6 +779,9 @@ nav.side li {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   gap: 1rem;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 7rem;
   z-index: 1;
 }
 
@@ -1364,7 +1367,7 @@ header {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  z-index: 2;
+  z-index: 5;
   position: -webkit-sticky;
   position: sticky;
   top: 0;
@@ -1561,9 +1564,21 @@ p:first-child {
   }
 }
 
-@media all and (max-width: 376px) {
+@media all and (max-width: 391px) {
   :root {
     --base-font-size: 1rem;
+  }
+  main,
+  .blog__cards {
+    top: 0;
+    position: relative;
+  }
+  .blog__top {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    top: -12rem;
   }
   .landing__top {
     top: -37rem;
@@ -1571,8 +1586,8 @@ p:first-child {
   .landing__second {
     top: 6rem;
   }
-  .michel {
-    top: 7.5rem;
+  footer {
+    top: 0;
   }
 }
 /*# sourceMappingURL=style.css.map */
