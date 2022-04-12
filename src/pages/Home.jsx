@@ -14,11 +14,11 @@ export default function Home(props) {
         <section className="photo-1">
           <h2>Creative generalist exploring consciousness through art and technology.</h2>
         </section>
-        <section className="landing__top home__top">
-          <section className="landing__banner">
+        <section className="main-1 top">
+          <section className="banner">
             <h2>I am currently studying frontend development at Hyper Island.</h2>
           </section>
-          <section className="landing-list">
+          <section className="link-list">
             <section>
               <ul className="home-list">
                 <li
@@ -82,7 +82,7 @@ export default function Home(props) {
         </section>
         <section className="photo-2">
         </section>
-        <section className="landing__second">
+        <section className="main-2">
           <div>
             <h2>I'm learning!</h2>
             <br />
@@ -141,7 +141,7 @@ export default function Home(props) {
         <Goals />
         <section className="photo-3">
         </section>
-        <section className="landing__second">
+        <section className="main-2">
           <div>
             <h2>🚧 Under Construction 🚧</h2>
             <p>Moar coming! Idk wat 2 put, butt it prolly b gr8.</p>

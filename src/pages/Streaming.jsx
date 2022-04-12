@@ -203,7 +203,7 @@ export default function Streaming() {
   return (
     <>
       <main>
-        <section className="landing__top">
+        <section className="main-1">
           {/* LEFT SECTION - LEFT SECTION - LEFT SECTION */}
           <section className="streaming__banner">
             <aside>

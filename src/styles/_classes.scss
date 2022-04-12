@@ -14,6 +14,58 @@
   }
 }
 
+.link-list {
+  display: flex;
+  flex-direction: column;
+  // gap: 1rem;
+
+  background: var(--color-dark);
+  width: 100%;
+
+  .school-project {
+    background-color: var(--color-white);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    div {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: right;
+      flex-shrink: 1;
+    }
+  }
+
+  ul {
+    display: grid;
+    gap: 1rem;
+
+    li a {
+      padding: 2rem;
+
+      background-color: var(--color-grey);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      text-decoration: none;
+
+      transition:
+        transform var(--speed-slow) cubic-bezier(0.81, 0.02, 0.92, 0.65),
+        border-radius 0.2s 0.4s ease;
+
+      &:focus,
+      &:hover {
+        border-radius: 1rem 0 0 1rem;
+        transform: translateX(1.5em);
+
+        transition:
+          transform var(--speed-slow) cubic-bezier(0.28, 0.78, 0.6, 0.93),
+          border-radius 0.2s;
+      }
+    }
+  }
+}
 .tech-icon {
   width: 2.5rem;
   margin-right: 1rem;

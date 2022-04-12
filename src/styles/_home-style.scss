@@ -1,27 +1,4 @@
-nav.side {
-  height: 92vh;
-  width: 30rem;
-  border: 1rem solid var(--color-dark);
-  padding: 1rem;
-
-  position: absolute;
-  top: 7.5rem;
-  right: 0;
-
-  background-color: var(--color-white);
-  color: var(--color-dark);
-  font-size: var(--h6);
-  // font-weight: bold;
-  z-index: 3;
-
-  transition: var(--speed-slow) ease-in-out;
-  transform: translateX(38rem);
-
-  li {
-    padding: 1rem;
-  }
-}
-.landing__top {
+.main-1 {
   width: 100vw;
   height: 100%;
   display: flex;
@@ -32,64 +9,58 @@ nav.side {
   top: 7rem;
   
   z-index: 0;
-  }
+}
   
-  .home__top {
-    border-top: 1rem solid var(--color-dark);
+.top {
+  border-top: 1rem solid var(--color-dark);
 }
 
-.landing__second {
+.main-2 {
   border-top: 1rem solid var(--color-dark);
   background-color: var(--color-dark);
   position: sticky;
   top: 7rem;
   z-index: 2;
-
-}
-
-.landing__second div {
-  padding: 2rem;
-
-  display: flex;
-  align-items: left;
-  justify-content: center;
-  flex-direction: column;
-
-  background-color: var(--color-white);
-
   
-  span {
-    margin: .33rem;
-    border: .5rem solid var(--color-dark);
-    font-weight: bold;
+  & div {
+    padding: 2rem;
 
-    transition: all 5s;
-    cursor: no-drop;
+    display: flex;
+    align-items: left;
+    justify-content: center;
+    flex-direction: column;
 
-    &:hover {
-      border-radius: 1rem;
-      transition: all var(--speed-fast);
-    }
+    background-color: var(--color-white);
 
-    &.passed {
+    span {
+      margin: .33rem;
       padding: 1rem;
+      border: .5rem solid var(--color-dark);
       display: inline-block;
-      background-color: #5f874c;
-      color: var(--color-white);
-    }
+      font-weight: bold;
 
-    &.wip {
-      padding: 1rem;
-      display: inline-block;
-      background-color: var(--color-yellow);
-    }
+      transition: all 5s;
+      cursor: no-drop;
 
-    &.future {
-      padding: 1rem;
-      display: inline-block;
-      color: var(--color-dark);
-    }
-  }
+      &:hover {
+        border-radius: 1rem;
+        transition: var(--speed-fast);
+        }
+
+      &.passed {
+        background-color: #5f874c;
+        color: var(--color-white);
+        }
+
+      &.wip {
+        background-color: var(--color-yellow);
+        }
+
+      &.future {
+        color: var(--color-dark);
+        }
+        }
+        }
 }
 
 .goals {
@@ -99,14 +70,15 @@ nav.side {
 
   ul {
     display: grid;
-    grid-gap: 1rem;
+    gap: 1rem;
     grid-template-columns: repeat(3, 1fr);
 
-    @media screen and (max-width: 64rem) {
-    & {
-      grid-template-columns: 1fr;
-    }
-  }
+    
+      @media screen and (max-width: 64rem) {
+        & {
+          grid-template-columns: 1fr;
+        }
+      }
 
     li {
       background-color: var(--color-white);
@@ -120,107 +92,17 @@ nav.side {
       &.wip {
         background-color: var(--color-yellow);
       }
-
-      &.reass {
-        background-color: var(--color-blood);
-        color: var(--color-white);
-      }
     }
   }
 }
 
-.landing__banner {
+.banner {
   min-width: 33vw;
   padding: 2rem;
-  border-top: 1rem solid var(--color-dar);
 
   background: 
     var(--color-blood) 
-    url(../../public/images/svg/stacked-waves-haikei.svg)
-    no-repeat 
-    center 
-    center;
+    url(../../public/images/svg/stacked-waves-haikei.svg);
   background-size: cover;
   color: var(--color-white);
-
-  h1 {
-    margin-bottom: 6rem;
-    position: sticky;
-    top: 12rem;
-  }
-}
-
-/* LANDING PAGE LIST - LANDING PAGE LIST - LANDING PAGE LIST - LANDING PAGE LIST */
-
-.landing-list {
-  display: flex;
-  flex-direction: column;
-  gap: 1rem;
-
-  background: var(--color-dark);
-  width: 100%;
-
-  .school-project {
-    background-color: var(--color-white);
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    div {
-      display: flex;
-      flex-wrap: wrap;
-      align-items: right;
-      flex-shrink: 1;
-    }
-  }
-
-  h1 { 
-    color: rgb(228, 228, 228);
-    padding: .25rem 1.5rem 0rem 1.5rem;
-  }
-
-  ul {
-    display: grid;
-    gap: 1rem;
-    mix-blend-mode: lighten;
-
-    h2 {
-      text-align: left;
-    }
-
-    li { 
-      z-index: 1;
-    }
-    
-    li a {
-      padding: 2rem;
-      width: 100%;
-
-      background-color: var(--color-grey);
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-
-      text-decoration: none;
-
-      transition: 
-        transform var(--speed-slow) cubic-bezier(0.81, 0.02, 0.92, 0.65),
-        border-radius 0.2s 0.4s ease;
-        
-        &:focus,
-        &:hover {
-        border-radius: 1rem 0 0 1rem;
-        transform: translateX(1.5em);
-
-        transition: 
-        transform var(--speed-slow) cubic-bezier(0.28, 0.78, 0.6, 0.93), 
-        border-radius 0.2s;
-      }
-    }
-  }
-}
-
-/* Background Images*/
-
-:root { /* Positioning of list background images */
-  --bg-pos: left / contain no-repeat; 
 }

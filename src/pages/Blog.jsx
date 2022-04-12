@@ -19,7 +19,7 @@ export default function Blog() {
           <section className="blog__banner">
             <h1 className="dragon-text">Free will is an illusion</h1>
           </section>
-          <section className="landing-list">
+          <section className="link-list">
             <ul>
               {/* LOOPING THROUGH POSTS IN JSON */}
               {posts &&

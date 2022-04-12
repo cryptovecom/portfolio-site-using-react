@@ -1,5 +1,4 @@
 import { Link } from "react-router-dom";
-// import Nav from '../components/Nav';
 
 function Header() {
   return (
@@ -13,7 +12,6 @@ function Header() {
             </li>
           </ul>
         </nav>
-        {/* <Nav /> */}
       </header>
       
     </>
