@@ -839,9 +839,6 @@ button.dark-mode-button:active {
 
 @media screen and (max-width: 64rem) {
   .top {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -1032,8 +1029,10 @@ button {
 }
 
 details {
+  background-color: #e1e1e1;
+  border-radius: .5rem;
   cursor: pointer;
-  padding: 1rem 0;
+  padding: 1rem;
 }
 
 details p,

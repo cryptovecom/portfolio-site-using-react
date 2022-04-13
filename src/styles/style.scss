@@ -160,8 +160,10 @@ button {
 }
 
 details {
+  background-color: rgb(225, 225, 225);
+  border-radius: .5rem;
   cursor: pointer;
-  padding: 1rem 0;
+  padding: 1rem;
 
   p,
   blockquote {
