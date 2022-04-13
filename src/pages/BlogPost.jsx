@@ -29,7 +29,7 @@ export default function BlogPost() {
             </button>
           </section>
           <section>
-            <article className="blog__post">
+            <article className="blog-post">
               {post && (
                 <>
                   <h2>{post[0].title}</h2>

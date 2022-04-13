@@ -1,0 +1,28 @@
+*.dark-mode {
+  --color-white: #1e1e1e;
+  --color-blood: #ffb532;
+  --color-dark: #d2d2ce;
+  --color-grey: #1e1e1e;
+  --color-yellow: #af3333;
+}
+
+.dark-mode-button {
+  position: sticky;
+  top: 10.5rem;
+
+  border: 0.25rem solid var(--color-dark);
+  padding: 1rem;
+
+  box-shadow: 0 4px .5rem #1e1e1e;
+
+  transition: var(--speed-fast);
+
+  &:focus,
+  &:hover {
+    border-radius: 1rem;
+  }
+
+  &:active {
+    box-shadow: none;
+  }
+}

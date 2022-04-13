@@ -1,6 +1,4 @@
-/* CLASSES CLASSES CLASSES CLASSES CLASSES CLASSES CLASSES CLASSES */
-
-.blog__post {
+.blog-post {
   padding: 2rem 3rem 2rem 2rem;
   background-color: var(--color-grey);
 
@@ -26,38 +24,4 @@
       }
     }
   }
-}
-
-/* DARK MODE DARK MODE DARK MODE DARK MODE DARK MODE DARK MODE DARK MODE */
-
-.dark-mode-button {
-  position: sticky;
-  top: 10.5rem;
-
-  border: 0.25rem solid var(--color-dark);
-  padding: 1rem;
-
-  box-shadow: 0 4px .5rem #1e1e1e;
-
-  transition: var(--speed-fast);
-
-  &:focus,
-  &:hover {
-    border-radius: 1rem;
-  }
-
-  &:active {
-    box-shadow: none;
-  }
-}
-
-:root *.dark-mode,
-.dark-mode .blog__post {
-  --color-white: #1e1e1e;
-  --color-blood: #ffb532;
-  --color-dark: #d2d2ce;
-  --color-grey: #1e1e1e;
-  --color-yellow: #af3333;
-
-  // color: var(--color-dark);
 }

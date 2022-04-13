@@ -387,21 +387,20 @@ p:first-child {
   background-color: var(--color-dark);
 }
 
-/* CLASSES CLASSES CLASSES CLASSES CLASSES CLASSES CLASSES CLASSES */
-.blog__post {
+.blog-post {
   padding: 2rem 3rem 2rem 2rem;
   background-color: var(--color-grey);
 }
 
-.blog__post h2 {
+.blog-post h2 {
   margin-bottom: 2rem;
 }
 
-.blog__post h5 {
+.blog-post h5 {
   margin-bottom: 2rem;
 }
 
-.blog__post img {
+.blog-post img {
   border: var(--border-size) solid var(--color-dark);
   margin: 1rem 0 0;
   -webkit-transform: translateX(-13rem);
@@ -409,43 +408,12 @@ p:first-child {
 }
 
 @media all and (max-width: 1023px) {
-  .blog__post img {
+  .blog-post img {
     width: 100%;
     -webkit-transform: translateX(0px);
             transform: translateX(0px);
     border-width: .5rem;
   }
-}
-
-/* DARK MODE DARK MODE DARK MODE DARK MODE DARK MODE DARK MODE DARK MODE */
-.dark-mode-button {
-  position: -webkit-sticky;
-  position: sticky;
-  top: 10.5rem;
-  border: 0.25rem solid var(--color-dark);
-  padding: 1rem;
-  -webkit-box-shadow: 0 4px .5rem #1e1e1e;
-          box-shadow: 0 4px .5rem #1e1e1e;
-  -webkit-transition: var(--speed-fast);
-  transition: var(--speed-fast);
-}
-
-.dark-mode-button:focus, .dark-mode-button:hover {
-  border-radius: 1rem;
-}
-
-.dark-mode-button:active {
-  -webkit-box-shadow: none;
-          box-shadow: none;
-}
-
-:root *.dark-mode,
-.dark-mode .blog__post {
-  --color-white: #1e1e1e;
-  --color-blood: #ffb532;
-  --color-dark: #d2d2ce;
-  --color-grey: #1e1e1e;
-  --color-yellow: #af3333;
 }
 
 .streaming__banner {
@@ -943,6 +911,35 @@ p:first-child {
   position: sticky;
   top: 8.5rem;
   z-index: 0;
+}
+
+*.dark-mode {
+  --color-white: #1e1e1e;
+  --color-blood: #ffb532;
+  --color-dark: #d2d2ce;
+  --color-grey: #1e1e1e;
+  --color-yellow: #af3333;
+}
+
+.dark-mode-button {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 10.5rem;
+  border: 0.25rem solid var(--color-dark);
+  padding: 1rem;
+  -webkit-box-shadow: 0 4px .5rem #1e1e1e;
+          box-shadow: 0 4px .5rem #1e1e1e;
+  -webkit-transition: var(--speed-fast);
+  transition: var(--speed-fast);
+}
+
+.dark-mode-button:focus, .dark-mode-button:hover {
+  border-radius: 1rem;
+}
+
+.dark-mode-button:active {
+  -webkit-box-shadow: none;
+          box-shadow: none;
 }
 
 @media all and (max-width: 64rem) {
