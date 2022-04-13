@@ -728,9 +728,6 @@ p:first-child {
 .card {
   padding: 2rem;
   min-width: 280px;
-  -webkit-box-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
   -webkit-transition: 5s;
   transition: 5s;
   background-color: var(--color-white);
@@ -747,6 +744,12 @@ p:first-child {
           box-shadow: -0.3rem 0.4rem 0.01rem rgba(0, 0, 0, 0.15);
   -webkit-transition: var(--speed-fast);
   transition: var(--speed-fast);
+}
+
+.flex {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
 }
 
 .link-list {

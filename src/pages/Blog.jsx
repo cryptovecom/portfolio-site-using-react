@@ -34,26 +34,26 @@ export default function Blog() {
           </section>
         </section>
         <section className="blog__cards top">
-          <aside className="card">
+          <aside className="card flex">
             <h6>APR 2022</h6>
             <p>
-              Content was revised into a more proper portfolio. Blog is still jibberish and the list of stuff to add is long.
+              The site's content was revised into a more proper portfolio. This blog is still jibberish and the list of stuff to add is long.
             </p>
           </aside>
-          <aside className="card">
+          <aside className="card flex">
             <h6>MAR 2022</h6>
             <p>
               CSS has been cleaned up and made a big mess again. Then cleaned up, again.
             </p>
           </aside>
-          <aside className="card">
+          <aside className="card flex">
             <h6>FEB 2022</h6>
             <p>
               Adding MERN-stack structure to explore Javascript backend
               technologies.
             </p>
           </aside>
-          <aside className="card">
+          <aside className="card flex">
             <h6>JAN 2022</h6>
             <p>
               The site was refactored using React.js and published to Netlify
@@ -68,7 +68,7 @@ export default function Blog() {
               .
             </p>
           </aside>
-          <aside className="card">
+          <aside className="card flex">
             <h6>SEP 2021</h6>
             <p>
               This was originally a dummy site made as my first school project to

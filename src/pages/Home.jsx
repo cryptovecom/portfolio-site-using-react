@@ -34,8 +34,8 @@ export default function Home(props) {
 
                     <div>
                       <img
-                        src="./images/icons/react.png"
-                        alt="React Icon"
+                        src="./images/icons/express.png"
+                        alt="Express Icon"
                         className="tech-icon"
                       />
                       <img
@@ -43,11 +43,7 @@ export default function Home(props) {
                         alt="Node Icon"
                         className="tech-icon"
                       />
-                      <img
-                        src="./images/icons/express.png"
-                        alt="Express Icon"
-                        className="tech-icon"
-                      />
+                      
                       <img
                         src="./images/icons/mongodb.png"
                         alt="MongoDB Icon"

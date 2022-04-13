@@ -16,7 +16,7 @@ function App() {
       <Header />
       <Routes>
         <Route exact path="/" element={<Home linkList={linkList} />} />
-        <Route exact path="/streaming" element={<Streaming />} />
+        <Route path="/streaming" element={<Streaming />} />
         <Route path="/blog" element={<Blog />} />
         <Route path="/blog/:post" element={<BlogPost />} />
         <Route path="/sandbox" element={<Sandbox />} />

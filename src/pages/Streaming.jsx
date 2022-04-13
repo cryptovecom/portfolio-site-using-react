@@ -206,7 +206,7 @@ export default function Streaming() {
         <section className="main-1 top-noborder">
           {/* LEFT SECTION - LEFT SECTION - LEFT SECTION */}
           <section className="streaming__banner">
-            <aside>
+            <aside className="banner">
               <h1>
                 {user && user.user
                   ? `${user.role}: ${user.user}`
