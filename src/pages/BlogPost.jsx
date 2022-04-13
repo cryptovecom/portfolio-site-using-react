@@ -22,8 +22,8 @@ export default function BlogPost() {
   return (
     <>
       <main>
-        <section className="blog__top">
-          <section className="banner">
+        <section className="top__noborder">
+          <section className="banner__blog">
             <button className="dark-mode-button" onClick={darkMode}>
               Dark Mode (Beta)
             </button>

@@ -10,10 +10,6 @@
   
   z-index: 0;
 }
-  
-.top {
-  border-top: 1rem solid var(--color-dark);
-}
 
 .main-2 {
   border-top: 1rem solid var(--color-dark);
@@ -80,18 +76,13 @@
         }
       }
 
-    li {
-      background-color: var(--color-white);
-      padding: 2rem;
+    .done {
+      background-color: #5f874c;
+      color: var(--color-white);
+    }
 
-      &.done {
-        background-color: #5f874c;
-        color: var(--color-white);
-      }
-
-      &.wip {
-        background-color: var(--color-yellow);
-      }
+    .wip {
+      background-color: var(--color-yellow);
     }
   }
 }

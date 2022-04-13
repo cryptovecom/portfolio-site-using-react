@@ -1,12 +1,6 @@
 $font-main: "Roboto", Arial, Helvetica, sans-serif;
 $font-dragon: "UnifrakturMaguntia", "Times New Roman", serif;
 
-@import "_home-style";
-@import "_blog-style";
-@import "_blog-post-style";
-@import "_streaming-style";
-@import "_classes";
-@import "_media-queries";
 @import url('https://fonts.googleapis.com/css2?family=UnifrakturMaguntia&display=swap');
 
 :root {
@@ -200,3 +194,9 @@ p {
     margin-top: 0; 
   }
 }
+@import "_home-style";
+@import "_blog-style";
+@import "_blog-post-style";
+@import "_streaming-style";
+@import "_classes";
+@import "_media-queries";

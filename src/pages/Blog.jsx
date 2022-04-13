@@ -15,8 +15,8 @@ export default function Blog() {
   return (
     <>
       <main>
-        <section className="top-noborder">
-          <section className="blog__banner">
+        <section className="top__noborder">
+          <section className="banner banner__blog">
             <h1 className="dragon-text">Free will is an illusion</h1>
           </section>
           <section className="link-list">
@@ -38,7 +38,7 @@ export default function Blog() {
             </ul>
           </section>
         </section>
-        <section className="blog__cards">
+        <section className="blog__cards top">
           <aside className="card">
             <h6>APR 2022</h6>
             <p>

@@ -1,8 +1,12 @@
 /* CLASSES CLASSES CLASSES CLASSES CLASSES CLASSES CLASSES CLASSES CLASSES  */
 
 .card {
+  padding: 2rem;
+  min-width: 20rem;
+  flex: 1;
   transition: 5s;
 
+  background-color: var(--color-white);
   &:hover {
     transition: var(--speed-fast);
 
@@ -131,12 +135,14 @@
   background-image: url('../../public/images/michel4.jpg');
   background-position: center center;
 }
-.top-noborder {
-  width: 100vw;
+.top {
+  border-top: 1rem solid var(--color-dark);
+}
+
+.top__noborder {
   display: flex;
   gap: 1rem;
 
-  background-color: var(--color-dark);
   position: sticky;
   top: 8.5rem;
 

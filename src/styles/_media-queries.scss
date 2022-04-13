@@ -1,11 +1,11 @@
-@media screen and (max-width: 64rem) {
+@media all and (max-width: 64rem) {
   .top {
     flex-direction: column;
     width: 100%;
     top: -21rem;
   }
 
-  .top-noborder {
+  .top__noborder {
     flex-direction: column;
     top: -12rem;
   }
@@ -16,17 +16,17 @@
 
 @media all and (max-width: 391px) {
   :root {
-    --base-font-size: 8rem;
+    --base-font-size: 1rem;
   }
 
-  main,
-  .blog__cards {
+  main {
     top: 0;
     position: relative;
   }
 
   .top {
-    top: -37rem;
+    position: sticky;
+    top: -35rem;
   }
 
   .main-2 {
