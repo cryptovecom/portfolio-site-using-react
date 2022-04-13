@@ -96,4 +96,7 @@
     url(../../public/images/svg/stacked-waves-haikei.svg);
   background-size: cover;
   color: var(--color-white);
+  h2 {
+    color: var(--color-staticwhite);
+  }
 }

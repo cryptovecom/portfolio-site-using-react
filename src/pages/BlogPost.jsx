@@ -23,9 +23,9 @@ export default function BlogPost() {
     <>
       <main>
         <section className="top__noborder">
-          <section className="banner__blog">
+          <section className="banner">
             <button className="dark-mode-button" onClick={darkMode}>
-              Dark Mode (Beta)
+              Dark Mode
             </button>
           </section>
           <section>

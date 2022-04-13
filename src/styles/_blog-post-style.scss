@@ -6,8 +6,6 @@
 
   h2 {
     margin-bottom: 2rem;
-
-    grid-column: 1 / 2;
   }
 
   h5 {
@@ -15,35 +13,37 @@
   }
 
   img {
-    background-color: var(--color-dark);
     border: var(--border-size) solid var(--color-dark);
-    margin: 2rem 0 0;
+    margin: 1rem 0 0;
 
-    transform: translateX(-9rem);
+    transform: translateX(-13rem);
+    
+    @media all and (max-width: 1023px) {
+      & {
+        width: 100%;
+        transform: translateX(0px);
+        border-width: .5rem;
+      }
+    }
   }
 }
 
 /* DARK MODE DARK MODE DARK MODE DARK MODE DARK MODE DARK MODE DARK MODE */
 
-button.dark-mode-button {
+.dark-mode-button {
   position: sticky;
-  top: 2rem;
+  top: 10.5rem;
 
-  border: 0.5rem solid var(--color-dark);
+  border: 0.25rem solid var(--color-dark);
   padding: 1rem;
 
   box-shadow: 0 4px .5rem #1e1e1e;
 
-  color: var(--color-dark);
-  font-size: var(--base-font-size); 
-
-  transition: border-radius var(--speed-slow);
+  transition: var(--speed-fast);
 
   &:focus,
   &:hover {
     border-radius: 1rem;
-
-    transition: border-radius  var(--speed-fast);
   }
 
   &:active {
@@ -57,29 +57,7 @@ button.dark-mode-button {
   --color-blood: #ffb532;
   --color-dark: #d2d2ce;
   --color-grey: #1e1e1e;
+  --color-yellow: #af3333;
 
-  color: var(--color-dark);
-
-  .landing__banner, 
-  .landing-list ul li a, 
-  .blog__banner, aside {
-    outline: 1rem solid var(--color-dark); 
-  }
-
-  .landing__banner, .blog__banner, h6 {
-    color: var(--color-dark);
-  }
-
-  .blog-animation {
-    color: #af3333;
-  }
-}
-
-/* MEDIA QUERIES MEDIA QUERIES MEDIA QUERIES MEDIA QUERIES MEDIA QUERIES */
-
-@media all and (max-width: 1023px) {
-  .blog__post img {
-    width: 100%;
-    transform: translateX(0px);
-  }
+  // color: var(--color-dark);
 }

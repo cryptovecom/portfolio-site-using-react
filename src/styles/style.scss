@@ -9,7 +9,7 @@ $font-dragon: "UnifrakturMaguntia", "Times New Roman", serif;
   --golden-ratio: 38.2%;
 
   /* Color Palette */
-
+  --color-staticwhite: #eeeeee;
   --color-white: #eeeeee;
   --color-blood: #af3333;
   --color-dark: #1e1e1e;
@@ -150,7 +150,10 @@ a:visited {
 
 button {
   background-color: var(--color-white);
+  color: var(--color-dark);
   cursor: pointer;
+  font-size: 1rem;
+  font-weight: bold;
 }
 
 details {
@@ -180,7 +183,7 @@ h6 {
     border: .2rem solid var(--color-dark);
     border-radius: 0.5rem;
     box-shadow: 0rem 0rem .01rem rgba(0, 0, 0, 0.15);
-    color: black;
+    color: var(--color-dark);
 
     transition: 1s;
 }

@@ -24,12 +24,7 @@ export default function Blog() {
               {/* LOOPING THROUGH POSTS IN JSON */}
               {posts &&
                 posts.map((post) => (
-                  <li
-                    key={post.id}
-                    style={{
-                      backgroundImage: `url(${post.previewImage})`,
-                    }}
-                  >
+                  <li key={post.id}>
                     <h2>
                       <Link to={`/blog/${post.page}`}>{post.title}</Link>
                     </h2>

@@ -3,40 +3,40 @@
     "id": 1,
     "title": "Fetchy fetchy!",
     "page": "fetchy-fetchy",
-    "previewImage": "https://source.unsplash.com/random/500x500",
+    "previewImage": "../images/michel1.jpg",
     "shortSummary": "This is done with Javascript by looping through all objects in the file.",
     "fullSummary": "This is a dummy post created for previous JSON practice.",
     "content": [
-      "<p>Have you ever read <a href='https://hipsum.co/' target='_blank'>Hipster Ipsum</a>? It's kind of funny:</p><p> I'm a baby taco thundercat organic chicharrones vape. Readymade coffee fashion mixtape distillery mug. Sustainable man bun polaroid quinoa. Asymmetrical letterpress sriracha fanny pack, you probably haven't heard of them occupy. +1 organic, biodiesel street art bicycle rights tattooed woke whatever chillwave banjo.</p> <img src='https://source.unsplash.com/random/1000x500' alt='A randomly generated placeholder image' loading='lazy'/> <p>Subway tumblr listicle, etsy meditation deep blog pok pok. Trust fund try-hard and put a bird on it. Cray knausgaard art party shaman dreamcatcher. Kale chips flexitarian aesthetic wolf moon man ugh.</p>"
+      "<p>Have you ever read <a href='https://hipsum.co/' target='_blank'>Hipster Ipsum</a>? It's kind of funny:</p><p> I'm a baby taco thundercat organic chicharrones vape. Readymade coffee fashion mixtape distillery mug. Sustainable man bun polaroid quinoa. Asymmetrical letterpress sriracha fanny pack, you probably haven't heard of them occupy. +1 organic, biodiesel street art bicycle rights tattooed woke whatever chillwave banjo.</p> <img src='../images/michel5.jpg' alt='A randomly generated placeholder image' loading='lazy'/> <p>Subway tumblr listicle, etsy meditation deep blog pok pok. Trust fund try-hard and put a bird on it. Cray knausgaard art party shaman dreamcatcher. Kale chips flexitarian aesthetic wolf moon man ugh.</p>"
     ]
   },
   {
     "id": 2,
     "title": "All posts are fetched from a JSON file",
     "page": "json-fetch",
-    "previewImage": "https://source.unsplash.com/random/500x500",
+    "previewImage": "../images/michel1.jpg",
     "shortSummary": "Focus has been on responsiveness and selector experimentation.",
     "fullSummary": "These posts are remnants from my very first school project, which I am iteratively refactoring with React and other technologies that I'm currently learning.",
     "content": [
-        "<p>Since all pages vary in content, and I wanted to experiment with different layouts and behaviors.</p> <p>This process has given valuable insights into the cascading feature of CSS.</p> <img src='https://source.unsplash.com/random/1000x500' alt='A randomly generated placeholder image' loading='lazy'/> <p>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>"
+        "<p>Since all pages vary in content, and I wanted to experiment with different layouts and behaviors.</p> <p>This process has given valuable insights into the cascading feature of CSS.</p> <img src='../images/michel5.jpg' alt='A randomly generated placeholder image' loading='lazy'/> <p>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>"
     ]
   },
    {
      "id": 3,
      "title": "Optimizing for page speed is more fun than it sounds!",
      "page": "speed-optimization",
-     "previewImage": "https://source.unsplash.com/random/500x500",
+     "previewImage": "../images/michel1.jpg",
      "shortSummary": "I got my page loading speed down by 45% with two simple steps.",
      "fullSummary": "I’ve spent time in the browser’s Network tab, simulating page loads on slow connections without the use of cache. This has been educational on the loading mechanisms of browsers and gives a clear view of the importance of compressed images and documents.",
      "content": [
-        "<p>By using separate CSS files for the unique styles for each page and compressing images, I reduced page load speed by over 45%.</p> <img src='https://source.unsplash.com/random/1000x500' alt='A randomly generated placeholder image' loading='lazy'/> <p>is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>"
+        "<p>By using separate CSS files for the unique styles for each page and compressing images, I reduced page load speed by over 45%.</p> <img src='../images/michel5.jpg' alt='A randomly generated placeholder image' loading='lazy'/> <p>is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>"
      ]
    },
  {
    "id": 4,
    "title": "These are just filler-uppers..",
    "page": "filler",
-   "previewImage": "https://source.unsplash.com/random/500x500",
+   "previewImage": "../images/michel1.jpg",
    "shortSummary": "A brief insight into my approach to this school project!",
    "fullSummary": "My goal with this project has been to gain fluency with CSS targeting, flexbox, grid, and semantic HTML.",
    "content": [
