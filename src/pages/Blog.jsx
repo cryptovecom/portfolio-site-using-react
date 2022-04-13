@@ -37,11 +37,17 @@ export default function Blog() {
           <aside className="card">
             <h6>APR 2022</h6>
             <p>
-              CSS has been cleaned up and made a big mess again. Probably worse than before.
+              Content was revised into a more proper portfolio. Blog is still jibberish and the list of stuff to add is long.
             </p>
           </aside>
           <aside className="card">
             <h6>MAR 2022</h6>
+            <p>
+              CSS has been cleaned up and made a big mess again. Then cleaned up, again.
+            </p>
+          </aside>
+          <aside className="card">
+            <h6>FEB 2022</h6>
             <p>
               Adding MERN-stack structure to explore Javascript backend
               technologies.
@@ -65,7 +71,7 @@ export default function Blog() {
           <aside className="card">
             <h6>SEP 2021</h6>
             <p>
-              This is a dummy site made as my very first school project to
+              This was originally a dummy site made as my first school project to
               practice HTML, CSS and Javascript.
             </p>
           </aside>

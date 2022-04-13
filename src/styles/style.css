@@ -727,7 +727,7 @@ p:first-child {
 /* CLASSES CLASSES CLASSES CLASSES CLASSES CLASSES CLASSES CLASSES CLASSES  */
 .card {
   padding: 2rem;
-  min-width: 20rem;
+  min-width: 280px;
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
@@ -963,7 +963,7 @@ p:first-child {
   }
 }
 
-@media all and (max-width: 391px) {
+@media all and (max-width: 414px) {
   :root {
     --base-font-size: 1rem;
   }
