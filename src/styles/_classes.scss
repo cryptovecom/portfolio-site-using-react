@@ -66,6 +66,7 @@
     }
   }
 }
+
 .tech-icon {
   width: 2.5rem;
   margin-right: 1rem;
@@ -129,4 +130,15 @@
 
   background-image: url('../../public/images/michel4.jpg');
   background-position: center center;
+}
+.top-noborder {
+  width: 100vw;
+  display: flex;
+  gap: 1rem;
+
+  background-color: var(--color-dark);
+  position: sticky;
+  top: 8.5rem;
+
+  z-index: 0;
 }

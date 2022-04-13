@@ -15,7 +15,7 @@ export default function Blog() {
   return (
     <>
       <main>
-        <section className="blog__top">
+        <section className="top-noborder">
           <section className="blog__banner">
             <h1 className="dragon-text">Free will is an illusion</h1>
           </section>

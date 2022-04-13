@@ -1,15 +1,4 @@
 /* BANNER - BANNER - BANNER - BANNER - BANNER - BANNER - BANNER - BANNER - BANNER */
-.blog__top {
-  width: 100vw;
-  display: flex;
-  gap: 1rem;
-
-  background-color: var(--color-dark);
-  position: sticky;
-  top: 7rem;
-
-  z-index: 0;
-}
 
 .blog__banner {
   min-width: 33vw;
@@ -96,10 +85,6 @@ aside {
 
   background-color: var(--color-white);
 }
-
-
-/* CLASSES CLASSES CLASSES CLASSES CLASSES CLASSES CLASSES CLASSES */
-
 
 /* MEDIA QUERIES - MEDIA QUERIES - MEDIA QUERIES - MEDIA QUERIES - MEDIA QUERIES */
 

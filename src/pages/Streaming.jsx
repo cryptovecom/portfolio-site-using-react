@@ -203,7 +203,7 @@ export default function Streaming() {
   return (
     <>
       <main>
-        <section className="main-1">
+        <section className="main-1 top-noborder">
           {/* LEFT SECTION - LEFT SECTION - LEFT SECTION */}
           <section className="streaming__banner">
             <aside>
@@ -310,9 +310,9 @@ export default function Streaming() {
               <h6>MY SOLUTION</h6>
               
               <p>
-                The frontend was made with React.js and deployed through a on
-                Netlify throug Github. The Node.js API I built is hosted on
-                Heroku and the MongoDB database is running as an Atlas cluster.
+                The frontend was made with React.js and deployed through 
+                Netlify and Github. I built a Node.js Express API that is hosted on
+                Heroku and a MongoDB database running as an Atlas cluster.
               </p>
               <p>
                 <img

@@ -96,7 +96,8 @@
 
     flex-grow: 3;
     background-color: var(--color-grey);
-    
+
+    font-size: var(--h6);
     font-weight: bold;
 
     &[type="submit"], &[type="button"] {
@@ -192,12 +193,13 @@
         padding: 2rem;
 
         align-content: center;
-
+        background-color: var(--color-grey);
         color: var(--color-dark);
         text-align: left;
         transition: var(--speed-fast) ease-out;
         &:hover {
           border-radius: 1rem 0 0 1rem;
+          background-color: var(--color-white);
           color: var(--color-dark);
           transform: translateX(1rem);
           transition: var(--speed-fast) ease-out;

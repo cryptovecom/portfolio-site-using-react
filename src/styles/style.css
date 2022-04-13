@@ -118,19 +118,6 @@
 }
 
 /* BANNER - BANNER - BANNER - BANNER - BANNER - BANNER - BANNER - BANNER - BANNER */
-.blog__top {
-  width: 100vw;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  gap: 1rem;
-  background-color: var(--color-dark);
-  position: -webkit-sticky;
-  position: sticky;
-  top: 7rem;
-  z-index: 0;
-}
-
 .blog__banner {
   min-width: 33vw;
   padding: 2rem;
@@ -236,7 +223,6 @@ aside {
   background-color: var(--color-white);
 }
 
-/* CLASSES CLASSES CLASSES CLASSES CLASSES CLASSES CLASSES CLASSES */
 /* MEDIA QUERIES - MEDIA QUERIES - MEDIA QUERIES - MEDIA QUERIES - MEDIA QUERIES */
 @media screen and (min-width: 64rem) {
   header {
@@ -489,6 +475,7 @@ button.dark-mode-button:active {
       -ms-flex-positive: 3;
           flex-grow: 3;
   background-color: var(--color-grey);
+  font-size: var(--h6);
   font-weight: bold;
 }
 
@@ -640,6 +627,7 @@ button.dark-mode-button:active {
   padding: 2rem;
   -ms-flex-line-pack: center;
       align-content: center;
+  background-color: var(--color-grey);
   color: var(--color-dark);
   text-align: left;
   -webkit-transition: var(--speed-fast) ease-out;
@@ -648,6 +636,7 @@ button.dark-mode-button:active {
 
 .streaming__results li button.button-play:hover {
   border-radius: 1rem 0 0 1rem;
+  background-color: var(--color-white);
   color: var(--color-dark);
   -webkit-transform: translateX(1rem);
           transform: translateX(1rem);
@@ -835,6 +824,19 @@ button.dark-mode-button:active {
   background-position: center center;
 }
 
+.top-noborder {
+  width: 100vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 1rem;
+  background-color: var(--color-dark);
+  position: -webkit-sticky;
+  position: sticky;
+  top: 8.5rem;
+  z-index: 0;
+}
+
 @media screen and (max-width: 64rem) {
   .top {
     display: -webkit-box;
@@ -847,7 +849,7 @@ button.dark-mode-button:active {
     width: 100%;
     top: -21rem;
   }
-  .blog__top {
+  .top-noborder {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
