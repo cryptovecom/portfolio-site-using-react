@@ -118,15 +118,5 @@
         "id":"C5",
         "description":"Handle expectations of customers and stakeholders so that it leads to further learning and completion of projects.",
         "status": "future"
-    },
-    {
-        "id":"C6",
-        "description":"Applying specialized knowledge within frontend development for continued learning and professional development.",
-        "status": "future"
-    },
-    {
-        "id":"FYI",
-        "description":"These card-thingies are fetched from a JSON-file in React hooks and looped using mad noob skillz.",
-        "status": "done"
     }
 ]

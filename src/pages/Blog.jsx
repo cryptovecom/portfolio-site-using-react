@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
+import { birthCalculatorYears, birthdayCalculator } from "../helpers/birthday";
 
 // BLOG FUNCTION
 
@@ -73,6 +74,15 @@ export default function Blog() {
             <p>
               This was originally a dummy site made as my first school project to
               practice HTML, CSS and Javascript.
+            </p>
+          </aside>
+          <aside className="card">
+            <h6>BIRTHDAY WIZARD</h6>
+            <p>
+              Today it's been <b id="elapsed-days">{birthdayCalculator()}</b>{" "}
+              days since I was born. <br />
+              That's <b id="elapsed-years">{birthCalculatorYears()}</b> years!
+              🧙✨
             </p>
           </aside>
         </section>

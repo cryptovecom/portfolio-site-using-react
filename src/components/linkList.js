@@ -11,12 +11,12 @@ const listItems = [
     img: "github.png",
     class: "github",
   },
-  {
-    title: "Instagram",
-    url: "https://www.instagram.com/micheliseneld/",
-    img: "photography.jpg",
-    class: "instagram",
-  },
+  // {
+  //   title: "Instagram",
+  //   url: "https://www.instagram.com/micheliseneld/",
+  //   img: "photography.jpg",
+  //   class: "instagram",
+  // },
   {
     title: "Linkedin",
     url: "https://www.linkedin.com/in/micheliseneld/",
