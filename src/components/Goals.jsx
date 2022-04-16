@@ -18,7 +18,7 @@ function Goals(props) {
             goals.map((post) => (
               <li key={post.id} className={`${post.status} card`}>
                 <h6>{post.id}</h6>
-                <h5>{post.description}</h5>
+                <p>{post.description}</p>
               </li>
             ))}
         </ul>
