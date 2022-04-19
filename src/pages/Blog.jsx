@@ -35,26 +35,26 @@ export default function Blog() {
           </section>
         </section>
         <section className="blog__cards top">
-          <aside className="card flex">
+          <article className="card flex">
             <h6>APR 2022</h6>
             <p>
               The site's content was revised into a more proper portfolio. This blog is still jibberish and the list of stuff to add is long.
             </p>
-          </aside>
-          <aside className="card flex">
+          </article>
+          <article className="card flex">
             <h6>MAR 2022</h6>
             <p>
               CSS has been cleaned up and made a big mess again. Then cleaned up, again.
             </p>
-          </aside>
-          <aside className="card flex">
+          </article>
+          <article className="card flex">
             <h6>FEB 2022</h6>
             <p>
               Adding MERN-stack structure to explore Javascript backend
               technologies.
             </p>
-          </aside>
-          <aside className="card flex">
+          </article>
+          <article className="card flex">
             <h6>JAN 2022</h6>
             <p>
               The site was refactored using React.js and published to Netlify
@@ -68,15 +68,15 @@ export default function Blog() {
               </a>
               .
             </p>
-          </aside>
-          <aside className="card flex">
+          </article>
+          <article className="card flex">
             <h6>SEP 2021</h6>
             <p>
               This was originally a dummy site made as my first school project to
               practice HTML, CSS and Javascript.
             </p>
-          </aside>
-          <aside className="card">
+          </article>
+          <article className="card">
             <h6>BIRTHDAY WIZARD</h6>
             <p>
               Today it's been <b id="elapsed-days">{birthdayCalculator()}</b>{" "}
@@ -84,7 +84,7 @@ export default function Blog() {
               That's <b id="elapsed-years">{birthCalculatorYears()}</b> years!
               🧙✨
             </p>
-          </aside>
+          </article>
         </section>
         <section className="photo-4">
         </section>
