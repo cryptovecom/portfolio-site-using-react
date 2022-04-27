@@ -23,15 +23,15 @@ export default function BlogPost() {
     <>
       <main>
         <section className="top__noborder">
-          <section className="banner">
+          <section className="banner clean">
             <button className="dark-mode-button" onClick={darkMode}>
               Dark Mode
             </button>
           </section>
-          <section>
+          <section className="blog-post">
             <article className="blog-post">
               {post && (
-                <>
+                <div>
                   <h2>{post[0].title}</h2>
                   <h5>{post[0].fullSummary}</h5>
                   <section
@@ -40,7 +40,7 @@ export default function BlogPost() {
                   <p>
                     <Link to="/blog">Back to blog page</Link>
                   </p>
-                </>
+                </div>
               )}
             </article>
           </section>

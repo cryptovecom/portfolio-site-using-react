@@ -1,7 +1,10 @@
-.blog-post {
+article.blog-post {
   padding: 2rem 3rem 2rem 2rem;
   background-color: var(--color-grey);
 
+  div {
+    max-width: 43rem;
+  }
   h2 {
     margin-bottom: 2rem;
   }
@@ -24,4 +27,11 @@
       }
     }
   }
+}
+section.blog-post {
+  width: 100%;
+}
+
+.clean {
+  background: var(--color-yellow);
 }
