@@ -215,7 +215,8 @@ export default function Streaming() {
                     : `⚡ Please log in! `}
                 </h1>
               </section> */}
-              <section className={`rumpa-1 ${none ? 'none' : ''}` } onClick={() => setNone(!none)}>
+              <button onClick={() => setNone(!none)}>Hehehe</button>
+              <section className={`rumpa-1 ${none ? 'none' : ''}` }>
                 <aside className="card how-to">
                   <h6>HOW TO USE</h6>
                   <ol>
@@ -301,7 +302,7 @@ export default function Streaming() {
                   </p>
                 </aside>
               </section>
-              <section className={`rumpa-2 ${!none ? 'none' : ''}` } onClick={() => setNone(!none)}>
+              <section className={`rumpa-2 ${!none ? 'none' : ''}` }>
                 <ul className="streaming__results">
                   {user &&
                     user.role &&
