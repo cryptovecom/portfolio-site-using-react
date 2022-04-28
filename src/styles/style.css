@@ -755,6 +755,16 @@ section.blog-post {
   display: none;
 }
 
+.kek {
+  padding: 1rem;
+  margin-bottom: 1rem;
+}
+
+.kek:hover {
+  -webkit-box-shadow: -0.3rem 0.3rem 0 #333333;
+          box-shadow: -0.3rem 0.3rem 0 #333333;
+}
+
 /* CLASSES CLASSES CLASSES CLASSES CLASSES CLASSES CLASSES CLASSES CLASSES  */
 .card {
   padding: 2rem;

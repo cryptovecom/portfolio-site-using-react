@@ -215,7 +215,7 @@ export default function Streaming() {
                     : `⚡ Please log in! `}
                 </h1>
               </section> */}
-              <button onClick={() => setNone(!none)}>Hehehe</button>
+              <button className="kek" onClick={() => setNone(!none)}>This button is kek</button>
               <section className={`rumpa-1 ${none ? 'none' : ''}` }>
                 <aside className="card how-to">
                   <h6>HOW TO USE</h6>

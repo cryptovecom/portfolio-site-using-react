@@ -240,3 +240,11 @@
 .none {
   display: none;
 }
+.kek {
+  padding: 1rem;
+  margin-bottom: 1rem;
+
+  &:hover {
+    box-shadow: -0.3rem 0.3rem 0 hsl(0, 0%, 20%);
+  }
+}
