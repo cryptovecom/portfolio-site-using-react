@@ -736,6 +736,25 @@ section.blog-post {
   background-color: var(--color-yellow);
 }
 
+.rumpa-1 {
+  position: relative;
+  top: 0;
+}
+
+.rumpa-1 .card {
+  background-color: transparent;
+}
+
+.rumpa-2 {
+  z-index: 1;
+  position: relative;
+  top: 0;
+}
+
+.none {
+  display: none;
+}
+
 /* CLASSES CLASSES CLASSES CLASSES CLASSES CLASSES CLASSES CLASSES CLASSES  */
 .card {
   padding: 2rem;

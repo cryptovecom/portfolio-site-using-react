@@ -220,3 +220,23 @@
     }
   }
 }
+.rumpa-1 {
+  position: relative;
+  top: 0;
+
+  .card {
+    // color: var(--color-dark);
+    background-color: transparent;
+  }
+}
+
+.rumpa-2 {
+  z-index: 1;
+
+  position: relative;
+  top: 0;
+}
+
+.none {
+  display: none;
+}
