@@ -207,7 +207,7 @@ export default function Streaming() {
         <section className="main-1 top__noborder">
           {/* LEFT SECTION - LEFT SECTION - LEFT SECTION */}
           <section className="streaming__banner">
-            <section className="banner">
+            <section className="banner dark-bg">
               {/* <section className="rumpa">
                 <h1>
                   {user && user.user
@@ -215,7 +215,7 @@ export default function Streaming() {
                     : `⚡ Please log in! `}
                 </h1>
               </section> */}
-              <button className="kek" onClick={() => setNone(!none)}>This button is kek</button>
+              <button className="info-toggle" onClick={() => setNone(!none)}>i</button>
               <section className={`rumpa-1 ${none ? 'none' : ''}` }>
                 <aside className="card how-to">
                   <h6>HOW TO USE</h6>

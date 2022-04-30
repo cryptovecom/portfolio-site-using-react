@@ -225,8 +225,8 @@
   top: 0;
 
   .card {
-    // color: var(--color-dark);
-    background-color: transparent;
+    color: var(--color-dark);
+    margin-bottom: 1rem;
   }
 }
 
@@ -240,11 +240,21 @@
 .none {
   display: none;
 }
-.kek {
-  padding: 1rem;
-  margin-bottom: 1rem;
+.info-toggle {
+  width: 2.5rem;
+  padding: .5rem;
+  border-radius: 2rem;
+
+  z-index: 2;
+
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
 
   &:hover {
     box-shadow: -0.3rem 0.3rem 0 hsl(0, 0%, 20%);
   }
+}
+.dark-bg {
+  background: var(--color-dark);
 }

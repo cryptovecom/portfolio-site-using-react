@@ -317,7 +317,7 @@ p:first-child {
 }
 
 .banner {
-  min-width: 33vw;
+  min-width: 38vw;
   padding: 2rem;
   background: var(--color-blood) url(../../public/images/svg/stacked-waves-haikei.svg);
   background-size: cover;
@@ -742,7 +742,8 @@ section.blog-post {
 }
 
 .rumpa-1 .card {
-  background-color: transparent;
+  color: var(--color-dark);
+  margin-bottom: 1rem;
 }
 
 .rumpa-2 {
@@ -755,14 +756,23 @@ section.blog-post {
   display: none;
 }
 
-.kek {
-  padding: 1rem;
-  margin-bottom: 1rem;
+.info-toggle {
+  width: 2.5rem;
+  padding: .5rem;
+  border-radius: 2rem;
+  z-index: 2;
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
 }
 
-.kek:hover {
+.info-toggle:hover {
   -webkit-box-shadow: -0.3rem 0.3rem 0 #333333;
           box-shadow: -0.3rem 0.3rem 0 #333333;
+}
+
+.dark-bg {
+  background: var(--color-dark);
 }
 
 /* CLASSES CLASSES CLASSES CLASSES CLASSES CLASSES CLASSES CLASSES CLASSES  */
