@@ -16,4 +16,10 @@
   background-color: var(--color-yellow);
   height: 1.05rem;
 }
+
+@media screen and (max-width: 414px) {
+  .progress-bar {
+    top: 6.1rem;
+  }
+}
 /*# sourceMappingURL=progress-bar.css.map */
