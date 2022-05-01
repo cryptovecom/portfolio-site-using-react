@@ -275,7 +275,7 @@ export default function Streaming() {
                   
                   <p>
                     The frontend was made with React.js and deployed through 
-                    Netlify and Github. I built a Node.js Express API that is hosted on
+                    Netlify and Github pipelines. I built a Node.js Express API that is hosted on
                     Heroku and a MongoDB database running as an Atlas cluster.
                   </p>
                   <p>
