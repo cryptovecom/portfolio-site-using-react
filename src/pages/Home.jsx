@@ -1,6 +1,5 @@
 import Goals from "../components/Goals";
 import { Link } from "react-router-dom";
-import ProgressBar from "../components/ProgressBar";
 
 export default function Home(props) {
   const linkList = props.linkList.map((object, i) => {

@@ -7,16 +7,17 @@ export const ProgressBar = () => {
 
   const [height, setHeight] = useState(0);
 
-  const handleScroll = () => {
-    html.style.setProperty('--progress-width', `${(window.pageYOffset/height)*100}%`)
-  };
+  // eslint-disable-next-line react-hooks/exhaustive-deps
+  function handleScroll() {
+    html.style.setProperty('--progress-width', `${(window.pageYOffset / height) * 100}%`);
+  }
 
   useEffect(() => {
     let clientHeight = html.clientHeight;
     let scrollHeight = Math.max(body.scrollHeight, html.scrollHeight);
     setHeight(scrollHeight-clientHeight);
     window.addEventListener('scroll', handleScroll);
-  });
+  }, [html.clientHeight, html.scrollHeight, body.scrollHeight, handleScroll]);
 
   return (
     <div className="progress-bar">
