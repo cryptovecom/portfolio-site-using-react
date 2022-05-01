@@ -1,4 +1,3 @@
-import Goals from "../components/Goals";
 import { Link } from "react-router-dom";
 
 export default function Home(props) {
@@ -124,16 +123,15 @@ export default function Home(props) {
               />
             </p>
             <p>
-              Below you see the progress I've made with my course goalz.
+              <Link to="/goals">Here</Link> you can see the progress I've made with my course goalz.
             </p>
-            <p>
+            {/* <p>
               <span className="passed">Passed</span>{" "}
               <span className="wip">Learning</span>{" "}
               <span className="future">Future</span>
-            </p>
+            </p> */}
           </div>
         </section>
-        <Goals />
         <section className="photo-3">
         </section>
         <section className="main-2">
