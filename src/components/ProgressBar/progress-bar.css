@@ -12,9 +12,9 @@
 }
 
 .progress-bar .progress-bar__progress {
+  height: 1.05rem;
   width: var(--progress-width);
   background-color: var(--color-yellow);
-  height: 1.05rem;
 }
 
 @media screen and (max-width: 414px) {

@@ -736,17 +736,17 @@ section.blog-post {
   background-color: var(--color-yellow);
 }
 
-.rumpa-1 {
+.user-panel__favs {
   position: relative;
   top: 0;
 }
 
-.rumpa-1 .card {
+.user-panel__favs .card {
   color: var(--color-dark);
   margin-bottom: 1rem;
 }
 
-.rumpa-2 {
+.user-panel__info {
   z-index: 1;
   position: relative;
   top: 0;

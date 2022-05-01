@@ -215,8 +215,8 @@ export default function Streaming() {
                     : `⚡ Please log in! `}
                 </h1>
               </section> */}
-              <button className="info-toggle" onClick={() => setNone(!none)}>i</button>
-              <section className={`rumpa-1 ${none ? 'none' : ''}` }>
+              <button className="info-toggle" onClick={() => setNone(!none)}>{none ? 'i' : '♪'}</button>
+              <section className={`user-panel__favs ${none ? 'none' : ''}` }>
                 <aside className="card how-to">
                   <h6>HOW TO USE</h6>
                   <ol>
@@ -302,7 +302,7 @@ export default function Streaming() {
                   </p>
                 </aside>
               </section>
-              <section className={`rumpa-2 ${!none ? 'none' : ''}` }>
+              <section className={`user-panel__info ${!none ? 'none' : ''}` }>
                 <ul className="streaming__results">
                   {user &&
                     user.role &&
@@ -343,10 +343,8 @@ export default function Streaming() {
                         );
                       })}
                 </ul>
-                </section>
               </section>
-              
-            
+            </section>
           </section>
             
             
