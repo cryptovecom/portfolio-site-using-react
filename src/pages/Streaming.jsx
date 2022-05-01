@@ -207,143 +207,141 @@ export default function Streaming() {
         <section className="main-1 top__noborder">
           {/* LEFT SECTION - LEFT SECTION - LEFT SECTION */}
           <section className="streaming__banner">
-            <section className="banner dark-bg">
-              {/* <section className="rumpa">
-                <h1>
-                  {user && user.user
-                    ? `${user.role}: ${user.user}`
-                    : `⚡ Please log in! `}
-                </h1>
-              </section> */}
-              <button className="info-toggle" onClick={() => setNone(!none)}>{none ? 'i' : '♪'}</button>
-              <section className={`user-panel__favs ${none ? 'none' : ''}` }>
-                <aside className="card how-to">
-                  <h6>HOW TO USE</h6>
-                  <ol>
-                    <li>
-                      Enter a username and click <strong>Register</strong>.
-                    </li>
-                    <li>
-                      Enter your username and click <strong>Login</strong>.
-                    </li>
-                    {user && user.user && (
-                      <>
-                        <li>You may now save favourites with the ❤️-buttons.</li>
-                        <li>
-                          .. and remove them with the 💔-buttons on the list above.
+            {/* <section className="rumpa">
+              <h1>
+                {user && user.user
+                  ? `${user.role}: ${user.user}`
+                  : `⚡ Please log in! `}
+              </h1>
+            </section> */}
+            <button className="info-toggle" onClick={() => setNone(!none)}>{none ? 'i' : '♪'}</button>
+            <section className={`user-panel__favs ${none ? 'none' : ''}` }>
+              <aside className="card how-to">
+                <h6>HOW TO USE</h6>
+                <ol>
+                  <li>
+                    Enter a username and click <strong>Register</strong>.
+                  </li>
+                  <li>
+                    Enter your username and click <strong>Login</strong>.
+                  </li>
+                  {user && user.user && (
+                    <>
+                      <li>You may now save favourites with the ❤️-buttons.</li>
+                      <li>
+                        .. and remove them with the 💔-buttons on the list above.
+                      </li>
+                      <li>
+                        To search for artists, clear your username and start
+                        typing!
+                      </li>
+                      <li>
+                        Audio doesn't work, yet, and there are still a few bugs
+                        lurking!
+                      </li>
+                      <li>That's it!</li>
+                    </>
+                  )}
+                </ol>
+              </aside>
+              <aside className="card how-to">
+                <h6>THE BRIEF</h6>
+                <p>
+                  I built this app during the <strong>Data Interaction</strong>{" "}
+                  module at Hyper Island in March, 2022.
+                </p>
+                <details>
+                  <summary>The brief:</summary>
+                  <blockquote>
+                    <p>
+                      Great Media Group has decided to relaunch, the new focus is purely around what you choose to be invested in. No algorithms, no big data, just you and your favorite content.
+                      They require a new platform, and know that API first is the way to go when building something new and great as to support their web, mobile and beyond.
+                    </p>
+                    <ul>
+                      <li>New users should be able to register</li>
+                      <li>Admin users should be able to add new content</li>
+                      <li>User should be able to find content</li>
+                      <li>Users should be able to save content to a list of favorites</li>
+                      <li>The list of favorites should be front and center throughout the entire experience</li>
+                    </ul>
+                  </blockquote>
+                </details>
+                
+                
+              </aside>
+              <aside className="card how-to">
+                <h6>MY SOLUTION</h6>
+                
+                <p>
+                  The frontend was made with React.js and deployed through 
+                  Netlify and Github pipelines. I built a Node.js Express API that is hosted on
+                  Heroku and a MongoDB database running as an Atlas cluster.
+                </p>
+                <p>
+                  <img
+                    src="./images/icons/react.png"
+                    alt="React Icon"
+                    className="tech-icon"
+                  />
+                  <img
+                    src="./images/icons/node.png"
+                    alt="Node Icon"
+                    className="tech-icon"
+                  />
+                  <img
+                    src="./images/icons/express.png"
+                    alt="Express Icon"
+                    className="tech-icon"
+                  />
+                  <img
+                    src="./images/icons/mongodb.png"
+                    alt="MongoDB Icon"
+                    className="tech-icon"
+                  />
+                </p>
+              </aside>
+            </section>
+            <section className={`user-panel__info ${!none ? 'none' : ''}` }>
+              <ul className="streaming__results">
+                {user &&
+                  user.role &&
+                  favs
+                    .sort((a, b) => {
+                      if (sort) {
+                        return a.artist < b.artist ? -1 : 1;
+                      } else {
+                        return a.artist > b.artist ? -1 : 1;
+                      }
+                    })
+                    .map((track) => {
+                      return (
+                        <li key={track._id + "x"}>
+                          <button
+                            className="button-play"
+                            id={`fav-btn-${track._id}`}
+                            onClick={() =>
+                              playPause(
+                                `fav-${track._id}`,
+                                `fav-btn-${track._id}`
+                              )
+                            }
+                          >
+                            {track.artist} - {track.title}
+                            <audio id={`fav-${track._id}`} controls>
+                              <source src={track.url} type="audio/mpeg" />
+                              Your browser does not support the audio element.
+                            </audio>
+                          </button>
+                          <button
+                            className="button-do button-fav"
+                            onClick={() => httpUnfav(track._id)}
+                          >
+                            💔
+                          </button>
                         </li>
-                        <li>
-                          To search for artists, clear your username and start
-                          typing!
-                        </li>
-                        <li>
-                          Audio doesn't work, yet, and there are still a few bugs
-                          lurking!
-                        </li>
-                        <li>That's it!</li>
-                      </>
-                    )}
-                  </ol>
-                </aside>
-                <aside className="card how-to">
-                  <h6>THE BRIEF</h6>
-                  <p>
-                    I built this app during the <strong>Data Interaction</strong>{" "}
-                    module at Hyper Island in March, 2022.
-                  </p>
-                  <details>
-                    <summary>The brief:</summary>
-                    <blockquote>
-                      <p>
-                        Great Media Group has decided to relaunch, the new focus is purely around what you choose to be invested in. No algorithms, no big data, just you and your favorite content.
-                        They require a new platform, and know that API first is the way to go when building something new and great as to support their web, mobile and beyond.
-                      </p>
-                      <ul>
-                        <li>New users should be able to register</li>
-                        <li>Admin users should be able to add new content</li>
-                        <li>User should be able to find content</li>
-                        <li>Users should be able to save content to a list of favorites</li>
-                        <li>The list of favorites should be front and center throughout the entire experience</li>
-                      </ul>
-                    </blockquote>
-                  </details>
-                  
-                  
-                </aside>
-                <aside className="card how-to">
-                  <h6>MY SOLUTION</h6>
-                  
-                  <p>
-                    The frontend was made with React.js and deployed through 
-                    Netlify and Github pipelines. I built a Node.js Express API that is hosted on
-                    Heroku and a MongoDB database running as an Atlas cluster.
-                  </p>
-                  <p>
-                    <img
-                      src="./images/icons/react.png"
-                      alt="React Icon"
-                      className="tech-icon"
-                    />
-                    <img
-                      src="./images/icons/node.png"
-                      alt="Node Icon"
-                      className="tech-icon"
-                    />
-                    <img
-                      src="./images/icons/express.png"
-                      alt="Express Icon"
-                      className="tech-icon"
-                    />
-                    <img
-                      src="./images/icons/mongodb.png"
-                      alt="MongoDB Icon"
-                      className="tech-icon"
-                    />
-                  </p>
-                </aside>
-              </section>
-              <section className={`user-panel__info ${!none ? 'none' : ''}` }>
-                <ul className="streaming__results">
-                  {user &&
-                    user.role &&
-                    favs
-                      .sort((a, b) => {
-                        if (sort) {
-                          return a.artist < b.artist ? -1 : 1;
-                        } else {
-                          return a.artist > b.artist ? -1 : 1;
-                        }
-                      })
-                      .map((track) => {
-                        return (
-                          <li key={track._id + "x"}>
-                            <button
-                              className="button-play"
-                              id={`fav-btn-${track._id}`}
-                              onClick={() =>
-                                playPause(
-                                  `fav-${track._id}`,
-                                  `fav-btn-${track._id}`
-                                )
-                              }
-                            >
-                              {track.artist} - {track.title}
-                              <audio id={`fav-${track._id}`} controls>
-                                <source src={track.url} type="audio/mpeg" />
-                                Your browser does not support the audio element.
-                              </audio>
-                            </button>
-                            <button
-                              className="button-do button-fav"
-                              onClick={() => httpUnfav(track._id)}
-                            >
-                              💔
-                            </button>
-                          </li>
-                        );
-                      })}
-                </ul>
-              </section>
+                      );
+                    })}
+              </ul>
             </section>
           </section>
             
