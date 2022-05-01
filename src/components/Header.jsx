@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import ProgressBar from './ProgressBar';
 
 function Header() {
   return (
@@ -12,10 +13,9 @@ function Header() {
             </li>
           </ul>
         </nav>
-        
       </header>
+      <ProgressBar />
     </>
-    
   );
 }
 

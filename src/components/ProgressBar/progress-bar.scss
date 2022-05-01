@@ -12,11 +12,12 @@
   z-index: 10;
 
   .progress-bar__progress {
+    height: 1.05rem;
     width: var(--progress-width);
     background-color: var(--color-yellow);
-    height: 1.05rem;
   }
 }
+
 @media screen and (max-width: $phone) {
   .progress-bar {
     top: 6.1rem;

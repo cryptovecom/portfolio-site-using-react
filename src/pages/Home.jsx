@@ -10,7 +10,6 @@ export default function Home(props) {
 
   return (
     <>
-      <ProgressBar />
       <main>
         <section className="photo-1">
           <h2>Creative generalist exploring consciousness through art and technology.</h2>

@@ -1,5 +1,5 @@
 @import './sass-vars';
-@media all and (max-width: 64rem) {
+@media all and (max-width: $tablet) {
   
   .top {
     flex-direction: column;
