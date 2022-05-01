@@ -1,5 +1,6 @@
 import Goals from "../components/Goals";
 import { Link } from "react-router-dom";
+import ProgressBar from "../components/ProgressBar";
 
 export default function Home(props) {
   const linkList = props.linkList.map((object, i) => {
@@ -9,7 +10,7 @@ export default function Home(props) {
 
   return (
     <>
-     
+      <ProgressBar />
       <main>
         <section className="photo-1">
           <h2>Creative generalist exploring consciousness through art and technology.</h2>

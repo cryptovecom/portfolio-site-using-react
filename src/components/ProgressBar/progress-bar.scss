@@ -1,0 +1,18 @@
+:root {
+  --progress-width: 0px;
+}
+
+.progress-bar {
+  height: 1rem;
+  margin-top: -1rem;
+
+  position: sticky;
+  top: 7.35rem;
+  z-index: 10;
+
+  .progress-bar__progress {
+    width: var(--progress-width);
+    background-color: var(--color-yellow);
+    height: 1.05rem;
+  }
+}
