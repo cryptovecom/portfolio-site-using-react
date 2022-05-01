@@ -9,7 +9,7 @@ export const ProgressBar = () => {
 
   // eslint-disable-next-line react-hooks/exhaustive-deps
   function handleScroll() {
-    html.style.setProperty('--progress-width', `${(window.pageYOffset / height) * 100 % 100}%`);
+    html.style.setProperty('--progress-width', `${(window.pageYOffset / height) * 100}%`);
   }
 
   useEffect(() => {
