@@ -4,6 +4,7 @@ $font-dragon: "UnifrakturMaguntia", "Times New Roman", serif;
 @import '_variables';
 @import url('https://fonts.googleapis.com/css2?family=UnifrakturMaguntia&display=swap');
 
+// GLOBAL BODY STYLE
 * {
   margin: 0;
   padding: 0;
@@ -38,7 +39,6 @@ main {
 }
 
 // HTML ELEMENTS
-
 a,
 a:visited {
   color: var(--color-dark);

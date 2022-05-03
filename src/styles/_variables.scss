@@ -1,13 +1,13 @@
+// MEDIA QUERRY BREAKPOINTS
 $phone: 414px;
 $tablet: 64rem;
-$reddd: red;
 
 :root {
-  /* Global Sizes */
+  // GLOBAL SIZES
   --border-size: 1rem;
   --golden-ratio: 38.2%;
 
-  /* Color Palette */
+  // COLOR PALETTE
   --color-staticwhite: #eeeeee;
   --color-white: #eeeeee;
   --color-blood: #af3333;
@@ -17,7 +17,7 @@ $reddd: red;
   --color-orange: #f66c03;
   --color-yellow: #ffb532;
 
-  /* Font Size Scales */
+  // FONT SIZE SCALES
 
   --base-font-size: 1.25em;
   --type-scale: 1.125;
@@ -29,7 +29,7 @@ $reddd: red;
   --h2: calc(var(--h3) * var(--type-scale));
   --h1: calc(var(--h2) * var(--type-scale));
 
-  /* Animation Speeds */
+  // ANIMATION SPEEDS
   --speed-fast: 0.25s;
   --speed-slow: 0.5s;
 }
