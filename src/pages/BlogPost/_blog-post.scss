@@ -5,6 +5,7 @@ article.blog-post {
   div {
     max-width: 43rem;
   }
+
   h2 {
     margin-bottom: 2rem;
   }
@@ -18,7 +19,7 @@ article.blog-post {
     margin: 1rem 0 0;
 
     transform: translateX(-13rem);
-    
+
     @media all and (max-width: 1023px) {
       & {
         width: 100%;
@@ -28,6 +29,7 @@ article.blog-post {
     }
   }
 }
+
 section.blog-post {
   width: 100%;
 }

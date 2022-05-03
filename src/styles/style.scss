@@ -138,8 +138,8 @@ p {
 }
 // PAGE COMPONENT SHEETS
 @import "_home-style";
-@import "_blog-style";
-@import "_blog-post-style";
+@import "../Pages/Blog/_blog";
+@import "../Pages/Blog/_blog-post";
 @import "_streaming-style";
 @import "_classes";
 @import "_dark-mode";

@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
-import { birthCalculatorYears, birthdayCalculator } from "../helpers/birthday";
+import { birthCalculatorYears, birthdayCalculator } from "../../helpers/birthday";
 
 // BLOG FUNCTION
 
