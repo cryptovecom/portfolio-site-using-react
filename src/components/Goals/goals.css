@@ -1,5 +1,4 @@
 .goals {
-  border-top: 1rem solid var(--color-dark);
   background-color: var(--color-dark);
   z-index: 2;
 }
