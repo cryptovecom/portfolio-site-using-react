@@ -1,6 +1,4 @@
 @import url("https://fonts.googleapis.com/css2?family=UnifrakturMaguntia&display=swap");
-@forward "_sass-vars";
-@use '_sass-vars';
 :root {
   /* Global Sizes */
   --border-size: 1rem;

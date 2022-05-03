@@ -1,40 +1,8 @@
 $font-main: "Roboto", Arial, Helvetica, sans-serif;
 $font-dragon: "UnifrakturMaguntia", "Times New Roman", serif;
 
-@forward "_sass-vars";
-@use '_sass-vars';
+@import '_variables';
 @import url('https://fonts.googleapis.com/css2?family=UnifrakturMaguntia&display=swap');
-
-:root {
-  /* Global Sizes */
-  --border-size: 1rem;
-  --golden-ratio: 38.2%;
-
-  /* Color Palette */
-  --color-staticwhite: #eeeeee;
-  --color-white: #eeeeee;
-  --color-blood: #af3333;
-  --color-dark: #1e1e1e;
-  --color-green: #6a9955;
-  --color-grey: #d2d2ce;
-  --color-orange: #f66c03;
-  --color-yellow: #ffb532;
-
-  /* Font Size Scales */
-
-  --base-font-size: 1.25em;
-  --type-scale: 1.125; /* Major Second Scale */
-
-  --h5: calc(var(--base-font-size));
-  --h4: calc(var(--h5) * var(--type-scale));
-  --h3: calc(var(--h4) * var(--type-scale));
-  --h2: calc(var(--h3) * var(--type-scale));
-  --h1: calc(var(--h2) * var(--type-scale));  
-
-  /* Animation Speeds */
-  --speed-fast: 0.25s;
-  --speed-slow: 0.5s;
-}
 
 * {
   margin: 0;
@@ -138,4 +106,5 @@ p {
     margin-top: 0; 
   }
 }
+
 @import '_hub';
