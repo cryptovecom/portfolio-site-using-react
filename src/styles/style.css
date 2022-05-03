@@ -60,45 +60,6 @@ body {
   scrollbar-gutter: stable;
 }
 
-/* HEADER HEADER HEADER HEADER HEADER HEADER HEADER HEADER HEADER HEADER HEADER */
-header {
-  border-bottom: 1rem solid var(--color-dark);
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  z-index: 10;
-  position: -webkit-sticky;
-  position: sticky;
-  top: 0;
-  background-color: var(--color-white);
-  font-size: var(--h2);
-  font-weight: bold;
-}
-
-header a {
-  padding: 2rem 0.3rem 2rem 2rem;
-  text-decoration: none;
-}
-
-header ul li a {
-  padding: 2rem 2rem 2rem 0.3rem;
-  color: var(--color-blood);
-  text-decoration: underline;
-  -webkit-transition: color var(--speed-fast);
-  transition: color var(--speed-fast);
-}
-
-header ul li a:focus, header ul li a:hover {
-  color: var(--color-dark);
-  text-decoration: none;
-}
-
 /* MAIN MAIN MAIN MAIN MAIN MAIN MAIN MAIN MAIN MAIN MAIN MAIN MAIN MAIN MAIN */
 main {
   display: -webkit-box;
@@ -108,28 +69,6 @@ main {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-}
-
-/* FOOTER FOOTER FOOTER FOOTER FOOTER FOOTER FOOTER FOOTER FOOTER FOOTER FOOTER */
-footer {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  background-color: var(--color-dark);
-  font-size: var(--h5);
-  -webkit-transition: border-radius var(--speed-slow);
-  transition: border-radius var(--speed-slow);
-}
-
-footer a,
-footer a:visited {
-  padding: 2rem;
-  width: 100%;
-  color: var(--color-grey);
-  text-decoration: none;
 }
 
 /* ELEMENTS ELEMENTS ELEMENTS ELEMENTS ELEMENTS ELEMENTS ELEMENTS ELEMENTS */
@@ -284,36 +223,6 @@ p:first-child {
 
 .main-2 div span.future {
   color: var(--color-dark);
-}
-
-.goals {
-  border-top: 1rem solid var(--color-dark);
-  background-color: var(--color-dark);
-  z-index: 2;
-}
-
-.goals ul {
-  display: -ms-grid;
-  display: grid;
-  gap: 1rem;
-  -ms-grid-columns: (1fr)[3];
-      grid-template-columns: repeat(3, 1fr);
-}
-
-@media screen and (max-width: 64rem) {
-  .goals ul {
-    -ms-grid-columns: 1fr;
-        grid-template-columns: 1fr;
-  }
-}
-
-.goals ul .done {
-  background-color: #5f874c;
-  color: var(--color-white);
-}
-
-.goals ul .wip {
-  background-color: var(--color-yellow);
 }
 
 .banner {

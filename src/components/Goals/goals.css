@@ -1,0 +1,30 @@
+.goals {
+  border-top: 1rem solid var(--color-dark);
+  background-color: var(--color-dark);
+  z-index: 2;
+}
+
+.goals ul {
+  display: -ms-grid;
+  display: grid;
+  gap: 1rem;
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+}
+
+@media screen and (max-width: 64rem) {
+  .goals ul {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+  }
+}
+
+.goals ul .done {
+  background-color: #5f874c;
+  color: var(--color-white);
+}
+
+.goals ul .wip {
+  background-color: var(--color-yellow);
+}
+/*# sourceMappingURL=goals.css.map */

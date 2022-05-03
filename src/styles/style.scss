@@ -64,72 +64,11 @@ body {
   scrollbar-gutter: stable;
 }
 
-/* HEADER HEADER HEADER HEADER HEADER HEADER HEADER HEADER HEADER HEADER HEADER */
-
-header {
-  border-bottom: 1rem solid var(--color-dark);
-
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  z-index: 10;
-
-  position: sticky;
-  top: 0;
-
-  background-color: var(--color-white);
-
-  font-size: var(--h2);
-  font-weight: bold;
-
-  a {
-    padding: 2rem 0.3rem 2rem 2rem;
-
-    text-decoration: none;
-  }
-
-  ul li a {
-    padding: 2rem 2rem 2rem 0.3rem;
-
-    color: var(--color-blood);
-    text-decoration: underline;
-
-    transition: color var(--speed-fast);
-
-    &:focus,
-    &:hover {
-      color: var(--color-dark);
-      text-decoration: none;
-    }
-  }
-}
-
 /* MAIN MAIN MAIN MAIN MAIN MAIN MAIN MAIN MAIN MAIN MAIN MAIN MAIN MAIN MAIN */
 
 main {
   display: flex;
   flex-direction: column;
-}
-
-/* FOOTER FOOTER FOOTER FOOTER FOOTER FOOTER FOOTER FOOTER FOOTER FOOTER FOOTER */
-
-footer {
-  display: flex;
-  align-items: center;
-
-  background-color: var(--color-dark); 
-  font-size: var(--h5);
-
-  transition: border-radius var(--speed-slow);
-
-  a,
-  a:visited {
-    padding: 2rem;
-    width: 100%;
-
-    color: var(--color-grey);
-    text-decoration: none;
-  }
 }
 
 /* ELEMENTS ELEMENTS ELEMENTS ELEMENTS ELEMENTS ELEMENTS ELEMENTS ELEMENTS */

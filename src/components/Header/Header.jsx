@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import ProgressBar from './ProgressBar';
+import ProgressBar from '../ProgressBar';
 
 function Header() {
   return (
