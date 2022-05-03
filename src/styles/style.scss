@@ -23,8 +23,6 @@ body {
   line-height: 1.5;
 }
 
-// Container added by React App.
-
 #root {
   display: flex;
   flex-direction: column;
@@ -34,14 +32,12 @@ body {
   scrollbar-gutter: stable;
 }
 
-/* MAIN MAIN MAIN MAIN MAIN MAIN MAIN MAIN MAIN MAIN MAIN MAIN MAIN MAIN MAIN */
-
 main {
   display: flex;
   flex-direction: column;
 }
 
-/* ELEMENTS ELEMENTS ELEMENTS ELEMENTS ELEMENTS ELEMENTS ELEMENTS ELEMENTS */
+// HTML ELEMENTS
 
 a,
 a:visited {
@@ -76,6 +72,7 @@ details {
     cursor: text;
   }
 }
+
 h1 { font-size: var(--h1); }
 h2 { font-size: var(--h2); }
 h3 { font-size: var(--h3); }

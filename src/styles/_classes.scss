@@ -1,5 +1,3 @@
-/* CLASSES CLASSES CLASSES CLASSES CLASSES CLASSES CLASSES CLASSES CLASSES  */
-
 .card {
   padding: 2rem;
   min-width: 280px;
@@ -20,6 +18,7 @@
 .flex {
   flex: 1;
 }
+
 .link-list {
   display: flex;
   flex-direction: column;
@@ -82,61 +81,6 @@
   }
 }
 
-@mixin photo-default {
-  border-top: 1rem solid var(--color-dark);
-  min-height: 89vh;
-
-  position: sticky;
-  top: 6rem;
-  z-index: 2;
-
-  background-size: cover;
-}
-
-.photo-1 {
-  padding: 2rem;
-  display: flex;
-  flex-direction: column;
-  justify-content: left;
-  align-items: flex-start;
-
-  width: 100%;
-  min-height: 89vh;
-
-  position: sticky;
-  top: 8.3rem;
-
-  background-image: url('../../public/images/michel.jpg');
-  background-size: cover;
-  background-position: center;
-
-  h2 {
-    color: var(--color-staticwhite);
-    text-align: left;
-
-    max-width: 30rem;
-  }
-}
-
-.photo-2 {
-  @include photo-default;
-
-  background-image: url('../../public/images/michel2.jpg');
-}
-
-.photo-3 {
-  @include photo-default;
-
-  background-image: url('../../public/images/michel3.jpg');
-  background-position: center top;
-}
-
-.photo-4 {
-  @include photo-default;
-
-  background-image: url('../../public/images/michel4.jpg');
-  background-position: center center;
-}
 .top {
   border-top: 1rem solid var(--color-dark);
 }

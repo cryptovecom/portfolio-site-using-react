@@ -13,7 +13,6 @@ import Blog from "./pages/Blog";
 import BlogPost from "./pages/BlogPost";
 import Goals from "./components/Goals";
 import Page404 from "./pages/Page404";
-import Sandbox from "./pages/Sandbox";
 import Streaming from "./pages/Streaming";
 
 function App() {
@@ -25,7 +24,6 @@ function App() {
         <Route path="/blog" element={<Blog />} />
         <Route path="/blog/:post" element={<BlogPost />} />
         <Route path="/goals" element={<Goals />} />
-        <Route path="/sandbox" element={<Sandbox />} />
         <Route path="/streaming" element={<Streaming />} />
         <Route path="*" element={<Page404 />} />
       </Routes>

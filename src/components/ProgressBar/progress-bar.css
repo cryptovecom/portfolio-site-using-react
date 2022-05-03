@@ -1,0 +1,25 @@
+:root {
+  --progress-width: 0px;
+}
+
+.progress-bar {
+  height: 1rem;
+  margin-top: -1rem;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 7.35rem;
+  z-index: 10;
+}
+
+.progress-bar .progress-bar__progress {
+  height: 1.05rem;
+  width: var(--progress-width);
+  background-color: var(--color-yellow);
+}
+
+@media screen and (max-width: 414px) {
+  .progress-bar {
+    top: 6.1rem;
+  }
+}
+/*# sourceMappingURL=progress-bar.css.map */
