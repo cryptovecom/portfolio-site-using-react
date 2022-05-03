@@ -1,5 +1,4 @@
 import { useEffect, useState } from 'react';
-import './progress-bar.css';
 
 export const ProgressBar = () => {
   let body = document.body;

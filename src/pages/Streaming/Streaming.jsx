@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import * as config from "../config";
+import * as config from "../../config";
 
 export default function Streaming() {
   const [favs, setFavs] = useState([]);

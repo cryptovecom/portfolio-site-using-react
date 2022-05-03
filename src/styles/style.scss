@@ -1,6 +1,8 @@
 $font-main: "Roboto", Arial, Helvetica, sans-serif;
 $font-dragon: "UnifrakturMaguntia", "Times New Roman", serif;
 
+@forward "_sass-vars";
+@use '_sass-vars';
 @import url('https://fonts.googleapis.com/css2?family=UnifrakturMaguntia&display=swap');
 
 :root {
@@ -136,4 +138,4 @@ p {
     margin-top: 0; 
   }
 }
-@import '_bootstrap';
+@import '_hub';

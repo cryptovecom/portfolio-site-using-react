@@ -2,7 +2,7 @@
   min-height: 13vh;
   min-width: 38vw;
   max-width: 38vw;
-  
+
   display: flex;
   flex-direction: column;
 
@@ -11,9 +11,10 @@
   h1 {
     color: var(--color-dark);
   }
+
   ol {
     padding-left: 1.5rem;
-  
+
     li {
       padding-left: .5rem;
       list-style-type: decimal;
@@ -23,11 +24,11 @@
   &.how-to {
     background: var(--color-white);
     color: var(--color-dark);
-  
+
     blockquote {
       padding: 2rem;
       background-color: rgb(225, 225, 225);
-    
+
       transition: 5s;
     }
   }
@@ -81,15 +82,18 @@
     font-size: var(--h6);
     font-weight: bold;
 
-    &[type="submit"], &[type="button"] {
+    &[type="submit"],
+    &[type="button"] {
       background-color: var(--color-blood);
       color: var(--color-grey);
       cursor: pointer;
 
-      &:active, &:focus, &:hover {
+      &:active,
+      &:focus,
+      &:hover {
         background-color: #aa3232;
       }
-      
+
       &::placeholder {
         color: rgb(82, 82, 82);
       }
@@ -97,10 +101,12 @@
 
     &[type="text"] {
       color: var(--color-dark);
-      
+
       font-weight: bold;
 
-      &:active, &:focus, &:hover {
+      &:active,
+      &:focus,
+      &:hover {
         background-color: var(--color-white);
       }
 
@@ -124,7 +130,7 @@
 
     button {
       height: 6rem;
-      border: none;  
+      border: none;
       padding: 0.5rem 1rem;
 
       display: flex;
@@ -148,17 +154,17 @@
         transform: translateX(1rem);
         z-index: 0;
         animation: playing 1.618s ease-in infinite;
-        
+
         @keyframes playing {
           from {
             background: var(--color-white);
           }
-          
+
           to {
             background: var(--color-grey);
           }
         }
-      
+
         &:hover {
           background-color: var(--color-orange);
         }
@@ -178,6 +184,7 @@
         color: var(--color-dark);
         text-align: left;
         transition: var(--speed-fast) ease-out;
+
         &:hover {
           border-radius: 1rem 0 0 1rem;
           background-color: var(--color-white);
@@ -201,6 +208,7 @@
     }
   }
 }
+
 .user-panel__favs {
   position: relative;
   top: 0;
@@ -221,6 +229,7 @@
 .none {
   display: none;
 }
+
 .info-toggle {
   width: 2.5rem;
   padding: .5rem;
@@ -236,6 +245,7 @@
     box-shadow: -0.3rem 0.3rem 0 hsl(0, 0%, 20%);
   }
 }
+
 .dark-bg {
   background: var(--color-dark);
 }
