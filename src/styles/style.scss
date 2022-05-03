@@ -136,12 +136,4 @@ p {
     margin-top: 0; 
   }
 }
-// PAGE COMPONENT SHEETS
-@import "_home-style";
-@import "../Pages/Blog/_blog";
-@import "../Pages/Blog/_blog-post";
-@import "_streaming-style";
-@import "_classes";
-@import "_dark-mode";
-@import "_media-queries";
-@import '_sass-vars';
+@import '_bootstrap';
