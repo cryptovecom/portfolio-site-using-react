@@ -28,8 +28,8 @@ export default function Home(props) {
                     to="/streaming"
                     className={`landing-list school-project`}
                   >
-                    <h2>Data Interaction</h2>
-
+                    <h2>A useless mern project</h2>
+{/* 
                     <div>
                       <img
                         src="./images/icons/express.png"
@@ -47,7 +47,7 @@ export default function Home(props) {
                         alt="MongoDB Icon"
                         className="tech-icon"
                       />
-                    </div>
+                    </div> */}
                   </Link>
                 </li>
                 {linkList.map((x) => (

@@ -1,9 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=UnifrakturMaguntia&display=swap");
 :root {
-  /* Global Sizes */
   --border-size: 1rem;
   --golden-ratio: 38.2%;
-  /* Color Palette */
   --color-staticwhite: #eeeeee;
   --color-white: #eeeeee;
   --color-blood: #af3333;
@@ -12,16 +10,14 @@
   --color-grey: #d2d2ce;
   --color-orange: #f66c03;
   --color-yellow: #ffb532;
-  /* Font Size Scales */
   --base-font-size: 1.25em;
   --type-scale: 1.125;
-  /* Major Second Scale */
+  /* ^ Major Second Scale */
   --h5: calc(var(--base-font-size));
   --h4: calc(var(--h5) * var(--type-scale));
   --h3: calc(var(--h4) * var(--type-scale));
   --h2: calc(var(--h3) * var(--type-scale));
   --h1: calc(var(--h2) * var(--type-scale));
-  /* Animation Speeds */
   --speed-fast: 0.25s;
   --speed-slow: 0.5s;
 }
@@ -60,7 +56,6 @@ body {
   scrollbar-gutter: stable;
 }
 
-/* MAIN MAIN MAIN MAIN MAIN MAIN MAIN MAIN MAIN MAIN MAIN MAIN MAIN MAIN MAIN */
 main {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -71,7 +66,6 @@ main {
           flex-direction: column;
 }
 
-/* ELEMENTS ELEMENTS ELEMENTS ELEMENTS ELEMENTS ELEMENTS ELEMENTS ELEMENTS */
 a,
 a:visited {
   color: var(--color-dark);
@@ -154,7 +148,6 @@ p:first-child {
   margin-top: 0;
 }
 
-/* CLASSES CLASSES CLASSES CLASSES CLASSES CLASSES CLASSES CLASSES CLASSES  */
 .card {
   padding: 2rem;
   min-width: 280px;
@@ -265,72 +258,6 @@ p:first-child {
   margin-right: 0;
 }
 
-.photo-1 {
-  padding: 2rem;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: left;
-      -ms-flex-pack: left;
-          justify-content: left;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
-  width: 100%;
-  min-height: 89vh;
-  position: -webkit-sticky;
-  position: sticky;
-  top: 8.3rem;
-  background-image: url("../../public/images/michel.jpg");
-  background-size: cover;
-  background-position: center;
-}
-
-.photo-1 h2 {
-  color: var(--color-staticwhite);
-  text-align: left;
-  max-width: 30rem;
-}
-
-.photo-2 {
-  border-top: 1rem solid var(--color-dark);
-  min-height: 89vh;
-  position: -webkit-sticky;
-  position: sticky;
-  top: 6rem;
-  z-index: 2;
-  background-size: cover;
-  background-image: url("../../public/images/michel2.jpg");
-}
-
-.photo-3 {
-  border-top: 1rem solid var(--color-dark);
-  min-height: 89vh;
-  position: -webkit-sticky;
-  position: sticky;
-  top: 6rem;
-  z-index: 2;
-  background-size: cover;
-  background-image: url("../../public/images/michel3.jpg");
-  background-position: center top;
-}
-
-.photo-4 {
-  border-top: 1rem solid var(--color-dark);
-  min-height: 89vh;
-  position: -webkit-sticky;
-  position: sticky;
-  top: 6rem;
-  z-index: 2;
-  background-size: cover;
-  background-image: url("../../public/images/michel4.jpg");
-  background-position: center center;
-}
-
 .top {
   border-top: 1rem solid var(--color-dark);
 }
@@ -373,45 +300,6 @@ p:first-child {
 .dark-mode-button:active {
   -webkit-box-shadow: none;
           box-shadow: none;
-}
-
-@media all and (max-width: 64rem) {
-  .top {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    width: 100%;
-    top: -21rem;
-  }
-  .top__noborder {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    top: -12rem;
-  }
-  .streaming__banner {
-    max-width: 100vw;
-  }
-}
-
-@media all and (max-width: 414px) {
-  :root {
-    --base-font-size: 1rem;
-  }
-  main {
-    top: 0;
-    position: relative;
-  }
-  .top {
-    position: -webkit-sticky;
-    position: sticky;
-    top: -35rem;
-  }
-  .main-2 {
-    top: 6rem;
-  }
 }
 
 .banner__blog {
@@ -595,6 +483,72 @@ section.blog-post {
 
 .banner h2 {
   color: var(--color-staticwhite);
+}
+
+.photo-1 {
+  padding: 2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: left;
+      -ms-flex-pack: left;
+          justify-content: left;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  width: 100%;
+  min-height: 89vh;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 8.3rem;
+  background-image: url("../../public/images/michel.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.photo-1 h2 {
+  color: var(--color-staticwhite);
+  text-align: left;
+  max-width: 30rem;
+}
+
+.photo-2 {
+  border-top: 1rem solid var(--color-dark);
+  min-height: 89vh;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 6rem;
+  z-index: 2;
+  background-size: cover;
+  background-image: url("../../public/images/michel2.jpg");
+}
+
+.photo-3 {
+  border-top: 1rem solid var(--color-dark);
+  min-height: 89vh;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 6rem;
+  z-index: 2;
+  background-size: cover;
+  background-image: url("../../public/images/michel3.jpg");
+  background-position: center top;
+}
+
+.photo-4 {
+  border-top: 1rem solid var(--color-dark);
+  min-height: 89vh;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 6rem;
+  z-index: 2;
+  background-size: cover;
+  background-image: url("../../public/images/michel4.jpg");
+  background-position: center center;
 }
 
 .streaming__banner {
@@ -1040,6 +994,45 @@ header ul li a:focus, header ul li a:hover {
 @media screen and (max-width: 414px) {
   .progress-bar {
     top: 6.1rem;
+  }
+}
+
+@media all and (max-width: 64rem) {
+  .top {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 100%;
+    top: -21rem;
+  }
+  .top__noborder {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    top: -12rem;
+  }
+  .streaming__banner {
+    max-width: none;
+  }
+}
+
+@media all and (max-width: 414px) {
+  :root {
+    --base-font-size: 1rem;
+  }
+  main {
+    top: 0;
+    position: relative;
+  }
+  .top {
+    position: -webkit-sticky;
+    position: sticky;
+    top: -35rem;
+  }
+  .main-2 {
+    top: 6rem;
   }
 }
 /*# sourceMappingURL=style.css.map */
