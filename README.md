@@ -4,7 +4,13 @@ I am working continously to refactor and upghrade this project as I learn new te
 
 It is published to [https://micheliseneld.com](https://micheliseneld.com)
 
-## It was made using Create React App
+## Tech Stack
+- Express.js
+- MongoDB
+- Node.js
+- React (create-react-app)
+- React Router DOM
+- Sass
 
 In the project directory, you can run:
 
@@ -58,3 +64,5 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+This is a fake plupp, hehe. 
