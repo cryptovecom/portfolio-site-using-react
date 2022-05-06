@@ -196,6 +196,7 @@
 
       &.button-do {
         background-color: var(--color-white);
+        z-index: 1;
       }
 
       &.button-del:hover {

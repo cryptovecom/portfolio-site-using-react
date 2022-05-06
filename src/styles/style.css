@@ -835,6 +835,7 @@ section.blog-post {
 
 .streaming__results li button.button-do {
   background-color: var(--color-white);
+  z-index: 1;
 }
 
 .streaming__results li button.button-del:hover {
