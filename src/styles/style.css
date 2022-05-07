@@ -551,6 +551,10 @@ section.blog-post {
   background-position: center center;
 }
 
+main.nvm {
+  background-color: var(--color-white);
+}
+
 .streaming__banner {
   min-height: 13vh;
   min-width: 38vw;

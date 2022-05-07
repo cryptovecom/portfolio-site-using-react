@@ -12,6 +12,7 @@ import Home from "./pages/Home";
 import Blog from "./pages/Blog";
 import BlogPost from "./pages/BlogPost";
 import Goals from "./components/Goals";
+import Nvm from "./pages/Nvm";
 import Page404 from "./pages/Page404";
 import Streaming from "./pages/Streaming";
 
@@ -23,6 +24,7 @@ function App() {
         <Route exact path="/" element={<Home linkList={linkList} />} />
         <Route path="/blog" element={<Blog />} />
         <Route path="/blog/:post" element={<BlogPost />} />
+        <Route path="/nvm" element={<Nvm />} />
         <Route path="/goals" element={<Goals />} />
         <Route path="/streaming" element={<Streaming />} />
         <Route path="*" element={<Page404 />} />
