@@ -1,0 +1,4 @@
+#link-404:hover {
+  transition: none;
+  color: var(--color-grey);
+}

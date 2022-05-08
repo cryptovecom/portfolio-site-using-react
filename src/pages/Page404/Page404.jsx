@@ -1,21 +1,19 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import "./page404.css";
 
 export default function Page404() {
   return (
     <>
       <main>
-        <section className="top">
+        <section className="top__noborder flex">
           <section className="banner">
-            <h1>404</h1>
+            <h1>404: Page not found 📉</h1>
             <h2>
-              <Link to="/">Go back to start</Link>
+              <Link to="/" id="link-404">
+                Go back to start
+              </Link>
             </h2>
-          </section>
-          <section className="link-list">
-            <section>
-              <h1>This page is not available</h1>
-            </section>
           </section>
         </section>
       </main>
