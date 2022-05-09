@@ -429,6 +429,34 @@ section.blog-post {
   font-size: var(--h5);
 }
 
+@-webkit-keyframes where {
+  from {
+    -webkit-filter: blur(0rem);
+            filter: blur(0rem);
+  }
+  to {
+    -webkit-filter: blur(4rem);
+            filter: blur(4rem);
+  }
+}
+
+@keyframes where {
+  from {
+    -webkit-filter: blur(0rem);
+            filter: blur(0rem);
+  }
+  to {
+    -webkit-filter: blur(4rem);
+            filter: blur(4rem);
+  }
+}
+
+#imagination-main article p.where {
+  -webkit-animation: where 1.618s ease-in infinite alternate;
+          animation: where 1.618s ease-in infinite alternate;
+  font-weight: bold;
+}
+
 @media all and (max-width: 64rem) {
   #imagination-main article {
     max-width: 68vw;
