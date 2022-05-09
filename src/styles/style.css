@@ -402,6 +402,19 @@ section.blog-post {
   background: var(--color-yellow);
 }
 
+#imagination-main {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: var(--color-grey);
+}
+
+#imagination-main article {
+  margin: 2rem 2rem;
+  max-width: 40rem;
+}
+
 .main-1 {
   width: 100vw;
   height: 100%;

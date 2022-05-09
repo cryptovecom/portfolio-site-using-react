@@ -1,0 +1,12 @@
+#imagination-main {
+  width: 100%;
+  display: flex;
+  // align-items: center;
+  background-color: var(--color-grey);
+
+  article {
+    margin: 2rem 2rem;
+    max-width: 40rem;
+    // min-width: 68vw;
+  }
+}

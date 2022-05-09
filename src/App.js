@@ -16,6 +16,9 @@ import Nvm from "./pages/Nvm";
 import Page404 from "./pages/Page404";
 import Streaming from "./pages/Streaming";
 
+// BLOG POSTS
+import Imagination from './pages/BlogPost/Imagination';
+
 function App() {
   return (
     <>
@@ -28,6 +31,9 @@ function App() {
         <Route path="/goals" element={<Goals />} />
         <Route path="/streaming" element={<Streaming />} />
         <Route path="*" element={<Page404 />} />
+
+        {/* BLOG POSTS */}
+        <Route path="/blog/imagination" element={<Imagination />} />
       </Routes>
       <Footer />
     </>

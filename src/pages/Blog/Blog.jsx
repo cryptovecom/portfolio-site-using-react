@@ -31,6 +31,11 @@ export default function Blog() {
                     </h2>
                   </li>
                 ))}
+              <li key="imagination-key">
+                <h2>
+                  <Link to={`/blog/imagination`}>Imagination is the key</Link>
+                </h2>
+              </li>
             </ul>
           </section>
         </section>
@@ -38,13 +43,15 @@ export default function Blog() {
           <article className="card flex">
             <h6>APR 2022</h6>
             <p>
-              The site's content was revised into a more proper portfolio. This blog is still jibberish and the list of stuff to add is long.
+              The site's content was revised into a more proper portfolio. This
+              blog is still jibberish and the list of stuff to add is long.
             </p>
           </article>
           <article className="card flex">
             <h6>MAR 2022</h6>
             <p>
-              CSS has been cleaned up and made a big mess again. Then cleaned up, again.
+              CSS has been cleaned up and made a big mess again. Then cleaned
+              up, again.
             </p>
           </article>
           <article className="card flex">
@@ -72,8 +79,8 @@ export default function Blog() {
           <article className="card flex">
             <h6>SEP 2021</h6>
             <p>
-              This was originally a dummy site made as my first school project to
-              practice HTML, CSS and Javascript.
+              This was originally a dummy site made as my first school project
+              to practice HTML, CSS and Javascript.
             </p>
           </article>
           <article className="card">
@@ -86,8 +93,7 @@ export default function Blog() {
             </p>
           </article>
         </section>
-        <section className="photo-4">
-        </section>
+        <section className="photo-4"></section>
       </main>
     </>
   );
