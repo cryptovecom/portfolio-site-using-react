@@ -440,9 +440,15 @@ section.blog-post {
   z-index: 2;
   background-size: cover;
   height: 100vh;
-  background-image: url("../../public/images/michel2.jpg");
+  background-image: url("../../public/images/michel6.jpg");
   border-top: none;
   width: 100%;
+}
+
+@media all and (min-width: 100rem) {
+  #imagination-main aside {
+    background-image: url("../../public/images/michel6__rotated.jpg");
+  }
 }
 
 .main-1 {
