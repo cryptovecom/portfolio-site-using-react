@@ -425,6 +425,10 @@ section.blog-post {
   font-style: italic;
 }
 
+#imagination-main article p {
+  font-size: var(--h5);
+}
+
 @media all and (max-width: 64rem) {
   #imagination-main article {
     max-width: 68vw;

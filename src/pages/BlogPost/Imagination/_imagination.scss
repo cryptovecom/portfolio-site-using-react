@@ -14,6 +14,10 @@
       font-size: calc(var(--base-font-size) * 1.1);
       font-style: italic;
     }
+
+    p {
+      font-size: var(--h5);
+    }
   }
 
   @media all and (max-width: $tablet) {
