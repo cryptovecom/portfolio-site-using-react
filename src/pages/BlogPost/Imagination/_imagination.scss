@@ -4,8 +4,6 @@
   flex-direction: row;
   gap: 1rem;
 
-  // background-color: var(--color-dark);
-
   article {
     background-color: var(--color-grey);
     padding: 2rem 2rem;
@@ -16,6 +14,12 @@
       font-size: calc(var(--base-font-size) * 1.1);
       font-style: italic;
     }
+  }
+
+  @media all and (max-width: $phone) {
+    article {
+      max-width: 68vw;
+    }   
   }
 
   aside {

@@ -32,7 +32,6 @@
 
 body {
   background-color: var(--color-dark);
-  min-width: 280px;
   width: 100vw;
   position: relative;
   overflow-x: hidden;
@@ -424,6 +423,12 @@ section.blog-post {
   font-family: 'Times New Roman', Times, serif;
   font-size: calc(var(--base-font-size) * 1.1);
   font-style: italic;
+}
+
+@media all and (max-width: 414px) {
+  #imagination-main article {
+    max-width: 68vw;
+  }
 }
 
 #imagination-main aside {
