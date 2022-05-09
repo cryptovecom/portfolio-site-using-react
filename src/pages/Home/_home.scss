@@ -72,16 +72,6 @@
     color: var(--color-staticwhite);
   }
 }
-@mixin photo-default {
-  border-top: 1rem solid var(--color-dark);
-  min-height: 89vh;
-
-  position: sticky;
-  top: 6rem;
-  z-index: 2;
-
-  background-size: cover;
-}
 
 .photo-1 {
   padding: 2rem;

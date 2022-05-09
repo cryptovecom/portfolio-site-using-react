@@ -1,11 +1,14 @@
 #imagination-main {
   width: 100%;
   display: flex;
-  // align-items: center;
-  background-color: var(--color-grey);
+  flex-direction: row;
+  gap: 1rem;
+
+  // background-color: var(--color-dark);
 
   article {
-    margin: 2rem 2rem;
+    background-color: var(--color-grey);
+    padding: 2rem 2rem;
     max-width: 40rem;
     
     blockquote {
@@ -13,5 +16,14 @@
       font-size: calc(var(--base-font-size) * 1.1);
       font-style: italic;
     }
+  }
+
+  aside {
+    @include photo-default;
+    height: 100vh;
+
+    background-image: url('../../public/images/michel2.jpg');
+    border-top: none;
+    width: 100%;
   }
 }

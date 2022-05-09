@@ -1,6 +1,6 @@
 @import "_classes";
 @import "_dark-mode";
-
+@import "_mixins";
 
 // PAGES
 @import "../pages/Blog/_blog";
@@ -14,5 +14,6 @@
 @import "../components/Goals/_goals";
 @import "../components/Header/_header";
 @import "../components/ProgressBar/_progress-bar";
+
 // MEDIA QUERIES
 @import "_media-queries";

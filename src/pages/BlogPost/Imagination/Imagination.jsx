@@ -103,6 +103,7 @@ export default function Imagination() {
           Love and light, <br /> Michel Iseneld
         </p>
       </article>
+      <aside></aside>
     </main>
   );
 }

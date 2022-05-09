@@ -407,11 +407,16 @@ section.blog-post {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  background-color: var(--color-grey);
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  gap: 1rem;
 }
 
 #imagination-main article {
-  margin: 2rem 2rem;
+  background-color: var(--color-grey);
+  padding: 2rem 2rem;
   max-width: 40rem;
 }
 
@@ -419,6 +424,20 @@ section.blog-post {
   font-family: 'Times New Roman', Times, serif;
   font-size: calc(var(--base-font-size) * 1.1);
   font-style: italic;
+}
+
+#imagination-main aside {
+  border-top: 1rem solid var(--color-dark);
+  min-height: 89vh;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 6rem;
+  z-index: 2;
+  background-size: cover;
+  height: 100vh;
+  background-image: url("../../public/images/michel2.jpg");
+  border-top: none;
+  width: 100%;
 }
 
 .main-1 {
