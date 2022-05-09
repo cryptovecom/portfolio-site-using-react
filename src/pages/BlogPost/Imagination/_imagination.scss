@@ -7,8 +7,8 @@
   article {
     background-color: var(--color-grey);
     padding: 2rem 2rem;
-    max-width: 40rem;
-    
+    max-width: 38vw;
+
     blockquote {
       font-family: 'Times New Roman', Times, serif;
       font-size: calc(var(--base-font-size) * 1.1);
@@ -16,7 +16,7 @@
     }
   }
 
-  @media all and (max-width: $phone) {
+  @media all and (max-width: $tablet) {
     article {
       max-width: 68vw;
     }   

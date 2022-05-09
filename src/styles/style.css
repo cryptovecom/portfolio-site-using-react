@@ -416,7 +416,7 @@ section.blog-post {
 #imagination-main article {
   background-color: var(--color-grey);
   padding: 2rem 2rem;
-  max-width: 40rem;
+  max-width: 38vw;
 }
 
 #imagination-main article blockquote {
@@ -425,7 +425,7 @@ section.blog-post {
   font-style: italic;
 }
 
-@media all and (max-width: 414px) {
+@media all and (max-width: 64rem) {
   #imagination-main article {
     max-width: 68vw;
   }

@@ -2,7 +2,7 @@ export default function Imagination() {
   return (
     <main id="imagination-main">
       <article>
-        <h2>Imagination is the key</h2>
+        <h2>Imagi&shy;nation is the key</h2>
         <p>
           We generally accept that our minds are able to produce dreams as we
           sleep. These dreams may be vivid, but they’re not real. We say that as
