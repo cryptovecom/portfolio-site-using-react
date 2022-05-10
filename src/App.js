@@ -14,10 +14,11 @@ import BlogPost from "./pages/BlogPost";
 import Goals from "./components/Goals";
 import Nvm from "./pages/Nvm";
 import Page404 from "./pages/Page404";
+import Photography from "./pages/Photography";
 import Streaming from "./pages/Streaming";
 
 // BLOG POSTS
-import Imagination from './pages/BlogPost/Imagination';
+import Imagination from "./pages/BlogPost/Imagination";
 
 function App() {
   return (
@@ -29,6 +30,7 @@ function App() {
         <Route path="/blog/:post" element={<BlogPost />} />
         <Route path="/nvm" element={<Nvm />} />
         <Route path="/goals" element={<Goals />} />
+        <Route path="/photography" element={<Photography />} />
         <Route path="/streaming" element={<Streaming />} />
         <Route path="*" element={<Page404 />} />
 

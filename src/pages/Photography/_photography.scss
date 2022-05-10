@@ -1,0 +1,119 @@
+.main-1 {
+  width: 100vw;
+  height: 100%;
+  display: flex;
+  gap: 1rem;
+  
+  background-color: var(--color-dark);
+  position: sticky;
+  top: 7rem;
+  
+  z-index: 0;
+}
+
+.main-2 {
+  border-top: 1rem solid var(--color-dark);
+  background-color: var(--color-dark);
+  position: sticky;
+  top: 7rem;
+  z-index: 2;
+  
+  & div {
+    padding: 2rem;
+
+    display: flex;
+    align-items: left;
+    justify-content: center;
+    flex-direction: column;
+
+    background-color: var(--color-white);
+
+    span {
+      margin: .33rem;
+      padding: 1rem;
+      border: .5rem solid var(--color-dark);
+      display: inline-block;
+      font-weight: bold;
+
+      transition: all 5s;
+      cursor: no-drop;
+
+      &:hover {
+        border-radius: 1rem;
+        transition: var(--speed-fast);
+        }
+
+      &.passed {
+        background-color: #5f874c;
+        color: var(--color-white);
+        }
+
+      &.wip {
+        background-color: var(--color-yellow);
+        }
+
+      &.future {
+        color: var(--color-dark);
+        }
+        }
+        }
+}
+
+.banner {
+  min-width: 38vw;
+  padding: 2rem;
+
+  background: 
+    var(--color-blood) 
+    url(../../public/images/svg/stacked-waves-haikei.svg);
+  background-size: cover;
+  color: var(--color-white);
+  h2 {
+    color: var(--color-staticwhite);
+  }
+}
+
+.photo-1 {
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+  align-items: flex-start;
+
+  width: 100%;
+  min-height: 89vh;
+
+  position: sticky;
+  top: 8.3rem;
+
+  background-image: url('../../public/images/michel.jpg');
+  background-size: cover;
+  background-position: center;
+
+  h2 {
+    color: var(--color-staticwhite);
+    text-align: left;
+
+    max-width: 30rem;
+  }
+}
+
+.photo-2 {
+  @include photo-default;
+
+  background-image: url('../../public/images/michel2.jpg');
+}
+
+.photo-3 {
+  @include photo-default;
+
+  background-image: url('../../public/images/michel3.jpg');
+  background-position: center top;
+}
+
+.photo-4 {
+  @include photo-default;
+
+  background-image: url('../../public/images/michel4.jpg');
+  background-position: center center;
+}
