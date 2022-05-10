@@ -147,6 +147,51 @@ p:first-child {
   margin-top: 0;
 }
 
+section {
+  width: 100vw;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 1rem;
+  background-color: var(--color-dark);
+  border-top: 1rem solid var(--color-dark);
+  position: -webkit-sticky;
+  position: sticky;
+  top: 7rem;
+  z-index: 2;
+}
+
+section div {
+  width: 100%;
+  padding: 2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: left;
+      -ms-flex-align: left;
+          align-items: left;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background-color: var(--color-white);
+}
+
+section div span {
+  margin: .33rem;
+  padding: 1rem;
+  border: 0.5rem solid var(--color-dark);
+  display: inline-block;
+  font-weight: bold;
+  -webkit-transition: all 5s;
+  transition: all 5s;
+  cursor: no-drop;
+}
+
 .card {
   padding: 2rem;
   min-width: 280px;
@@ -216,6 +261,9 @@ p:first-child {
 .link-list ul {
   display: -ms-grid;
   display: grid;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
   gap: 1rem;
 }
 
@@ -257,15 +305,11 @@ p:first-child {
   margin-right: 0;
 }
 
-.top {
-  border-top: 1rem solid var(--color-dark);
-}
-
 .top__noborder {
+  border-top: none;
   position: -webkit-sticky;
   position: sticky;
   top: 8.5rem;
-  z-index: 0;
 }
 
 *.dark-mode {
@@ -484,77 +528,6 @@ section.blog-post {
   #imagination-main aside {
     background-image: url("../../public/images/michel6__rotated.jpg");
   }
-}
-
-.main-1 {
-  width: 100vw;
-  height: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  gap: 1rem;
-  background-color: var(--color-dark);
-  position: -webkit-sticky;
-  position: sticky;
-  top: 7rem;
-  z-index: 0;
-}
-
-.main-2 {
-  border-top: 1rem solid var(--color-dark);
-  background-color: var(--color-dark);
-  position: -webkit-sticky;
-  position: sticky;
-  top: 7rem;
-  z-index: 2;
-}
-
-.main-2 div {
-  padding: 2rem;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: left;
-      -ms-flex-align: left;
-          align-items: left;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  background-color: var(--color-white);
-}
-
-.main-2 div span {
-  margin: .33rem;
-  padding: 1rem;
-  border: 0.5rem solid var(--color-dark);
-  display: inline-block;
-  font-weight: bold;
-  -webkit-transition: all 5s;
-  transition: all 5s;
-  cursor: no-drop;
-}
-
-.main-2 div span:hover {
-  border-radius: 1rem;
-  -webkit-transition: var(--speed-fast);
-  transition: var(--speed-fast);
-}
-
-.main-2 div span.passed {
-  background-color: #5f874c;
-  color: var(--color-white);
-}
-
-.main-2 div span.wip {
-  background-color: var(--color-yellow);
-}
-
-.main-2 div span.future {
-  color: var(--color-dark);
 }
 
 .banner {
@@ -1290,6 +1263,44 @@ header ul li a:focus, header ul li a:hover {
   }
 }
 
+header {
+  border-bottom: 1rem solid var(--color-dark);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  z-index: 10;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  background-color: var(--color-white);
+  font-size: var(--h2);
+  font-weight: bold;
+}
+
+header a {
+  padding: 2rem 0.3rem 2rem 2rem;
+  text-decoration: none;
+}
+
+header ul li a {
+  padding: 2rem 2rem 2rem 0.3rem;
+  color: var(--color-blood);
+  text-decoration: underline;
+  -webkit-transition: color var(--speed-fast);
+  transition: color var(--speed-fast);
+}
+
+header ul li a:focus, header ul li a:hover {
+  color: var(--color-dark);
+  text-decoration: none;
+}
+
 @media all and (max-width: 64rem) {
   .top {
     -webkit-box-orient: vertical;
@@ -1319,12 +1330,12 @@ header ul li a:focus, header ul li a:hover {
     top: 0;
     position: relative;
   }
-  .top {
+  .top__noborder {
     position: -webkit-sticky;
     position: sticky;
     top: -35rem;
   }
-  .main-2 {
+  section {
     top: 6rem;
   }
 }

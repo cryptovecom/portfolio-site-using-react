@@ -204,7 +204,7 @@ export default function Streaming() {
   return (
     <>
       <main>
-        <section className="main-1 top__noborder">
+        <section className="top__noborder">
           {/* LEFT SECTION - LEFT SECTION - LEFT SECTION */}
           <section className="streaming__banner">
             {/* <section className="rumpa">
@@ -214,8 +214,10 @@ export default function Streaming() {
                   : `⚡ Please log in! `}
               </h1>
             </section> */}
-            <button className="info-toggle" onClick={() => setNone(!none)}>{none ? 'i' : '♪'}</button>
-            <section className={`user-panel__favs ${none ? 'none' : ''}` }>
+            <button className="info-toggle" onClick={() => setNone(!none)}>
+              {none ? "i" : "♪"}
+            </button>
+            <div className={`user-panel__favs ${none ? "none" : ""}`}>
               <aside className="card how-to">
                 <h6>HOW TO USE</h6>
                 <ol>
@@ -229,7 +231,8 @@ export default function Streaming() {
                     <>
                       <li>You may now save favourites with the ❤️-buttons.</li>
                       <li>
-                        .. and remove them with the 💔-buttons on the list above.
+                        .. and remove them with the 💔-buttons on the list
+                        above.
                       </li>
                       <li>
                         To search for artists, clear your username and start
@@ -254,28 +257,37 @@ export default function Streaming() {
                   <summary>The brief:</summary>
                   <blockquote>
                     <p>
-                      Great Media Group has decided to relaunch, the new focus is purely around what you choose to be invested in. No algorithms, no big data, just you and your favorite content.
-                      They require a new platform, and know that API first is the way to go when building something new and great as to support their web, mobile and beyond.
+                      Great Media Group has decided to relaunch, the new focus
+                      is purely around what you choose to be invested in. No
+                      algorithms, no big data, just you and your favorite
+                      content. They require a new platform, and know that API
+                      first is the way to go when building something new and
+                      great as to support their web, mobile and beyond.
                     </p>
                     <ul>
                       <li>New users should be able to register</li>
                       <li>Admin users should be able to add new content</li>
                       <li>User should be able to find content</li>
-                      <li>Users should be able to save content to a list of favorites</li>
-                      <li>The list of favorites should be front and center throughout the entire experience</li>
+                      <li>
+                        Users should be able to save content to a list of
+                        favorites
+                      </li>
+                      <li>
+                        The list of favorites should be front and center
+                        throughout the entire experience
+                      </li>
                     </ul>
                   </blockquote>
                 </details>
-                
-                
               </aside>
               <aside className="card how-to">
                 <h6>MY SOLUTION</h6>
-                
+
                 <p>
-                  The frontend was made with React.js and deployed through 
-                  Netlify and Github pipelines. I built a Node.js Express API that is hosted on
-                  Heroku and a MongoDB database running as an Atlas cluster.
+                  The frontend was made with React.js and deployed through
+                  Netlify and Github pipelines. I built a Node.js Express API
+                  that is hosted on Heroku and a MongoDB database running as an
+                  Atlas cluster.
                 </p>
                 <p>
                   <img
@@ -300,8 +312,8 @@ export default function Streaming() {
                   />
                 </p>
               </aside>
-            </section>
-            <section className={`user-panel__info ${!none ? 'none' : ''}` }>
+            </div>
+            <div className={`user-panel__info ${!none ? "none" : ""}`}>
               <ul className="streaming__results">
                 {user &&
                   user.role &&
@@ -342,10 +354,9 @@ export default function Streaming() {
                       );
                     })}
               </ul>
-            </section>
+            </div>
           </section>
-            
-            
+
           {/* RIGHT SECTION - RIGHT SECTION - RIGHT SECTION */}
 
           <section className="streaming__main">
