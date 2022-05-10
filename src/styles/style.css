@@ -162,7 +162,7 @@ section {
   z-index: 2;
 }
 
-section div {
+section div.info {
   width: 100%;
   padding: 2rem;
   display: -webkit-box;
@@ -181,7 +181,7 @@ section div {
   background-color: var(--color-white);
 }
 
-section div span {
+section div.info span {
   margin: .33rem;
   padding: 1rem;
   border: 0.5rem solid var(--color-dark);
@@ -698,6 +698,7 @@ main.nvm {
 }
 
 .toolbar {
+  padding: 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -942,6 +943,7 @@ main.nvm {
 }
 
 .user-panel__favs {
+  padding: 0;
   position: relative;
   top: 0;
 }
@@ -952,6 +954,7 @@ main.nvm {
 }
 
 .user-panel__info {
+  padding: 0;
   z-index: 1;
   position: relative;
   top: 0;

@@ -22,10 +22,7 @@ export default function Home(props) {
           <section className="link-list top__noborder">
             <ul>
               <li>
-                <Link
-                  to="/streaming"
-                  className={`landing-list school-project`}
-                >
+                <Link to="/streaming" className={`landing-list school-project`}>
                   <h2>A useless mern project</h2>
                   {/* 
                   <div>
@@ -86,7 +83,7 @@ export default function Home(props) {
 
         <section className="photo-3"></section>
         <section>
-          <div>
+          <div className="info">
             <h2>This site is under construction 🚧</h2>
           </div>
         </section>

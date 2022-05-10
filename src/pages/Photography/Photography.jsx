@@ -3,7 +3,7 @@ export default function Photography(props) {
     <>
       <main>
         <section className="main-2" style={{ borderTop: "none" }}>
-          <div>
+          <div className="info">
             <h2>Photo gallery coming soon 🚧</h2>
           </div>
         </section>

@@ -42,6 +42,7 @@
 }
 
 .toolbar {
+  padding: 0;
   display: flex;
   flex-wrap: wrap;
   gap: .25rem;
@@ -211,6 +212,7 @@
 }
 
 .user-panel__favs {
+  padding: 0;
   position: relative;
   top: 0;
 
@@ -221,6 +223,7 @@
 }
 
 .user-panel__info {
+  padding: 0;
   z-index: 1;
 
   position: relative;
