@@ -204,7 +204,7 @@ export default function Streaming() {
   return (
     <>
       <main>
-        <section className="top__noborder">
+        <section>
           {/* LEFT SECTION - LEFT SECTION - LEFT SECTION */}
           <section className="streaming__banner">
             {/* <section className="rumpa">

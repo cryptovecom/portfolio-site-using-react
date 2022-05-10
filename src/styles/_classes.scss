@@ -20,6 +20,7 @@
 }
 
 .link-list {
+  border-top: none;
   display: flex;
   flex-direction: column;
 
@@ -79,11 +80,4 @@
   &:last-child {
     margin-right: 0;
   }
-}
-
-.top__noborder {
-  border-top: none;
-
-  position: sticky;
-  top: 8.5rem;
 }

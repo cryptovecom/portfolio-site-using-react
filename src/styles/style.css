@@ -192,6 +192,14 @@ section div.info span {
   cursor: no-drop;
 }
 
+section:nth-child(1) {
+  border-top: none;
+}
+
+section:nth-child(1) section {
+  border-top: none;
+}
+
 .card {
   padding: 2rem;
   min-width: 280px;
@@ -220,6 +228,7 @@ section div.info span {
 }
 
 .link-list {
+  border-top: none;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -305,13 +314,6 @@ section div.info span {
   margin-right: 0;
 }
 
-.top__noborder {
-  border-top: none;
-  position: -webkit-sticky;
-  position: sticky;
-  top: 8.5rem;
-}
-
 *.dark-mode {
   --color-white: #1e1e1e;
   --color-blood: #ffb532;
@@ -390,7 +392,6 @@ section div.info span {
   position: -webkit-sticky;
   position: sticky;
   top: 7rem;
-  z-index: 1;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -406,7 +407,7 @@ article.blog-post {
 }
 
 article.blog-post div {
-  max-width: 43rem;
+  max-width: 40rem;
 }
 
 article.blog-post h2 {
@@ -434,11 +435,8 @@ article.blog-post img {
 }
 
 section.blog-post {
+  background-color: var(--color-grey);
   width: 100%;
-}
-
-.clean {
-  background: var(--color-yellow);
 }
 
 #imagination-main {
@@ -1313,7 +1311,7 @@ header ul li a:focus, header ul li a:hover {
     width: 100%;
     top: -21rem;
   }
-  .top__noborder {
+  section:nth-child(1) {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -1333,7 +1331,7 @@ header ul li a:focus, header ul li a:hover {
     top: 0;
     position: relative;
   }
-  .top__noborder {
+  section:nth-child(1) {
     position: -webkit-sticky;
     position: sticky;
     top: -35rem;

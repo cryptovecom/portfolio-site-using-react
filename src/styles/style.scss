@@ -142,4 +142,11 @@ section {
   }
 }
 
+section:nth-child(1) {
+  border-top: none;
+  
+  section {
+  border-top: none; }
+}
+
 @import '_hub';

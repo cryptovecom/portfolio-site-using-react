@@ -22,8 +22,8 @@ export default function BlogPost() {
   return (
     <>
       <main>
-        <section className="top__noborder">
-          <section className="banner clean">
+        <section>
+          <section className="banner">
             <button className="dark-mode-button" onClick={darkMode}>
               Dark Mode
             </button>
@@ -34,9 +34,9 @@ export default function BlogPost() {
                 <div>
                   <h2>{post[0].title}</h2>
                   <h5>{post[0].fullSummary}</h5>
-                  <section
+                  <div
                     dangerouslySetInnerHTML={{ __html: post[0].content }}
-                  ></section>
+                  ></div>
                   <p>
                     <Link to="/blog">Back to blog page</Link>
                   </p>

@@ -17,9 +17,9 @@ export default function Home(props) {
             technology.
           </h2>
         </section>
-        <section className="top">
-          <section className="banner top__noborder"></section>
-          <section className="link-list top__noborder">
+        <section>
+          <section className="banner"></section>
+          <section className="link-list">
             <ul>
               <li>
                 <Link to="/streaming" className={`landing-list school-project`}>

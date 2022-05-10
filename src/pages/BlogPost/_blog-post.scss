@@ -3,7 +3,7 @@ article.blog-post {
   background-color: var(--color-grey);
 
   div {
-    max-width: 43rem;
+    max-width: 40rem;
   }
 
   h2 {
@@ -31,11 +31,8 @@ article.blog-post {
 }
 
 section.blog-post {
+  background-color: var(--color-grey);
   width: 100%;
-}
-
-.clean {
-  background: var(--color-yellow);
 }
 
 @import './Imagination/imagination';

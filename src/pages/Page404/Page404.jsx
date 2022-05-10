@@ -6,15 +6,15 @@ export default function Page404() {
   return (
     <>
       <main>
-        <section className="top__noborder flex">
-          <section className="banner">
-            <h1>404: Page not found 📉</h1>
+        <section>
+          <div className="info">
             <h2>
+              404: Page not found 📉{" "}
               <Link to="/" id="link-404">
                 Go back to start
               </Link>
             </h2>
-          </section>
+          </div>
         </section>
       </main>
     </>
