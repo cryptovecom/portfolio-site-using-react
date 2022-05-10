@@ -127,18 +127,6 @@ section {
     flex-direction: column;
 
     background-color: var(--color-white);
-
-    span {
-      margin: .33rem;
-      padding: 1rem;
-      border: .5rem solid var(--color-dark);
-      display: inline-block;
-      font-weight: bold;
-
-      transition: all 5s;
-      cursor: no-drop;
-
-    }
   }
 }
 

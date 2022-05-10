@@ -181,17 +181,6 @@ section div.info {
   background-color: var(--color-white);
 }
 
-section div.info span {
-  margin: .33rem;
-  padding: 1rem;
-  border: 0.5rem solid var(--color-dark);
-  display: inline-block;
-  font-weight: bold;
-  -webkit-transition: all 5s;
-  transition: all 5s;
-  cursor: no-drop;
-}
-
 section:nth-child(1) {
   border-top: none;
 }
@@ -502,13 +491,8 @@ section.blog-post {
 }
 
 #imagination-main aside {
-  border-top: 1rem solid var(--color-dark);
   min-height: 89vh;
   padding: 2rem;
-  position: -webkit-sticky;
-  position: sticky;
-  top: 6rem;
-  z-index: 2;
   background-size: cover;
   height: 100vh;
   background-image: url("../../public/images/michel6.jpg");
@@ -518,7 +502,6 @@ section.blog-post {
 
 #imagination-main aside h2 {
   color: var(--color-staticwhite);
-  text-align: left;
   max-width: 30rem;
 }
 
@@ -538,106 +521,6 @@ section.blog-post {
 
 .banner h2 {
   color: var(--color-staticwhite);
-}
-
-.photo-1 {
-  padding: 2rem;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: left;
-      -ms-flex-pack: left;
-          justify-content: left;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
-  width: 100%;
-  min-height: 89vh;
-  position: -webkit-sticky;
-  position: sticky;
-  top: 8.3rem;
-  background-image: url("../../public/images/michel.jpg");
-  background-size: cover;
-  background-position: center;
-}
-
-.photo-2 {
-  border-top: 1rem solid var(--color-dark);
-  min-height: 89vh;
-  padding: 2rem;
-  position: -webkit-sticky;
-  position: sticky;
-  top: 6rem;
-  z-index: 2;
-  background-size: cover;
-  background-image: url("../../public/images/michel2.jpg");
-}
-
-.photo-2 h2 {
-  color: var(--color-staticwhite);
-  text-align: left;
-  max-width: 30rem;
-}
-
-.photo-3 {
-  border-top: 1rem solid var(--color-dark);
-  min-height: 89vh;
-  padding: 2rem;
-  position: -webkit-sticky;
-  position: sticky;
-  top: 6rem;
-  z-index: 2;
-  background-size: cover;
-  background-image: url("../../public/images/michel3.jpg");
-  background-position: center top;
-}
-
-.photo-3 h2 {
-  color: var(--color-staticwhite);
-  text-align: left;
-  max-width: 30rem;
-}
-
-.photo-4 {
-  border-top: 1rem solid var(--color-dark);
-  min-height: 89vh;
-  padding: 2rem;
-  position: -webkit-sticky;
-  position: sticky;
-  top: 6rem;
-  z-index: 2;
-  background-size: cover;
-  background-image: url("../../public/images/michel4.jpg");
-  background-position: center center;
-}
-
-.photo-4 h2 {
-  color: var(--color-staticwhite);
-  text-align: left;
-  max-width: 30rem;
-}
-
-.photo-5 {
-  border-top: 1rem solid var(--color-dark);
-  min-height: 89vh;
-  padding: 2rem;
-  position: -webkit-sticky;
-  position: sticky;
-  top: 6rem;
-  z-index: 2;
-  background-size: cover;
-  background-image: url("../../public/images/vsc.jpg");
-  background-position: center center;
-}
-
-.photo-5 h2 {
-  color: var(--color-staticwhite);
-  text-align: left;
-  max-width: 30rem;
 }
 
 main.nvm {
@@ -981,146 +864,34 @@ main.nvm {
   background: var(--color-dark);
 }
 
-.main-1 {
-  width: 100vw;
-  height: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  gap: 1rem;
-  background-color: var(--color-dark);
-  position: -webkit-sticky;
-  position: sticky;
-  top: 7rem;
-  z-index: 0;
-}
-
-.main-2 {
-  border-top: 1rem solid var(--color-dark);
-  background-color: var(--color-dark);
-  position: -webkit-sticky;
-  position: sticky;
-  top: 7rem;
-  z-index: 2;
-}
-
-.main-2 div {
-  padding: 2rem;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: left;
-      -ms-flex-align: left;
-          align-items: left;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  background-color: var(--color-white);
-}
-
-.main-2 div span {
-  margin: .33rem;
-  padding: 1rem;
-  border: 0.5rem solid var(--color-dark);
-  display: inline-block;
-  font-weight: bold;
-  -webkit-transition: all 5s;
-  transition: all 5s;
-  cursor: no-drop;
-}
-
-.main-2 div span:hover {
-  border-radius: 1rem;
-  -webkit-transition: var(--speed-fast);
-  transition: var(--speed-fast);
-}
-
-.main-2 div span.passed {
-  background-color: #5f874c;
-  color: var(--color-white);
-}
-
-.main-2 div span.wip {
-  background-color: var(--color-yellow);
-}
-
-.main-2 div span.future {
-  color: var(--color-dark);
-}
-
-.banner {
-  min-width: 38vw;
-  padding: 2rem;
-  background: var(--color-blood) url(../../public/images/svg/stacked-waves-haikei.svg);
-  background-size: cover;
-  color: var(--color-white);
-}
-
-.banner h2 {
-  color: var(--color-staticwhite);
-}
-
 .photo-1 {
-  padding: 2rem;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: left;
-      -ms-flex-pack: left;
-          justify-content: left;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
-  width: 100%;
   min-height: 89vh;
-  position: -webkit-sticky;
-  position: sticky;
-  top: 8.3rem;
-  background-image: url("../../public/images/michel.jpg");
+  padding: 2rem;
   background-size: cover;
+  background-image: url("../../public/images/michel.jpg");
   background-position: center;
 }
 
 .photo-1 h2 {
   color: var(--color-staticwhite);
-  text-align: left;
   max-width: 30rem;
 }
 
 .photo-2 {
-  border-top: 1rem solid var(--color-dark);
   min-height: 89vh;
   padding: 2rem;
-  position: -webkit-sticky;
-  position: sticky;
-  top: 6rem;
-  z-index: 2;
   background-size: cover;
   background-image: url("../../public/images/michel2.jpg");
 }
 
 .photo-2 h2 {
   color: var(--color-staticwhite);
-  text-align: left;
   max-width: 30rem;
 }
 
 .photo-3 {
-  border-top: 1rem solid var(--color-dark);
   min-height: 89vh;
   padding: 2rem;
-  position: -webkit-sticky;
-  position: sticky;
-  top: 6rem;
-  z-index: 2;
   background-size: cover;
   background-image: url("../../public/images/michel3.jpg");
   background-position: center top;
@@ -1128,18 +899,12 @@ main.nvm {
 
 .photo-3 h2 {
   color: var(--color-staticwhite);
-  text-align: left;
   max-width: 30rem;
 }
 
 .photo-4 {
-  border-top: 1rem solid var(--color-dark);
   min-height: 89vh;
   padding: 2rem;
-  position: -webkit-sticky;
-  position: sticky;
-  top: 6rem;
-  z-index: 2;
   background-size: cover;
   background-image: url("../../public/images/michel4.jpg");
   background-position: center center;
@@ -1147,7 +912,19 @@ main.nvm {
 
 .photo-4 h2 {
   color: var(--color-staticwhite);
-  text-align: left;
+  max-width: 30rem;
+}
+
+.photo-5 {
+  min-height: 89vh;
+  padding: 2rem;
+  background-size: cover;
+  background-image: url("../../public/images/vsc.jpg");
+  background-position: center center;
+}
+
+.photo-5 h2 {
+  color: var(--color-staticwhite);
   max-width: 30rem;
 }
 

@@ -7,52 +7,8 @@
     url(../../public/images/svg/stacked-waves-haikei.svg);
   background-size: cover;
   color: var(--color-white);
+
   h2 {
     color: var(--color-staticwhite);
   }
-}
-
-.photo-1 {
-  padding: 2rem;
-  display: flex;
-  flex-direction: column;
-  justify-content: left;
-  align-items: flex-start;
-
-  width: 100%;
-  min-height: 89vh;
-
-  position: sticky;
-  top: 8.3rem;
-
-  background-image: url('../../public/images/michel.jpg');
-  background-size: cover;
-  background-position: center;
-}
-
-.photo-2 {
-  @include photo-default;
-
-  background-image: url('../../public/images/michel2.jpg');
-}
-
-.photo-3 {
-  @include photo-default;
-
-  background-image: url('../../public/images/michel3.jpg');
-  background-position: center top;
-}
-
-.photo-4 {
-  @include photo-default;
-
-  background-image: url('../../public/images/michel4.jpg');
-  background-position: center center;
-}
-
-.photo-5 {
-  @include photo-default;
-
-  background-image: url('../../public/images/vsc.jpg');
-  background-position: center center;
 }
