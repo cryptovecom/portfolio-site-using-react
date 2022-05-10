@@ -73,6 +73,11 @@
   }
 }
 
+.respond {
+  flex-direction: row;
+  align-content: stretch;
+}
+
 .tech-icon {
   width: 2.5rem;
   margin-right: 1rem;

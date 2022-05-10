@@ -294,6 +294,15 @@ section:nth-child(1) section {
   transition: transform var(--speed-slow) cubic-bezier(0.28, 0.78, 0.6, 0.93), border-radius 0.2s, -webkit-transform var(--speed-slow) cubic-bezier(0.28, 0.78, 0.6, 0.93);
 }
 
+.respond {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-line-pack: stretch;
+      align-content: stretch;
+}
+
 .tech-icon {
   width: 2.5rem;
   margin-right: 1rem;
@@ -495,6 +504,8 @@ section.blog-post {
   padding: 2rem;
   background-size: cover;
   height: 100vh;
+  display: sticky;
+  top: 8rem;
   background-image: url("../../public/images/michel6.jpg");
   border-top: none;
   width: 100%;
@@ -515,6 +526,7 @@ section.blog-post {
   min-height: 13vh;
   width: 38vw;
   padding: 2rem;
+  height: auto;
   background: var(--color-blood) url(../../public/images/svg/stacked-waves-haikei.svg);
   background-size: cover;
 }

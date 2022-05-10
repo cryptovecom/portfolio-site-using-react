@@ -88,7 +88,7 @@ export default function Home(props) {
             >
               <img
                 src="http://ghchart.rshah.org/iseneld"
-                alt="Name Your GitHub chart"
+                alt="My github contributions over the last year"
               />
             </a>
           </div>

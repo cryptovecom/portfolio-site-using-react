@@ -39,6 +39,8 @@
   aside {
     @include photo-default;
     height: 100vh;
+    display: sticky;
+    top: 8rem;
 
     background-image: url('../../public/images/michel6.jpg');
     border-top: none;
