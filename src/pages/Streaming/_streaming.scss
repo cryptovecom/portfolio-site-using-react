@@ -1,12 +1,6 @@
 .streaming__banner {
-  min-height: 13vh;
-  min-width: 38vw;
-  max-width: 38vw;
-  
   display: flex;
   flex-direction: column;
-
-  color: var(--color-grey);
 
   h1 {
     color: var(--color-dark);
@@ -219,6 +213,10 @@
   .card {
     color: var(--color-dark);
     margin-bottom: 1rem;
+  }
+
+  .card:last-child {
+    margin-bottom: 0;
   }
 }
 

@@ -512,15 +512,19 @@ section.blog-post {
 }
 
 .banner {
-  min-width: 38vw;
+  min-height: 13vh;
+  width: 38vw;
   padding: 2rem;
   background: var(--color-blood) url(../../public/images/svg/stacked-waves-haikei.svg);
   background-size: cover;
-  color: var(--color-white);
 }
 
 .banner h2 {
   color: var(--color-staticwhite);
+}
+
+.github-contributions img {
+  width: 100%;
 }
 
 main.nvm {
@@ -528,9 +532,6 @@ main.nvm {
 }
 
 .streaming__banner {
-  min-height: 13vh;
-  min-width: 38vw;
-  max-width: 38vw;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -538,7 +539,6 @@ main.nvm {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  color: var(--color-grey);
 }
 
 .streaming__banner h1 {
@@ -834,6 +834,10 @@ main.nvm {
   margin-bottom: 1rem;
 }
 
+.user-panel__favs .card:last-child {
+  margin-bottom: 0;
+}
+
 .user-panel__info {
   padding: 0;
   z-index: 1;
@@ -1041,45 +1045,10 @@ header ul li a:focus, header ul li a:hover {
   }
 }
 
-header {
-  border-bottom: 1rem solid var(--color-dark);
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  z-index: 10;
-  position: -webkit-sticky;
-  position: sticky;
-  top: 0;
-  background-color: var(--color-white);
-  font-size: var(--h2);
-  font-weight: bold;
-}
-
-header a {
-  padding: 2rem 0.3rem 2rem 2rem;
-  text-decoration: none;
-}
-
-header ul li a {
-  padding: 2rem 2rem 2rem 0.3rem;
-  color: var(--color-blood);
-  text-decoration: underline;
-  -webkit-transition: color var(--speed-fast);
-  transition: color var(--speed-fast);
-}
-
-header ul li a:focus, header ul li a:hover {
-  color: var(--color-dark);
-  text-decoration: none;
-}
-
 @media all and (max-width: 64rem) {
+  .banner, .streaming__banner {
+    width: 100vw;
+  }
   .top {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -1088,7 +1057,7 @@ header ul li a:focus, header ul li a:hover {
     width: 100%;
     top: -21rem;
   }
-  section:nth-child(1) {
+  section:nth-child(1), .respond {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -1108,7 +1077,7 @@ header ul li a:focus, header ul li a:hover {
     top: 0;
     position: relative;
   }
-  section:nth-child(1) {
+  section:nth-child(1), .respond {
     position: -webkit-sticky;
     position: sticky;
     top: -35rem;

@@ -17,15 +17,14 @@ export default function Home(props) {
             technology.
           </h2>
         </section>
-        <section>
+        <section className="respond">
           <section className="banner"></section>
           <section className="link-list">
             <ul>
               <li>
                 <Link to="/streaming" className={`landing-list school-project`}>
                   <h2>A useless mern project</h2>
-                  {/* 
-                  <div>
+                  <div style={{ marginLeft: "1rem" }}>
                     <img
                       src="./images/icons/express.png"
                       alt="Express Icon"
@@ -36,13 +35,13 @@ export default function Home(props) {
                       alt="Node Icon"
                       className="tech-icon"
                     />
-                    
+
                     <img
                       src="./images/icons/mongodb.png"
                       alt="MongoDB Icon"
                       className="tech-icon"
                     />
-                  </div> */}
+                  </div>
                 </Link>
               </li>
               <li>
@@ -76,11 +75,24 @@ export default function Home(props) {
             </ul>
           </section>
         </section>
-
         <section className="photo-5">
           <h2>I am currently studying frontend development at Hyper Island.</h2>
         </section>
-
+        <section>
+          <div className="info">
+            <a
+              className="github-contributions"
+              href="https://github.com/iseneld"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <img
+                src="http://ghchart.rshah.org/iseneld"
+                alt="Name Your GitHub chart"
+              />
+            </a>
+          </div>
+        </section>
         <section className="photo-3"></section>
         <section>
           <div className="info">

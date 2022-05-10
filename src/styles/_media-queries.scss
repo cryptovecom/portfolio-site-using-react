@@ -1,12 +1,15 @@
 @media all and (max-width: $tablet) {
-  
+  .banner, .streaming__banner {
+    width: 100vw;
+  }
+
   .top {
     flex-direction: column;
     width: 100%;
     top: -21rem;
   }
 
-  section:nth-child(1) {
+  section:nth-child(1), .respond {
     flex-direction: column;
     top: -12rem;
   }
@@ -25,7 +28,7 @@
     position: relative;
   }
 
-  section:nth-child(1) {
+  section:nth-child(1), .respond {
     position: sticky;
     top: -35rem;
   }

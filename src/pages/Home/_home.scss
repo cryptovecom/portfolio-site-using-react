@@ -1,14 +1,22 @@
 .banner {
-  min-width: 38vw;
+  min-height: 13vh;
+  width: 38vw;
   padding: 2rem;
 
   background: 
     var(--color-blood) 
     url(../../public/images/svg/stacked-waves-haikei.svg);
   background-size: cover;
-  color: var(--color-white);
 
   h2 {
     color: var(--color-staticwhite);
   }
+}
+
+.github-contributions {
+
+  img {
+    width: 100%;
+  }
+  
 }
