@@ -15,13 +15,6 @@ export default function Home(props) {
             technology.
           </h2>
         </section>
-        <section className="main-2">
-          <div>
-            <h2>
-              I am currently studying frontend development at Hyper Island.
-            </h2>
-          </div>
-        </section>
         <section className="main-1 top">
           <section className="banner"></section>
           <section className="link-list">
@@ -86,13 +79,15 @@ export default function Home(props) {
             </section>
           </section>
         </section>
-        <section className="photo-2"></section>
+
+        <section className="photo-5">
+          <h2>I am currently studying frontend development at Hyper Island.</h2>
+        </section>
 
         <section className="photo-3"></section>
         <section className="main-2">
           <div>
-            <h2>🚧 Under Construction 🚧</h2>
-            <p>Moar coming! Idk wat 2 put, butt it prolly b gr8.</p>
+            <h2>This site is under construction 🚧</h2>
           </div>
         </section>
       </main>

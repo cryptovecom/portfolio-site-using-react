@@ -262,10 +262,6 @@ p:first-child {
 }
 
 .top__noborder {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  gap: 1rem;
   position: -webkit-sticky;
   position: sticky;
   top: 8.5rem;
@@ -466,6 +462,7 @@ section.blog-post {
 #imagination-main aside {
   border-top: 1rem solid var(--color-dark);
   min-height: 89vh;
+  padding: 2rem;
   position: -webkit-sticky;
   position: sticky;
   top: 6rem;
@@ -475,6 +472,12 @@ section.blog-post {
   background-image: url("../../public/images/michel6.jpg");
   border-top: none;
   width: 100%;
+}
+
+#imagination-main aside h2 {
+  color: var(--color-staticwhite);
+  text-align: left;
+  max-width: 30rem;
 }
 
 @media all and (min-width: 100rem) {
@@ -591,15 +594,10 @@ section.blog-post {
   background-position: center;
 }
 
-.photo-1 h2 {
-  color: var(--color-staticwhite);
-  text-align: left;
-  max-width: 30rem;
-}
-
 .photo-2 {
   border-top: 1rem solid var(--color-dark);
   min-height: 89vh;
+  padding: 2rem;
   position: -webkit-sticky;
   position: sticky;
   top: 6rem;
@@ -608,9 +606,16 @@ section.blog-post {
   background-image: url("../../public/images/michel2.jpg");
 }
 
+.photo-2 h2 {
+  color: var(--color-staticwhite);
+  text-align: left;
+  max-width: 30rem;
+}
+
 .photo-3 {
   border-top: 1rem solid var(--color-dark);
   min-height: 89vh;
+  padding: 2rem;
   position: -webkit-sticky;
   position: sticky;
   top: 6rem;
@@ -620,9 +625,16 @@ section.blog-post {
   background-position: center top;
 }
 
+.photo-3 h2 {
+  color: var(--color-staticwhite);
+  text-align: left;
+  max-width: 30rem;
+}
+
 .photo-4 {
   border-top: 1rem solid var(--color-dark);
   min-height: 89vh;
+  padding: 2rem;
   position: -webkit-sticky;
   position: sticky;
   top: 6rem;
@@ -630,6 +642,31 @@ section.blog-post {
   background-size: cover;
   background-image: url("../../public/images/michel4.jpg");
   background-position: center center;
+}
+
+.photo-4 h2 {
+  color: var(--color-staticwhite);
+  text-align: left;
+  max-width: 30rem;
+}
+
+.photo-5 {
+  border-top: 1rem solid var(--color-dark);
+  min-height: 89vh;
+  padding: 2rem;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 6rem;
+  z-index: 2;
+  background-size: cover;
+  background-image: url("../../public/images/vsc.jpg");
+  background-position: center center;
+}
+
+.photo-5 h2 {
+  color: var(--color-staticwhite);
+  text-align: left;
+  max-width: 30rem;
 }
 
 main.nvm {
@@ -1087,6 +1124,7 @@ main.nvm {
 .photo-2 {
   border-top: 1rem solid var(--color-dark);
   min-height: 89vh;
+  padding: 2rem;
   position: -webkit-sticky;
   position: sticky;
   top: 6rem;
@@ -1095,9 +1133,16 @@ main.nvm {
   background-image: url("../../public/images/michel2.jpg");
 }
 
+.photo-2 h2 {
+  color: var(--color-staticwhite);
+  text-align: left;
+  max-width: 30rem;
+}
+
 .photo-3 {
   border-top: 1rem solid var(--color-dark);
   min-height: 89vh;
+  padding: 2rem;
   position: -webkit-sticky;
   position: sticky;
   top: 6rem;
@@ -1107,9 +1152,16 @@ main.nvm {
   background-position: center top;
 }
 
+.photo-3 h2 {
+  color: var(--color-staticwhite);
+  text-align: left;
+  max-width: 30rem;
+}
+
 .photo-4 {
   border-top: 1rem solid var(--color-dark);
   min-height: 89vh;
+  padding: 2rem;
   position: -webkit-sticky;
   position: sticky;
   top: 6rem;
@@ -1117,6 +1169,12 @@ main.nvm {
   background-size: cover;
   background-image: url("../../public/images/michel4.jpg");
   background-position: center center;
+}
+
+.photo-4 h2 {
+  color: var(--color-staticwhite);
+  text-align: left;
+  max-width: 30rem;
 }
 
 footer {
