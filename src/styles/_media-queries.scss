@@ -16,6 +16,15 @@
   .streaming__banner {
     max-width: none;
   }
+
+  footer section {
+    flex-direction: column;
+    max-width: 100vw;
+    
+    a {
+      border-radius: 0;
+      flex-grow: 1;
+  }
 }
 
 @media all and (max-width: $phone) {
