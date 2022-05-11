@@ -1,5 +1,4 @@
 import { Link } from "react-router-dom";
-// import Section from "../../components/Section/Section";
 import ProgressBar from "../../components/ProgressBar";
 
 export default function Home(props) {
@@ -12,7 +11,6 @@ export default function Home(props) {
     <>
       <ProgressBar />
       <main>
-        {/* <Section /> */}
         <section className="photo-1">
           <h2>
             Creative generalist exploring consciousness through art and
