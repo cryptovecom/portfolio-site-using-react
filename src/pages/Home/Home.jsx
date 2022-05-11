@@ -76,7 +76,11 @@ export default function Home(props) {
           </section>
         </section>
         <section className="photo-5">
-          <h2>I am currently studying frontend development at Hyper Island.</h2>
+          <Link to="/goals">
+            <h2>
+              I am currently studying frontend development at Hyper Island.
+            </h2>
+          </Link>
         </section>
         <section>
           <div className="info">

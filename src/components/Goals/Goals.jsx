@@ -13,6 +13,11 @@ function Goals(props) {
   return (
     <>
       <ProgressBar />
+      <section style={{ borderTop: "none" }}>
+        <div className="info">
+          <h2>My current course goal progress:</h2>
+        </div>
+      </section>
       <section className="goals">
         <ul>
           {/* LOOPING THROUGH POSTS IN JSON */}
