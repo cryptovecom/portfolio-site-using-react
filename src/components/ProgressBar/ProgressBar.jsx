@@ -3,7 +3,6 @@ import { useEffect, useState } from 'react';
 export const ProgressBar = () => {
   let body = document.body;
   let html = document.documentElement;
-  console.log("mount");
 
   const [height, setHeight] = useState(0);
 

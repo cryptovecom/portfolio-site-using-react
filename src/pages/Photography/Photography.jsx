@@ -1,6 +1,9 @@
+import ProgressBar from "../../components/ProgressBar";
+
 export default function Photography(props) {
   return (
     <>
+      <ProgressBar />
       <main>
         <section className="main-2" style={{ borderTop: "none" }}>
           <div className="info">

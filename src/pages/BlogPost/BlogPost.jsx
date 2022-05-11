@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import { Link, useParams } from "react-router-dom";
+import ProgressBar from "../../components/ProgressBar";
 
 export default function BlogPost() {
   function darkMode(e) {
@@ -21,6 +22,7 @@ export default function BlogPost() {
 
   return (
     <>
+      <ProgressBar />
       <main>
         <section>
           <section className="banner">

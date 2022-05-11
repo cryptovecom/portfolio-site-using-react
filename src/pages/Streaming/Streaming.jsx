@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import * as config from "../../config";
+import ProgressBar from "../../components/ProgressBar";
 
 export default function Streaming() {
   const [favs, setFavs] = useState([]);
@@ -203,6 +204,7 @@ export default function Streaming() {
 
   return (
     <>
+      <ProgressBar />
       <main>
         <section>
           {/* LEFT SECTION - LEFT SECTION - LEFT SECTION */}
