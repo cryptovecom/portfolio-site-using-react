@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import ProgressBar from "../../components/ProgressBar";
 
 function Goals(props) {
   const [goals, setGoals] = useState();
@@ -11,6 +12,7 @@ function Goals(props) {
 
   return (
     <>
+      <ProgressBar />
       <section className="goals">
         <ul>
           {/* LOOPING THROUGH POSTS IN JSON */}
