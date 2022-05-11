@@ -226,30 +226,6 @@ export default function Streaming() {
             </button>
             <div className={`user-panel__favs ${none ? "none" : ""}`}>
               <aside className="card how-to">
-                <h6>HOW TO USE</h6>
-                <ol>
-                  <li>
-                    Enter a username and click <strong>Register</strong>.
-                  </li>
-                  <li>
-                    Enter your username and click <strong>Login</strong>.
-                  </li>
-                  {user && user.user && (
-                    <>
-                      <li>You may now save favourites with the ❤️-buttons.</li>
-                      <li>
-                        .. and remove them with the 💔-buttons on the list
-                        above.
-                      </li>
-                      <li>
-                        To search for artists, clear your username and start
-                        typing!
-                      </li>
-                    </>
-                  )}
-                </ol>
-              </aside>
-              <aside className="card how-to">
                 <h6>THE BRIEF</h6>
                 <p>
                   I built this app during the <strong>Data Interaction</strong>{" "}
@@ -311,6 +287,32 @@ export default function Streaming() {
                       className="tech-icon"
                     />
                   </p>
+                </details>
+                <details>
+                  <summary>How to use:</summary>
+                  <ol>
+                    <li>
+                      Enter a username and click <strong>Register</strong>.
+                    </li>
+                    <li>
+                      Enter your username and click <strong>Login</strong>.
+                    </li>
+                    {user && user.user && (
+                      <>
+                        <li>
+                          You may now save favourites with the ❤️-buttons.
+                        </li>
+                        <li>
+                          .. and remove them with the 💔-buttons on the list
+                          above.
+                        </li>
+                        <li>
+                          To search for artists, clear your username and start
+                          typing!
+                        </li>
+                      </>
+                    )}
+                  </ol>
                 </details>
               </aside>
             </div>

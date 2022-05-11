@@ -109,7 +109,7 @@ details summary {
   font-weight: bold;
 }
 
-details p,
+details ol, details p,
 details blockquote {
   cursor: text;
   margin-top: 1rem;
