@@ -100,6 +100,11 @@ details:last-child {
   margin-bottom: 0;
 }
 
+details li {
+  list-style-type: disc;
+  margin-left: 2rem;
+}
+
 details summary {
   font-weight: bold;
 }
@@ -869,8 +874,8 @@ main.nvm {
   border-radius: 2rem;
   z-index: 2;
   position: absolute;
-  top: 1rem;
-  left: 1rem;
+  top: -1.75rem;
+  left: 1.75rem;
 }
 
 .info-toggle:hover {

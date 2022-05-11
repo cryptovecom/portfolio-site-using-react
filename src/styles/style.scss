@@ -72,6 +72,11 @@ details {
     margin-bottom: 0;
   }
 
+  li {
+    list-style-type: disc;
+    margin-left: 2rem;
+  }
+
   summary {
     font-weight: bold;
   }
@@ -81,7 +86,7 @@ details {
     cursor: text;
     margin-top: 1rem;
   }
-  
+
 }
 
 h1 { font-size: var(--h1); }
