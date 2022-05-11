@@ -1,7 +1,3 @@
-export default function Section() {
-  return (
-    <section>
-      <h1>Hej</h1>
-    </section>
-  );
+export default function Section({ image }) {
+  return <section className={`photo-${image}`}></section>;
 }
