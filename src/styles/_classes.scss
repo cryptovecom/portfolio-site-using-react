@@ -4,6 +4,22 @@
   transition: 5s;
 
   background-color: var(--color-white);
+
+  h6 {
+    margin-bottom: 1rem;
+    margin-right: 1rem;
+    padding: 0.5rem;
+    display: inline-block;
+
+    background-color: var(--color-grey);
+    border: .2rem solid var(--color-dark);
+    border-radius: 0.5rem;
+    box-shadow: 0rem 0rem .01rem rgba(0, 0, 0, 0.15);
+    color: var(--color-dark);
+
+    transition: 1s;
+  }
+
   &:hover {
     transition: var(--speed-fast);
 

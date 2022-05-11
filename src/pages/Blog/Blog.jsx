@@ -18,30 +18,11 @@ export default function Blog() {
     <>
       <ProgressBar />
       <main>
-        <section>
-          <section className="banner banner__blog">
-            <h1 className="dragon-text">Free will is an illusion</h1>
-          </section>
-          <section className="link-list">
-            <ul>
-              {/* LOOPING THROUGH POSTS IN JSON */}
-              {posts &&
-                posts.map((post) => (
-                  <li key={post.id}>
-                    <h2>
-                      <Link to={`/blog/${post.page}`}>{post.title}</Link>
-                    </h2>
-                  </li>
-                ))}
-              <li key="imagination-key">
-                <h2>
-                  <Link to={`/blog/imagination`}>Imagination is the key</Link>
-                </h2>
-              </li>
-            </ul>
-          </section>
-        </section>
         <section className="blog__cards">
+          <article className="log">
+            <h6>2022-04</h6>
+            <p>A lot changed.</p>
+          </article>
           <article className="card flex">
             <h6>APR 2022</h6>
             <p>
@@ -94,6 +75,29 @@ export default function Blog() {
               🧙✨
             </p>
           </article>
+        </section>
+        <section>
+          <section className="banner banner__blog">
+            <h1 className="dragon-text">Free will is an illusion</h1>
+          </section>
+          <section className="link-list">
+            <ul>
+              {/* LOOPING THROUGH POSTS IN JSON */}
+              {posts &&
+                posts.map((post) => (
+                  <li key={post.id}>
+                    <h2>
+                      <Link to={`/blog/${post.page}`}>{post.title}</Link>
+                    </h2>
+                  </li>
+                ))}
+              <li key="imagination-key">
+                <h2>
+                  <Link to={`/blog/imagination`}>Imagination is the key</Link>
+                </h2>
+              </li>
+            </ul>
+          </section>
         </section>
         <section className="photo-4"></section>
       </main>
