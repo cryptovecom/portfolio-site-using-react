@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 // import Section from "../../components/Section/Section";
+import ProgressBar from "../../components/ProgressBar";
 
 export default function Home(props) {
   const linkList = props.linkList.map((object, i) => {
@@ -9,6 +10,7 @@ export default function Home(props) {
 
   return (
     <>
+      <ProgressBar />
       <main>
         {/* <Section /> */}
         <section className="photo-1">

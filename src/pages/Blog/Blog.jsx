@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import { birthCalculatorYears, birthdayCalculator } from "../../helpers/birthday";
+import ProgressBar from "../../components/ProgressBar";
 
 // BLOG FUNCTION
 
@@ -15,6 +16,7 @@ export default function Blog() {
 
   return (
     <>
+      <ProgressBar />
       <main>
         <section>
           <section className="banner banner__blog">
