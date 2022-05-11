@@ -20,35 +20,24 @@ export default function Blog() {
       <main>
         <section className="blog__cards">
           <article className="log">
-            <h6>2022-04</h6>
             <p>A lot changed.</p>
+            <h6>2205</h6>
           </article>
-          <article className="card flex">
-            <h6>APR 2022</h6>
-            <p>
-              The site's content was revised into a more proper portfolio. This
-              blog is still jibberish and the list of stuff to add is long.
-            </p>
+          <article className="log">
+            <p>Content revised and expanded.</p>
+            <h6>2204</h6>
           </article>
-          <article className="card flex">
-            <h6>MAR 2022</h6>
-            <p>
-              CSS has been cleaned up and made a big mess again. Then cleaned
-              up, again.
-            </p>
+          <article className="log">
+            <p>SCSS cleaned up and restructured.</p>
+            <h6>2203</h6>
           </article>
-          <article className="card flex">
-            <h6>FEB 2022</h6>
-            <p>
-              Adding MERN-stack structure to explore Javascript backend
-              technologies.
-            </p>
+          <article className="log">
+            <p>MERN-stack added to explore JS backend tech.</p>
+            <h6>2202</h6>
           </article>
-          <article className="card flex">
-            <h6>JAN 2022</h6>
+          <article className="log">
             <p>
-              The site was refactored using React.js and published to Netlify
-              via&nbsp;
+              Deployed to Netlify via&nbsp;
               <a
                 href="https://github.com/iseneld"
                 target="_blank"
@@ -58,25 +47,26 @@ export default function Blog() {
               </a>
               .
             </p>
+            <h6>2201</h6>
           </article>
-          <article className="card flex">
-            <h6>SEP 2021</h6>
-            <p>
-              This was originally a dummy site made as my first school project
-              to practice HTML, CSS and Javascript.
-            </p>
+          <article className="log">
+            <p>Refactored with React.js.</p>
+            <h6>2112</h6>
           </article>
-          <article className="card">
-            <h6>BIRTHDAY WIZARD</h6>
+          <article className="log">
+            <p>Created as my first school project.</p>
+            <h6>2109</h6>
+          </article>
+          <article className="log">
             <p>
-              Today it's been <b id="elapsed-days">{birthdayCalculator()}</b>{" "}
-              days since I was born. <br />
-              That's <b id="elapsed-years">{birthCalculatorYears()}</b> years!
-              🧙✨
+              I was born <b id="elapsed-days">{birthdayCalculator()}</b> days
+              ago. That's <b id="elapsed-years">{birthCalculatorYears()}</b>{" "}
+              years! 🧙✨
             </p>
+            <h6>FYI</h6>
           </article>
         </section>
-        <section>
+        <section className="respond">
           <section className="banner banner__blog">
             <h1 className="dragon-text">Free will is an illusion</h1>
           </section>

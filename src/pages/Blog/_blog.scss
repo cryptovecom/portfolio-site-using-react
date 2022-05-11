@@ -33,22 +33,48 @@
 }
 
 .blog__cards {
-  position: sticky;
-  top: 7rem;
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
   gap: 1rem;
 
+  position: sticky;
+  top: 7rem;
+
   background-color: var(--color-dark);
 
   .log {
     background-color: var(--color-white);
-    padding: 1rem;
 
     display: flex;
     flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
     font-size: var(--h3);
     font-weight: 700;
+
+    & > * {
+      padding: 1rem;
+    }
+
+    h6 {
+      border-radius: .5rem 0 0 .5rem;
+      margin: 1rem 0;
+      padding-left: 2rem;
+      transform: rotate(180deg);
+
+      background-color: var(--color-dark);
+      color: var(--color-white);
+      
+
+      writing-mode: vertical-rl;
+      text-align: center;
+      text-orientation: mixed;
+      
+    }
+
+    p {
+      margin: 0 1rem;
+    }
   }
 }

@@ -402,9 +402,6 @@ section:nth-child(1) section {
 }
 
 .blog__cards {
-  position: -webkit-sticky;
-  position: sticky;
-  top: 7rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -415,12 +412,14 @@ section:nth-child(1) section {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   gap: 1rem;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 7rem;
   background-color: var(--color-dark);
 }
 
 .blog__cards .log {
   background-color: var(--color-white);
-  padding: 1rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -428,8 +427,37 @@ section:nth-child(1) section {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   font-size: var(--h3);
   font-weight: 700;
+}
+
+.blog__cards .log > * {
+  padding: 1rem;
+}
+
+.blog__cards .log h6 {
+  border-radius: .5rem 0 0 .5rem;
+  margin: 1rem 0;
+  padding-left: 2rem;
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+  background-color: var(--color-dark);
+  color: var(--color-white);
+  -webkit-writing-mode: vertical-rl;
+      -ms-writing-mode: tb-rl;
+          writing-mode: vertical-rl;
+  text-align: center;
+  text-orientation: mixed;
+}
+
+.blog__cards .log p {
+  margin: 0 1rem;
 }
 
 article.blog-post {
