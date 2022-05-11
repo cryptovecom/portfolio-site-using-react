@@ -5,24 +5,7 @@ const listItems = [
   //   img: "codewars.png",
   //   class: "corewars",
   // },
-  {
-    title: "Github",
-    url: "https://github.com/iseneld",
-    img: "github.png",
-    class: "github",
-  },
   // {
-  //   title: "Instagram",
-  //   url: "https://www.instagram.com/micheliseneld/",
-  //   img: "photography.jpg",
-  //   class: "instagram",
-  // },
-  {
-    title: "Linkedin",
-    url: "https://www.linkedin.com/in/micheliseneld/",
-    img: "linkedin.png",
-    class: "linkedin",
-  },
   {
     title: "Aether Mechanics",
     url: "https://aethermechanics.bandcamp.com/",

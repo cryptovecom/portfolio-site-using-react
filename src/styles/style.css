@@ -1016,6 +1016,10 @@ footer {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -1031,6 +1035,33 @@ footer a:visited {
   width: 100%;
   color: var(--color-grey);
   text-decoration: none;
+}
+
+footer section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  gap: .5rem;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+footer section a {
+  background-color: var(--color-grey);
+  border-radius: .5rem .5rem 0 0;
+  text-align: center;
+}
+
+footer section a:hover {
+  background-color: var(--color-yellow);
 }
 
 .goals {

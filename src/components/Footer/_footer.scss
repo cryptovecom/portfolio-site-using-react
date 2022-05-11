@@ -1,5 +1,6 @@
 footer {
   display: flex;
+  flex-direction: column;
   align-items: center;
 
   background-color: var(--color-dark);
@@ -14,5 +15,23 @@ footer {
 
     color: var(--color-grey);
     text-decoration: none;
+  }
+
+  section {
+    display: flex;
+    flex-direction: row;
+    gap: .5rem;
+    align-items: center;
+    justify-content: center;
+
+    a {
+      background-color: var(--color-grey);
+      border-radius: .5rem .5rem 0 0;
+      text-align: center;
+
+      &:hover {
+        background-color: var(--color-yellow);
+      }
+    }
   }
 }
