@@ -3,11 +3,6 @@ import { Link, useParams } from "react-router-dom";
 import ProgressBar from "../../components/ProgressBar";
 
 export default function BlogPost() {
-  function darkMode(e) {
-    e.preventDefault(); // Added to prevent page reload on click.
-    document.querySelector("body").classList.toggle("dark-mode");
-  }
-
   const [post, setPost] = useState();
   const match = useParams();
 
@@ -25,11 +20,7 @@ export default function BlogPost() {
       <ProgressBar />
       <main>
         <section>
-          <section className="banner">
-            <button className="dark-mode-button" onClick={darkMode}>
-              Dark Mode
-            </button>
-          </section>
+          <section className="banner"></section>
           <section className="blog-post">
             <article className="blog-post">
               {post && (

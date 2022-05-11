@@ -3,6 +3,7 @@ import React from "react";
 import { Routes, Route } from "react-router-dom";
 
 // COMPONENTS
+import DarkMode from "./components/DarkMode";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
 import linkList from "./components/linkList";
@@ -27,7 +28,7 @@ function App() {
       <Routes>
         <Route exact path="/" element={<Home linkList={linkList} />} />
         <Route path="/log" element={<Log />} />
-        <Route path="/log/:post" element={<BlogPost />} />
+        <Route path="/blog/:post" element={<BlogPost />} />
         <Route path="/nvm" element={<Nvm />} />
         <Route path="/goals" element={<Goals />} />
         <Route path="/photography" element={<Photography />} />
@@ -37,6 +38,7 @@ function App() {
         {/* BLOG POSTS */}
         <Route path="/blog/imagination" element={<Imagination />} />
       </Routes>
+      <DarkMode />
       <Footer />
     </>
   );

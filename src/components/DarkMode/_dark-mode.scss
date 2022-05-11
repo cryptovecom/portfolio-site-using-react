@@ -7,19 +7,22 @@
 }
 
 .dark-mode-button {
-  position: sticky;
-  top: 10.5rem;
+  position: fixed;
+  bottom: 2rem;
+  right: 2rem;
 
   border: 0.25rem solid var(--color-dark);
+  border-radius: 2rem;
   padding: 1rem;
 
-  box-shadow: 0 4px .5rem #1e1e1e;
+  box-shadow: 0 0 2rem #1e1e1e;
 
   transition: var(--speed-fast);
 
-  &:focus,
+  z-index: 100;
+
   &:hover {
-    border-radius: 1rem;
+    background-color: var(--color-blood);
   }
 
   &:active {

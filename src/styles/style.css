@@ -327,35 +327,6 @@ section:nth-child(1) section {
   margin-right: 0;
 }
 
-*.dark-mode {
-  --color-white: #1e1e1e;
-  --color-blood: #ffb532;
-  --color-dark: #d2d2ce;
-  --color-grey: #1e1e1e;
-  --color-yellow: #af3333;
-}
-
-.dark-mode-button {
-  position: -webkit-sticky;
-  position: sticky;
-  top: 10.5rem;
-  border: 0.25rem solid var(--color-dark);
-  padding: 1rem;
-  -webkit-box-shadow: 0 4px .5rem #1e1e1e;
-          box-shadow: 0 4px .5rem #1e1e1e;
-  -webkit-transition: var(--speed-fast);
-  transition: var(--speed-fast);
-}
-
-.dark-mode-button:focus, .dark-mode-button:hover {
-  border-radius: 1rem;
-}
-
-.dark-mode-button:active {
-  -webkit-box-shadow: none;
-          box-shadow: none;
-}
-
 .banner__blog {
   background: var(--color-yellow) url("../../public/images/svg/blob-scene-haikei.svg") no-repeat;
   background-size: cover;
@@ -1031,6 +1002,37 @@ footer a:visited {
   width: 100%;
   color: var(--color-grey);
   text-decoration: none;
+}
+
+*.dark-mode {
+  --color-white: #1e1e1e;
+  --color-blood: #ffb532;
+  --color-dark: #d2d2ce;
+  --color-grey: #1e1e1e;
+  --color-yellow: #af3333;
+}
+
+.dark-mode-button {
+  position: fixed;
+  bottom: 2rem;
+  right: 2rem;
+  border: 0.25rem solid var(--color-dark);
+  border-radius: 2rem;
+  padding: 1rem;
+  -webkit-box-shadow: 0 0 2rem #1e1e1e;
+          box-shadow: 0 0 2rem #1e1e1e;
+  -webkit-transition: var(--speed-fast);
+  transition: var(--speed-fast);
+  z-index: 100;
+}
+
+.dark-mode-button:hover {
+  background-color: var(--color-blood);
+}
+
+.dark-mode-button:active {
+  -webkit-box-shadow: none;
+          box-shadow: none;
 }
 
 .goals {
