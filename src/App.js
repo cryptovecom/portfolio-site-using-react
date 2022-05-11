@@ -9,7 +9,7 @@ import linkList from "./components/linkList";
 
 // PAGES
 import Home from "./pages/Home";
-import Blog from "./pages/Blog";
+import Log from "./pages/Log";
 import BlogPost from "./pages/BlogPost";
 import Goals from "./components/Goals";
 import Nvm from "./pages/Nvm";
@@ -26,8 +26,8 @@ function App() {
       <Header />
       <Routes>
         <Route exact path="/" element={<Home linkList={linkList} />} />
-        <Route path="/blog" element={<Blog />} />
-        <Route path="/blog/:post" element={<BlogPost />} />
+        <Route path="/log" element={<Log />} />
+        <Route path="/log/:post" element={<BlogPost />} />
         <Route path="/nvm" element={<Nvm />} />
         <Route path="/goals" element={<Goals />} />
         <Route path="/photography" element={<Photography />} />

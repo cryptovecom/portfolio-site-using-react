@@ -1,6 +1,9 @@
 import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
-import { birthCalculatorYears, birthdayCalculator } from "../../helpers/birthday";
+import {
+  birthCalculatorYears,
+  birthdayCalculator,
+} from "../../helpers/birthday";
 import ProgressBar from "../../components/ProgressBar";
 
 // BLOG FUNCTION
@@ -59,11 +62,11 @@ export default function Blog() {
           </article>
           <article className="log">
             <p>
-              I was born <b id="elapsed-days">{birthdayCalculator()}</b> days
-              ago. That's <b id="elapsed-years">{birthCalculatorYears()}</b>{" "}
-              years! 🧙✨
+              I was born <b id="elapsed-days">{birthdayCalculator()}</b> days,
+              or <b id="elapsed-years">{birthCalculatorYears()}</b> years, ago!
+              🧙✨
             </p>
-            <h6>FYI</h6>
+            <h6>FYI!</h6>
           </article>
         </section>
         <section className="respond">

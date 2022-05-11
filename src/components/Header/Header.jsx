@@ -8,7 +8,7 @@ export default function Header() {
         <nav>
           <ul>
             <li>
-              <Link to="/blog">Blog</Link>
+              <Link to="/log">Log</Link>
             </li>
           </ul>
         </nav>

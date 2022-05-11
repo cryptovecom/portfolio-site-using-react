@@ -418,6 +418,10 @@ section:nth-child(1) section {
   background-color: var(--color-dark);
 }
 
+.blog__cards:hover {
+  cursor: not-allowed;
+}
+
 .blog__cards .log {
   background-color: var(--color-white);
   display: -webkit-box;
@@ -433,27 +437,38 @@ section:nth-child(1) section {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  font-size: var(--h3);
+  font-size: var(--h2);
   font-weight: 700;
 }
 
 .blog__cards .log > * {
-  padding: 1rem;
+  padding: 2rem 1rem;
+}
+
+.blog__cards .log:hover h6 {
+  background-color: var(--color-blood);
+  border-radius: 0 .5rem .5rem 0;
+  -webkit-transform: translateX(0.5rem) rotate(180deg);
+          transform: translateX(0.5rem) rotate(180deg);
+  -webkit-transition: var(--speed-fast);
+  transition: var(--speed-fast);
 }
 
 .blog__cards .log h6 {
-  border-radius: .5rem 0 0 .5rem;
   margin: 1rem 0;
-  padding-left: 2rem;
-  -webkit-transform: rotate(180deg);
-          transform: rotate(180deg);
+  padding: 1rem 1rem 1rem 2.5rem;
+  -webkit-transform: translateX(1.5rem) rotate(180deg);
+          transform: translateX(1.5rem) rotate(180deg);
   background-color: var(--color-dark);
   color: var(--color-white);
+  font-size: 1rem;
   -webkit-writing-mode: vertical-rl;
       -ms-writing-mode: tb-rl;
           writing-mode: vertical-rl;
   text-align: center;
   text-orientation: mixed;
+  -webkit-transition: var(--speed-slow) ease-in;
+  transition: var(--speed-slow) ease-in;
 }
 
 .blog__cards .log p {
