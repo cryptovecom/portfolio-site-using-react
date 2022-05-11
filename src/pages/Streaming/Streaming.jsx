@@ -206,6 +206,11 @@ export default function Streaming() {
     <>
       <ProgressBar />
       <main>
+        <section className="main-2">
+          <div className="info">
+            <h2>Audio doesn't work, yet 🚧</h2>
+          </div>
+        </section>
         <section>
           {/* LEFT SECTION - LEFT SECTION - LEFT SECTION */}
           <section className="streaming__banner">
@@ -240,11 +245,6 @@ export default function Streaming() {
                         To search for artists, clear your username and start
                         typing!
                       </li>
-                      <li>
-                        Audio doesn't work, yet, and there are still a few bugs
-                        lurking!
-                      </li>
-                      <li>That's it!</li>
                     </>
                   )}
                 </ol>
@@ -281,38 +281,37 @@ export default function Streaming() {
                     </ul>
                   </blockquote>
                 </details>
-              </aside>
-              <aside className="card how-to">
-                <h6>MY SOLUTION</h6>
-
-                <p>
-                  The frontend was made with React.js and deployed through
-                  Netlify and Github pipelines. I built a Node.js Express API
-                  that is hosted on Heroku and a MongoDB database running as an
-                  Atlas cluster.
-                </p>
-                <p>
-                  <img
-                    src="./images/icons/react.png"
-                    alt="React Icon"
-                    className="tech-icon"
-                  />
-                  <img
-                    src="./images/icons/node.png"
-                    alt="Node Icon"
-                    className="tech-icon"
-                  />
-                  <img
-                    src="./images/icons/express.png"
-                    alt="Express Icon"
-                    className="tech-icon"
-                  />
-                  <img
-                    src="./images/icons/mongodb.png"
-                    alt="MongoDB Icon"
-                    className="tech-icon"
-                  />
-                </p>
+                <details>
+                  <summary>My solution:</summary>
+                  <p>
+                    Client-side made with React.js and deployed through Netlify
+                    and Github pipelines. I built a Node.js Express API that is
+                    hosted on Heroku and a MongoDB database running as an Atlas
+                    cluster.
+                  </p>
+                  <p>
+                    <img
+                      src="./images/icons/react.png"
+                      alt="React Icon"
+                      className="tech-icon"
+                    />
+                    <img
+                      src="./images/icons/node.png"
+                      alt="Node Icon"
+                      className="tech-icon"
+                    />
+                    <img
+                      src="./images/icons/express.png"
+                      alt="Express Icon"
+                      className="tech-icon"
+                    />
+                    <img
+                      src="./images/icons/mongodb.png"
+                      alt="MongoDB Icon"
+                      className="tech-icon"
+                    />
+                  </p>
+                </details>
               </aside>
             </div>
             <div className={`user-panel__info ${!none ? "none" : ""}`}>

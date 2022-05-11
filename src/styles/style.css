@@ -89,15 +89,25 @@ button {
 }
 
 details {
+  margin-bottom: 1rem;
+  padding: 1rem;
   background-color: #e1e1e1;
   border-radius: .5rem;
   cursor: pointer;
-  padding: 1rem;
+}
+
+details:last-child {
+  margin-bottom: 0;
+}
+
+details summary {
+  font-weight: bold;
 }
 
 details p,
 details blockquote {
   cursor: text;
+  margin-top: 1rem;
 }
 
 h1 {

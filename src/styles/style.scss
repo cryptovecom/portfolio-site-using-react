@@ -62,15 +62,26 @@ button {
 }
 
 details {
+  margin-bottom: 1rem;
+  padding: 1rem;
   background-color: rgb(225, 225, 225);
   border-radius: .5rem;
   cursor: pointer;
-  padding: 1rem;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+
+  summary {
+    font-weight: bold;
+  }
 
   p,
   blockquote {
     cursor: text;
+    margin-top: 1rem;
   }
+  
 }
 
 h1 { font-size: var(--h1); }
