@@ -1190,7 +1190,7 @@ header ul li a:focus, header ul li a:hover {
   }
   footer section a {
     border-radius: 0;
-    width: 100%;
+    width: 57vw;
   }
 }
 
