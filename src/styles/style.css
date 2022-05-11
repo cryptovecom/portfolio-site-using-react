@@ -1013,26 +1013,24 @@ footer a:visited {
 }
 
 .dark-mode-button {
+  border: 0.3rem solid var(--color-dark);
+  border-radius: 3rem;
+  padding: 1rem;
   position: fixed;
   bottom: 2rem;
   right: 2rem;
-  border: 0.25rem solid var(--color-dark);
-  border-radius: 2rem;
-  padding: 1rem;
-  -webkit-box-shadow: 0 0 2rem #1e1e1e;
-          box-shadow: 0 0 2rem #1e1e1e;
-  -webkit-transition: var(--speed-fast);
-  transition: var(--speed-fast);
-  z-index: 100;
+  z-index: 10;
+  font-size: var(--h4);
+  -webkit-transition: calc(var(--speed-slow) * 5) ease-out;
+  transition: calc(var(--speed-slow) * 5) ease-out;
 }
 
 .dark-mode-button:hover {
-  background-color: var(--color-blood);
-}
-
-.dark-mode-button:active {
-  -webkit-box-shadow: none;
-          box-shadow: none;
+  background-color: var(--color-orange);
+  -webkit-transform: rotate(360deg);
+          transform: rotate(360deg);
+  -webkit-transition: var(--speed-fast);
+  transition: var(--speed-fast);
 }
 
 .goals {

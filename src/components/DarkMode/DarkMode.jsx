@@ -6,7 +6,7 @@ function darkMode(e) {
 export const DarkMode = () => {
   return (
     <button className="dark-mode-button" onClick={darkMode}>
-      🌙
+      🌓
     </button>
   );
 };

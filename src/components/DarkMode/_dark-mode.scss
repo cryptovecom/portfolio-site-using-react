@@ -7,25 +7,22 @@
 }
 
 .dark-mode-button {
+  border: 0.3rem solid var(--color-dark);
+  border-radius: 3rem;
+  padding: 1rem;
+
   position: fixed;
   bottom: 2rem;
   right: 2rem;
+  z-index: 10;
 
-  border: 0.25rem solid var(--color-dark);
-  border-radius: 2rem;
-  padding: 1rem;
+  font-size: var(--h4);
 
-  box-shadow: 0 0 2rem #1e1e1e;
-
-  transition: var(--speed-fast);
-
-  z-index: 100;
-
+  transition: calc(var(--speed-slow) * 5) ease-out;
+  
   &:hover {
-    background-color: var(--color-blood);
-  }
-
-  &:active {
-    box-shadow: none;
+    background-color: var(--color-orange);
+    transform: rotate(360deg);
+    transition: var(--speed-fast);
   }
 }
