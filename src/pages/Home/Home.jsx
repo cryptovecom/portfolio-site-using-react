@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import Banner from "../../components/Banner";
 import ProgressBar from "../../components/ProgressBar";
 
 export default function Home(props) {
@@ -98,11 +99,7 @@ export default function Home(props) {
           </div>
         </section>
         <section className="photo-3"></section>
-        <section>
-          <div className="info">
-            <h2>This site is under construction 🚧</h2>
-          </div>
-        </section>
+        <Banner text="This site is under construction 🚧" />
       </main>
     </>
   );

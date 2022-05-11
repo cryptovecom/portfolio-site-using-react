@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import ProgressBar from "../../components/ProgressBar";
+import Banner from "../../components/Banner";
 
 function Goals(props) {
   const [goals, setGoals] = useState();
@@ -13,11 +14,7 @@ function Goals(props) {
   return (
     <>
       <ProgressBar />
-      <section style={{ borderTop: "none" }}>
-        <div className="info">
-          <h2>My current course goal progress:</h2>
-        </div>
-      </section>
+      <Banner text="My current course goal progress:" />
       <section className="goals">
         <ul>
           {/* LOOPING THROUGH POSTS IN JSON */}

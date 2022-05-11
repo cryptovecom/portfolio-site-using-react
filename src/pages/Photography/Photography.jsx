@@ -1,4 +1,7 @@
 import ProgressBar from "../../components/ProgressBar";
+
+// COMPONENTS
+import Banner from "../../components/Banner";
 import Section from "../../components/Section";
 
 export default function Photography(props) {
@@ -6,11 +9,7 @@ export default function Photography(props) {
     <>
       <ProgressBar />
       <main>
-        <section className="main-2">
-          <div className="info">
-            <h2>More photos coming soon 🚧</h2>
-          </div>
-        </section>
+        <Banner text="More photos coming soon 🚧" />
         <Section image={1} />
         <Section image={2} />
         <Section image={3} />

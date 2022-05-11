@@ -1,5 +1,8 @@
 import { useEffect, useState } from "react";
 import * as config from "../../config";
+
+// COMPONENTS
+import Banner from "../../components/Banner";
 import ProgressBar from "../../components/ProgressBar";
 
 export default function Streaming() {
@@ -206,11 +209,7 @@ export default function Streaming() {
     <>
       <ProgressBar />
       <main>
-        <section className="main-2">
-          <div className="info">
-            <h2>Audio doesn't work, yet 🚧</h2>
-          </div>
-        </section>
+        <Banner text="Audio doesn't work, yet 🚧" />
         <section>
           {/* LEFT SECTION - LEFT SECTION - LEFT SECTION */}
           <section className="streaming__banner">
