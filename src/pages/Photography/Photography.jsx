@@ -9,11 +9,13 @@ export default function Photography(props) {
     <>
       <ProgressBar />
       <main>
-        <Banner text="More photos coming soon 🚧" />
         <Section page="photo" image={1} />
         <Section page="photo" image={2} />
         <Section page="photo" image={3} />
         <Section page="photo" image={4} />
+        <Section page="photo" image={5} />
+        <Section page="photo" image={"6__rotated"} />
+        <Banner text="More photos coming soon 🚧" />
       </main>
     </>
   );
