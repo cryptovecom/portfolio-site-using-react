@@ -1,0 +1,6 @@
+.photo-5 {
+  @include photo-default;
+
+  background-image: url('../../public/images/vsc.jpg');
+  background-position: center center;
+}
