@@ -585,6 +585,7 @@ main.nvm {
 }
 
 .streaming__main {
+  border-top: 0;
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -868,18 +869,21 @@ main.nvm {
 }
 
 .info-toggle {
-  width: 2.5rem;
+  width: 3rem;
   padding: .5rem;
-  border-radius: 2rem;
+  border: 0.2rem solid var(--color-dark);
+  border-radius: 3rem;
   z-index: 2;
   position: absolute;
   top: -1.75rem;
   left: 1.75rem;
+  -webkit-transition: var(--speed-fast);
+  transition: var(--speed-fast);
 }
 
 .info-toggle:hover {
-  -webkit-box-shadow: -0.3rem 0.3rem 0 #333333;
-          box-shadow: -0.3rem 0.3rem 0 #333333;
+  -webkit-box-shadow: -0.3rem 0.3rem 0 rgba(51, 51, 51, 0.194);
+          box-shadow: -0.3rem 0.3rem 0 rgba(51, 51, 51, 0.194);
 }
 
 .dark-bg {

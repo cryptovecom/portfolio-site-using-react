@@ -29,7 +29,9 @@
 }
 
 .streaming__main {
+  border-top: 0;
   width: 100%;
+
   display: flex;
   flex-direction: column;
   gap: 1rem;
@@ -233,9 +235,10 @@
 }
 
 .info-toggle {
-  width: 2.5rem;
+  width: 3rem;
   padding: .5rem;
-  border-radius: 2rem;
+  border: .2rem solid var(--color-dark);
+  border-radius: 3rem;
 
   z-index: 2;
 
@@ -243,8 +246,11 @@
   top: -1.75rem;
   left: 1.75rem;
 
+  transition: var(--speed-fast);
+
   &:hover {
-    box-shadow: -0.3rem 0.3rem 0 hsl(0, 0%, 20%);
+    box-shadow: -0.3rem 0.3rem 0 rgba(51, 51, 51, 0.194);
+    
   }
 }
 

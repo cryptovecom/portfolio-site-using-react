@@ -210,7 +210,7 @@ export default function Streaming() {
       <ProgressBar />
       <main>
         <Banner text="Wait for audio to load 🥴" />
-        <section>
+        <section className="respond">
           {/* LEFT SECTION - LEFT SECTION - LEFT SECTION */}
           <section className="streaming__banner">
             {/* <section className="rumpa">
