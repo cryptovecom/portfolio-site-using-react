@@ -1,3 +1,5 @@
-export default function Section({ image }) {
-  return <section className={`photo-${image}`}></section>;
+export default function Section({ image, text }) {
+  return (
+    <section className={`photo-${image}`}>{text && <h2>{text}</h2>}</section>
+  );
 }

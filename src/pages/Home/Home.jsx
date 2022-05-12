@@ -1,6 +1,9 @@
 import { Link } from "react-router-dom";
+
+//COMPONENTS
 import Banner from "../../components/Banner";
 import ProgressBar from "../../components/ProgressBar";
+import Section from "../../components/Section/Section";
 
 export default function Home(props) {
   const linkList = props.linkList.map((object, i) => {
@@ -12,12 +15,10 @@ export default function Home(props) {
     <>
       <ProgressBar />
       <main>
-        <section className="photo-1">
-          <h2>
-            Creative generalist exploring consciousness through art and
-            technology.
-          </h2>
-        </section>
+        <Section 
+          image="1" 
+          text="Creative generalist exploring consciousness through art and
+            technology." />
         <section className="respond">
           <section className="banner"></section>
           <section className="link-list">
@@ -76,13 +77,10 @@ export default function Home(props) {
             </ul>
           </section>
         </section>
-        <section className="photo-5">
-          <Link to="/goals">
-            <h2>
-              I am currently studying frontend development at Hyper Island.
-            </h2>
-          </Link>
-        </section>
+        <Section
+          image="5"
+          text="I am currently studying frontend development at Hyper Island."
+        />
         <section>
           <div className="info">
             <a
@@ -98,7 +96,7 @@ export default function Home(props) {
             </a>
           </div>
         </section>
-        <section className="photo-3"></section>
+        <Section image="3" />
         <Banner text="This site is under construction 🚧" />
       </main>
     </>
