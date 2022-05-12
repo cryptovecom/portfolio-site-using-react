@@ -15,10 +15,11 @@ export default function Home(props) {
     <>
       <ProgressBar />
       <main>
-        <Section 
-          image="1" 
+        <Section
+          image="1"
           text="Creative generalist exploring consciousness through art and
-            technology." />
+            technology."
+        />
         <section className="respond">
           <section className="banner"></section>
           <section className="link-list">
@@ -44,6 +45,11 @@ export default function Home(props) {
                       className="tech-icon"
                     />
                   </div>
+                </Link>
+              </li>
+              <li>
+                <Link to="/music" className={`landing-list school-project`}>
+                  <h2>Music</h2>
                 </Link>
               </li>
               <li>

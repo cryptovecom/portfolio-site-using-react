@@ -544,6 +544,70 @@ section.blog-post {
   width: 100%;
 }
 
+.photo-1 {
+  min-height: 89vh;
+  padding: 2rem;
+  background-size: cover;
+  background-image: url("../../public/images/michel.jpg");
+  background-position: center;
+}
+
+.photo-1 h2 {
+  color: var(--color-staticwhite);
+  max-width: 45rem;
+}
+
+.photo-2 {
+  min-height: 89vh;
+  padding: 2rem;
+  background-size: cover;
+  background-image: url("../../public/images/michel2.jpg");
+}
+
+.photo-2 h2 {
+  color: var(--color-staticwhite);
+  max-width: 45rem;
+}
+
+.photo-3 {
+  min-height: 89vh;
+  padding: 2rem;
+  background-size: cover;
+  background-image: url("../../public/images/michel3.jpg");
+  background-position: center top;
+}
+
+.photo-3 h2 {
+  color: var(--color-staticwhite);
+  max-width: 45rem;
+}
+
+.photo-4 {
+  min-height: 89vh;
+  padding: 2rem;
+  background-size: cover;
+  background-image: url("../../public/images/michel4.jpg");
+  background-position: center center;
+}
+
+.photo-4 h2 {
+  color: var(--color-staticwhite);
+  max-width: 45rem;
+}
+
+.photo-5 {
+  min-height: 89vh;
+  padding: 2rem;
+  background-size: cover;
+  background-image: url("../../public/images/vsc.jpg");
+  background-position: center center;
+}
+
+.photo-5 h2 {
+  color: var(--color-staticwhite);
+  max-width: 45rem;
+}
+
 main.nvm {
   background-color: var(--color-white);
 }

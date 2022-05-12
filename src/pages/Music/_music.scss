@@ -1,0 +1,33 @@
+.photo-1 {
+  @include photo-default;
+  
+  background-image: url('../../public/images/michel.jpg');
+  background-position: center;
+}
+
+.photo-2 {
+  @include photo-default;
+
+  background-image: url('../../public/images/michel2.jpg');
+}
+
+.photo-3 {
+  @include photo-default;
+
+  background-image: url('../../public/images/michel3.jpg');
+  background-position: center top;
+}
+
+.photo-4 {
+  @include photo-default;
+
+  background-image: url('../../public/images/michel4.jpg');
+  background-position: center center;
+}
+
+.photo-5 {
+  @include photo-default;
+
+  background-image: url('../../public/images/vsc.jpg');
+  background-position: center center;
+}

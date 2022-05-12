@@ -1,12 +1,15 @@
 import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
+
+//HELPERS
 import {
   birthCalculatorYears,
   birthdayCalculator,
 } from "../../helpers/birthday";
-import ProgressBar from "../../components/ProgressBar";
 
-// BLOG FUNCTION
+//COMPONENTS
+import ProgressBar from "../../components/ProgressBar";
+import Section from "../../components/Section/Section";
 
 export default function Blog() {
   const [posts, setPosts] = useState();
@@ -92,7 +95,7 @@ export default function Blog() {
             </ul>
           </section>
         </section>
-        <section className="photo-4"></section>
+        <Section image="4" />
       </main>
     </>
   );

@@ -13,6 +13,7 @@ import Home from "./pages/Home";
 import Log from "./pages/Log";
 import BlogPost from "./pages/BlogPost";
 import Goals from "./components/Goals";
+import Music from "./pages/Music";
 import Nvm from "./pages/Nvm";
 import Page404 from "./pages/Page404";
 import Photography from "./pages/Photography";
@@ -29,6 +30,7 @@ function App() {
         <Route exact path="/" element={<Home linkList={linkList} />} />
         <Route path="/log" element={<Log />} />
         <Route path="/blog/:post" element={<BlogPost />} />
+        <Route path="/music" element={<Music />} />
         <Route path="/nvm" element={<Nvm />} />
         <Route path="/goals" element={<Goals />} />
         <Route path="/photography" element={<Photography />} />
