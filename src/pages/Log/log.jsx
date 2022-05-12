@@ -26,19 +26,19 @@ export default function Blog() {
       <main>
         <section className="blog__cards">
           <article className="log">
-            <p>A lot changed.</p>
+            <p>Features removed, added &#38; improved.</p>
             <h6>2205</h6>
           </article>
           <article className="log">
-            <p>Content revised and expanded.</p>
+            <p>Site stabilized. 140 commits!</p>
             <h6>2204</h6>
           </article>
           <article className="log">
-            <p>SCSS cleaned up and restructured.</p>
+            <p>Massive SCSS overhaul.</p>
             <h6>2203</h6>
           </article>
           <article className="log">
-            <p>MERN-stack added to explore JS backend tech.</p>
+            <p>Explored backend tech with MERN.</p>
             <h6>2202</h6>
           </article>
           <article className="log">
@@ -56,11 +56,15 @@ export default function Blog() {
             <h6>2201</h6>
           </article>
           <article className="log">
-            <p>Refactored with React.js.</p>
+            <p>Site refactored with React.js.</p>
             <h6>2112</h6>
           </article>
           <article className="log">
-            <p>Created as my first school project.</p>
+            <p>Went into vanilla Javascript.</p>
+            <h6>2110</h6>
+          </article>
+          <article className="log">
+            <p>Started learning HTML &#38; CSS.</p>
             <h6>2109</h6>
           </article>
           <article className="log">
@@ -96,6 +100,21 @@ export default function Blog() {
           </section>
         </section>
         <Section image="4" />
+        <section>
+          <div className="info">
+            <h2>
+              You find me on{" "}
+              <a
+                href="https://twitter.com/micheliseneld"
+                target="_blank"
+                rel="noreferrer"
+              >
+                Twitter
+              </a>{" "}
+              🐦
+            </h2>
+          </div>
+        </section>
       </main>
     </>
   );
