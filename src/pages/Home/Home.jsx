@@ -103,7 +103,7 @@ export default function Home(props) {
             </a>
           </div>
         </section>
-        <Section image="3" />
+        <Section image="15" />
         <Banner text="This site is under construction 🚧" />
       </main>
     </>
