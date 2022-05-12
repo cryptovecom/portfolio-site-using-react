@@ -26,7 +26,7 @@ export default function Home(props) {
             <ul>
               <li>
                 <Link to="/streaming" className={`landing-list school-project`}>
-                  <h2>A useless mern project</h2>
+                  <h2>Audio streaming project</h2>
                   <div style={{ marginLeft: "1rem" }}>
                     <img
                       src="./images/icons/express.png"
