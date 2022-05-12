@@ -24,7 +24,7 @@ export default function Blog() {
     <>
       <ProgressBar />
       <main>
-        <section className="blog__cards">
+        <section className="log__cards">
           <article className="log">
             <p>Features removed, added &#38; improved.</p>
             <h6>2205</h6>

@@ -65,15 +65,11 @@ export default function Music(props) {
         </section>
         <Section page="music" image="ntogn" />
         <Section page="music" image="modular-1" />
-        <Section page="music" image="modular-2" />
-        <Section page="music" image="books-2" />
+        <Section page="music" image="studio-2" />
+        <Section page="music" image="hd800s" />
         <Section page="music" image="hypnus-basel" />
         <Section page="music" image="hypnus-bryssel" />
         <Section page="music" image="hypnus-monument" />
-        <Section page="music" image="studio-3" />
-        <Section page="music" image="studio-2" />
-        <Section page="music" image="hd800s" />
-        <Section page="music" image="modular-3" />
         <section>
           <div className="info">
             <h2>
