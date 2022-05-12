@@ -14,8 +14,10 @@ export default function Photography(props) {
         <Section page="photo" image={20} />
         <Section page="photo" image={15} />
         <Section page="photo" image={14} />
+        {/* <Section page="photo" image={21} /> */}
         <Section page="photo" image={2} />
         <Section page="photo" image={"6__rotated"} />
+        <Section page="photo" image={22} />
         <Section page="photo" image={3} />
         <Section page="photo" image={4} />
         <Section page="photo" image={7} />
@@ -39,8 +41,8 @@ export default function Photography(props) {
                 rel="noreferrer"
               >
                 Instagram
-              </a>
-              !
+              </a>{" "}
+              🖖
             </h2>
           </div>
         </section>
