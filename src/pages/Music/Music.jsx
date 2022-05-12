@@ -8,7 +8,7 @@ export default function Music(props) {
     <>
       <ProgressBar />
       <main>
-        <Section page="music" image="studio" text="Aural dreamweaving." />
+        <Section page="music" image="studio-1" text="Aural dreamweaving." />
         <section className="link-list">
           <ul style={{ borderTop: "1rem solid var(--color-dark)" }}>
             <li>
@@ -64,9 +64,16 @@ export default function Music(props) {
           </ul>
         </section>
         <Section page="music" image="ntogn" />
+        <Section page="music" image="modular-1" />
+        <Section page="music" image="modular-2" />
+        <Section page="music" image="books-2" />
         <Section page="music" image="hypnus" />
-        <Section page="music" image="aethermechanics" />
-        <Banner text="Under construction 🚧" />
+        <Section page="music" image="studio-2" />
+        <Section page="music" image="modular-3" />
+        <Section page="music" image="studio-3" />
+        <Section page="music" image="hd800s" />
+        <Banner text="Jam with Birds ov Paradise" />
+        <Section page="music" image="floghult" />
       </main>
     </>
   );
