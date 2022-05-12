@@ -209,7 +209,7 @@ export default function Streaming() {
     <>
       <ProgressBar />
       <main>
-        <Banner text="Audio doesn't work, yet 🚧" />
+        <Banner text="Wait for audio to load 🥴" />
         <section>
           {/* LEFT SECTION - LEFT SECTION - LEFT SECTION */}
           <section className="streaming__banner">
