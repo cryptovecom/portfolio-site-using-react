@@ -49,7 +49,7 @@ export default function Home(props) {
               </li>
               <li>
                 <Link to="/music" className={`landing-list school-project`}>
-                  <h2>Hear</h2>
+                  <h2>Music</h2>
                 </Link>
               </li>
               <li>
@@ -57,7 +57,7 @@ export default function Home(props) {
                   to="/photography"
                   className={`landing-list school-project`}
                 >
-                  <h2>See</h2>
+                  <h2>Photo</h2>
                 </Link>
               </li>
               {linkList.map((x) => (
