@@ -84,7 +84,8 @@ export default function Home(props) {
           </section>
         </section>
         <Section
-          image="5"
+          page="home"
+          image="vsc"
           text="I am currently studying frontend development at Hyper Island."
         />
         <section>
