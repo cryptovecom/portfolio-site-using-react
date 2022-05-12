@@ -40,7 +40,7 @@ export default function Streaming() {
       _id: `${Date.now()}`,
       artist: `${e.target[0].value}`,
       title: `${e.target[1].value}`,
-      url: `${config.CLIENT_BASE_URL}/audio/${e.target[2].value}.mp3`,
+      url: `/audio/${e.target[2].value}.mp3`,
     };
 
     console.log(`Add: ` + databody._id);
