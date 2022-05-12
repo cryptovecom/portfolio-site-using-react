@@ -103,7 +103,7 @@ export default function Blog() {
         <section>
           <div className="info">
             <h2>
-              You find me on{" "}
+              I'm on{" "}
               <a
                 href="https://twitter.com/micheliseneld"
                 target="_blank"
