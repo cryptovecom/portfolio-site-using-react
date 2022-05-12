@@ -1,5 +1,3 @@
-import { Link } from "react-router-dom";
-
 // COMPONENTS
 import Banner from "../../components/Banner";
 import ProgressBar from "../../components/ProgressBar";
