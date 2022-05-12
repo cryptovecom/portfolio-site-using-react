@@ -10,39 +10,64 @@ export default function Music(props) {
     <>
       <ProgressBar />
       <main>
+        <Section page="music" image="studio" text="Aural dreamweaving." />
         <section className="link-list">
-          <ul>
+          <ul style={{ borderTop: "1rem solid var(--color-dark)" }}>
             <li>
-              <Link to="/music" className={`landing-list school-project`}>
+              <a
+                href="https://aethermechanics.bandcamp.com/"
+                className={`landing-list school-project`}
+                target="_blank"
+                rel="noreferrer"
+              >
                 <h2>Aether Mechanics</h2>
-              </Link>
+              </a>
             </li>
             <li>
-              <Link to="/music" className={`landing-list school-project`}>
+              <a
+                href="https://tomerecords.bandcamp.com/"
+                className={`landing-list school-project`}
+                target="_blank"
+                rel="noreferrer"
+              >
                 <h2>Ntogn</h2>
-              </Link>
+              </a>
             </li>
-            <li>
-              <Link to="/music" className={`landing-list school-project`}>
+            {/* <li>
+              <a
+                href="https://aedirecords.bandcamp.com/"
+                className={`landing-list school-project`}
+                target="_blank"
+                rel="noreferrer"
+              >
                 <h2>Aedi Records</h2>
-              </Link>
-            </li>
+              </a>
+            </li> */}
             <li>
-              <Link to="/music" className={`landing-list school-project`}>
+              <a
+                href="https://hypnus.bandcamp.com/"
+                className={`landing-list school-project`}
+                target="_blank"
+                rel="noreferrer"
+              >
                 <h2>Hypnus Records</h2>
-              </Link>
+              </a>
             </li>
-            <li>
-              <Link to="/music" className={`landing-list school-project`}>
+            {/* <li>
+              <a
+                href="https://kabalion.bandcamp.com/"
+                className={`landing-list school-project`}
+                target="_blank"
+                rel="noreferrer"
+              >
                 <h2>Kabalion Records</h2>
-              </Link>
-            </li>
+              </a>
+            </li> */}
           </ul>
         </section>
-        <Section image={1} text="Ntogn" />
-        <Section image={2} text="Aether Mechanics" />
-        <Section image={3} text="Hypnus Records" />
-        <Section image={4} text="Kabalion" />
+        <Section page="music" image="ntogn" />
+        <Section page="music" image="hypnus" />
+        <Section page="music" image="aethermechanics" />
         <Banner text="Under construction 🚧" />
       </main>
     </>

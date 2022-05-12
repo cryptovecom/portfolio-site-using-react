@@ -26,7 +26,7 @@ export default function Home(props) {
             <ul>
               <li>
                 <Link to="/streaming" className={`landing-list school-project`}>
-                  <h2>Audio streaming project</h2>
+                  <h2>Code</h2>
                   <div style={{ marginLeft: "1rem" }}>
                     <img
                       src="./images/icons/express.png"
@@ -49,7 +49,7 @@ export default function Home(props) {
               </li>
               <li>
                 <Link to="/music" className={`landing-list school-project`}>
-                  <h2>Music</h2>
+                  <h2>Hear</h2>
                 </Link>
               </li>
               <li>
@@ -57,7 +57,7 @@ export default function Home(props) {
                   to="/photography"
                   className={`landing-list school-project`}
                 >
-                  <h2>Photography</h2>
+                  <h2>See</h2>
                 </Link>
               </li>
               {linkList.map((x) => (
