@@ -26,7 +26,7 @@ export default function Home(props) {
             <ul>
               <li>
                 <Link to="/streaming">
-                  <h2>Code</h2>
+                  <h2>Full-stack project</h2>
                   {/* <div style={{ marginLeft: "1rem" }}>
                     <img
                       src="./images/icons/express.png"
