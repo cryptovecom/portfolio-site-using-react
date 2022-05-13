@@ -8,6 +8,7 @@ import {
 } from "../../helpers/birthday";
 
 //COMPONENTS
+import LogPost from "../../components/LogPost";
 import ProgressBar from "../../components/ProgressBar";
 import Section from "../../components/Section/Section";
 
@@ -25,22 +26,10 @@ export default function Blog() {
       <ProgressBar />
       <main>
         <section className="log__cards">
-          <article className="log">
-            <p>Features removed, added &#38; improved.</p>
-            <h6>2205</h6>
-          </article>
-          <article className="log">
-            <p>Site stabilized. 140 commits!</p>
-            <h6>2204</h6>
-          </article>
-          <article className="log">
-            <p>Massive SCSS overhaul.</p>
-            <h6>2203</h6>
-          </article>
-          <article className="log">
-            <p>Explored backend tech with MERN.</p>
-            <h6>2202</h6>
-          </article>
+          <LogPost text="Features removed, added &#38; improved." date="2205" />
+          <LogPost text="Site stabilized. 140 commits!" date="2204" />
+          <LogPost text="Massive SCSS overhaul." date="2203" />
+          <LogPost text="Explored backend tech with MERN." date="2202" />
           <article className="log">
             <p>
               Deployed to Netlify via&nbsp;
@@ -55,18 +44,9 @@ export default function Blog() {
             </p>
             <h6>2201</h6>
           </article>
-          <article className="log">
-            <p>Site refactored with React.js.</p>
-            <h6>2112</h6>
-          </article>
-          <article className="log">
-            <p>Went into vanilla Javascript.</p>
-            <h6>2110</h6>
-          </article>
-          <article className="log">
-            <p>Started learning HTML &#38; CSS.</p>
-            <h6>2109</h6>
-          </article>
+          <LogPost text="Site refactored with React.js." date="2112" />
+          <LogPost text="Went into vanilla Javascript." date="2110" />
+          <LogPost text="Started learning HTML &#38; CSS." date="2109" />
           <article className="log">
             <p>
               I was born <b id="elapsed-days">{birthdayCalculator()}</b> days,
