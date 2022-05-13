@@ -316,24 +316,24 @@ section:nth-child(1) section {
   }
 }
 
-article.log-post {
+article.blog-post {
   padding: 2rem 3rem 2rem 2rem;
   background-color: var(--color-grey);
 }
 
-article.log-post div {
+article.blog-post div {
   max-width: 40rem;
 }
 
-article.log-post h2 {
+article.blog-post h2 {
   margin-bottom: 2rem;
 }
 
-article.log-post h5 {
+article.blog-post h5 {
   margin-bottom: 2rem;
 }
 
-article.log-post img {
+article.blog-post img {
   border: var(--border-size) solid var(--color-dark);
   margin: 1rem 0 0;
   -webkit-transform: translateX(-13rem);
@@ -341,7 +341,7 @@ article.log-post img {
 }
 
 @media all and (max-width: 1023px) {
-  article.log-post img {
+  article.blog-post img {
     width: 100%;
     -webkit-transform: translateX(0px);
             transform: translateX(0px);
@@ -349,7 +349,7 @@ article.log-post img {
   }
 }
 
-section.log-post {
+section.blog-post {
   background-color: var(--color-grey);
   width: 100%;
 }
@@ -447,10 +447,6 @@ section.log-post {
 
 .github-contributions img {
   width: 100%;
-}
-
-main.nvm {
-  background-color: var(--color-white);
 }
 
 .streaming__banner {

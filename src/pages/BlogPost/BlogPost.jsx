@@ -21,8 +21,8 @@ export default function BlogPost() {
       <main>
         <section>
           <section className="banner"></section>
-          <section className="log-post">
-            <article className="log-post">
+          <section className="blog-post">
+            <article className="blog-post">
               {post && (
                 <div>
                   <h2>{post[0].title}</h2>

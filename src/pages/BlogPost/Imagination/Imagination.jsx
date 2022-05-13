@@ -61,7 +61,7 @@ export default function Imagination() {
             called sleep, it somehow goes into a world that is no longer part of
             this materialistic swirling chaos that gave birth to it.
           </p>
-          <p class="where">Where does it go?</p>
+          <p className="where">Where does it go?</p>
           <p>
             Somehow, this swirling mist enters a state where it vibrates in a
             way as to generate internal resonances that evoke worlds within it
