@@ -22,6 +22,11 @@ import Streaming from "./pages/Streaming";
 import Imagination from "./pages/BlogPost/Imagination";
 
 function App() {
+  console.log(
+    "%cEverything is a lesson if you are willing to learn.",
+    "background-color: #ffb532 ; color: #1e1e1e ; font-weight: bold ; padding: 4px ; border-radius: 8px ; margin: 8px ; padding: 8px ;"
+  );
+
   return (
     <>
       <Header />
