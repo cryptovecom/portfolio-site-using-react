@@ -43,14 +43,6 @@
   background: var(--color-dark);
   width: 100%;
 
-    div {
-      display: flex;
-      flex-wrap: wrap;
-      align-items: right;
-      flex-shrink: 1;
-    }
-  }
-
   ul {
     display: grid;
     flex-grow: 1;
@@ -73,7 +65,7 @@
       &:focus,
       &:hover {
         border-radius: 1rem 0 0 1rem;
-        transform: translateX(1.5em);
+        transform: translateX(1rem);
 
         transition:
           transform var(--speed-slow) cubic-bezier(0.28, 0.78, 0.6, 0.93),

@@ -30,16 +30,6 @@ export default function Music(props) {
                 <span>{`>`}</span>
               </a>
             </li>
-            {/* <li>
-              <a
-                href="https://aedirecords.bandcamp.com/"
-                
-                target="_blank"
-                rel="noreferrer"
-              >
-                <h2>Aedi Records</h2>
-              </a>
-            </li> */}
             <li>
               <a
                 href="https://hypnus.bandcamp.com/"
@@ -50,16 +40,6 @@ export default function Music(props) {
                 <span>{`>`}</span>
               </a>
             </li>
-            {/* <li>
-              <a
-                href="https://kabalion.bandcamp.com/"
-                
-                target="_blank"
-                rel="noreferrer"
-              >
-                <h2>Kabalion Records</h2>
-              </a>
-            </li> */}
           </ul>
         </section>
         <Section page="music" image="ntogn" />

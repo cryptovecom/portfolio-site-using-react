@@ -210,33 +210,6 @@ section:nth-child(1) section {
   width: 100%;
 }
 
-.link-list .school-project {
-  background-color: var(--color-white);
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-}
-
-.link-list .school-project div {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-align: right;
-      -ms-flex-align: right;
-          align-items: right;
-  -ms-flex-negative: 1;
-      flex-shrink: 1;
-}
-
 .link-list ul {
   display: -ms-grid;
   display: grid;
@@ -267,8 +240,8 @@ section:nth-child(1) section {
 
 .link-list ul li a:focus, .link-list ul li a:hover {
   border-radius: 1rem 0 0 1rem;
-  -webkit-transform: translateX(1.5em);
-          transform: translateX(1.5em);
+  -webkit-transform: translateX(1rem);
+          transform: translateX(1rem);
   -webkit-transition: border-radius 0.2s, -webkit-transform var(--speed-slow) cubic-bezier(0.28, 0.78, 0.6, 0.93);
   transition: border-radius 0.2s, -webkit-transform var(--speed-slow) cubic-bezier(0.28, 0.78, 0.6, 0.93);
   transition: transform var(--speed-slow) cubic-bezier(0.28, 0.78, 0.6, 0.93), border-radius 0.2s;
