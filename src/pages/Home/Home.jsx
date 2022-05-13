@@ -27,7 +27,7 @@ export default function Home(props) {
               <li>
                 <Link to="/streaming" className={`landing-list school-project`}>
                   <h2>Code</h2>
-                  <div style={{ marginLeft: "1rem" }}>
+                  {/* <div style={{ marginLeft: "1rem" }}>
                     <img
                       src="./images/icons/express.png"
                       alt="Express Icon"
@@ -44,12 +44,14 @@ export default function Home(props) {
                       alt="MongoDB Icon"
                       className="tech-icon"
                     />
-                  </div>
+                  </div> */}
+                  <span>{`>`}</span>
                 </Link>
               </li>
               <li>
                 <Link to="/music" className={`landing-list school-project`}>
                   <h2>Music</h2>
+                  <span>{`>`}</span>
                 </Link>
               </li>
               <li>
@@ -58,18 +60,18 @@ export default function Home(props) {
                   className={`landing-list school-project`}
                 >
                   <h2>Photo</h2>
+                  <span>{`>`}</span>
                 </Link>
               </li>
               {linkList.map((x) => (
                 <li
-                  className={`landing-list`}
                   key={x.id} // KEY PROP ADDED HERE!
                   style={{
                     backgroundImage: `url(./images/${x.img})`,
                   }}
                 >
                   <a href={x.url} target="_blank" rel="noreferrer">
-                    <h2>{x.title} </h2>{" "}
+                    <h2>{x.title} </h2> <span>{`>`}</span>
                     {x.class !== "none" && (
                       <img
                         src={`/images/icons/${x.class}.png`}

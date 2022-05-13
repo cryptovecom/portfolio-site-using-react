@@ -85,6 +85,11 @@
           transform var(--speed-slow) cubic-bezier(0.28, 0.78, 0.6, 0.93),
           border-radius 0.2s;
       }
+
+      span {
+        font-size: var(--h2);
+        font-weight: bold;
+      }
     }
   }
 }

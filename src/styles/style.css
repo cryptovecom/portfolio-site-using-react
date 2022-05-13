@@ -275,6 +275,11 @@ section:nth-child(1) section {
   transition: transform var(--speed-slow) cubic-bezier(0.28, 0.78, 0.6, 0.93), border-radius 0.2s, -webkit-transform var(--speed-slow) cubic-bezier(0.28, 0.78, 0.6, 0.93);
 }
 
+.link-list ul li a span {
+  font-size: var(--h2);
+  font-weight: bold;
+}
+
 .respond {
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
@@ -412,24 +417,24 @@ section:nth-child(1) section {
   margin: 0 1rem;
 }
 
-article.blog-post {
+article.log-post {
   padding: 2rem 3rem 2rem 2rem;
   background-color: var(--color-grey);
 }
 
-article.blog-post div {
+article.log-post div {
   max-width: 40rem;
 }
 
-article.blog-post h2 {
+article.log-post h2 {
   margin-bottom: 2rem;
 }
 
-article.blog-post h5 {
+article.log-post h5 {
   margin-bottom: 2rem;
 }
 
-article.blog-post img {
+article.log-post img {
   border: var(--border-size) solid var(--color-dark);
   margin: 1rem 0 0;
   -webkit-transform: translateX(-13rem);
@@ -437,7 +442,7 @@ article.blog-post img {
 }
 
 @media all and (max-width: 1023px) {
-  article.blog-post img {
+  article.log-post img {
     width: 100%;
     -webkit-transform: translateX(0px);
             transform: translateX(0px);
@@ -445,7 +450,7 @@ article.blog-post img {
   }
 }
 
-section.blog-post {
+section.log-post {
   background-color: var(--color-grey);
   width: 100%;
 }

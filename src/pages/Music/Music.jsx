@@ -18,6 +18,7 @@ export default function Music(props) {
                 rel="noreferrer"
               >
                 <h2>Aether Mechanics</h2>
+                <span>{`>`}</span>
               </a>
             </li>
             <li>
@@ -28,6 +29,7 @@ export default function Music(props) {
                 rel="noreferrer"
               >
                 <h2>Ntogn</h2>
+                <span>{`>`}</span>
               </a>
             </li>
             {/* <li>
@@ -48,6 +50,7 @@ export default function Music(props) {
                 rel="noreferrer"
               >
                 <h2>Hypnus Records</h2>
+                <span>{`>`}</span>
               </a>
             </li>
             {/* <li>
