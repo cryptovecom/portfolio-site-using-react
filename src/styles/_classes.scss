@@ -43,12 +43,6 @@
   background: var(--color-dark);
   width: 100%;
 
-  .school-project {
-    background-color: var(--color-white);
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-
     div {
       display: flex;
       flex-wrap: wrap;
@@ -65,7 +59,7 @@
     li a {
       padding: 2rem;
 
-      background-color: var(--color-grey);
+      background-color: var(--color-white);
       display: flex;
       justify-content: space-between;
       align-items: center;

@@ -13,7 +13,6 @@ export default function Music(props) {
             <li>
               <a
                 href="https://aethermechanics.bandcamp.com/"
-                className={`landing-list school-project`}
                 target="_blank"
                 rel="noreferrer"
               >
@@ -24,7 +23,6 @@ export default function Music(props) {
             <li>
               <a
                 href="https://tomerecords.bandcamp.com/"
-                className={`landing-list school-project`}
                 target="_blank"
                 rel="noreferrer"
               >
@@ -35,7 +33,7 @@ export default function Music(props) {
             {/* <li>
               <a
                 href="https://aedirecords.bandcamp.com/"
-                className={`landing-list school-project`}
+                
                 target="_blank"
                 rel="noreferrer"
               >
@@ -45,7 +43,6 @@ export default function Music(props) {
             <li>
               <a
                 href="https://hypnus.bandcamp.com/"
-                className={`landing-list school-project`}
                 target="_blank"
                 rel="noreferrer"
               >
@@ -56,7 +53,7 @@ export default function Music(props) {
             {/* <li>
               <a
                 href="https://kabalion.bandcamp.com/"
-                className={`landing-list school-project`}
+                
                 target="_blank"
                 rel="noreferrer"
               >

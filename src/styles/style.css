@@ -248,7 +248,7 @@ section:nth-child(1) section {
 
 .link-list ul li a {
   padding: 2rem;
-  background-color: var(--color-grey);
+  background-color: var(--color-white);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;

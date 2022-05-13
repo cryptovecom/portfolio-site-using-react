@@ -86,20 +86,14 @@ export default function Blog() {
               {posts &&
                 posts.map((post) => (
                   <li key={post.id}>
-                    <Link
-                      to={`/blog/${post.page}`}
-                      className={`landing-list school-project`}
-                    >
+                    <Link to={`/blog/${post.page}`}>
                       <h2>{post.title}</h2>
                       <span>{`>`}</span>
                     </Link>
                   </li>
                 ))}
               <li key="imagination-key">
-                <Link
-                  to={`/blog/imagination`}
-                  className={`landing-list school-project`}
-                >
+                <Link to={`/blog/imagination`}>
                   <h2>Imagination is the key</h2>
                   <span>{`>`}</span>
                 </Link>

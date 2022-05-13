@@ -25,7 +25,7 @@ export default function Home(props) {
           <section className="link-list">
             <ul>
               <li>
-                <Link to="/streaming" className={`landing-list school-project`}>
+                <Link to="/streaming">
                   <h2>Code</h2>
                   {/* <div style={{ marginLeft: "1rem" }}>
                     <img
@@ -49,16 +49,13 @@ export default function Home(props) {
                 </Link>
               </li>
               <li>
-                <Link to="/music" className={`landing-list school-project`}>
+                <Link to="/music">
                   <h2>Music</h2>
                   <span>{`>`}</span>
                 </Link>
               </li>
               <li>
-                <Link
-                  to="/photography"
-                  className={`landing-list school-project`}
-                >
+                <Link to="/photography">
                   <h2>Photo</h2>
                   <span>{`>`}</span>
                 </Link>
