@@ -289,7 +289,7 @@ export default function Streaming() {
                     />
                   </p>
                 </details>
-                <details>
+                <details open>
                   <summary>How to use:</summary>
                   <ol>
                     <li>
