@@ -1,4 +1,4 @@
-export function birthdayCalculator() {
+export function durationCalc() {
   let birth = "October 20, 1988 04:40:00 GMT";
   let born = new Date(birth);
   let now = new Date();
@@ -9,8 +9,8 @@ export function birthdayCalculator() {
   return daysSinceBorn;
 }
 
-export function birthCalculatorYears() {
-  let years = birthdayCalculator();
+export function durationCalcYears() {
+  let years = durationCalc();
 
   return parseFloat(years / 365).toFixed(2);
 }

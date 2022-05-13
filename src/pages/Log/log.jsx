@@ -2,10 +2,7 @@ import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 
 //HELPERS
-import {
-  birthCalculatorYears,
-  birthdayCalculator,
-} from "../../helpers/birthday";
+import { durationCalcYears, durationCalc } from "../../helpers/durationCalc";
 
 //COMPONENTS
 import LogPost from "../../components/LogPost";
@@ -49,9 +46,8 @@ export default function Blog() {
           <LogPost text="Started learning HTML &#38; CSS." date="2109" />
           <article className="log">
             <p>
-              I was born <b id="elapsed-days">{birthdayCalculator()}</b> days,
-              or <b id="elapsed-years">{birthCalculatorYears()}</b> years, ago!
-              🧙✨
+              Today is my <b id="elapsed-days">{durationCalc()}</b> day, or{" "}
+              <b id="elapsed-years">{durationCalcYears()}</b> year! 🧙✨
             </p>
             <h6>FYI!</h6>
           </article>
