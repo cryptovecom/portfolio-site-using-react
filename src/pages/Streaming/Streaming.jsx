@@ -220,9 +220,11 @@ export default function Streaming() {
                   : `⚡ Please log in! `}
               </h1>
             </section> */}
-            <button className="info-toggle" onClick={() => setNone(!none)}>
-              {none ? "i" : "♪"}
-            </button>
+            {user && user.role && (
+              <button className="info-toggle" onClick={() => setNone(!none)}>
+                {none ? "i" : "♪"}
+              </button>
+            )}
             <div className={`user-panel__favs ${none ? "none" : ""}`}>
               <aside className="card how-to">
                 <h6>THE BRIEF</h6>
