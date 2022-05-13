@@ -16,6 +16,13 @@ export default function Page404() {
             </h2>
           </div>
         </section>
+        <section
+          className={`photo-section`}
+          style={{
+            backgroundImage: `url(/images//404.png)`,
+            backgroundPosition: "top center",
+          }}
+        ></section>
       </main>
     </>
   );
