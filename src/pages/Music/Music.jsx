@@ -42,25 +42,25 @@ export default function Music(props) {
             </li>
           </ul>
         </section>
-        <Section page="music" image="ntogn" />
         <Section page="music" image="modular-1" />
+        <Section page="music" image="modular-2" />
+        <Section page="music" image="books" />
         <Section page="music" image="studio-2" />
-        <Section page="music" image="hd800s" />
         <Section page="music" image="hypnus-basel" />
         <Section page="music" image="hypnus-bryssel" />
         <Section page="music" image="hypnus-monument" />
         <section>
           <div className="info">
             <h2>
-              I'll teach you at{" "}
+              I'll teach you sound design at{" "}
               <a
                 href="https://www.patreon.com/micheliseneld"
                 target="_blank"
                 rel="noreferrer"
               >
                 Patreon
-              </a>
-              .
+              </a>{" "}
+              🎛️
             </h2>
           </div>
         </section>

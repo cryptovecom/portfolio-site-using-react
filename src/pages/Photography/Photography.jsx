@@ -30,7 +30,6 @@ export default function Photography(props) {
         <Banner text="Canon EF 35/2.0 USM" />
         <Banner text="Canon EF 100/2.8 IS USM " />
         <Section page="photo" image={13} />
-        <Section page="photo" image={10} />
         <section>
           <div className="info">
             <h2>
