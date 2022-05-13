@@ -96,7 +96,7 @@ export default function Home(props) {
               rel="noreferrer"
             >
               <img
-                src="http://ghchart.rshah.org/iseneld"
+                src="https://ghchart.rshah.org/iseneld"
                 alt="My github contributions over the last year"
               />
             </a>
