@@ -86,6 +86,7 @@ export default function Home(props) {
           page="home"
           image="vsc"
           text="I am currently studying frontend development at Hyper Island."
+          height={54}
         />
         <section>
           <div className="info">
