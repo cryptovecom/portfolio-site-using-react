@@ -26,7 +26,7 @@ export default function Home(props) {
             <ul>
               <li>
                 <Link to="/streaming">
-                  <h2>Full-stack project</h2>
+                  <h2>A full-stack project</h2>
                   {/* <div style={{ marginLeft: "1rem" }}>
                     <img
                       src="./images/icons/express.png"
@@ -103,6 +103,7 @@ export default function Home(props) {
             </a>
           </div>
         </section>
+        <Banner text="Fail fast." />
         <Section image="15" />
         <Banner text="This site is under construction 🚧" />
       </main>
