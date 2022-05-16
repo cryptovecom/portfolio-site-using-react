@@ -12,104 +12,105 @@ export default function HiApplication() {
             multiplayer game?
           </h2>
           <p>
+            Picture this: we register to an application from anywhere in the
+            world. It then asks us: What do we want to learn?
+          </p>
+          <p>
             Like Twitter asking us about our interests when registering, so does
             this educational platform, matching us with resources, quizzes,
             tasks, communities and job opportunities—all within the application.
           </p>
           <p>
-            Reality is thus the empirical world that our mind dips into when we
-            are not sleeping.
+            So, we pick a topic, and the app presents a variety of content. If
+            we do not find it interesting, we can go back and try something
+            else. A part of this system’s charm is the opportunity to learn many
+            different things and creating our unique skillset.
           </p>
           <p>
-            Meanwhile, most of us agree that life is more than the objective. In
-            fact, most of what truly matters to us is subjective; our ideas,
-            values, identities, beliefs, opinions, and motivations—all this is
-            in our minds. In our dreams, a boundless landscape where the laws of
-            nature no longer apply. We may think of anything, and it’s right
-            there before our mind’s eye.
+            We then start learning by reading, watching, listening and finishing
+            quizzes and tasks. All this earns us experience points with
+            occasional level-ups that unlock new educational content,
+            assignments and challenges.
           </p>
           <p>
-            Many of us have trouble grasping the concept of infinity, while
-            easily accepting that nothing lies beyond the end of our subjective
-            dreams. Our imagination is simply enclosed in a nothingness from
-            which ideas arise and fall. Like a sound that grows and fades into
-            silence.
-          </p>
-          <p>Vibration and tranquility. Motion and stillness.</p>
-          <blockquote>
-            'Nothing happens until something moves.' ― Albert Einstein
-          </blockquote>
-          <p>
-            Our sciences show that the material world isn’t anything like how we
-            perceive it. Colors, sounds, smells, flavors, and tactile sensations
-            are but truncated interpretations rendered by our body. They’re
-            translations of vast amounts of fluctuating energies that vibrate at
-            astonishing rates into what we experience as an impression of
-            reality.
+            Once our skill level has increased enough on a topic, we can look at
+            the low-level tasks and propose improvements. We submit our
+            suggestions for peer review by other skilled students who may up or
+            downvote. If our suggestion is appreciated, we earn more points and
+            improve the overall education quality.
           </p>
           <p>
-            Reality has laws, such as gravity. 99.9999999% of this world is said
-            to be empty space. By empty, we mean large distances between atoms.
-            Going deeper, it’s been shown that the emptiness isn’t even empty
-            per se but filled with a wide variety of non-atom particles and
-            fields.
+            This way, the system becomes open-source and could be built on a
+            decentralised blockchain system, making it open, neutral and
+            permanent. We would then not need programmes nor degrees. Instead,
+            we could have reward systems, learning paths, achievements and skill
+            levels neatly summarised on our public profile.
           </p>
           <p>
-            If we then consider that our bodies consist of only 0.0000001%
-            conventional matter, energy, that is swirling at bewildering rates.
-            Reality is a porous mist of almost nothing from which a perceiving
-            consciousness emerges.
+            Let us look at a traditional master’s degree. It requires five years
+            of studies with, let us say, 50 weeks of annual activity. That means
+            we go to school for 250 weeks to earn a degree. If we further assume
+            that we must complete ten tasks per week, that adds up to 2500 tasks
+            for a degree.
           </p>
           <p>
-            Then, when this whirlwind goes into the specific vibratory state
-            called sleep, it somehow goes into a world that is no longer part of
-            this materialistic swirling chaos that gave birth to it.
-          </p>
-          <p className="where">Where does it go?</p>
-          <p>
-            Somehow, this swirling mist enters a state where it vibrates in a
-            way as to generate internal resonances that evoke worlds within it
-            that would be impossible beyond it. Something unreal is now being
-            generated and played out by a cloud of energy in reality.
+            In this new platform, education becomes a more nuanced and
+            open-ended learning process. Everything we learn adds continuously
+            to our profile.
           </p>
           <p>
-            How does a vibrating cloud, that adheres to the laws of nature,
-            resonate in such a way as to generate experiences that defy these
-            laws?
+            Jobs are unlocked as we improve our skills. Companies pay us to
+            learn about their product or add paid tasks to a global marketplace.
+            The former can also lead to the latter as they pay us to learn to
+            help them.
           </p>
           <p>
-            The answer to this question is likely trivial. However, what strikes
-            me as profoundly important, is what this means to our relationship
-            to our imagination. It may unlock a more creative way to reason
-            about our conscious experience. Myth becomes ordinary. Synthesizing
-            ideas in our minds and transmitting them to others; is magic. It’s
-            literally spell weaving. We pull realms out of our void and share
-            them in a process that reshapes the physical world.
+            Both local and web-based jobs could be submitted. We build a
+            reputation as an employee by doing a good job and employers by being
+            fair. This system creates a market where meeting the needs of others
+            is central.
           </p>
           <p>
-            That is the essence of alchemy, and it’s atheistic. <br /> Mysticism
-            is the elusive science of our self-aware and creative consciousness.{" "}
-            <br /> Myth is a syntax for grasping the fullness of reality. <br />
-            Our imagination is as vital to reality as anything, and so is the
-            study of its evolution and the development of it for the future.
-          </p>
-          <blockquote>
-            'If the doors of perception were cleansed every thing would appear
-            to man as it is, Infinite. For man has closed himself up, till he
-            sees all things thro' narrow chinks of his cavern.' ― William Blake,
-            The Marriage of Heaven and Hell
-          </blockquote>
-          <p>
-            Humanity is tirelessly pushing to manifest our collective dreams;
-            mirroring ourselves through art and technology. Like angels we swirl
-            in a mental realm of infinite potential, desperately trying to pull
-            reality closer.
+            By issuing transactions with cryptocurrency, anyone in the world
+            could receive funds instantly. All they need to get started is the
+            faintest verbal skill to find the appropriate content that improves
+            and progressively opens their possibilities. This way, young
+            individuals in developing countries could educate themselves and
+            make careers using only a smartphone.
           </p>
           <p>
-            We know that dreams are as real as our love and passion. <br />
-            It’s the only thing that is truly ours.
+            Furthermore, by allowing students to be pseudonymous, there would be
+            no gender or skin colour. Instead, we could show only our knowledge
+            and reputation within the community.
           </p>
-          <p>All we need is to close our eyes, focus, and we’re there.</p>
+          <p>
+            Pseudonymity opens up borderless cooperation without prejudice. As
+            we solve tasks in teams, we share experience points and level up our
+            teamwork stats.
+          </p>
+          <p>
+            Although global networking would be made more accessible, local
+            institutions could still be valuable. Companies such as Hyper Island
+            could provide facilities where users meet, learn and earn together.
+            They could provide their subscribers with lectures, rental gear and
+            an inspiring environment. The education, however, is available for
+            free to anyone through the application.
+          </p>
+          <p>
+            After spending a couple of months, years or decades being active on
+            this application, we would have a public profile that reflects our
+            competence and interests. There is no bottom limit to when someone
+            can start exploring this application.
+          </p>
+          <p>
+            In essence, it would be no different from a regular elementary
+            school or university in terms of what can we teach online.
+          </p>
+          <p>
+            However, instead of keeping the knowledge as a centralized secret
+            for admitted students only, anyone is welcome to learn, teach and
+            earn.
+          </p>
           <p>
             Love and light, <br /> Michel Iseneld
           </p>
