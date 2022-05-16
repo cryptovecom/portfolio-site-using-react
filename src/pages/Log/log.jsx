@@ -58,16 +58,6 @@ export default function Blog() {
           </section>
           <section className="link-list">
             <ul>
-              {/* LOOPING THROUGH POSTS IN JSON */}
-              {posts &&
-                posts.map((post) => (
-                  <li key={post.id}>
-                    <Link to={`/blog/${post.page}`}>
-                      <h2>{post.title}</h2>
-                      <span>{`>`}</span>
-                    </Link>
-                  </li>
-                ))}
               <li key="hi-application">
                 <Link to={`/blog/hi-application`}>
                   <h2>My application to Hyper Island</h2>
@@ -80,6 +70,16 @@ export default function Blog() {
                   <span>{`>`}</span>
                 </Link>
               </li>
+              {/* LOOPING THROUGH POSTS IN JSON */}
+              {posts &&
+                posts.map((post) => (
+                  <li key={post.id}>
+                    <Link to={`/blog/${post.page}`}>
+                      <h2>{post.title}</h2>
+                      <span>{`>`}</span>
+                    </Link>
+                  </li>
+                ))}
             </ul>
           </section>
         </section>
