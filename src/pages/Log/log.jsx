@@ -68,6 +68,12 @@ export default function Blog() {
                     </Link>
                   </li>
                 ))}
+              <li key="hi-application">
+                <Link to={`/blog/hi-application`}>
+                  <h2>My application to Hyper Island</h2>
+                  <span>{`>`}</span>
+                </Link>
+              </li>
               <li key="imagination-key">
                 <Link to={`/blog/imagination`}>
                   <h2>Imagination is the key</h2>

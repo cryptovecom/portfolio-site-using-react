@@ -19,6 +19,7 @@ import Photography from "./pages/Photography";
 import Streaming from "./pages/Streaming";
 
 // BLOG POSTS
+import HiApplication from "./pages/BlogPost/HiApplication";
 import Imagination from "./pages/BlogPost/Imagination";
 
 function App() {
@@ -42,6 +43,7 @@ function App() {
 
         {/* BLOG POSTS */}
         <Route path="/blog/imagination" element={<Imagination />} />
+        <Route path="/blog/hi-application" element={<HiApplication />} />
       </Routes>
       <DarkMode />
       <Footer />
