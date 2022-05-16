@@ -7,7 +7,12 @@ export default function Music(props) {
     <>
       <ProgressBar />
       <main>
-        <Section page="music" image="studio-1" text="Aural dreamweaving." />
+        <Section
+          page="music"
+          image="studio-1"
+          text="Aural dreamweaving."
+          height={59}
+        />
         <section className="link-list">
           <ul style={{ borderTop: "1rem solid var(--color-dark)" }}>
             <li>
