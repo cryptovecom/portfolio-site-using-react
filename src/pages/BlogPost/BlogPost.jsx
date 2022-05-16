@@ -31,7 +31,7 @@ export default function BlogPost() {
                     dangerouslySetInnerHTML={{ __html: post[0].content }}
                   ></div>
                   <p>
-                    <Link to="/blog">Back to blog page</Link>
+                    <Link to="/log">Back to blog page</Link>
                   </p>
                 </div>
               )}
