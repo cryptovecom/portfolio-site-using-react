@@ -1134,7 +1134,7 @@ header ul li a:focus, header ul li a:hover {
   section:nth-child(1), .respond {
     position: -webkit-sticky;
     position: sticky;
-    top: -35rem;
+    top: -55rem;
   }
   section {
     top: 6rem;
