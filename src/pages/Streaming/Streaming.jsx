@@ -7,6 +7,7 @@ import ProgressBar from "../../components/ProgressBar";
 
 export default function Streaming() {
   const [favs, setFavs] = useState([]);
+  const [loading, setLoading] = useState(true);
   const [play, setPlay] = useState({
     id: null,
     playing: false,
@@ -28,6 +29,7 @@ export default function Streaming() {
         }
       );
       const body = await result.json();
+      setLoading(false);
       setTracks(body);
       setSearch(body);
     };
@@ -209,7 +211,6 @@ export default function Streaming() {
     <>
       <ProgressBar />
       <main>
-        <Banner text="Wait for audio to load 🥴" />
         <section className="respond">
           {/* LEFT SECTION - LEFT SECTION - LEFT SECTION */}
           <section className="streaming__banner">
@@ -429,8 +430,8 @@ export default function Streaming() {
                 </form>
               )}
             </div>
-
             <ul className="streaming__results">
+              {loading && <li>Audio loading...</li>}
               {search
                 .sort((a, b) => {
                   if (sort) {
