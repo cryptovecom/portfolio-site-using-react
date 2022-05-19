@@ -6,6 +6,7 @@ export default function HiApplication() {
       <ProgressBar />
       <main id="imagination-main">
         <article>
+          <h6>READ TIME: 3 MIN</h6>
           <h2>Education is not universal.</h2>
           <h2>
             What if we made it more inclusive, like a free open-world online
