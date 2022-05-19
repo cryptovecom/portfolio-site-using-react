@@ -92,7 +92,7 @@ button {
 details {
   margin-bottom: 1rem;
   padding: 1rem;
-  background-color: #e1e1e1;
+  background-color: var(--color-grey);
   border-radius: .5rem;
   cursor: pointer;
 }
@@ -159,8 +159,8 @@ section:nth-child(1) section {
 .card {
   padding: 2rem;
   min-width: 280px;
-  -webkit-transition: 5s;
-  transition: 5s;
+  -webkit-transition: var(--speed-fast);
+  transition: var(--speed-fast);
   background-color: var(--color-white);
 }
 
@@ -867,8 +867,8 @@ section div.info {
   right: 2rem;
   z-index: 10;
   font-size: var(--h4);
-  -webkit-transition: calc(var(--speed-slow) * 5) ease-out;
-  transition: calc(var(--speed-slow) * 5) ease-out;
+  -webkit-transition: var(--speed-slow) ease-out;
+  transition: var(--speed-slow) ease-out;
 }
 
 .dark-mode-button:hover {

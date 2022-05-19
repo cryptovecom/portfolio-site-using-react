@@ -1,7 +1,7 @@
 .card {
   padding: 2rem;
   min-width: 280px;
-  transition: 5s;
+  transition: var(--speed-fast);
 
   background-color: var(--color-white);
 
