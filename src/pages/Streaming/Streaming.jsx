@@ -429,8 +429,12 @@ export default function Streaming() {
                 </form>
               )}
             </div>
+            {loading && (
+              <h3 style={{ color: "white", padding: "1rem" }}>
+                Audio loading...
+              </h3>
+            )}
             <ul className="streaming__results">
-              {loading && <li>Audio loading...</li>}
               {search
                 .sort((a, b) => {
                   if (sort) {
