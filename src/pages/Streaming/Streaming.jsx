@@ -2,7 +2,6 @@ import { useEffect, useState } from "react";
 import * as config from "../../config";
 
 // COMPONENTS
-import Banner from "../../components/Banner";
 import ProgressBar from "../../components/ProgressBar";
 
 export default function Streaming() {
