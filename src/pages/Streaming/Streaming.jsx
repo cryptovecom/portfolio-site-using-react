@@ -383,7 +383,11 @@ export default function Streaming() {
                         value={sort ? "A : Z" : "Z : A"}
                         onClick={sortFn}
                       />
-                      <input type="submit" value="Log out" />
+                      <input
+                        type="submit"
+                        value="Log out"
+                        onClick={() => setNone(!none)}
+                      />
                     </div>
                   </>
                 ) : (
