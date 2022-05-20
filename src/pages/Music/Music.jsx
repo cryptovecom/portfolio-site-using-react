@@ -1,6 +1,5 @@
-import { Link } from "react-router-dom";
-
 // COMPONENTS
+import NavLink from "../../components/NavLink";
 import ProgressBar from "../../components/ProgressBar";
 import Section from "../../components/Section";
 
@@ -17,42 +16,13 @@ export default function Music(props) {
         />
         <section className="link-list">
           <ul style={{ borderTop: "1rem solid var(--color-dark)" }}>
-            <li>
-              <Link to="/music/aethermechanics">
-                <h2>Aether Mechanics</h2>
-                <span>{`>`}</span>
-              </Link>
-            </li>
-            <li>
-              <a
-                href="https://hypnus.bandcamp.com/"
-                target="_blank"
-                rel="noreferrer"
-              >
-                <h2>Hypnus Records</h2>
-                <span>{`>`}</span>
-              </a>
-            </li>
-            <li>
-              <a
-                href="https://tomerecords.bandcamp.com/"
-                target="_blank"
-                rel="noreferrer"
-              >
-                <h2>Ntogn</h2>
-                <span>{`>`}</span>
-              </a>
-            </li>
-            <li>
-              <a
-                href="https://soundcloud.com/hypnus-memoirs"
-                target="_blank"
-                rel="noreferrer"
-              >
-                <h2>The Memoir</h2>
-                <span>{`>`}</span>
-              </a>
-            </li>
+            <NavLink text="Aether Mechanics" to="/music/aethermechanics" />
+            <NavLink text="Hypnus Records" url="https://hypnus.bandcamp.com/" />
+            <NavLink text="Ntogn" url="https://tomerecords.bandcamp.com/" />
+            <NavLink
+              text="The Memoir"
+              url="https://soundcloud.com/hypnus-memoirs"
+            />
           </ul>
         </section>
         <Section page="music" image="modular-1" />
