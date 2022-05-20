@@ -1,4 +1,5 @@
 // COMPONENTS
+import NavLink from "../../../components/NavLink";
 import ProgressBar from "../../../components/ProgressBar";
 import Section from "../../../components/Section";
 
@@ -15,36 +16,18 @@ export default function AetherMechanics(props) {
         />
         <section className="link-list">
           <ul style={{ borderTop: "1rem solid var(--color-dark)" }}>
-            <li>
-              <a
-                href="https://aethermechanics.bandcamp.com/"
-                target="_blank"
-                rel="noreferrer"
-              >
-                <h2>Bandcamp</h2>
-                <span>{`>`}</span>
-              </a>
-            </li>
-            <li>
-              <a
-                href="https://soundcloud.com/aethermechanics"
-                target="_blank"
-                rel="noreferrer"
-              >
-                <h2>Soundcloud</h2>
-                <span>{`>`}</span>
-              </a>
-            </li>
-            <li>
-              <a
-                href="https://music.youtube.com/channel/UCGvPehEP20Gq9VV7R_JXYtQ?feature=share"
-                target="_blank"
-                rel="noreferrer"
-              >
-                <h2>Youtube Music</h2>
-                <span>{`>`}</span>
-              </a>
-            </li>
+            <NavLink
+              text="Bandcamp"
+              url="https://aethermechanics.bandcamp.com"
+            />
+            <NavLink
+              text="Soundcloud"
+              url="https://soundcloud.com/aethermechanics"
+            />
+            <NavLink
+              text="Youtube Music"
+              url="https://music.youtube.com/channel/UCGvPehEP20Gq9VV7R_JXYtQ?feature=share"
+            />
           </ul>
         </section>
         <Section page="music" image="aethermechanics/aether3" />
