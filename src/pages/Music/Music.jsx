@@ -25,6 +25,16 @@ export default function Music(props) {
             </li>
             <li>
               <a
+                href="https://hypnus.bandcamp.com/"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <h2>Hypnus Records</h2>
+                <span>{`>`}</span>
+              </a>
+            </li>
+            <li>
+              <a
                 href="https://tomerecords.bandcamp.com/"
                 target="_blank"
                 rel="noreferrer"
@@ -35,11 +45,11 @@ export default function Music(props) {
             </li>
             <li>
               <a
-                href="https://hypnus.bandcamp.com/"
+                href="https://soundcloud.com/hypnus-memoirs"
                 target="_blank"
                 rel="noreferrer"
               >
-                <h2>Hypnus Records</h2>
+                <h2>The Memoir</h2>
                 <span>{`>`}</span>
               </a>
             </li>
