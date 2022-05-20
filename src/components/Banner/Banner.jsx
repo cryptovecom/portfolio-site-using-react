@@ -1,4 +1,4 @@
-function Banner({ text }) {
+export default function Banner({ text }) {
   return (
     <section>
       <div className="info">
@@ -7,5 +7,3 @@ function Banner({ text }) {
     </section>
   );
 }
-
-export default Banner;
