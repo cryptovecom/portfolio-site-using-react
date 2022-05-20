@@ -4,7 +4,7 @@ import ProgressBar from "../../components/ProgressBar";
 import Banner from "../../components/Banner";
 import Section from "../../components/Section";
 
-export default function Photography(props) {
+export default function Photo(props) {
   return (
     <>
       <ProgressBar />

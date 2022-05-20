@@ -15,7 +15,7 @@ import Goals from "./components/Goals";
 import Music from "./pages/Music";
 import AetherMechanics from "./pages/Music/AetherMechanics";
 import Page404 from "./pages/Page404";
-import Photography from "./pages/Photography";
+import Photo from "./pages/Photo";
 import Streaming from "./pages/Streaming";
 
 // BLOG POSTS
@@ -38,7 +38,7 @@ function App() {
         <Route path="/music" element={<Music />} />
         <Route path="/music/aethermechanics" element={<AetherMechanics />} />
         <Route path="/goals" element={<Goals />} />
-        <Route path="/photography" element={<Photography />} />
+        <Route path="/photo" element={<Photo />} />
         <Route path="/streaming" element={<Streaming />} />
         <Route path="*" element={<Page404 />} />
 
