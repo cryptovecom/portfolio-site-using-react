@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 
-export default function NavLink({ text, url, to }) {
+export default function NavLink({ text, url, to, blob }) {
   if (url) {
     return (
       <li>
@@ -8,6 +8,18 @@ export default function NavLink({ text, url, to }) {
           <h2>{text}</h2>
           <span>{`>`}</span>
         </a>
+      </li>
+    );
+  } else if (blob && to) {
+    return (
+      <li>
+        <Link to={to}>
+          <div>
+            <h2>{text}</h2>
+            <span>{blob}</span>
+          </div>
+          <span>{`>`}</span>
+        </Link>
       </li>
     );
   } else {

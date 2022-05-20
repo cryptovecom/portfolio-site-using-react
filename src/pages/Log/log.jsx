@@ -6,6 +6,7 @@ import { durationCalcYears, durationCalc } from "../../helpers/durationCalc";
 
 //COMPONENTS
 import LogPost from "../../components/LogPost";
+import NavLink from "../../components/NavLink";
 import ProgressBar from "../../components/ProgressBar";
 import Section from "../../components/Section/Section";
 
@@ -58,24 +59,16 @@ export default function Blog() {
           </section>
           <section className="link-list">
             <ul>
-              <li key="hi-application">
-                <Link to={`/blog/hi-application`}>
-                  <div>
-                    <h2>My application to Hyper Island</h2>
-                    <span>3 MIN</span>
-                  </div>
-                  <span>{`>`}</span>
-                </Link>
-              </li>
-              <li key="imagination-key">
-                <Link to={`/blog/imagination`}>
-                  <div>
-                    <h2>Imagination is the key</h2>
-                    <span>3 MIN</span>
-                  </div>
-                  <span>{`>`}</span>
-                </Link>
-              </li>
+              <NavLink
+                text="My application to Hyper Island"
+                to="/blog/hi-application"
+                blob="3 MIN"
+              />
+              <NavLink
+                text="Imagination is the key"
+                to="/blog/imagination"
+                blob="3 MIN"
+              />
               {/* LOOPING THROUGH POSTS IN JSON */}
               {posts &&
                 posts.map((post) => (
