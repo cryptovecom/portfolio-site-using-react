@@ -18,7 +18,7 @@ export default function Home(props) {
           <section className="banner"></section>
           <section className="link-list">
             <ul>
-              <NavLink text="A full-stack project" to="/streaming" />
+              <NavLink text="Code" to="/streaming" />
               <NavLink text="Music" to="/music" />
               <NavLink text="Photo" to="/photo" />
               <NavLink

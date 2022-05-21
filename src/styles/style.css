@@ -850,6 +850,10 @@ section div.info {
   background-color: var(--color-white);
 }
 
+section div.info:hover {
+  cursor: not-allowed;
+}
+
 *.dark-mode {
   --color-white: #1e1e1e;
   --color-blood: #ffb532;
