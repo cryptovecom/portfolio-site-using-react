@@ -22,6 +22,7 @@ export default function Home(props) {
               <NavLink text="Sound" to="/music" />
               <NavLink text="Vision" to="/photo" />
               <NavLink text="Mind" to="/words" />
+              <NavLink text="Me" to="/me" />
             </ul>
           </section>
         </section>
