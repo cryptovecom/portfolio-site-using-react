@@ -12,6 +12,7 @@ import Home from "./pages/Home";
 import Log from "./pages/Log";
 import BlogPost from "./pages/BlogPost";
 import Goals from "./components/Goals";
+import Me from "./pages/Me";
 import Music from "./pages/Music";
 import AetherMechanics from "./pages/Music/AetherMechanics";
 import HypnusRecords from "./pages/Music/HypnusRecords";
@@ -39,6 +40,7 @@ function App() {
         <Route exact path="/" element={<Home />} />
         <Route path="/log" element={<Log />} />
         <Route path="/blog/:post" element={<BlogPost />} />
+        <Route path="/me" element={<Me />} />
         <Route path="/music" element={<Music />} />
         <Route path="/music/aethermechanics" element={<AetherMechanics />} />
         <Route path="/music/hypnusrecords" element={<HypnusRecords />} />

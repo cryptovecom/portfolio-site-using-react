@@ -19,9 +19,9 @@ export default function Home(props) {
           <section className="link-list">
             <ul>
               <NavLink text="Code" to="/streaming" />
-              <NavLink text="Music" to="/music" />
-              <NavLink text="Photo" to="/photo" />
-              <NavLink text="Words" to="/words" />
+              <NavLink text="Sound" to="/music" />
+              <NavLink text="Vision" to="/photo" />
+              <NavLink text="Mind" to="/words" />
             </ul>
           </section>
         </section>
