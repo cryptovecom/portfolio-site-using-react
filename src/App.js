@@ -15,6 +15,7 @@ import Goals from "./components/Goals";
 import Music from "./pages/Music";
 import AetherMechanics from "./pages/Music/AetherMechanics";
 import HypnusRecords from "./pages/Music/HypnusRecords";
+import Ntogn from "./pages/Music/Ntogn";
 import Page404 from "./pages/Page404";
 import Photo from "./pages/Photo";
 import Streaming from "./pages/Streaming";
@@ -39,6 +40,7 @@ function App() {
         <Route path="/music" element={<Music />} />
         <Route path="/music/aethermechanics" element={<AetherMechanics />} />
         <Route path="/music/hypnusrecords" element={<HypnusRecords />} />
+        <Route path="/music/ntogn" element={<Ntogn />} />
         <Route path="/goals" element={<Goals />} />
         <Route path="/photo" element={<Photo />} />
         <Route path="/streaming" element={<Streaming />} />
