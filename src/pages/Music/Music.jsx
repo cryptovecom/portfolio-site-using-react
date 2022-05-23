@@ -12,7 +12,7 @@ export default function Music(props) {
           page="music"
           image="studio-1"
           text="Aural dreamweaving."
-          height={59}
+          height={49}
         />
         <section className="link-list">
           <ul style={{ borderTop: "1rem solid var(--color-dark)" }}>
