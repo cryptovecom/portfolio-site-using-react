@@ -31,7 +31,7 @@ export default function Music(props) {
         <section>
           <div className="info">
             <h2>
-              I'll teach you sound design at{" "}
+              I teach sound design at{" "}
               <a
                 href="https://www.patreon.com/micheliseneld"
                 target="_blank"
