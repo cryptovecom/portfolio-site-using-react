@@ -17,7 +17,7 @@ export default function Music(props) {
         <section className="link-list">
           <ul style={{ borderTop: "1rem solid var(--color-dark)" }}>
             <NavLink text="Aether Mechanics" to="/music/aethermechanics" />
-            <NavLink text="Hypnus Records" url="https://hypnus.bandcamp.com/" />
+            <NavLink text="Hypnus Records" to="/music/hypnusrecords" />
             <NavLink text="Ntogn" url="https://tomerecords.bandcamp.com/" />
             <NavLink
               text="The Memoir"
@@ -29,7 +29,6 @@ export default function Music(props) {
         <Section page="music" image="modular-2" />
         <Section page="music" image="books" />
         <Section page="music" image="studio-2" />
-        <Section page="music" image="hypnus-basel" />
         <Section page="music" image="hypnus-bryssel" />
         <Section page="music" image="hypnus-monument" />
         <section>
