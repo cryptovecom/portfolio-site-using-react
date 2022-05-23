@@ -19,10 +19,7 @@ export default function Music(props) {
             <NavLink text="Aether Mechanics" to="/music/aethermechanics" />
             <NavLink text="Hypnus Records" to="/music/hypnusrecords" />
             <NavLink text="Ntogn" to="/music/ntogn" />
-            <NavLink
-              text="The Memoir"
-              url="https://soundcloud.com/hypnus-memoirs"
-            />
+            <NavLink text="The Memoir" to="/music/thememoir" />
           </ul>
         </section>
         <Section page="music" image="modular-1" />
