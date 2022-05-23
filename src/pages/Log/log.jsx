@@ -1,24 +1,11 @@
-import { useEffect, useState } from "react";
-import { Link } from "react-router-dom";
-
 //HELPERS
 import { durationCalcYears, durationCalc } from "../../helpers/durationCalc";
 
 //COMPONENTS
 import LogPost from "../../components/LogPost";
-import NavLink from "../../components/NavLink";
 import ProgressBar from "../../components/ProgressBar";
-import Section from "../../components/Section/Section";
 
 export default function Blog() {
-  const [posts, setPosts] = useState();
-
-  useEffect(() => {
-    fetch("./data/posts.json")
-      .then((response) => response.json())
-      .then((data) => setPosts(data));
-  }, []);
-
   return (
     <>
       <ProgressBar />
