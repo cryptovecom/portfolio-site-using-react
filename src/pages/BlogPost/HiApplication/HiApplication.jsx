@@ -6,12 +6,38 @@ export default function HiApplication() {
       <ProgressBar />
       <main id="imagination-main">
         <article>
-          <h6>READ TIME: 3 MIN</h6>
+          <h6>Read Time: 3 min • April 1, 2021</h6>
           <h2>Education is not universal.</h2>
           <h2>
             What if we made it more inclusive, like a free open-world online
             multiplayer game?
           </h2>
+          <details>
+            <summary>The brief:</summary>
+            <h4>
+              Your task is to pick a shortcoming in education and redesign it!
+            </h4>
+            <p>
+              What one element could be improved so that students today can
+              become more engaged, curious or stimulated or so that learning in
+              general could include more emotion, purpose, meaning and/or
+              feeling? How could the learning environment be changed to reduce
+              inequality or discrimination? It could be a 5-minute fix that any
+              instructor can incorporate or an entire redesign of the public
+              education system.
+            </p>
+            <ol>
+              <li>Identify a shortcoming that you think you can improve.</li>
+              <li>
+                Once you have identified the shortcoming, explore what you can
+                do to change the status quo and hack it.
+              </li>
+              <li>
+                Create a unique method or solution that actively resolves the
+                shortcoming. Present your solution as your Application Task.
+              </li>
+            </ol>
+          </details>
           <p>
             Picture this: we register to an application from anywhere in the
             world. It then asks us: What do we want to learn?
