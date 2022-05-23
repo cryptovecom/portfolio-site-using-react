@@ -12,12 +12,7 @@ export default function Me(props) {
         <Section page="me" image="meditate" text="" height={79} />
         <Banner text="This is my face." />
         <Section page="me" image="ljus" />
-        <section>
-          <div className="info">
-            <h2>More about me coming soon 🚧</h2>
-          </div>
-        </section>
-        <Banner text="You find me here:" />
+        <Banner text="Find me here:" />
         <section className="link-list">
           <ul style={{ borderTop: "1rem solid var(--color-dark)" }}>
             <NavLink text="Github" url="https://github.com/iseneld" />
@@ -43,6 +38,11 @@ export default function Me(props) {
               url="https://www.vivino.com/users/micheliseneld"
             />
           </ul>
+        </section>
+        <section>
+          <div className="info">
+            <h2>This page is under construction 🚧</h2>
+          </div>
         </section>
       </main>
     </>
