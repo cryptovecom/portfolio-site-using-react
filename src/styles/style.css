@@ -10,6 +10,7 @@
   --color-grey: #d2d2ce;
   --color-orange: #f66c03;
   --color-yellow: #ffb532;
+  --color-shadow: rgba(0, 0, 0, 0.15);
   --base-font-size: 1.25em;
   --type-scale: 1.125;
   /* ^ Major Second Scale */
@@ -90,11 +91,21 @@ button {
 }
 
 details {
-  margin-bottom: 1rem;
+  margin: 1rem 0;
   padding: 1rem;
-  background-color: var(--color-grey);
+  background-color: var(--color-white);
+  border: 0.2rem solid var(--color-dark);
   border-radius: .5rem;
   cursor: pointer;
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+details:hover {
+  -webkit-box-shadow: -0.3rem 0.4rem 0.01rem var(--color-shadow);
+          box-shadow: -0.3rem 0.4rem 0.01rem var(--color-shadow);
+  -webkit-transition: var(--speed-fast);
+  transition: var(--speed-fast);
 }
 
 details:last-child {
@@ -172,8 +183,8 @@ section:nth-child(1) section {
   background-color: var(--color-grey);
   border: 0.2rem solid var(--color-dark);
   border-radius: 0.5rem;
-  -webkit-box-shadow: 0rem 0rem 0.01rem rgba(0, 0, 0, 0.15);
-          box-shadow: 0rem 0rem 0.01rem rgba(0, 0, 0, 0.15);
+  -webkit-box-shadow: 0rem 0rem 0.01rem var(--color-shadow);
+          box-shadow: 0rem 0rem 0.01rem var(--color-shadow);
   color: var(--color-dark);
   -webkit-transition: 1s;
   transition: 1s;

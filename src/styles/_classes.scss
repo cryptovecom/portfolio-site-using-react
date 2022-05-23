@@ -14,7 +14,7 @@
     background-color: var(--color-grey);
     border: .2rem solid var(--color-dark);
     border-radius: 0.5rem;
-    box-shadow: 0rem 0rem .01rem rgba(0, 0, 0, 0.15);
+    box-shadow: 0rem 0rem .01rem var(--color-shadow);
     color: var(--color-dark);
 
     transition: 1s;
