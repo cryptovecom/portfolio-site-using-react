@@ -8,17 +8,16 @@ export default function Music(props) {
     <>
       <ProgressBar />
       <main>
-        <Section
-          page="music"
-          image="studio-1"
-          text="Aural dreamweaving."
-          height={49}
-        />
+        <Section page="music" image="studio-1" text="" height={39} />
         <section className="link-list">
           <ul style={{ borderTop: "1rem solid var(--color-dark)" }}>
             <NavLink text="Aether Mechanics" to="/music/aethermechanics" />
             <NavLink text="Hypnus Records" to="/music/hypnusrecords" />
             <NavLink text="Ntogn" to="/music/ntogn" />
+            <NavLink
+              text="Slink"
+              url="https://www.ableton.com/en/packs/slink-devices/"
+            />
             <NavLink text="The Memoir" to="/music/thememoir" />
           </ul>
         </section>

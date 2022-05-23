@@ -6,7 +6,7 @@ export default function Imagination() {
       <ProgressBar />
       <main id="imagination-main">
         <article>
-          <h6>READ TIME: 3 MIN</h6>
+          <h6>Read Time: 3 min • June 5, 2021</h6>
           <h2>Imagi&shy;nation is the key</h2>
           <p>
             We generally accept that our minds are able to produce dreams as we

@@ -20,6 +20,7 @@ import TheMemoir from "./pages/Music/TheMemoir";
 import Page404 from "./pages/Page404";
 import Photo from "./pages/Photo";
 import Streaming from "./pages/Streaming";
+import Words from "./pages/Words";
 
 // BLOG POSTS
 import HiApplication from "./pages/BlogPost/HiApplication";
@@ -46,6 +47,7 @@ function App() {
         <Route path="/goals" element={<Goals />} />
         <Route path="/photo" element={<Photo />} />
         <Route path="/streaming" element={<Streaming />} />
+        <Route path="/words" element={<Words />} />
         <Route path="*" element={<Page404 />} />
 
         {/* BLOG POSTS */}

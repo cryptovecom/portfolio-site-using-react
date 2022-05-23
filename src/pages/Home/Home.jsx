@@ -21,10 +21,7 @@ export default function Home(props) {
               <NavLink text="Code" to="/streaming" />
               <NavLink text="Music" to="/music" />
               <NavLink text="Photo" to="/photo" />
-              <NavLink
-                text="Slink"
-                url="https://www.ableton.com/en/packs/slink-devices/"
-              />
+              <NavLink text="Words" to="/words" />
             </ul>
           </section>
         </section>

@@ -53,48 +53,18 @@ export default function Blog() {
             <h6>FYI!</h6>
           </article>
         </section>
-        <section className="respond">
-          <section className="banner banner__blog">
-            <h1 className="dragon-text">Free will is an illusion</h1>
-          </section>
-          <section className="link-list">
-            <ul>
-              <NavLink
-                text="My application to Hyper Island"
-                to="/blog/hi-application"
-                blob="3 MIN"
-              />
-              <NavLink
-                text="Imagination is the key"
-                to="/blog/imagination"
-                blob="3 MIN"
-              />
-              {/* LOOPING THROUGH POSTS IN JSON */}
-              {posts &&
-                posts.map((post) => (
-                  <li key={post.id}>
-                    <Link to={`/blog/${post.page}`}>
-                      <h2>{post.title}</h2>
-                      <span>{`>`}</span>
-                    </Link>
-                  </li>
-                ))}
-            </ul>
-          </section>
-        </section>
-        <Section image="4" />
         <section>
           <div className="info">
             <h2>
               I'm on{" "}
               <a
-                href="https://twitter.com/micheliseneld"
+                href="https://github.com/iseneld"
                 target="_blank"
                 rel="noreferrer"
               >
-                Twitter
+                Github
               </a>{" "}
-              🐦
+              🤖
             </h2>
           </div>
         </section>
