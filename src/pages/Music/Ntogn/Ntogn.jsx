@@ -8,10 +8,14 @@ export default function Ntogn(props) {
     <>
       <ProgressBar />
       <main>
-        <Section page="music/ntogn" image="ntogn" text="Ntogn" height={59} />
+        <Section page="music/ntogn" image="ntogn" text="Ntogn" height={49} />
         <section className="link-list">
           <ul style={{ borderTop: "1rem solid var(--color-dark)" }}>
             <NavLink text="Bandcamp" url="https://tomerecords.bandcamp.com/" />
+            <NavLink
+              text="Discogs"
+              url="https://www.discogs.com/artist/3641884-Ntogn"
+            />
             <NavLink text="Soundcloud" url="https://soundcloud.com/ntogn" />
             <NavLink
               text="Youtube Music"
