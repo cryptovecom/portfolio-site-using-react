@@ -11,7 +11,7 @@ export default function AetherMechanics(props) {
         <Section
           page="music"
           image="/aethermechanics/aether1"
-          text="Aether Mechanics"
+          text=""
           height={59}
         />
         <section className="link-list">
