@@ -1,5 +1,6 @@
 :root {
   --progress-width: 0px;
+  --progress-color: 38;
 }
 
 .progress-bar {
@@ -13,7 +14,7 @@
   .progress-bar__progress {
     height: 1.05rem;
     width: var(--progress-width);
-    background-color: var(--color-yellow);
+    background-color: hsl(var(--progress-color), 100%, 60%);
   }
 }
 

@@ -196,7 +196,7 @@ export default function Streaming() {
       <main>
         <section className="respond">
           {/* LEFT SECTION - LEFT SECTION - LEFT SECTION */}
-          <section className="streaming__banner">
+          <section className="streaming__banner" style={{ top: "8.4rem" }}>
             {user && user.role && (
               <button className="info-toggle" onClick={() => setNone(!none)}>
                 {none ? "Info" : "Favourites"}

@@ -826,7 +826,7 @@ section {
   border-top: 1rem solid var(--color-dark);
   position: -webkit-sticky;
   position: sticky;
-  top: 7rem;
+  top: 8.5rem;
   z-index: 2;
 }
 
@@ -1075,6 +1075,7 @@ header ul li a:focus, header ul li a:hover {
 
 :root {
   --progress-width: 0px;
+  --progress-color: 38;
 }
 
 .progress-bar {
@@ -1089,7 +1090,7 @@ header ul li a:focus, header ul li a:hover {
 .progress-bar .progress-bar__progress {
   height: 1.05rem;
   width: var(--progress-width);
-  background-color: var(--color-yellow);
+  background-color: hsl(var(--progress-color), 100%, 60%);
 }
 
 @media screen and (max-width: 414px) {
