@@ -292,6 +292,7 @@ export default function Streaming() {
                 <details open>
                   <summary>How to use:</summary>
                   <ol>
+                    <p>Click a track in the list to play or pause.</p>
                     <li>
                       Enter a username and click <strong>Register</strong>.
                     </li>

@@ -39,21 +39,21 @@ export default function Blog() {
             </p>
             <h6>FYI!</h6>
           </article>
-        </section>
-        <section>
-          <div className="info">
-            <h2>
-              I'm on{" "}
-              <a
-                href="https://github.com/iseneld"
-                target="_blank"
-                rel="noreferrer"
-              >
-                Github
-              </a>{" "}
-              🤖
-            </h2>
-          </div>
+          <section>
+            <div className="info">
+              <h2>
+                I'm on{" "}
+                <a
+                  href="https://github.com/iseneld"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  Github
+                </a>{" "}
+                🤖
+              </h2>
+            </div>
+          </section>
         </section>
       </main>
     </>

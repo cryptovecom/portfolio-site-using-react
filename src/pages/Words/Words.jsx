@@ -27,7 +27,7 @@ export default function Words() {
               />
             </ul>
             <Banner text="I'll gather more thoughts here soon." />
-            <Banner text="Meanwhile; take some risks." />
+            <Banner text="Meanwhile; take some risks in life." />
           </section>
         </section>
         <Section image="4" />
