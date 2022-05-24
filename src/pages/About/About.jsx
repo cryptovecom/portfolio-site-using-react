@@ -9,8 +9,8 @@ export default function Me(props) {
     <>
       <ProgressBar />
       <main>
-        <Section page="me" image="meditate" text="" height={79} />
-        <Banner text="This is my face." />
+        <Section page="me" image="odin" text="" height={79} />
+        <Banner text="This page is under construction 🚧" />
         <Section page="me" image="ljus" />
         <Banner text="Find me here:" />
         <nav className="link-list">

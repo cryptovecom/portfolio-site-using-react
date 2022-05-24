@@ -11,8 +11,7 @@ export default function Home(props) {
       <main>
         <Section
           image="1"
-          text="Creative generalist exploring consciousness through art and
-            technology."
+          text="Creative generalist entrepreneur exploring consciousness through art and technology."
         />
         <section className="respond">
           <section className="banner"></section>
@@ -47,9 +46,15 @@ export default function Home(props) {
             </a>
           </div>
         </section>
-        <Banner text="Fail fast." />
-        <Section image="15" />
-        <Banner text="This site is under construction 🚧" />
+        {/* <Banner text="Fail fast." /> */}
+        <Section page="me" image="hand" height={79} />
+        <Banner text="I am passionate about pulling dreams into reality." />
+        <Section image="15" height={79} />
+        <Banner text="Through the eye." />
+        <Section page="music" image="hd800s" height={79} />
+        <Banner text="Ear." />
+        <Section page="me" image="meditate" height={79} />
+        <Banner text="and Mind." />
       </main>
     </>
   );
