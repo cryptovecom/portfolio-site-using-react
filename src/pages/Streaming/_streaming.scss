@@ -121,12 +121,12 @@
   gap: .25rem;
 
   li {
+    max-height: 5.75rem;
     display: flex;
-    align-items: center;
+    align-items: stretch;
     justify-content: space-between;
 
     button {
-      height: 6rem;
       border: none;
       padding: 0.5rem 1rem;
 
@@ -134,9 +134,7 @@
       flex-wrap: wrap;
       justify-content: space-between;
       align-items: center;
-      gap: 1rem;
 
-      box-shadow: none;
       font-size: var(--h6);
       font-weight: bold;
 
@@ -235,23 +233,14 @@
 }
 
 .info-toggle {
-  width: 3rem;
-  padding: .5rem;
-  border: .2rem solid var(--color-dark);
-  border-radius: 3rem;
+  border: none;
+  padding: 2rem;
+ 
 
-  z-index: 2;
-
-  position: absolute;
-  top: -1.75rem;
-  left: 1.75rem;
-
+  background-color: var(--color-blood);
+  color: var(--color-grey);
+  font-size: var(--h6);
   transition: var(--speed-fast);
-
-  &:hover {
-    @include box-shadow;
-    
-  }
 }
 
 .dark-bg {

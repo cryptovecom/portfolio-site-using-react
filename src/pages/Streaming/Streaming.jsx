@@ -1,9 +1,6 @@
 import { useEffect, useState } from "react";
 import * as config from "../../config";
 
-// COMPONENTS
-import ProgressBar from "../../components/ProgressBar";
-
 export default function Streaming() {
   const [favs, setFavs] = useState([]);
   const [loading, setLoading] = useState(true);
@@ -44,7 +41,6 @@ export default function Streaming() {
       url: `/audio/${e.target[2].value}.mp3`,
     };
 
-    console.log(`Add: ` + databody._id);
     setTracks([...tracks, databody]);
 
     fetch(`${config.API_BASE_URL}/streaming-api/tracks`, {
@@ -57,9 +53,6 @@ export default function Streaming() {
   }
 
   function httpFav(id) {
-    console.log(`User info: `, user);
-    console.log(`favs: `, favs);
-
     if (favs.map((track) => track._id).indexOf(id) === -1) {
       fetch(`${config.API_BASE_URL}/streaming-api/users/${user._id}/fav`, {
         method: "PATCH",
@@ -72,8 +65,6 @@ export default function Streaming() {
       let favTrack = tracks.filter((track) => {
         return track._id === id;
       });
-
-      console.log(`Favtrack: `, favTrack);
 
       setFavs([...favs, ...favTrack]);
     }
@@ -95,8 +86,6 @@ export default function Streaming() {
   }
 
   function httpDelete(id) {
-    console.log(`Delete: ` + id);
-
     let filteredArray = tracks.filter(idFilterer);
 
     function idFilterer(x) {
@@ -115,10 +104,7 @@ export default function Streaming() {
     let buttonValue = e.nativeEvent.submitter.value;
     let textValue = e.nativeEvent.target[0].value;
 
-    console.log(`Text: `, textValue);
-    console.log(`Button: `, buttonValue);
-
-    if (buttonValue === "Login") {
+    if (buttonValue === "Log in") {
       fetch(`${config.API_BASE_URL}/streaming-api/users/${textValue}`, {
         headers: {
           "content-type": "application/json",
@@ -202,27 +188,18 @@ export default function Streaming() {
         btn: null,
         playing: !play.playing,
       });
-      console.log(`Pause: `, play);
     }
   }
 
   return (
     <>
-      <ProgressBar />
       <main>
         <section className="respond">
           {/* LEFT SECTION - LEFT SECTION - LEFT SECTION */}
           <section className="streaming__banner">
-            {/* <section className="rumpa">
-              <h1>
-                {user && user.user
-                  ? `${user.role}: ${user.user}`
-                  : `⚡ Please log in! `}
-              </h1>
-            </section> */}
             {user && user.role && (
               <button className="info-toggle" onClick={() => setNone(!none)}>
-                {none ? "i" : "♪"}
+                {none ? "Info" : "Favourites"}
               </button>
             )}
             <div className={`user-panel__favs ${none ? "none" : ""}`}>
@@ -297,7 +274,7 @@ export default function Streaming() {
                       Enter a username and click <strong>Register</strong>.
                     </li>
                     <li>
-                      Enter your username and click <strong>Login</strong>.
+                      Enter your username and click <strong>Log in</strong>.
                     </li>
                     {user && user.user && (
                       <>
@@ -387,7 +364,7 @@ export default function Streaming() {
                       <input
                         type="submit"
                         value="Log out"
-                        onClick={() => setNone(!none)}
+                        onClick={() => setNone(false)}
                       />
                     </div>
                   </>
@@ -399,7 +376,7 @@ export default function Streaming() {
                       className="searchBar"
                     />
                     <div>
-                      <input type="submit" value="Login" />
+                      <input type="submit" value="Log in" />
                       <input type="submit" value="Register" />
                     </div>
                   </>
