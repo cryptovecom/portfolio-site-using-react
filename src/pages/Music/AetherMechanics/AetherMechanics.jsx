@@ -14,7 +14,7 @@ export default function AetherMechanics(props) {
           text=""
           height={59}
         />
-        <section className="link-list">
+        <nav className="link-list">
           <ul style={{ borderTop: "1rem solid var(--color-dark)" }}>
             <NavLink
               text="Bandcamp"
@@ -29,7 +29,7 @@ export default function AetherMechanics(props) {
               url="https://music.youtube.com/channel/UCGvPehEP20Gq9VV7R_JXYtQ?feature=share"
             />
           </ul>
-        </section>
+        </nav>
         <Section page="music" image="aethermechanics/aether3" />
         <section>
           <div className="info">

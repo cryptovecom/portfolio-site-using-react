@@ -9,7 +9,7 @@ export default function Ntogn(props) {
       <ProgressBar />
       <main>
         <Section page="music/ntogn" image="ntogn" text="" height={49} />
-        <section className="link-list">
+        <nav className="link-list">
           <ul style={{ borderTop: "1rem solid var(--color-dark)" }}>
             <NavLink text="Bandcamp" url="https://tomerecords.bandcamp.com/" />
             <NavLink
@@ -22,7 +22,7 @@ export default function Ntogn(props) {
               url="https://music.youtube.com/channel/UCsoEC0nREkeuQOjqdyXSVFg?feature=share"
             />
           </ul>
-        </section>
+        </nav>
         <Section page="music/ntogn" image="utopia" />
         <section>
           <div className="info">

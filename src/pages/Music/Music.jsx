@@ -9,7 +9,7 @@ export default function Music(props) {
       <ProgressBar />
       <main>
         <Section page="music" image="studio-1" text="" height={39} />
-        <section className="link-list">
+        <nav className="link-list">
           <ul style={{ borderTop: "1rem solid var(--color-dark)" }}>
             <NavLink text="Aether Mechanics" to="/music/aethermechanics" />
             <NavLink text="Hypnus Records" to="/music/hypnusrecords" />
@@ -20,7 +20,7 @@ export default function Music(props) {
             />
             <NavLink text="The Memoir" to="/music/thememoir" />
           </ul>
-        </section>
+        </nav>
         <Section page="music" image="modular-1" />
         <Section page="music" image="modular-2" />
         <Section page="music" image="books" />

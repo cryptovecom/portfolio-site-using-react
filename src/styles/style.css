@@ -220,6 +220,7 @@ section:nth-child(1) section {
           flex-direction: column;
   background: var(--color-dark);
   width: 100%;
+  z-index: 2;
 }
 
 .link-list ul {

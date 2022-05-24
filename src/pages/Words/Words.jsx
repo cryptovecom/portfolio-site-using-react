@@ -14,18 +14,20 @@ export default function Words() {
             <h1 className="dragon-text">Free will is an illusion</h1>
           </section>
           <section className="link-list">
-            <ul>
-              <NavLink
-                text="My application to Hyper Island"
-                to="/blog/hi-application"
-                blob="3 MIN"
-              />
-              <NavLink
-                text="Imagination is the key"
-                to="/blog/imagination"
-                blob="3 MIN"
-              />
-            </ul>
+            <nav>
+              <ul>
+                <NavLink
+                  text="My application to Hyper Island"
+                  to="/blog/hi-application"
+                  blob="3 MIN"
+                />
+                <NavLink
+                  text="Imagination is the key"
+                  to="/blog/imagination"
+                  blob="3 MIN"
+                />
+              </ul>
+            </nav>
             <Banner text="I'll gather more thoughts here soon." />
             <Banner text="Meanwhile; take some risks in life." />
           </section>

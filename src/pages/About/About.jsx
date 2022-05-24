@@ -13,7 +13,7 @@ export default function Me(props) {
         <Banner text="This is my face." />
         <Section page="me" image="ljus" />
         <Banner text="Find me here:" />
-        <section className="link-list">
+        <nav className="link-list">
           <ul style={{ borderTop: "1rem solid var(--color-dark)" }}>
             <NavLink text="Github" url="https://github.com/iseneld" />
             <NavLink
@@ -42,7 +42,7 @@ export default function Me(props) {
               url="https://www.vivino.com/users/micheliseneld"
             />
           </ul>
-        </section>
+        </nav>
         <section>
           <div className="info">
             <h2>This page is under construction 🚧</h2>

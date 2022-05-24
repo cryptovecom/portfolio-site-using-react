@@ -16,15 +16,15 @@ export default function Home(props) {
         />
         <section className="respond">
           <section className="banner"></section>
-          <section className="link-list">
+          <nav className="link-list">
             <ul>
               <NavLink text="Code" to="/streaming" />
               <NavLink text="Sound" to="/music" />
               <NavLink text="Photography" to="/photo" />
               <NavLink text="Thoughts" to="/words" />
-              <NavLink text="About me" to="/me" />
+              <NavLink text="About me" to="/about" />
             </ul>
-          </section>
+          </nav>
         </section>
         <Section
           page="home"

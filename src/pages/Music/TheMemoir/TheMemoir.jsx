@@ -9,7 +9,7 @@ export default function TheMemoir(props) {
       <ProgressBar />
       <main>
         <Section page="music/thememoir" image="2020" text="" height={59} />
-        <section className="link-list">
+        <nav className="link-list">
           <ul style={{ borderTop: "1rem solid var(--color-dark)" }}>
             <NavLink
               text="Soundcloud"
@@ -20,7 +20,7 @@ export default function TheMemoir(props) {
               url="https://youtube.com/playlist?list=PLkgFfDkt471WvjPNrswaGkfvKf2MwwRVO"
             />
           </ul>
-        </section>
+        </nav>
         <section>
           <div className="info">
             <h2>

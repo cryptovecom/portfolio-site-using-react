@@ -9,7 +9,7 @@ export default function HypnusRecords(props) {
       <ProgressBar />
       <main>
         <Section page="music/hypnusrecords" image="tejp" text="" height={39} />
-        <section className="link-list">
+        <nav className="link-list">
           <ul style={{ borderTop: "1rem solid var(--color-dark)" }}>
             <NavLink text="Bandcamp" url="https://hypnus.bandcamp.com/" />
             <NavLink
@@ -26,7 +26,7 @@ export default function HypnusRecords(props) {
               url="https://music.youtube.com/playlist?list=PLkgFfDkt471UKw84HV0EKW-_W0FLPRsaZ&feature=share"
             />
           </ul>
-        </section>
+        </nav>
         <Section page="music" image="hypnus-basel" />
         <section>
           <div className="info">

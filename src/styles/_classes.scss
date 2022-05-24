@@ -43,6 +43,8 @@
   background: var(--color-dark);
   width: 100%;
 
+  z-index: 2;
+
   ul {
     display: grid;
     flex-grow: 1;
