@@ -17,6 +17,10 @@ export default function Me(props) {
           <ul style={{ borderTop: "1rem solid var(--color-dark)" }}>
             <NavLink text="Github" url="https://github.com/iseneld" />
             <NavLink
+              text="Goodreads"
+              url="https://www.goodreads.com/user/show/15854773-michel-iseneld"
+            />
+            <NavLink
               text="Instagram"
               url="https://www.instagram.com/micheliseneld/"
             />
