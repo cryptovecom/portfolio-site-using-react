@@ -183,8 +183,6 @@ section:nth-child(1) section {
   background-color: var(--color-grey);
   border: 0.2rem solid var(--color-dark);
   border-radius: 0.5rem;
-  -webkit-box-shadow: 0rem 0rem 0.01rem var(--color-shadow);
-          box-shadow: 0rem 0rem 0.01rem var(--color-shadow);
   color: var(--color-dark);
   -webkit-transition: 1s;
   transition: 1s;
@@ -196,9 +194,9 @@ section:nth-child(1) section {
 }
 
 .card:hover h6 {
+  -webkit-box-shadow: -0.3rem 0.4rem 0.01rem var(--color-shadow);
+          box-shadow: -0.3rem 0.4rem 0.01rem var(--color-shadow);
   background-color: var(--color-white);
-  -webkit-box-shadow: -0.3rem 0.4rem 0.01rem rgba(0, 0, 0, 0.15);
-          box-shadow: -0.3rem 0.4rem 0.01rem rgba(0, 0, 0, 0.15);
   -webkit-transition: var(--speed-fast);
   transition: var(--speed-fast);
 }
@@ -820,8 +818,8 @@ section.blog-post {
 }
 
 .info-toggle:hover {
-  -webkit-box-shadow: -0.3rem 0.3rem 0 rgba(51, 51, 51, 0.194);
-          box-shadow: -0.3rem 0.3rem 0 rgba(51, 51, 51, 0.194);
+  -webkit-box-shadow: -0.3rem 0.4rem 0.01rem var(--color-shadow);
+          box-shadow: -0.3rem 0.4rem 0.01rem var(--color-shadow);
 }
 
 .dark-bg {

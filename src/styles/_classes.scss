@@ -14,7 +14,6 @@
     background-color: var(--color-grey);
     border: .2rem solid var(--color-dark);
     border-radius: 0.5rem;
-    box-shadow: 0rem 0rem .01rem var(--color-shadow);
     color: var(--color-dark);
 
     transition: 1s;
@@ -24,8 +23,8 @@
     transition: var(--speed-fast);
 
     h6 {
+      @include box-shadow;
       background-color: var(--color-white);
-      box-shadow: -0.3rem 0.4rem .01rem rgba(0, 0, 0, 0.15);
       transition: var(--speed-fast);
     }
   }
