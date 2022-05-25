@@ -9,10 +9,7 @@ export default function Home(props) {
     <>
       <ProgressBar />
       <main>
-        <Section
-          image="1"
-          text="Creative generalist entrepreneur exploring consciousness through art and technology."
-        />
+        <Section image="1" text="Creative generalist entrepreneur." />
         <section className="respond">
           <section className="banner"></section>
           <nav className="link-list">
@@ -48,13 +45,13 @@ export default function Home(props) {
         </section>
         {/* <Banner text="Fail fast." /> */}
         <Section page="me" image="hand" height={79} />
-        <Banner text="I am passionate about pulling dreams into reality." />
-        <Section image="15" height={79} />
-        <Banner text="Through the eye." />
+        <Banner text="Pulling dreams into reality." />
+        <Section page="me" image="meditate" height={79} />
+        <Banner text="Mind." />
         <Section page="music" image="hd800s" height={79} />
         <Banner text="Ear." />
-        <Section page="me" image="meditate" height={79} />
-        <Banner text="and Mind." />
+        <Section image="15" height={79} />
+        <Banner text="&#38; Eye." />
       </main>
     </>
   );
