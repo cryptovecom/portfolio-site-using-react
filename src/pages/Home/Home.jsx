@@ -46,12 +46,12 @@ export default function Home(props) {
         {/* <Banner text="Fail fast." /> */}
         <Section page="me" image="hand" height={79} />
         <Banner text="Pulling dreams into reality." />
-        <Section page="me" image="meditate" height={79} />
-        <Banner text="Mind." />
+        <Section image="15" height={79} />
+        <Banner text=" Eye." />
         <Section page="music" image="hd800s" height={79} />
         <Banner text="Ear." />
-        <Section image="15" height={79} />
-        <Banner text="&#38; Eye." />
+        <Section page="me" image="meditate" height={79} />
+        <Banner text="&#38; Mind." />
       </main>
     </>
   );
