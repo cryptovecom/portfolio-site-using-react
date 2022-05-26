@@ -9,7 +9,7 @@ export default function AetherMechanics(props) {
     <>
       <ProgressBar />
       <main>
-        <Banner text="A sci-fi novel, written with music." />
+        <Banner text="A musical space opera." />
         <Section
           page="music"
           image="/aethermechanics/aether1"
