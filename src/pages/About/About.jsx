@@ -1,7 +1,6 @@
 // COMPONENTS
 import Banner from "../../components/Banner";
 import NavLink from "../../components/NavLink";
-import ProgressBar from "../../components/ProgressBar";
 import Section from "../../components/Section";
 
 export default function Me(props) {
