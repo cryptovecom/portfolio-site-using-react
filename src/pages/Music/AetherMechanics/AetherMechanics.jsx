@@ -1,4 +1,5 @@
 // COMPONENTS
+import Banner from "../../../components/Banner";
 import NavLink from "../../../components/NavLink";
 import ProgressBar from "../../../components/ProgressBar";
 import Section from "../../../components/Section";
@@ -8,11 +9,12 @@ export default function AetherMechanics(props) {
     <>
       <ProgressBar />
       <main>
+        <Banner text="A sci-fi novel, written with music." />
         <Section
           page="music"
           image="/aethermechanics/aether1"
           text=""
-          height={59}
+          height={49}
         />
         <nav className="link-list">
           <ul style={{ borderTop: "1rem solid var(--color-dark)" }}>
@@ -31,6 +33,10 @@ export default function AetherMechanics(props) {
           </ul>
         </nav>
         <Section page="music" image="aethermechanics/aether3" />
+        <Banner text="Modular synthesis." />
+        <Section page="music" image="modular-3" height={79} />
+        <Banner text="Field recordings of old machines." />
+        <Section page="music" image="studio-2" height={79} />
         <section>
           <div className="info">
             <h2>Under construction 🚧</h2>
