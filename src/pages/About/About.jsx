@@ -9,7 +9,7 @@ export default function Me(props) {
       <main>
         <Section page="me" image="odin" text="" height={79} />
         <Banner text="This page is under construction 🚧" />
-        <Section page="me" image="ljus" />
+        <Section page="me" image="ljus" height={79} />
         <Banner text="Find me here:" />
         <nav className="link-list">
           <ul style={{ borderTop: "1rem solid var(--color-dark)" }}>

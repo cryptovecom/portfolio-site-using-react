@@ -11,7 +11,7 @@ export default function Home(props) {
       <main>
         <Section
           image="1"
-          text="Creative generalist exploring consciousness through are and technology."
+          text="Creative generalist exploring consciousness through art and technology."
         />
         <section className="respond">
           <section className="banner"></section>
@@ -20,7 +20,7 @@ export default function Home(props) {
               <NavLink text="Code" to="/streaming" />
               <NavLink text="Sound" to="/music" />
               <NavLink text="Sight" to="/photo" />
-              <NavLink text="Thought" to="/words" />
+              <NavLink text="Words" to="/words" />
             </ul>
           </nav>
         </section>
@@ -49,11 +49,11 @@ export default function Home(props) {
         <Section page="me" image="hand" height={79} />
         <Banner text="Dreams are real." />
         <Section image="15" height={79} />
-        <Banner text=" Nurtured by the eye." />
+        <Banner text="They are nurtured by the eye." />
         <Section page="music" image="hd800s" height={79} />
         <Banner text="Ear." />
         <Section page="me" image="meditate" height={79} />
-        <Banner text="Synthesized in the mind." />
+        <Banner text="Synthesized in our minds." />
         <Section page="music" image="hypnusrecords/zodiac" height={79} />
         <Banner text="Then we create." />
         <Section page="music" image="books-2" height={79} />
