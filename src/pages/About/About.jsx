@@ -7,7 +7,6 @@ import Section from "../../components/Section";
 export default function Me(props) {
   return (
     <>
-      <ProgressBar />
       <main>
         <Section page="me" image="odin" text="" height={79} />
         <Banner text="This page is under construction 🚧" />
@@ -15,6 +14,10 @@ export default function Me(props) {
         <Banner text="Find me here:" />
         <nav className="link-list">
           <ul style={{ borderTop: "1rem solid var(--color-dark)" }}>
+            <NavLink
+              text="Facebook"
+              url="https://www.facebook.com/micheliseneld/"
+            />
             <NavLink text="Github" url="https://github.com/iseneld" />
             <NavLink
               text="Goodreads"
@@ -43,11 +46,6 @@ export default function Me(props) {
             />
           </ul>
         </nav>
-        <section>
-          <div className="info">
-            <h2>This page is under construction 🚧</h2>
-          </div>
-        </section>
       </main>
     </>
   );
