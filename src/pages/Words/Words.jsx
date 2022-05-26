@@ -9,6 +9,10 @@ export default function Words() {
     <>
       <ProgressBar />
       <main>
+        <Banner text="You are not experiencing. You are the experience." />
+        <Banner text="Sanity is a matter of degree." />
+        <Banner text="The best way to predict the future is to create it." />
+        <Banner text="Negativity is easy. Optimism is creative." />
         <section className="respond">
           <section className="banner banner__blog">
             <h1 className="dragon-text">Free will is an illusion</h1>

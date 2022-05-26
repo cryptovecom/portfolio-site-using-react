@@ -1,7 +1,9 @@
-export default function Banner({ text }) {
+export default function Banner({ text, stylez }) {
   return (
     <section>
-      <div className="info">{text && <h2>{text}</h2>}</div>
+      <div className="info" style={stylez}>
+        {text && <h2>{text}</h2>}
+      </div>
     </section>
   );
 }
