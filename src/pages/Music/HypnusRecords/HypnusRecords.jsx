@@ -1,4 +1,5 @@
 // COMPONENTS
+import Banner from "../../../components/Banner";
 import NavLink from "../../../components/NavLink";
 import ProgressBar from "../../../components/ProgressBar";
 import Section from "../../../components/Section";
@@ -8,6 +9,7 @@ export default function HypnusRecords(props) {
     <>
       <ProgressBar />
       <main>
+        <Banner text="Psychedelic deep techno record label." />
         <Section page="music/hypnusrecords" image="tejp" text="" height={39} />
         <nav className="link-list">
           <ul style={{ borderTop: "1rem solid var(--color-dark)" }}>
@@ -27,10 +29,12 @@ export default function HypnusRecords(props) {
             />
           </ul>
         </nav>
-        <Section page="music" image="hypnus-basel" />
+        <Section page="music" image="hypnus-basel" height={79} />
+        <Banner text="Founded by me in 2013." />
+        <Banner text="Releasing every full moon." />
         <section>
           <div className="info">
-            <h2>Under construction 🚧</h2>
+            <h2>This page is uder construction 🚧</h2>
           </div>
         </section>
       </main>
