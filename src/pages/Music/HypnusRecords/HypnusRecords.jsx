@@ -30,7 +30,7 @@ export default function HypnusRecords(props) {
           </ul>
         </nav>
         <Section page="music" image="hypnus-basel" height={79} />
-        <Banner text="Founded by me in 2013." />
+        <Banner text="Founded in 2013." />
         <Banner text="Releasing every full moon." />
         <section>
           <div className="info">

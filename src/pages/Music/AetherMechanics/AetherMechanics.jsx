@@ -33,9 +33,9 @@ export default function AetherMechanics(props) {
           </ul>
         </nav>
         <Section page="music" image="aethermechanics/aether3" />
-        <Banner text="Modular synthesis." />
+        <Banner text="Made by modular." />
         <Section page="music" image="modular-3" height={79} />
-        <Banner text="Field recordings of old machines." />
+        <Banner text="Mechanical field recordings." />
         <Section page="music" image="studio-2" height={79} />
         <section>
           <div className="info">

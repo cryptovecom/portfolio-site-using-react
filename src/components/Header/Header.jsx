@@ -8,7 +8,11 @@ export default function Header() {
         <nav>
           <ul>
             <li>
-              <Link to="/log">Log</Link>
+              <Link to="/streaming">🤖</Link>
+              <Link to="/log"> </Link>
+              <Link to="/music">👂</Link>
+              <Link to="/photo">👁️</Link>
+              <Link to="/words">🧠</Link>
             </li>
           </ul>
         </nav>
