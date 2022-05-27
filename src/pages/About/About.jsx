@@ -13,6 +13,7 @@ export default function Me(props) {
         <Banner text="Find me here:" />
         <nav className="link-list">
           <ul style={{ borderTop: "1rem solid var(--color-dark)" }}>
+            <NavLink text="Archidekt" url="https://archidekt.com/user/130955" />
             <NavLink
               text="Facebook"
               url="https://www.facebook.com/micheliseneld/"
@@ -29,6 +30,10 @@ export default function Me(props) {
             <NavLink
               text="Linkedin"
               url="https://www.linkedin.com/in/micheliseneld/"
+            />
+            <NavLink
+              text="Modulargrid"
+              url="https://www.modulargrid.net/e/users/view/157916"
             />
             <NavLink
               text="Patreon"
