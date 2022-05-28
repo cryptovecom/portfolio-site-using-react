@@ -39,7 +39,7 @@ export default function AetherMechanics(props) {
         <Section page="music" image="studio-2" height={79} />
         <section>
           <div className="info">
-            <h2>Under construction 🚧</h2>
+            <h2>This page is under construction 🚧</h2>
           </div>
         </section>
       </main>

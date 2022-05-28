@@ -26,7 +26,7 @@ export default function Ntogn(props) {
         <Section page="music/ntogn" image="utopia" />
         <section>
           <div className="info">
-            <h2>Under construction 🚧</h2>
+            <h2>This page is under construction 🚧</h2>
           </div>
         </section>
       </main>

@@ -1,7 +1,19 @@
 import { Link } from "react-router-dom";
 
 export default function NavLink({ text, url, to, blob }) {
-  if (url) {
+  if (url && blob) {
+    return (
+      <li>
+        <a href={url} target="_blank" rel="noreferrer">
+          <div>
+            <h2>{text}</h2>
+            <span>{blob}</span>
+          </div>
+          <span>{`>`}</span>
+        </a>
+      </li>
+    );
+  } else if (url) {
     return (
       <li>
         <a href={url} target="_blank" rel="noreferrer">

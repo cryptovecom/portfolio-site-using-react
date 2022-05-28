@@ -34,7 +34,7 @@ export default function HypnusRecords(props) {
         <Banner text="Releasing every full moon." />
         <section>
           <div className="info">
-            <h2>This page is uder construction 🚧</h2>
+            <h2>This page is under construction 🚧</h2>
           </div>
         </section>
       </main>

@@ -10,18 +10,19 @@ export default function Words() {
       <ProgressBar />
       <main>
         <Banner
-          text="Read slowly."
+          text="Read slow."
           stylez={{
             backgroundColor: "var(--color-blood)",
             color: "var(--color-white)",
           }}
         />
+
         <Banner text="You are not experiencing. You are the experience." />
         {/* <Banner text="Sanity is a matter of degree." /> */}
         <Banner text="The best way to predict the future is to create it." />
         <Banner text="Negativity is easy. Optimism is creative." />
         <Banner
-          text="Slowly."
+          text="Fail fast."
           stylez={{
             backgroundColor: "var(--color-yellow)",
           }}
@@ -48,21 +49,7 @@ export default function Words() {
           </section>
         </section>
         <Section image="4" />
-        <section>
-          <div className="info">
-            <h2>
-              I'm on{" "}
-              <a
-                href="https://twitter.com/micheliseneld"
-                target="_blank"
-                rel="noreferrer"
-              >
-                Twitter
-              </a>{" "}
-              🐦
-            </h2>
-          </div>
-        </section>
+        <Banner text="Fail fast." />
       </main>
     </>
   );
