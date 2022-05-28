@@ -42,6 +42,11 @@ export default function AetherMechanics(props) {
             <h2>This page is under construction 🚧</h2>
           </div>
         </section>
+        <nav className="link-list">
+          <ul style={{ borderTop: "1rem solid var(--color-dark)" }}>
+            <NavLink text="Go back" to="/music" />
+          </ul>
+        </nav>
       </main>
     </>
   );

@@ -1,4 +1,5 @@
 // COMPONENTS
+import Banner from "../../../components/Banner";
 import NavLink from "../../../components/NavLink";
 import ProgressBar from "../../../components/ProgressBar";
 import Section from "../../../components/Section";
@@ -8,6 +9,7 @@ export default function Ntogn(props) {
     <>
       <ProgressBar />
       <main>
+        <Banner text="Sonic spells and roaring dragons." />
         <Section page="music/ntogn" image="ntogn" text="" height={49} />
         <nav className="link-list">
           <ul style={{ borderTop: "1rem solid var(--color-dark)" }}>
@@ -29,6 +31,11 @@ export default function Ntogn(props) {
             <h2>This page is under construction 🚧</h2>
           </div>
         </section>
+        <nav className="link-list">
+          <ul style={{ borderTop: "1rem solid var(--color-dark)" }}>
+            <NavLink text="Go back" to="/music" />
+          </ul>
+        </nav>
       </main>
     </>
   );

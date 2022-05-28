@@ -16,17 +16,7 @@ export default function Words() {
             color: "var(--color-white)",
           }}
         />
-
-        <Banner text="You are not experiencing. You are the experience." />
         {/* <Banner text="Sanity is a matter of degree." /> */}
-        <Banner text="The best way to predict the future is to create it." />
-        <Banner text="Negativity is easy. Optimism is creative." />
-        <Banner
-          text="Fail fast."
-          stylez={{
-            backgroundColor: "var(--color-yellow)",
-          }}
-        />
         <section className="respond">
           <section className="banner banner__blog">
             <h1 className="dragon-text">Free will is an illusion</h1>
@@ -37,17 +27,28 @@ export default function Words() {
                 <NavLink
                   text="My application to Hyper Island"
                   to="/blog/hi-application"
-                  blob="3 MIN"
+                  blob="BLOG: 3 MIN"
                 />
                 <NavLink
                   text="Imagination is the key"
                   to="/blog/imagination"
-                  blob="3 MIN"
+                  blob="BLOG: 3 MIN"
                 />
               </ul>
             </nav>
           </section>
         </section>
+        <Banner text="You are not experiencing. You are the experience." />
+        <Banner text="The best way to predict the future is to create it." />
+        <Banner text="Negativity is easy. Optimism is creative." />
+        <Banner text="Innovation can only happen at the speed of trust." />
+        <Banner text="Iteration outperforms design." />
+        <Banner
+          text="Fail fast."
+          stylez={{
+            backgroundColor: "var(--color-grey)",
+          }}
+        />
         <Section image="4" />
         <Banner text="Fail fast." />
       </main>

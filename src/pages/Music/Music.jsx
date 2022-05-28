@@ -22,7 +22,7 @@ export default function Music(props) {
             <NavLink
               text="Slink"
               url="https://www.ableton.com/en/packs/slink-devices/"
-              blob="NEW TAB"
+              blob="ABLETON.COM"
             />
             <NavLink text="The Memoir" to="/music/thememoir" />
           </ul>

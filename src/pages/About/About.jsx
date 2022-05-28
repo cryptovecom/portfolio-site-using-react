@@ -10,7 +10,13 @@ export default function Me(props) {
         <Section page="me" image="odin" text="" height={79} />
         <Banner text="This page is under construction 🚧" />
         <Section page="me" image="ljus" height={79} />
-        <Banner text="Find me here:" />
+        <Banner
+          text="Find me here:"
+          stylez={{
+            backgroundColor: "var(--color-blood)",
+            color: "var(--color-white)",
+          }}
+        />
         <nav className="link-list">
           <ul style={{ borderTop: "1rem solid var(--color-dark)" }}>
             <NavLink text="Archidekt" url="https://archidekt.com/user/130955" />
@@ -51,7 +57,7 @@ export default function Me(props) {
           </ul>
         </nav>
         <Banner
-          text="My favourite yellow is #FFB532 🌻"
+          text=" #FFB532 💖"
           stylez={{
             backgroundColor: "var(--color-yellow)",
           }}

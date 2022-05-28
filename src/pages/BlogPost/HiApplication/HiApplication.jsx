@@ -1,3 +1,4 @@
+// COMPONENTS
 import ProgressBar from "../../../components/ProgressBar";
 
 export default function HiApplication() {
