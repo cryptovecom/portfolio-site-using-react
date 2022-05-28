@@ -58,7 +58,7 @@ export default function Words() {
         />
         <Section image="4" height={79} />
         <Banner
-          text="Read slowly."
+          text="Slow down."
           stylez={{
             backgroundColor: "var(--color-blood)",
             color: "var(--color-white)",
