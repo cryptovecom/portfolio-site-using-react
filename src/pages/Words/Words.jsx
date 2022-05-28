@@ -49,7 +49,7 @@ export default function Words() {
         <Banner text="Progress is propelled by problems. " />
         <Banner text="Being wrong means you've grown." />
         <Banner text="All mistakes can be good mistakes, if you learn." />
-        <Banner text="Take risks." />
+        <Banner text="No risk, no story." />
         <Banner
           text="Fail fast."
           stylez={{
@@ -74,19 +74,21 @@ export default function Words() {
         <Banner text="Honor is an underrated virtue." />
         <Banner text="Make promises and keep them." />
         <Banner
-          text="Think."
+          text="What am I trying to say?"
           stylez={{
             backgroundColor: "var(--color-blood)",
             color: "var(--color-white)",
           }}
         />
-        <Banner text="Nature doesn't care about anything that matters to us. " />
+        <Banner text="Nature doesn't care about what matters to us. " />
         <Banner text="The universe is an answer. The question is science." />
-        <Banner text="Imagination makes us human. " />
+        <Banner text="Imagination makes us human." />
         <Banner text="Everything we hold dear sprouts from our imagination." />
+        <Banner text="Imagination is a miracle." />
         <Banner text="Consciousness is controlled hallucination." />
         <Banner text="Attention is psychedelic." />
-        <Banner text="What is the difference between authenticity and insanity?" />
+        <Banner text="What's the difference between authenticity and insanity?" />
+        <Banner text="We adapt to function." />
         <Banner text="Sanity is a matter of degree." />
         {/* <Banner text="Norms are societal narcotics." /> */}
         {/* <Banner text="The only way to make sense is to be insane." /> */}
