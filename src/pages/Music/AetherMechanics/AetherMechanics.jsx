@@ -37,11 +37,10 @@ export default function AetherMechanics(props) {
         <Section page="music" image="modular-3" height={79} />
         <Banner text="Mechanical field recordings." />
         <Section page="music" image="studio-2" height={79} />
-        <section>
-          <div className="info">
-            <h2>This page is under construction 🚧</h2>
-          </div>
-        </section>
+        <Banner
+          text="This page is under construction 🚧"
+          stylez={{ backgroundColor: "var(--color-yellow)" }}
+        />
         <nav className="link-list">
           <ul style={{ borderTop: "1rem solid var(--color-dark)" }}>
             <NavLink text="Go back" to="/music" />

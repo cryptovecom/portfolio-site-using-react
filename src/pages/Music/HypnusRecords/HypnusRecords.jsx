@@ -30,13 +30,11 @@ export default function HypnusRecords(props) {
           </ul>
         </nav>
         <Section page="music" image="hypnus-basel" height={79} />
-        <Banner text="Founded in 2013." />
-        <Banner text="Releasing every full moon." />
-        <section>
-          <div className="info">
-            <h2>This page is under construction 🚧</h2>
-          </div>
-        </section>
+        <Banner text="Releasing every full moon since 2013." />
+        <Banner
+          text="This page is under construction 🚧"
+          stylez={{ backgroundColor: "var(--color-yellow)" }}
+        />
         <nav className="link-list">
           <ul style={{ borderTop: "1rem solid var(--color-dark)" }}>
             <NavLink text="Go back" to="/music" />

@@ -39,11 +39,10 @@ export default function TheMemoir(props) {
           </div>
         </section>
         <Section page="music/thememoir" image="2020-b" />
-        <section>
-          <div className="info">
-            <h2>This page is under construction 🚧</h2>
-          </div>
-        </section>
+        <Banner
+          text="This page is under construction 🚧"
+          stylez={{ backgroundColor: "var(--color-yellow)" }}
+        />
         <nav className="link-list">
           <ul style={{ borderTop: "1rem solid var(--color-dark)" }}>
             <NavLink text="Go back" to="/music" />

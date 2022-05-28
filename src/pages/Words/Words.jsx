@@ -50,7 +50,6 @@ export default function Words() {
           }}
         />
         <Section image="4" />
-        <Banner text="Fail fast." />
       </main>
     </>
   );

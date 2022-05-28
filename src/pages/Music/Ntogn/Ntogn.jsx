@@ -26,11 +26,10 @@ export default function Ntogn(props) {
           </ul>
         </nav>
         <Section page="music/ntogn" image="utopia" />
-        <section>
-          <div className="info">
-            <h2>This page is under construction 🚧</h2>
-          </div>
-        </section>
+        <Banner
+          text="This page is under construction 🚧"
+          stylez={{ backgroundColor: "var(--color-yellow)" }}
+        />
         <nav className="link-list">
           <ul style={{ borderTop: "1rem solid var(--color-dark)" }}>
             <NavLink text="Go back" to="/music" />
