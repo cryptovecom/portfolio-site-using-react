@@ -49,7 +49,11 @@ export default function Words() {
             backgroundColor: "var(--color-grey)",
           }}
         />
-        <Section image="4" />
+        <Section image="4" height={79} />
+        <Banner
+          text="This page is under construction 🚧"
+          stylez={{ backgroundColor: "var(--color-yellow)" }}
+        />
       </main>
     </>
   );
