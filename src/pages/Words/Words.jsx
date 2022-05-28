@@ -39,10 +39,10 @@ export default function Words() {
           </section>
         </section>
         <Banner text="You are not experiencing. You are the experience." />
-        <Banner text="The best way to predict the future is to create it." />
-        <Banner text="Negativity is easy. Optimism is creative." />
         <Banner text="Innovation can only happen at the speed of trust." />
         <Banner text="Iteration outperforms design." />
+        <Banner text="The best way to predict the future is to create it." />
+        <Banner text="Take risks." />
         <Banner
           text="Fail fast."
           stylez={{

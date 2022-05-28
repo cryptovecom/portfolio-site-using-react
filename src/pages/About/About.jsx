@@ -3,12 +3,23 @@ import Banner from "../../components/Banner";
 import NavLink from "../../components/NavLink";
 import Section from "../../components/Section";
 
+// HELPERS
+import { durationCalcYears, durationCalc } from "../../helpers/durationCalc";
+
 export default function Me(props) {
   return (
     <>
       <main>
-        <Section page="me" image="odin" text="" height={79} />
-        <Banner text="This page is under construction 🚧" />
+        <section>
+          <div className="info">
+            <h2>
+              I was born <b id="elapsed-days">{durationCalc()}</b> days ago. That's {" "}
+              <b id="elapsed-years">{durationCalcYears()}</b> years! 🧙✨
+            </h2>
+          </div>
+        </section>
+        <Section page="me" image="odin" text="" height={69} />
+        <Banner text="Page under construction 🚧" />
         <Section page="me" image="ljus" height={79} />
         <Banner
           text="Find me here:"
