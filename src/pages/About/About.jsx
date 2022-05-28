@@ -13,13 +13,13 @@ export default function Me(props) {
         <section>
           <div className="info">
             <h2>
-              I was born <b id="elapsed-days">{durationCalc()}</b> days ago. That's {" "}
-              <b id="elapsed-years">{durationCalcYears()}</b> years! 🧙✨
+              I was born <b id="elapsed-days">{durationCalc()}</b> days ago.
+              That's <b id="elapsed-years">{durationCalcYears()}</b> years! 🧙✨
             </h2>
           </div>
         </section>
         <Section page="me" image="odin" text="" height={69} />
-        <Banner text="Page under construction 🚧" />
+        <Banner text="I embrace what can be proven and wonder with bewilderment at that which can not. " />
         <Section page="me" image="ljus" height={79} />
         <Banner
           text="Find me here:"

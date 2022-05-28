@@ -38,10 +38,12 @@ export default function Words() {
             </nav>
           </section>
         </section>
-        <Banner text="You are not experiencing. You are the experience." />
-        <Banner text="Innovation can only happen at the speed of trust." />
+        <Banner text="You're not experiencing. You are the experience." />
+        <Banner text="Creativity brings order to chaos." />
+        <Banner text="Innovation happens at the speed of trust." />
         <Banner text="Iteration outperforms design." />
-        <Banner text="The best way to predict the future is to create it." />
+        <Banner text="The surest way to predict the future is to create it." />
+        <Banner text="Consistency compounds." />
         <Banner text="Take risks." />
         <Banner
           text="Fail fast."
@@ -50,10 +52,12 @@ export default function Words() {
           }}
         />
         <Section image="4" height={79} />
-        <Banner
-          text="This page is under construction 🚧"
-          stylez={{ backgroundColor: "var(--color-yellow)" }}
-        />
+        <Banner text="There is no free will. We do not control, we react." />
+        <Banner text="Natural does not mean good." />
+        <Banner text="Nature is an answer. Science is the question." />
+        <Banner text="Reality is meaningless. Meaning arises from the mind." />
+        <Banner text="Chosen suffering creates meaning. Sacrifice." />
+        <Banner text="Honor is a virtue." />
       </main>
     </>
   );
