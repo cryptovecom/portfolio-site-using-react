@@ -63,6 +63,7 @@ export default function Words() {
           }}
         />
         <Banner text="Identify with your ignorance." />
+        <Banner text="Knowledge is limited. Ignorance is boundless." />
         <Banner text="Determinism cures hatred." />
         <Banner text="There is no free will." />
         <Banner text="We do not control, we react." />
