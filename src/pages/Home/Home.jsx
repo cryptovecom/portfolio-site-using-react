@@ -31,7 +31,7 @@ export default function Home(props) {
         <Section
           page="home"
           image="vsc"
-          text="I am currently studying frontend development at Hyper Island."
+          text="I'm studying frontend development at Hyper Island."
           height={69}
         />
         <Banner text="A sensory being." />
