@@ -986,17 +986,33 @@ header a {
   text-decoration: none;
 }
 
-header ul li a {
-  padding: 2rem 2rem 2rem 0.3rem;
-  color: var(--color-blood);
-  text-decoration: underline;
-  -webkit-transition: color var(--speed-fast);
-  transition: color var(--speed-fast);
+header ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
-header ul li a:focus, header ul li a:hover {
+header ul li:last-child {
+  margin-right: 2rem;
+}
+
+header ul li a {
+  border-radius: 3rem;
+  padding: .5rem;
+  color: var(--color-blood);
+  -webkit-transition: var(--speed-slow);
+  transition: var(--speed-slow);
+}
+
+header ul li a:hover {
+  background-color: var(--color-generally);
   color: var(--color-dark);
   text-decoration: none;
+  -webkit-transition: var(--speed-fast);
+  transition: var(--speed-fast);
 }
 
 .log__cards {

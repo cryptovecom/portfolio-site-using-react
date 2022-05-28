@@ -20,18 +20,32 @@ header {
     text-decoration: none;
   }
 
-  ul li a {
-    padding: 2rem 2rem 2rem 0.3rem;
+  ul {
+    display: flex;
+    align-items: center;
 
-    color: var(--color-blood);
-    text-decoration: underline;
+    li {
+      &:last-child {
+        margin-right: 2rem;
+        }
 
-    transition: color var(--speed-fast);
+      a {
+        border-radius: 3rem;
+        padding: .5rem;
 
-    &:focus,
-    &:hover {
-      color: var(--color-dark);
-      text-decoration: none;
+        color: var(--color-blood);
+        // text-decoration: underline;
+
+        transition: var(--speed-slow);
+
+        &:hover {
+          background-color: var(--color-generally);
+          color: var(--color-dark);
+          text-decoration: none;
+
+          transition: var(--speed-fast);
+        }
+      }
     }
   }
 }
