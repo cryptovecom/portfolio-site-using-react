@@ -16,7 +16,6 @@ export default function Words() {
             color: "var(--color-white)",
           }}
         />
-        {/* <Banner text="Sanity is a matter of degree." /> */}
         <section className="respond">
           <section className="banner banner__blog">
             <h1 className="dragon-text">Free will is an illusion</h1>
@@ -45,7 +44,6 @@ export default function Words() {
         <Banner text="Innovation happens at the speed of trust." />
         <Banner text="Iteration outperforms design." />
         <Banner text="Consistency compounds." />
-        {/* <Banner text="Make progress, not perfect." /> */}
         <Banner text="Progress is propelled by problems. " />
         <Banner text="Being wrong means you've grown." />
         <Banner text="All mistakes can be good mistakes, if you learn." />
@@ -90,11 +88,6 @@ export default function Words() {
         <Banner text="What's the difference between authenticity and insanity?" />
         <Banner text="We adapt to function." />
         <Banner text="Sanity is a matter of degree." />
-        {/* <Banner text="Norms are societal narcotics." /> */}
-        {/* <Banner text="The only way to make sense is to be insane." /> */}
-        {/* <Banner text="Social media drama is transfat for the mind. " /> */}
-        {/* <Banner text="Freedom of speech improves our ability to think." /> */}
-        {/* <Banner text="Cancel culture is a virus to open discussions." /> */}
       </main>
     </>
   );
