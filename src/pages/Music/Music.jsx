@@ -8,7 +8,12 @@ export default function Music(props) {
     <>
       <ProgressBar />
       <main>
-        <Section page="music" image="studio-1" text="" height={39} />
+        <Section
+          page="music"
+          image="studio-1"
+          text="Listen closely."
+          height={39}
+        />
         <nav className="link-list">
           <ul style={{ borderTop: "1rem solid var(--color-dark)" }}>
             <NavLink text="Aether Mechanics" to="/music/aethermechanics" />

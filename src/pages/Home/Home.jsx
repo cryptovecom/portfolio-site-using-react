@@ -13,12 +13,6 @@ export default function Home(props) {
           image="1"
           text="A creative generalist exploring consciousness through art and technology."
         />
-        <Section
-          page="home"
-          image="vsc"
-          text="I am currently studying frontend development at Hyper Island."
-          height={54}
-        />
         <section>
           <div className="info">
             <a
@@ -34,6 +28,12 @@ export default function Home(props) {
             </a>
           </div>
         </section>
+        <Section
+          page="home"
+          image="vsc"
+          text="I am currently studying frontend development at Hyper Island."
+          height={54}
+        />
         {/* <Banner text="Fail fast." /> */}
         <Section page="me" image="hand" height={79} />
         <Banner text="Imagination is reality." />
