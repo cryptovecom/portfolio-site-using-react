@@ -10,21 +10,50 @@ export default function Music(props) {
       <main>
         <Section
           page="music"
-          image="studio-1"
-          text="Listen closely."
-          height={39}
+          image="/hypnusrecords/geonosis"
+          text="Curated."
+          height={59}
         />
         <nav className="link-list">
           <ul style={{ borderTop: "1rem solid var(--color-dark)" }}>
+            <NavLink
+              text="Hypnus Records"
+              blob="RECORD LABEL"
+              to="/music/hypnusrecords"
+            />
+            <NavLink text="The Memoir" blob="PODCAST" to="/music/thememoir" />
+          </ul>
+        </nav>
+        <Section page="music" image="studio-1" text="Created." height={59} />
+        <nav className="link-list">
+          <ul style={{ borderTop: "1rem solid var(--color-dark)" }}>
             <NavLink text="Aether Mechanics" to="/music/aethermechanics" />
-            <NavLink text="Hypnus Records" to="/music/hypnusrecords" />
             <NavLink text="Ntogn" to="/music/ntogn" />
+          </ul>
+        </nav>
+        <Section
+          page="music"
+          image="/max4live/slink"
+          text="Designed."
+          height={49}
+        />
+        <nav className="link-list">
+          <ul style={{ borderTop: "1rem solid var(--color-dark)" }}>
+            <NavLink
+              text="Calculus"
+              url="https://hypnusrecords.com/shop/p/calculus"
+              blob="PLUG-IN"
+            />
             <NavLink
               text="Slink"
               url="https://www.ableton.com/en/packs/slink-devices/"
-              blob="ABLETON.COM"
+              blob="PLUG-IN"
             />
-            <NavLink text="The Memoir" to="/music/thememoir" />
+            <NavLink
+              text="The Spellbook"
+              url="https://hypnusrecords.com/shop/p/spellbook"
+              blob="PLUG-IN"
+            />
           </ul>
         </nav>
         <Section page="music" image="modular-1" />
