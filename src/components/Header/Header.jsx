@@ -8,16 +8,19 @@ export default function Header() {
         <nav>
           <ul>
             <li>
-              {/* <Link to="/log"> </Link> */}
-              {/* <Link to="/streaming">🤖</Link> */}
-              <Link to="/music">👂</Link>
-            </li>
-            <li>
               <Link to="/photo">👁️</Link>
             </li>
             <li>
+              <Link to="/music">👂</Link>
+            </li>
+
+            <li>
               <Link to="/words">🧠</Link>
             </li>
+            <li>
+              <Link to="/streaming">🤖</Link>
+            </li>
+            {/* <li><Link to="/log"> </Link></li> */}
           </ul>
         </nav>
       </header>

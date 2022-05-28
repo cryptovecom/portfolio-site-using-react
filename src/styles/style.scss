@@ -47,7 +47,6 @@ a:visited {
 
   transition: color var(--speed-fast);
 
-  &:focus,
   &:hover {
     color: var(--color-blood);
     text-decoration: none;
