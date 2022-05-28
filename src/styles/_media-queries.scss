@@ -34,6 +34,10 @@
     --base-font-size: 1rem;
   }
 
+  header ul li:last-child {
+    margin-right: 0rem;
+  }
+
   main {
     top: 0;
     position: relative;

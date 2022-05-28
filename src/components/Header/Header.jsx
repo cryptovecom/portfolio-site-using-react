@@ -17,9 +17,9 @@ export default function Header() {
             <li>
               <Link to="/words">🧠</Link>
             </li>
-            <li>
+            {/* <li>
               <Link to="/streaming">🤖</Link>
-            </li>
+            </li> */}
             {/* <li><Link to="/log"> </Link></li> */}
           </ul>
         </nav>

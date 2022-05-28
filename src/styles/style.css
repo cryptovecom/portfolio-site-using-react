@@ -1110,7 +1110,7 @@ header ul li a:hover {
   background-color: hsl(var(--progress-color), 100%, 60%);
 }
 
-@media screen and (max-width: 414px) {
+@media screen and (max-width: 32rem) {
   .progress-bar {
     top: 6.1rem;
   }
@@ -1163,9 +1163,12 @@ header ul li a:hover {
   }
 }
 
-@media all and (max-width: 414px) {
+@media all and (max-width: 32rem) {
   :root {
     --base-font-size: 1rem;
+  }
+  header ul li:last-child {
+    margin-right: 0rem;
   }
   main {
     top: 0;
