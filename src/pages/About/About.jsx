@@ -52,7 +52,9 @@ export default function Me(props) {
         </nav>
         <Banner
           text="My favourite yellow is #FFB532 🌻"
-          stylez={{ backgroundColor: "#FFB532" }}
+          stylez={{
+            backgroundColor: "var(--color-yellow)",
+          }}
         />
       </main>
     </>

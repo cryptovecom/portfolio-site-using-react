@@ -9,8 +9,15 @@ export default function Words() {
     <>
       <ProgressBar />
       <main>
+        <Banner
+          text="Read slowly."
+          stylez={{
+            backgroundColor: "var(--color-blood)",
+            color: "var(--color-white)",
+          }}
+        />
         <Banner text="You are not experiencing. You are the experience." />
-        <Banner text="Sanity is a matter of degree." />
+        {/* <Banner text="Sanity is a matter of degree." /> */}
         <Banner text="The best way to predict the future is to create it." />
         <Banner text="Negativity is easy. Optimism is creative." />
         <section className="respond">
