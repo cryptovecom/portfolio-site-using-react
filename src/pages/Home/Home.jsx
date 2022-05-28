@@ -11,19 +11,8 @@ export default function Home(props) {
       <main>
         <Section
           image="1"
-          text="Creative generalist exploring consciousness through art and technology."
+          text="A creative generalist exploring consciousness through art and technology."
         />
-        <section className="respond">
-          <section className="banner"></section>
-          <nav className="link-list">
-            <ul>
-              <NavLink text="Code" to="/streaming" />
-              <NavLink text="Sound" to="/music" />
-              <NavLink text="Light" to="/photo" />
-              <NavLink text="Mind" to="/words" />
-            </ul>
-          </nav>
-        </section>
         <Section
           page="home"
           image="vsc"
@@ -47,16 +36,27 @@ export default function Home(props) {
         </section>
         {/* <Banner text="Fail fast." /> */}
         <Section page="me" image="hand" height={79} />
-        <Banner text="Dreams are real." />
+        <Banner text="Imagination is reality." />
         <Section image="15" height={79} />
-        <Banner text="They are nurtured by the eye." />
+        <Banner text="It's nurtured by the eye." />
         <Section page="music" image="hd800s" height={79} />
         <Banner text="Ear." />
         <Section page="me" image="meditate" height={79} />
-        <Banner text="Synthesized in our minds." />
+        <Banner text="Growing in our minds." />
         <Section page="music" image="hypnusrecords/zodiac" height={79} />
-        <Banner text="Then we create." />
+        <Banner text="Manifested by creativity." />
         <Section page="music" image="books-2" height={79} />
+        <section className="respond">
+          <section className="banner"></section>
+          <nav className="link-list">
+            <ul>
+              <NavLink text="Code" to="/streaming" />
+              <NavLink text="Sound" to="/music" />
+              <NavLink text="Light" to="/photo" />
+              <NavLink text="Mind" to="/words" />
+            </ul>
+          </nav>
+        </section>
         <nav className="link-list" style={{ borderTop: "1rem solid black" }}>
           <ul>
             <NavLink text="About me" to="/about" />
