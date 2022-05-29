@@ -14,9 +14,9 @@ export default function Header() {
               <Link to="/music">👂</Link>
             </li>
 
-            <li>
+            {/* <li>
               <Link to="/words">🧠</Link>
-            </li>
+            </li> */}
             {/* <li>
               <Link to="/streaming">🤖</Link>
             </li> */}

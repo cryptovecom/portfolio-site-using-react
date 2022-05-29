@@ -31,10 +31,12 @@ export default function Home(props) {
         <Section
           page="home"
           image="vsc"
-          text="I'm studying frontend development at Hyper Island."
+          text="I'm currently studying frontend development at Hyper Island."
           height={69}
         />
-        <Banner text="A sensory being." />
+        <Banner text="But I'm not a developer." />
+        <Section page="music" image="hypnusrecords/zodiac" height={79} />
+        <Banner text="I'm a creator." />
         <Section page="me" image="hand" height={79} />
         <Banner text="Bridging dreams and reality." />
         <Section image="15" height={79} />
@@ -43,10 +45,7 @@ export default function Home(props) {
         <Banner text="Ear." />
         <Section page="me" image="meditate" height={79} />
         <Banner text="Mind." />
-        <Section page="music" image="hypnusrecords/zodiac" height={79} />
-        <Banner text="And creativity." />
         <Section page="music" image="books-2" height={79} />
-        <Banner text="These are my dreams in:" />
         <section className="respond">
           <section className="banner"></section>
           <nav className="link-list">
@@ -54,15 +53,16 @@ export default function Home(props) {
               <NavLink text="Code" to="/streaming" />
               <NavLink text="Sound" to="/music" />
               <NavLink text="Light" to="/photo" />
-              <NavLink text="Words" to="/words" />
+              {/* <NavLink text="Words" to="/words" /> */}
+              <NavLink text="About me" to="/about" />
             </ul>
           </nav>
         </section>
-        <nav className="link-list" style={{ borderTop: "1rem solid black" }}>
+        {/* <nav className="link-list" style={{ borderTop: "1rem solid black" }}>
           <ul>
             <NavLink text="About me" to="/about" />
           </ul>
-        </nav>
+        </nav> */}
       </main>
     </>
   );
