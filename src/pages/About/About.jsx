@@ -10,16 +10,9 @@ export default function Me(props) {
   return (
     <>
       <main>
-        <section>
-          <div className="info">
-            <h2>
-              I was born <b id="elapsed-days">{durationCalc()}</b> days ago.
-              That's <b id="elapsed-years">{durationCalcYears()}</b> years! 🧙✨
-            </h2>
-          </div>
-        </section>
-        <Section page="me" image="odin" text="" height={69} />
-        <Banner text="I embrace what can be proven and wonder with bewilderment at that which can not. " />
+        <Banner text="Who am I?" />
+        <Section page="me" image="odin" text="" height={80} />
+        <Banner text="I am not sure." />
         <Section page="me" image="ljus" height={79} />
         <Banner
           text="Find me here:"
@@ -31,6 +24,10 @@ export default function Me(props) {
         <nav className="link-list">
           <ul style={{ borderTop: "1rem solid var(--color-dark)" }}>
             <NavLink text="Archidekt" url="https://archidekt.com/user/130955" />
+            <NavLink
+              text="Codewars"
+              url="https://www.codewars.com/users/iseneld"
+            />
             <NavLink
               text="Facebook"
               url="https://www.facebook.com/micheliseneld/"
@@ -65,6 +62,7 @@ export default function Me(props) {
               text="Vivino"
               url="https://www.vivino.com/users/micheliseneld"
             />
+            <NavLink text="Some thoughts" to="/words" />
           </ul>
         </nav>
         <Banner
@@ -73,6 +71,14 @@ export default function Me(props) {
             backgroundColor: "var(--color-yellow)",
           }}
         />
+        <section>
+          <div className="info">
+            <h2>
+              I was born <b id="elapsed-days">{durationCalc()}</b> days ago.
+              That's <b id="elapsed-years">{durationCalcYears()}</b> years! 🧙✨
+            </h2>
+          </div>
+        </section>
       </main>
     </>
   );

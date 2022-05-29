@@ -50,11 +50,11 @@ export default function Home(props) {
           <section className="banner"></section>
           <nav className="link-list">
             <ul>
+              <NavLink text="Light" to="/photo" />
               <NavLink text="Code" to="/streaming" />
               <NavLink text="Sound" to="/music" />
-              <NavLink text="Light" to="/photo" />
-              {/* <NavLink text="Words" to="/words" /> */}
               <NavLink text="About me" to="/about" />
+              {/* <NavLink text="Words" to="/words" /> */}
             </ul>
           </nav>
         </section>
