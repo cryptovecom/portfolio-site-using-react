@@ -25,6 +25,7 @@ export default function Words() {
         <Banner text="Progress is propelled by problems. " />
         <Banner text="Being wrong means you've grown." />
         <Banner text="All mistakes can be good mistakes, if you learn." />
+        <Banner text="Thrive in volatility." />
         <Banner text="No risk, no story." />
         <Banner
           text="Fail fast."
@@ -62,28 +63,29 @@ export default function Words() {
           }}
         />
         <Banner text="Identify with your ignorance." />
-        {/* <Banner text="Knowledge is limited. Ignorance is boundless." /> */}
+        <Banner text="Knowledge is limited. Ignorance is boundless, just like you." />
         {/* <Banner text="Determinism cures hatred." /> */}
         <Banner text="There is no free will." />
         <Banner text="We do not control, we react." />
         <Banner text="Pain and pleasure steers us." />
         <Banner text="You're not experiencing. You are the experience." />
-        <Banner text="That life is inherently meaningless is not a problem, it's an opportunity." />
-        <Banner text="We create meaning through our sacrifices." />
+        <Banner text="The inherent meaningless of life is not a problem, it's an opportunity." />
+        <Banner text="Sacrifice creates meaning." />
+        <Banner text="Choose what to suffer for." />
         {/* <Banner text="Honor is an underrated virtue." /> */}
         {/* <Banner text="Make promises and keep them." /> */}
-        <Banner text="The universe is an answer. Science is the question." />
-        <Banner text="Imagination makes us human." />
-        <Banner text="Nature does not care about our hopes and dreams." />
-        <Banner text="Everything we hold dear sprouts from our imagination." />
-        <Banner text="Imagination is a miracle." />
+        <Banner text="Imagine, then create." />
+        <Banner text="Imagination is what makes us human." />
+        {/* <Banner text="Everything we hold dear sprouts from our imagination." /> */}
+        {/* <Banner text="Imagination is the miracle." /> */}
+        <Banner text="Nature does not care about our hopes and dreams. It just wants to eat us." />
+        <Banner text="The universe is an answer to scientific questions." />
         <Banner text="Consciousness is a controlled hallucination." />
         <Banner text="Attention is psychedelic." />
         <Banner text="Am I authentic or insane?" />
         <Banner text="The difference between genius and insanity is measured in success." />
         <Banner text="Sanity is a matter of degree." />
         <Banner text="We adapt to function." />
-        {/* <Banner text="Trends are societal narcotics." /> */}
         <Banner
           text="Do you understand what I am trying to tell you?"
           stylez={{
