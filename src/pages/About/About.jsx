@@ -14,6 +14,14 @@ export default function Me(props) {
         <Section page="me" image="odin" text="" height={80} />
         <Banner text="I am not sure." />
         <Section page="me" image="ljus" height={79} />
+        <section>
+          <div className="info">
+            <h2>
+              I was born <b id="elapsed-days">{durationCalc()}</b> days ago.
+              That's <b id="elapsed-years">{durationCalcYears()}</b> years! 🧙✨
+            </h2>
+          </div>
+        </section>
         <Banner
           text="Find me here:"
           stylez={{
@@ -21,6 +29,7 @@ export default function Me(props) {
             color: "var(--color-white)",
           }}
         />
+
         <nav className="link-list">
           <ul style={{ borderTop: "1rem solid var(--color-dark)" }}>
             <NavLink text="Archidekt" url="https://archidekt.com/user/130955" />
@@ -66,19 +75,11 @@ export default function Me(props) {
           </ul>
         </nav>
         <Banner
-          text=" #FFB532 💖"
+          text=" #FFB532"
           stylez={{
             backgroundColor: "var(--color-yellow)",
           }}
         />
-        <section>
-          <div className="info">
-            <h2>
-              I was born <b id="elapsed-days">{durationCalc()}</b> days ago.
-              That's <b id="elapsed-years">{durationCalcYears()}</b> years! 🧙✨
-            </h2>
-          </div>
-        </section>
       </main>
     </>
   );
