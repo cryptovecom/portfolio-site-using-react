@@ -42,12 +42,12 @@ export default function Words() {
                 <NavLink
                   text="My application to Hyper Island"
                   to="/blog/hi-application"
-                  blob="BLOG: 3 MIN"
+                  blob="3 MIN READ"
                 />
                 <NavLink
                   text="Imagination is the key"
                   to="/blog/imagination"
-                  blob="BLOG: 3 MIN"
+                  blob="3 MIN READ"
                 />
               </ul>
             </nav>
@@ -72,13 +72,6 @@ export default function Words() {
         <Banner text="We create meaning through our sacrifices." />
         {/* <Banner text="Honor is an underrated virtue." /> */}
         {/* <Banner text="Make promises and keep them." /> */}
-        <Banner
-          text="Why did I make this page?"
-          stylez={{
-            backgroundColor: "var(--color-blood)",
-            color: "var(--color-white)",
-          }}
-        />
         <Banner text="The universe is an answer. Science is the question." />
         <Banner text="Imagination makes us human." />
         <Banner text="Nature does not care about our hopes and dreams." />
@@ -90,8 +83,14 @@ export default function Words() {
         <Banner text="The difference between genius and insanity is measured in success." />
         <Banner text="Sanity is a matter of degree." />
         <Banner text="We adapt to function." />
-        <Banner text="Trends are societal narcotics." />
-        <Banner text="Be different." />
+        {/* <Banner text="Trends are societal narcotics." /> */}
+        <Banner
+          text="Do you understand what I am trying to tell you?"
+          stylez={{
+            backgroundColor: "var(--color-blood)",
+            color: "var(--color-white)",
+          }}
+        />
       </main>
     </>
   );

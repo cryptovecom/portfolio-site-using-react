@@ -1,4 +1,5 @@
 // COMPONENTS
+import Banner from "../../components/Banner";
 import NavLink from "../../components/NavLink";
 import ProgressBar from "../../components/ProgressBar";
 import Section from "../../components/Section";
@@ -11,7 +12,7 @@ export default function Music(props) {
         <Section
           page="music"
           image="/hypnusrecords/geonosis"
-          text="Curated."
+          text="I curate."
           height={59}
         />
         <nav className="link-list">
@@ -24,7 +25,7 @@ export default function Music(props) {
             <NavLink text="The Memoir" blob="PODCAST" to="/music/thememoir" />
           </ul>
         </nav>
-        <Section page="music" image="studio-1" text="Created." height={59} />
+        <Section page="music" image="studio-1" text="Create." height={59} />
         <nav className="link-list">
           <ul style={{ borderTop: "1rem solid var(--color-dark)" }}>
             <NavLink text="Aether Mechanics" to="/music/aethermechanics" />
@@ -34,7 +35,7 @@ export default function Music(props) {
         <Section
           page="music"
           image="/max4live/slink"
-          text="Designed."
+          text="Design."
           height={49}
         />
         <nav className="link-list">
@@ -56,24 +57,28 @@ export default function Music(props) {
             />
           </ul>
         </nav>
-        <Section page="music" image="modular-1" />
-        <Section page="music" image="modular-2" />
-        <Section page="music" image="books" />
-        <Section page="music" image="studio-2" />
-        <Section page="music" image="hypnus-bryssel" />
+        <Section page="music" image="modular-1" height={79} />
+        <Banner text="A curiosity for sound." />
+        <Section page="music" image="modular-2" height={79} />
+        <Banner text="Connecting." />
+        <Section page="music" image="books" height={79} />
+        <Banner text="Understanding." />
+        <Section page="music" image="studio-2" height={79} />
+        <Banner text="Recording." />
+        <Section page="music" image="hypnus-bryssel" height={79} />
+        <Banner text="Sharing." />
         <Section page="music" image="hypnus-monument" />
         <section>
           <div className="info">
             <h2>
-              I teach sound design at{" "}
               <a
                 href="https://www.patreon.com/micheliseneld"
                 target="_blank"
                 rel="noreferrer"
               >
-                Patreon
-              </a>{" "}
-              🎛️
+                Teaching
+              </a>
+              .
             </h2>
           </div>
         </section>
