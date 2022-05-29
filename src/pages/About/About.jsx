@@ -14,14 +14,14 @@ export default function Me(props) {
         <Section page="me" image="odin" text="" height={80} />
         <Banner text="I am not sure." />
         <Section page="me" image="ljus" height={79} />
-        <section>
+        {/* <section>
           <div className="info">
             <h2>
               I was born <b id="elapsed-days">{durationCalc()}</b> days ago.
               That's <b id="elapsed-years">{durationCalcYears()}</b> years! 🧙✨
             </h2>
           </div>
-        </section>
+        </section> */}
         <Banner
           text="Find me here:"
           stylez={{
@@ -71,15 +71,22 @@ export default function Me(props) {
               text="Vivino"
               url="https://www.vivino.com/users/micheliseneld"
             />
-            <NavLink text="Some thoughts" to="/words" />
+            <NavLink text="🧠" to="/words" />
           </ul>
         </nav>
-        <Banner
-          text=" #FFB532"
+        {/* <Banner
+          text=" #ffb532"
           stylez={{
             backgroundColor: "var(--color-yellow)",
           }}
         />
+        <Banner
+          text=" #af3333"
+          stylez={{
+            backgroundColor: "var(--color-blood)",
+            color: "var(--color-white)",
+          }}
+        /> */}
       </main>
     </>
   );
