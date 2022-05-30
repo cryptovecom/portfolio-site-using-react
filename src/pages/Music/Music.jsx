@@ -54,7 +54,7 @@ export default function Music(props) {
         <Section page="music" image="books" height={79} />
         <Banner text="Understanding." />
         <Section page="music" image="studio-2" height={79} />
-        <Banner text="Recording." />
+        <Banner text="Documenting." />
         <Section page="music" image="hypnus-bryssel" height={79} />
         <Banner text="Sharing." />
         <Section page="music" image="hypnus-monument" />
