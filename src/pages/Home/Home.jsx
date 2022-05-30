@@ -35,16 +35,15 @@ export default function Home(props) {
           height={69}
         />
         <Section page="me" image="meditate" height={79} />
-        <Banner text="I'm a dreamer." />
+        <Banner text="But mostly, I dream." />
         <Section page="music" image="hypnusrecords/zodiac" height={79} />
-        <Banner text="And creativity." />
-        <Section page="me" image="hand" height={79} />
-        <Banner text="Bridging dreams and reality." />
+        <Banner text="Create." />
         <Section image="15" height={79} />
-        <Banner text="Through the eye." />
+        <Banner text="Observe." />
         <Section page="music" image="hd800s" height={79} />
-        <Banner text="Ear." />
-
+        <Banner text="Listen." />
+        <Section page="me" image="hand" height={79} />
+        <Banner text="Come, into my world." />
         {/* <Section page="music" image="books-2" height={79} /> */}
         <section className="respond">
           <section className="banner"></section>
