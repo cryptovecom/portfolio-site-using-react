@@ -35,7 +35,7 @@ export default function Home(props) {
           height={69}
         />
         <Section page="me" image="meditate" height={79} />
-        <Banner text="But mostly, I dream." />
+        <Banner text="Mostly, I dream." />
         <Section page="music" image="hypnusrecords/zodiac" height={79} />
         <Banner text="Create." />
         <Section image="15" height={79} />
@@ -43,7 +43,7 @@ export default function Home(props) {
         <Section page="music" image="hd800s" height={79} />
         <Banner text="Listen." />
         <Section page="me" image="hand" height={79} />
-        <Banner text="Come, into my world." />
+        <Banner text="Join me." />
         {/* <Section page="music" image="books-2" height={79} /> */}
         <section className="respond">
           <section className="banner"></section>

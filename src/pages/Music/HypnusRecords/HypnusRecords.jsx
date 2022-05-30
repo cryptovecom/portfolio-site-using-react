@@ -31,6 +31,14 @@ export default function HypnusRecords(props) {
         </nav>
         <Section page="music" image="hypnus-basel" height={79} />
         <Banner text="Releasing every full moon since 2013." />
+        <iframe
+          className="youtube"
+          src="https://www.youtube.com/embed/videoseries?list=PLkgFfDkt471UKw84HV0EKW-_W0FLPRsaZ"
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen
+        ></iframe>
         <Banner
           text="This page is under construction 🚧"
           stylez={{ backgroundColor: "var(--color-yellow)" }}

@@ -303,6 +303,17 @@ section:nth-child(1) section {
   margin-right: 0;
 }
 
+.bandcamp {
+  border: none;
+  margin: 1rem;
+  z-index: 2;
+}
+
+.youtube {
+  z-index: 2;
+  height: 69vh;
+}
+
 article.blog-post {
   padding: 2rem 3rem 2rem 2rem;
   background-color: var(--color-grey);

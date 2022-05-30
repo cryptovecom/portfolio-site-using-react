@@ -25,11 +25,59 @@ export default function Ntogn(props) {
             />
           </ul>
         </nav>
-        <Section page="music/ntogn" image="utopia" />
-        <Banner
-          text="This page is under construction 🚧"
-          stylez={{ backgroundColor: "var(--color-yellow)" }}
-        />
+        <Section page="music/ntogn" image="tome7" />
+
+        <iframe
+          className="bandcamp"
+          title="aether"
+          style={{ height: "274px" }}
+          src="https://bandcamp.com/EmbeddedPlayer/album=3021143014/size=large/bgcol=eee/linkcol=333333/artwork=small/transparent=true/"
+          seamless
+        >
+          <a href="https://tomerecords.bandcamp.com/album/smedjan">
+            Smedjan by Ntogn
+          </a>
+        </iframe>
+        <Banner text="Smedjan" />
+        <Section page="music/ntogn" image="tome6" />
+        <iframe
+          className="bandcamp"
+          title="aether"
+          style={{ height: "307px" }}
+          src="https://bandcamp.com/EmbeddedPlayer/album=3208485433/size=large/bgcol=eee/linkcol=333333/artwork=small/transparent=true/"
+          seamless
+        >
+          <a href="https://tomerecords.bandcamp.com/album/utopia">
+            Utopia by Ntogn
+          </a>
+        </iframe>
+        <Banner text="Utopia" />
+        <Section page="music/ntogn" image="tome5" />
+        <iframe
+          className="bandcamp"
+          title="aether"
+          style={{ height: "274px" }}
+          src="https://bandcamp.com/EmbeddedPlayer/album=3199338464/size=large/bgcol=eee/linkcol=333333/artwork=small/transparent=true/"
+          seamless
+        >
+          <a href="https://tomerecords.bandcamp.com/album/sathurnus-2">
+            Sathurnus by Ntogn
+          </a>
+        </iframe>
+        <Banner text="Sathurnus" />
+        <Section page="music/ntogn" image="tome3" />
+        <iframe
+          className="bandcamp"
+          title="aether"
+          style={{ height: "274px" }}
+          src="https://bandcamp.com/EmbeddedPlayer/album=2164860030/size=large/bgcol=eee/linkcol=333333/artwork=small/transparent=true/"
+          seamless
+        >
+          <a href="https://tomerecords.bandcamp.com/album/bestiary">
+            Bestiary by Ntogn
+          </a>
+        </iframe>
+        <Banner text="Bestiary" />
         <nav className="link-list">
           <ul style={{ borderTop: "1rem solid var(--color-dark)" }}>
             <NavLink text="Go back" to="/music" />

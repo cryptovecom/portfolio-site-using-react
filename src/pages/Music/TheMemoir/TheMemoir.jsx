@@ -38,7 +38,14 @@ export default function TheMemoir(props) {
             </h2>
           </div>
         </section>
-        <Section page="music/thememoir" image="2020-b" />
+        <iframe
+          className="youtube"
+          src="https://www.youtube.com/embed/videoseries?list=PLkgFfDkt471WvjPNrswaGkfvKf2MwwRVO"
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen
+        ></iframe>
         <Banner
           text="This page is under construction 🚧"
           stylez={{ backgroundColor: "var(--color-yellow)" }}
