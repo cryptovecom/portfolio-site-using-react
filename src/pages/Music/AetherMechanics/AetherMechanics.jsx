@@ -32,6 +32,13 @@ export default function AetherMechanics(props) {
             />
           </ul>
         </nav>
+        <Section page="music" image="modular-3" height={79} />
+        <Banner text="Made by modular." />
+        <Section page="music" image="studio-2" height={79} />
+        <Banner text="Industrial field recordings." />
+        <Section page="music" image="aethermechanics/norrbacka-1" height={69} />
+        <Section page="music" image="aethermechanics/norrbacka-3" height={69} />
+        <Section page="music" image="aethermechanics/norrbacka-2" height={69} />
         <Section page="music" image="aethermechanics/aether3" />
         <iframe
           className="bandcamp"
@@ -71,13 +78,7 @@ export default function AetherMechanics(props) {
           </a>
         </iframe>
         <Banner text="Aether Mechanics, self-titled album." />
-        <Section page="music" image="modular-3" height={79} />
-        <Banner text="Made by modular." />
-        <Section page="music" image="studio-2" height={79} />
-        <Banner text="Industrial field recordings." />
-        <Section page="music" image="aethermechanics/norrbacka-1" height={69} />
-        <Section page="music" image="aethermechanics/norrbacka-3" height={69} />
-        <Section page="music" image="aethermechanics/norrbacka-2" height={69} />
+
         <nav className="link-list">
           <ul style={{ borderTop: "1rem solid var(--color-dark)" }}>
             <NavLink text="Go back" to="/music" />
