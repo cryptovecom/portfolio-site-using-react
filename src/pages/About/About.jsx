@@ -4,7 +4,7 @@ import NavLink from "../../components/NavLink";
 import Section from "../../components/Section";
 
 // HELPERS
-import { durationCalcYears, durationCalc } from "../../helpers/durationCalc";
+// import { durationCalcYears, durationCalc } from "../../helpers/durationCalc";
 
 export default function Me(props) {
   return (
