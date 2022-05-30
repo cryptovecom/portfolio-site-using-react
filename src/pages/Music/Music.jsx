@@ -27,7 +27,7 @@ export default function Music(props) {
             <NavLink text="Ntogn" to="/music/ntogn" />
           </ul>
         </nav>
-        <Section page="music" image="/max4live/slink" height={59} />
+        <Section page="music" image="/max4live/slink" height={49} />
         <nav className="link-list">
           <ul style={{ borderTop: "1rem solid var(--color-dark)" }}>
             <NavLink

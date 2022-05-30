@@ -2,12 +2,13 @@
 :root {
   --border-size: 1rem;
   --golden-ratio: 38.2%;
-  --color-staticwhite: #eeeeee;
-  --color-white: #eeeeee;
+  --color-staticwhite: #eee;
+  --color-white: #eee;
   --color-blood: #af3333;
   --color-dark: #1e1e1e;
   --color-green: #6a9955;
   --color-grey: #d2d2ce;
+  --color-darkgrey: #adada9;
   --color-orange: #f66c03;
   --color-yellow: #ffb532;
   --color-shadow: rgba(0, 0, 0, 0.15);
@@ -310,6 +311,7 @@ section:nth-child(1) section {
 }
 
 .youtube {
+  border-top: 1rem solid var(--color-dark);
   z-index: 2;
   height: 69vh;
 }
@@ -931,7 +933,7 @@ footer section {
 footer section a {
   border-radius: .75rem .75rem 0 0;
   padding: 1rem 0;
-  background-color: var(--color-grey);
+  background-color: var(--color-darkgrey);
   text-align: center;
   -webkit-transform: translateY(0.5rem);
           transform: translateY(0.5rem);
