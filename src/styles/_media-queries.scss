@@ -11,7 +11,7 @@
 
   section:nth-child(1), .respond {
     flex-direction: column;
-    top: -12rem;
+    top: 8.35rem;
   }
 
   .streaming__banner {
@@ -43,7 +43,7 @@
     position: relative;
   }
 
-  section:nth-child(1), .respond {
+  section:first-child, .respond {
     position: sticky;
     top: -55rem;
   }

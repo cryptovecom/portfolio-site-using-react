@@ -824,7 +824,7 @@ section {
   border-top: 1rem solid var(--color-dark);
   position: -webkit-sticky;
   position: sticky;
-  top: 8.35rem;
+  top: 7.35rem;
   z-index: 2;
 }
 
@@ -845,6 +845,10 @@ section div.info {
       -ms-flex-direction: column;
           flex-direction: column;
   background-color: var(--color-white);
+}
+
+section:first-child {
+  top: 8.35rem;
 }
 
 *.dark-mode {
@@ -1144,7 +1148,7 @@ header ul li a:hover {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    top: -12rem;
+    top: 8.35rem;
   }
   .streaming__banner {
     max-width: none;
@@ -1173,7 +1177,7 @@ header ul li a:hover {
     top: 0;
     position: relative;
   }
-  section:nth-child(1), .respond {
+  section:first-child, .respond {
     position: -webkit-sticky;
     position: sticky;
     top: -55rem;

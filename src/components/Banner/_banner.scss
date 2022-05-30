@@ -7,7 +7,7 @@ section {
   background-color: var(--color-dark);
   border-top: 1rem solid var(--color-dark);
   position: sticky;
-  top: 8.35rem;
+  top: 7.35rem;
 
   z-index: 2;
 
@@ -21,5 +21,9 @@ section {
     flex-direction: column;
 
     background-color: var(--color-white);
+  }
+
+  &:first-child {
+    top: 8.35rem;
   }
 }
