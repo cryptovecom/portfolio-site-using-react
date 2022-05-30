@@ -12,10 +12,6 @@ export const ProgressBar = () => {
       "--progress-width",
       `${(window.pageYOffset / height) * 100}%`
     );
-    html.style.setProperty(
-      "--progress-color",
-      `${38 + (window.pageYOffset / height) * 60}`
-    );
   }
 
   useEffect(() => {

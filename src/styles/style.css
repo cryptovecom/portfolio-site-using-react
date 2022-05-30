@@ -929,7 +929,7 @@ footer section a {
 }
 
 footer section a:hover {
-  background-color: var(--color-yellow);
+  background-color: var(--color-white);
   -webkit-transform: translateY(0);
           transform: translateY(0);
 }
