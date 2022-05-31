@@ -16,7 +16,7 @@ export default function Words() {
             color: "var(--color-white)",
           }}
         />
-        {/* <Banner text="If you want to understand your mind, sit down and observe it." /> */}
+        <Banner text="To understand your mind, observe it." />
         {/* <Banner text="Creativity brings order to chaos." /> */}
         <Banner text="The surest way to predict the future is to create it." />
         <Banner text="Innovation happens at the speed of trust." />
