@@ -88,6 +88,11 @@ export default function Me(props) {
             <NavLink text="🧠" to="/words" />
           </ul>
         </nav>
+        <Section page="me" image="beard" height={89} />
+        <Banner text="An idea is a dream." />
+        <Banner text="A dream with a date is a goal." />
+        <Banner text="A goal in steps is a plan." />
+        <Banner text="A plan put to action becomes reality." />
       </main>
     </>
   );

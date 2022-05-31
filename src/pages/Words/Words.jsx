@@ -94,6 +94,11 @@ export default function Words() {
             </nav>
           </section>
         </section>
+        <nav className="link-list">
+          <ul style={{ borderTop: "1rem solid var(--color-dark)" }}>
+            <NavLink text="Go back" to="/about" />
+          </ul>
+        </nav>
       </main>
     </>
   );

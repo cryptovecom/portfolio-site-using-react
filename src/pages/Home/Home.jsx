@@ -55,10 +55,6 @@ export default function Home(props) {
             </ul>
           </nav>
         </section>
-        <Banner text="An idea is a dream." />
-        <Banner text="A dream with a date is a goal." />
-        <Banner text="A goal in steps is a plan." />
-        <Banner text="A plan put to action becomes reality." />
       </main>
     </>
   );
