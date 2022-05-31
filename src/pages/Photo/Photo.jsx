@@ -25,6 +25,7 @@ export default function Photo(props) {
         <Section page="photo" image={11} />
         <Section page="photo" image={12} />
         <Section page="photo" image={5} />
+        <Banner text="Keep death in mind, lest the trivial will seem important." />
         <Section page="photo" image={9} />
         <Banner text="Canon 6D Mk. II" />
         <Banner text="Canon EF 35/2.0 USM" />

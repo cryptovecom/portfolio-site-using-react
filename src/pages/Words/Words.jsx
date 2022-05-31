@@ -20,8 +20,9 @@ export default function Words() {
         {/* <Banner text="Creativity brings order to chaos." /> */}
         <Banner text="The surest way to predict the future is to create it." />
         <Banner text="Innovation happens at the speed of trust." />
-        <Banner text="Iteration outperforms design." />
+        <Banner text="If you want something quickly, you're easier to manipulate." />
         <Banner text="Consistency compounds." />
+        <Banner text="Iteration outperforms design." />
         <Banner text="Progress is propelled by problems. " />
         <Banner text="Being wrong means you've grown." />
         <Banner text="All mistakes can be good mistakes, if you learn." />
@@ -33,27 +34,6 @@ export default function Words() {
             backgroundColor: "var(--color-grey)",
           }}
         />
-        <section className="respond">
-          <section className="banner banner__blog">
-            <h1 className="dragon-text">Free will is an illusion</h1>
-          </section>
-          <section className="link-list">
-            <nav>
-              <ul>
-                <NavLink
-                  text="My application to Hyper Island"
-                  to="/blog/hi-application"
-                  blob="3 MIN READ"
-                />
-                <NavLink
-                  text="Imagination is the key"
-                  to="/blog/imagination"
-                  blob="3 MIN READ"
-                />
-              </ul>
-            </nav>
-          </section>
-        </section>
         <Section image="4" height={79} />
         <Banner
           text="Read slowly."
@@ -82,10 +62,10 @@ export default function Words() {
         <Banner text="The universe is an answer to scientific questions." />
         <Banner text="Consciousness is a controlled hallucination." />
         <Banner text="Attention is psychedelic." />
+        <Banner text="We adapt to function." />
         <Banner text="Am I authentic or insane?" />
         <Banner text="The difference between genius and insanity is measured in success." />
         <Banner text="Sanity is a matter of degree." />
-        <Banner text="We adapt to function." />
         <Banner
           text="Do you understand what I am trying to tell you?"
           stylez={{
@@ -93,6 +73,27 @@ export default function Words() {
             color: "var(--color-white)",
           }}
         />
+        <section className="respond">
+          <section className="banner banner__blog">
+            <h1 className="dragon-text">Free will is an illusion</h1>
+          </section>
+          <section className="link-list">
+            <nav>
+              <ul>
+                <NavLink
+                  text="My application to Hyper Island"
+                  to="/blog/hi-application"
+                  blob="3 MIN READ"
+                />
+                <NavLink
+                  text="Imagination is the key"
+                  to="/blog/imagination"
+                  blob="3 MIN READ"
+                />
+              </ul>
+            </nav>
+          </section>
+        </section>
       </main>
     </>
   );

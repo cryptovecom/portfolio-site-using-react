@@ -34,16 +34,16 @@ export default function Home(props) {
           text="I'm currently studying frontend development at Hyper Island."
           height={69}
         />
-        <Section page="me" image="meditate" height={79} />
-        <Banner text="Mostly, I dream." />
-        <Section page="music" image="hypnusrecords/zodiac" height={79} />
-        <Banner text="Create." />
         <Section image="15" height={79} />
-        <Banner text="Observe." />
+        <Banner text="Mostly, I observe." />
         <Section page="music" image="hd800s" height={79} />
         <Banner text="Listen." />
+        <Section page="me" image="meditate" height={79} />
+        <Banner text="Imagine." />
+        <Section page="music" image="hypnusrecords/zodiac" height={79} />
+        <Banner text="Create." />
         <Section page="me" image="hand" height={79} />
-        <Banner text="Join me." />
+        <Banner text="Step into my dreams." />
         {/* <Section page="music" image="books-2" height={79} /> */}
         <section className="respond">
           <section className="banner"></section>
@@ -55,11 +55,10 @@ export default function Home(props) {
             </ul>
           </nav>
         </section>
-        {/* <nav className="link-list" style={{ borderTop: "1rem solid black" }}>
-          <ul>
-            <NavLink text="About me" to="/about" />
-          </ul>
-        </nav> */}
+        <Banner text="An idea is a dream." />
+        <Banner text="A dream with a date is a goal." />
+        <Banner text="A goal in steps is a plan." />
+        <Banner text="A plan put to action becomes reality." />
       </main>
     </>
   );
