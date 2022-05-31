@@ -43,7 +43,7 @@ export default function Home(props) {
         <Section page="music" image="hypnusrecords/zodiac" height={79} />
         <Banner text="Create." />
         <Section page="me" image="hand" height={79} />
-        <Banner text="Step into my dreams." />
+        <Banner text="Let me show you." />
         {/* <Section page="music" image="books-2" height={79} /> */}
         <section className="respond">
           <section className="banner"></section>
