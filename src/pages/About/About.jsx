@@ -22,6 +22,22 @@ export default function Me(props) {
             </h2>
           </div>
         </section> */}
+        <Banner text="I am a conscious experience." />
+        <Banner text="Consciousness, in turn, is energy experiencing itself." />
+        <Banner text="By energy, I mean the scientific kind which everything is made of." />
+        <Banner text="Thus, my body is made of the same stuff as my dreams." />
+        <Banner text="As above, so below." />
+        {/* <Banner text="I am a swirling mist able to dream about what doesn't exist, yet the dreams exist vividly in my mind made of the same energy as matter." /> */}
+        <Section page="me" image="floor-1" height={79} />
+        <Banner text="Imagination shapes reality through creative action. That's magic." />
+        <Banner text="Our dreams reshapes the physical world." />
+        <Banner text="Dreams that emanate from the infinite void that is our mind." />
+        <Section page="me" image="floor-2" height={79} />
+        <Banner text="The floor connects to the building, which rests on the ground that connects to everything on this planet." />
+        <Banner text="I am a leaf on a tree or a flame dancing infernally across the surface of the sun." />
+        <Section page="me" image="floor-3" height={79} />
+        <Banner text="That's why we don't die, you see. Rather, the swan song that is our conscious experience fades into silence as we merge with the rest of this burning orb while the ripples of our deeds continues to reverberate like the wind of a butterfly." />
+        <Section page="me" image="floor-4" height={79} />
         <Banner
           text="Find me here:"
           stylez={{
@@ -29,7 +45,6 @@ export default function Me(props) {
             color: "var(--color-white)",
           }}
         />
-
         <nav className="link-list">
           <ul style={{ borderTop: "1rem solid var(--color-dark)" }}>
             <NavLink text="Archidekt" url="https://archidekt.com/user/130955" />
@@ -74,19 +89,6 @@ export default function Me(props) {
             <NavLink text="🧠" to="/words" />
           </ul>
         </nav>
-        {/* <Banner
-          text=" #ffb532"
-          stylez={{
-            backgroundColor: "var(--color-yellow)",
-          }}
-        />
-        <Banner
-          text=" #af3333"
-          stylez={{
-            backgroundColor: "var(--color-blood)",
-            color: "var(--color-white)",
-          }}
-        /> */}
       </main>
     </>
   );
