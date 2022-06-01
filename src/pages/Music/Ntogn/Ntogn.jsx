@@ -25,8 +25,11 @@ export default function Ntogn(props) {
             />
           </ul>
         </nav>
+        <Section page="music/ntogn" image="studio-1" height={79} />
+        <Banner text="Made in the forest." />
+        <Section page="music/ntogn" image="ntogn-2" height={79} />
+        <Banner text="Inspired by myth." />
         <Section page="music/ntogn" image="tome7" />
-
         <iframe
           className="bandcamp"
           title="aether"
