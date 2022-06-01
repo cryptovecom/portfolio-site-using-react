@@ -7,7 +7,7 @@ export default function ToTop() {
   return (
     <button onClick={toTop} className="to-top">
       <div>
-        <h2>Back to top</h2>
+        <h2>Jump to top</h2>
       </div>
       <span>☝️</span>
     </button>
