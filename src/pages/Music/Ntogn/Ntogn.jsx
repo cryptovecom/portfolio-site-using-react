@@ -44,7 +44,7 @@ export default function Ntogn(props) {
           className="bandcamp"
           title="aether"
           style={{ height: "307px" }}
-          src="https://bandcamp.com/EmbeddedPlayer/album=3208485433/size=large/bgcol=eee/linkcol=333333/artwork=small/transparent=true/"
+          src="https://bandcamp.com/EmbeddedPlayer/album=3208485433/size=large/bgcol=eee/linkcol=af3333/artwork=small/transparent=true/"
           seamless
         >
           <a href="https://tomerecords.bandcamp.com/album/utopia">

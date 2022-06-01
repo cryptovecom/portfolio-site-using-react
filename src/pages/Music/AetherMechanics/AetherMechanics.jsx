@@ -44,7 +44,7 @@ export default function AetherMechanics(props) {
           className="bandcamp"
           title="vaccine"
           style={{ height: "410px" }}
-          src="https://bandcamp.com/EmbeddedPlayer/album=3377475822/size=large/bgcol=ffffff/linkcol=e99708/artwork=small/transparent=true/"
+          src="https://bandcamp.com/EmbeddedPlayer/album=3377475822/size=large/bgcol=fff/linkcol=732a35/artwork=small/transparent=true/"
           seamless
         >
           <a href="https://aethermechanics.bandcamp.com/album/vaccine">
@@ -57,7 +57,7 @@ export default function AetherMechanics(props) {
           className="bandcamp"
           title="magnetic"
           style={{ height: "410px" }}
-          src="https://bandcamp.com/EmbeddedPlayer/album=631192131/size=large/bgcol=ffffff/linkcol=de270f/artwork=small/transparent=true/"
+          src="https://bandcamp.com/EmbeddedPlayer/album=631192131/size=large/bgcol=fff/linkcol=af3333/artwork=small/transparent=true/"
           seamless
         >
           <a href="https://aethermechanics.bandcamp.com/album/magnetic-meditation-devices">
@@ -70,7 +70,7 @@ export default function AetherMechanics(props) {
           className="bandcamp"
           title="aether"
           style={{ height: "410px" }}
-          src="https://bandcamp.com/EmbeddedPlayer/album=1102521977/size=large/bgcol=ffffff/linkcol=0687f5/artwork=small/transparent=true/"
+          src="https://bandcamp.com/EmbeddedPlayer/album=1102521977/size=large/bgcol=fff/linkcol=194B57/artwork=small/transparent=true/"
           seamless
         >
           <a href="https://aethermechanics.bandcamp.com/album/aether-mechanics">
