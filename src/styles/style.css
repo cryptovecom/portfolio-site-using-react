@@ -1203,8 +1203,8 @@ header ul li a:hover {
 .to-top:hover span {
   -webkit-transform: translateY(-3rem) translateX(-1);
           transform: translateY(-3rem) translateX(-1);
-  -webkit-animation: wobble var(--speed-fast) infinite alternate;
-          animation: wobble var(--speed-fast) infinite alternate;
+  -webkit-animation: wobble var(--speed-fast) cubic-bezier(0.18, 0.59, 0.45, 1.13) infinite alternate;
+          animation: wobble var(--speed-fast) cubic-bezier(0.18, 0.59, 0.45, 1.13) infinite alternate;
 }
 
 @media all and (max-width: 64rem) {

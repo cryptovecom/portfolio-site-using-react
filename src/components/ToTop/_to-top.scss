@@ -36,7 +36,7 @@
     span{
       transform: translateY(-3rem) translateX(-1);
 
-      animation: wobble var(--speed-fast) infinite alternate;
+      animation: wobble var(--speed-fast) cubic-bezier(.18,.59,.45,1.13) infinite alternate;
     }
   }
 }
