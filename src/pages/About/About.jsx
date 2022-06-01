@@ -38,7 +38,7 @@ export default function Me(props) {
         <Banner text="That's why we don't die, you see. Rather, the swan song that is our conscious experience fades into silence as we merge with the rest of this burning orb while the ripples of our deeds continues to reverberate like the wind of a butterfly." />
         <Section page="me" image="floor-4" height={79} />
         <Banner
-          text="'Let there be links!', and there were links:"
+          text="Find me here:"
           stylez={{
             backgroundColor: "var(--color-blood)",
             color: "var(--color-white)",

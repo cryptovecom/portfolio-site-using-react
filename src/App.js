@@ -6,6 +6,7 @@ import { Routes, Route } from "react-router-dom";
 import DarkMode from "./components/DarkMode";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
+import ToTop from "./components/ToTop";
 
 // PAGES
 import Home from "./pages/Home";
@@ -56,6 +57,7 @@ function App() {
         <Route path="/blog/imagination" element={<Imagination />} />
         <Route path="/blog/hi-application" element={<HiApplication />} />
       </Routes>
+      <ToTop />
       <DarkMode />
       <Footer />
     </>

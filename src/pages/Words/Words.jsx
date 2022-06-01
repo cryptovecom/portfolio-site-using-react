@@ -3,6 +3,7 @@ import Banner from "../../components/Banner";
 import NavLink from "../../components/NavLink";
 import ProgressBar from "../../components/ProgressBar";
 import Section from "../../components/Section/Section";
+import ToTop from "../../components/ToTop";
 
 export default function Words() {
   return (
