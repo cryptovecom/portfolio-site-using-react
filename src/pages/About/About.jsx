@@ -4,26 +4,34 @@ import NavLink from "../../components/NavLink";
 import Section from "../../components/Section";
 
 // HELPERS
+import { durationCalc } from "../../helpers/durationCalc";
 // import { durationCalcYears, durationCalc } from "../../helpers/durationCalc";
 
 export default function Me(props) {
   return (
     <>
       <main>
-        <Banner text="Who am I?" />
-        <Section page="me" image="odin" text="" height={80} />
-        <Banner text="I am not sure." />
-        <Section page="me" image="ljus" height={79} />
-        {/* <section>
+        <section>
           <div className="info">
             <h2>
               I was born <b id="elapsed-days">{durationCalc()}</b> days ago.
-              That's <b id="elapsed-years">{durationCalcYears()}</b> years! 🧙✨
+              {/* That's <b id="elapsed-years">{durationCalcYears()}</b> years! 🧙✨ */}
             </h2>
           </div>
-        </section> */}
+        </section>
+        <Banner text="Now, I'm an independent entrepreneur, software designer, photographer, writer, retired sommelier, music producer, performer, sound design educator, mixing and recording audio engineer with a passion for the imagination, innovation, and sensory exploration." />
+        <Banner text="For leisure, I'm currently studying frontend development." />
+        <Section page="me" image="odin" text="" height={80} />
+        <Banner text="The truth seduces me." />
+        <Section page="me" image="ljus" height={79} />
+        <Banner text="Myth and art is the science of mind." />
+        <Section page="me" image="tooweirdtolive" height={79} />
+        <Banner text="Using imagination to grasp a higher reality." />
+        <Section page="me" image="edh" text="" height={80} />
+        <Banner text="I also play EDH. A lot!" />
+
         <Banner
-          text="Find me here:"
+          text="Find me online:"
           stylez={{
             backgroundColor: "var(--color-blood)",
             color: "var(--color-white)",
@@ -74,10 +82,6 @@ export default function Me(props) {
           </ul>
         </nav>
         <Section page="me" image="beard" height={89} />
-        <Banner text="An idea is a dream." />
-        <Banner text="A dream with a date is a goal." />
-        <Banner text="A goal in steps is a plan." />
-        <Banner text="A plan put to action becomes reality." />
       </main>
     </>
   );
