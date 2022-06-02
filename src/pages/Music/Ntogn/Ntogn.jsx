@@ -28,11 +28,11 @@ export default function Ntogn(props) {
         <Section page="music/ntogn" image="studio-1" height={79} />
         <Banner text="Made in the woods." />
         <Section page="music/ntogn" image="natur" height={79} />
-        <Banner text="Whispering winds." />
+        <Banner text="Among life and death." />
         <Section page="music/ntogn" image="demon" />
         <Banner text="Lost in myth." />
         <Section page="music/ntogn" image="fingers" height={79} />
-        <Banner text="Altered perception." />
+        <Banner text="Altering reality." />
 
         <Section page="music/ntogn" image="tome7" />
         <iframe
