@@ -24,11 +24,11 @@ export default function Me(props) {
         <Section page="me" image="odin" text="" height={80} />
         <Banner text="The truth seduces me." />
         <Section page="me" image="ljus" height={79} />
-        <Banner text="Myth and art is the science of mind." />
+        <Banner text="Myth and art as a science of mind." />
         <Section page="me" image="tooweirdtolive" height={79} />
         <Banner text="Using imagination to grasp a higher reality." />
         <Section page="me" image="edh" text="" height={80} />
-        <Banner text="I also play EDH. A lot!" />
+        <Banner text="I also play EDH, a lot!" />
 
         <Banner
           text="Find me online:"
