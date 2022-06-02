@@ -1169,7 +1169,6 @@ header ul li a:hover {
 .to-top {
   width: 100%;
   height: 100%;
-  margin-top: 1rem;
   border: none;
   padding: 2rem;
   display: -webkit-box;
@@ -1177,10 +1176,12 @@ header ul li a:hover {
   display: flex;
   gap: 1rem;
   background-color: var(--color-grey);
+  border-top: 1rem solid var(--color-dark);
   font-size: var(--h6);
   position: -webkit-sticky;
   position: sticky;
   top: 7.35rem;
+  z-index: 2;
   -webkit-transition: var(--speed-slow);
   transition: var(--speed-slow);
 }

@@ -3,6 +3,7 @@ import Banner from "../../components/Banner";
 import NavLink from "../../components/NavLink";
 import ProgressBar from "../../components/ProgressBar";
 import Section from "../../components/Section/Section";
+import ToTop from "../../components/ToTop";
 
 export default function Words() {
   return (
@@ -100,6 +101,22 @@ export default function Words() {
             <NavLink text="Go back" to="/about" />
           </ul>
         </nav>
+        <ToTop />
+        <Section page="me" image="floor-1" height={79} />
+        <Banner text="Consciousness is energy experiencing itself." />
+        <Banner text="By energy, I mean the scientific kind that powers everything." />
+        <Banner text="That means my body is made of the same stuff as my dreams." />
+        {/* <Banner text="I am a swirling mist able to dream about what doesn't exist, yet the dreams exist vividly in my mind made of the same energy as matter." /> */}
+        <Section page="me" image="floor-2" height={79} />
+        <Banner text="Imagination then shapes reality through creative action." />
+        <Banner text="Our dreams reshape the world." />
+        <Banner text="Mystics call it alchemy." />
+        <Section page="me" image="floor-3" height={79} />
+        <Banner text="As the ground beneath me connects to the entire planet." />
+        <Banner text="I flap around like a leaf on a tree." />
+        <Banner text="A flame, dancing infernally across the surface of the sun." />
+        <Section page="me" image="floor-4" height={79} />
+        <Banner text="That's why we don't die, you see. Rather, the swan song that is our conscious experience fades into silence as we merge with the rest of this burning orb while the ripples of our deeds continues to reverberate like the wind of a butterfly." />
       </main>
     </>
   );

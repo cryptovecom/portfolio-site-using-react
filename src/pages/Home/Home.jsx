@@ -32,7 +32,7 @@ export default function Home(props) {
           page="home"
           image="vsc"
           text="I'm currently studying frontend development at Hyper Island."
-          height={69}
+          height={59}
         />
         <Section image="15" height={79} />
         <Banner text="Mostly, I observe." />
