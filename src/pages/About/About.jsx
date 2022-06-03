@@ -19,16 +19,16 @@ export default function Me(props) {
             </h2>
           </div>
         </section>
-        <Banner text="Now, I'm an independent entrepreneur, software designer, photographer, writer, retired sommelier, music producer, performer, sound design educator, mixing and recording audio engineer with a passion for the imagination, innovation, and sensory exploration." />
-        <Banner text="For leisure, I'm currently studying frontend development." />
+        <Banner text="Now, I'm an independent entrepreneur, software designer, photographer, writer, retired sommelier, music producer, performer, sound design educator, mixing and recording audio engineer with a passion for the imagination, communication, and sensory exploration." />
+        <Banner text="I'm currently studying frontend development at Hyper Island." />
         <Section page="me" image="odin" text="" height={80} />
-        <Banner text="The truth seduces me." />
+        <Banner text="I'm curious about the truth of things." />
         <Section page="me" image="ljus" height={79} />
-        <Banner text="Myth and art as a science of mind." />
+        <Banner text="I see myth and art as the science of mind." />
         <Section page="me" image="tooweirdtolive" height={79} />
-        <Banner text="Using imagination to grasp a higher reality." />
+        <Banner text="Our imagination allows us to create higher realities." />
         <Section page="me" image="edh" text="" height={80} />
-        <Banner text="I also play EDH, a lot!" />
+        <Banner text="I also play way too much EDH." />
 
         <Banner
           text="Find me online:"
