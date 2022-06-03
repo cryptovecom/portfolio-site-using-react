@@ -20,7 +20,7 @@ export default function Music(props) {
             <NavLink text="The Memoir" blob="PODCAST" to="/music/thememoir" />
           </ul>
         </nav>
-        <Section page="music" image="studio-1" height={69} />
+        <Section page="music" image="studio-1" height={59} />
         <nav className="link-list">
           <ul style={{ borderTop: "1rem solid var(--color-dark)" }}>
             <NavLink text="Aether Mechanics" to="/music/aethermechanics" />

@@ -52,6 +52,7 @@ export default function TheMemoir(props) {
         />
         <nav className="link-list">
           <ul style={{ borderTop: "1rem solid var(--color-dark)" }}>
+            <NavLink text="Aether Mechanics" to="/music/aethermechanics" />
             <NavLink text="Go back" to="/music" />
           </ul>
         </nav>

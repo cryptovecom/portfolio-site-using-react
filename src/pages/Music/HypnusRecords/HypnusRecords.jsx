@@ -45,6 +45,7 @@ export default function HypnusRecords(props) {
         />
         <nav className="link-list">
           <ul style={{ borderTop: "1rem solid var(--color-dark)" }}>
+            <NavLink text="The Memoir" blob="PODCAST" to="/music/thememoir" />
             <NavLink text="Go back" to="/music" />
           </ul>
         </nav>
