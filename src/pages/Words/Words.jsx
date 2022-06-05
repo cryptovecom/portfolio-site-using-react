@@ -5,11 +5,23 @@ import ProgressBar from "../../components/ProgressBar";
 import Section from "../../components/Section/Section";
 import ToTop from "../../components/ToTop";
 
+import { durationCalcYears } from "../../helpers/durationCalc";
+
 export default function Words() {
   return (
     <>
       <ProgressBar />
       <main>
+        <section>
+          <div className="info">
+            <h2>
+              These are condensed insights from{" "}
+              {durationCalcYears("January 11, 2011 12:40:00 GMT", 0)} years of
+              journaling.
+            </h2>
+          </div>
+        </section>
+        <Banner text="Each line has at some point changed my life." />
         <Banner
           text="Slow down."
           stylez={{
@@ -31,12 +43,13 @@ export default function Words() {
         <Banner
           text="Fail fast."
           stylez={{
-            backgroundColor: "var(--color-grey)",
+            backgroundColor: "var(--color-blood)",
+            color: "var(--color-white)",
           }}
         />
         <Section image="4" height={89} />
         <Banner
-          text="Read slowly."
+          text="Read slow."
           stylez={{
             backgroundColor: "var(--color-blood)",
             color: "var(--color-white)",
