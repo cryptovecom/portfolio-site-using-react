@@ -9,7 +9,8 @@ export default function Music(props) {
     <>
       <ProgressBar />
       <main>
-        <Section page="music" image="/hypnusrecords/geonosis" height={59} />
+        <Banner text="I curate, create and design for the ear." />
+        <Section page="music" image="/hypnusrecords/geonosis" height={49} />
         <nav className="link-list">
           <ul style={{ borderTop: "1rem solid var(--color-dark)" }}>
             <NavLink

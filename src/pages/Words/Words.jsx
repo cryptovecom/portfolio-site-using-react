@@ -59,7 +59,7 @@ export default function Words() {
         <Banner text="You are an illusion of yourself." />
         <Banner text="Identify with your ignorance." />
         <Banner text="There is no free will." />
-        {/* <Banner text="We do not control, we react." /> */}
+        <Banner text="You do not control, you react." />
         <Banner text="Pain and pleasure steers us." />
         <Banner text="You're not experiencing. You are the experience." />
         <Banner text="Life is meaningless. That is an opportunity." />
