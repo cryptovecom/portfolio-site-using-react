@@ -19,16 +19,42 @@ export default function Me(props) {
             </h2>
           </div>
         </section>
+
         <Banner text="Now, I'm an independent entrepreneur, software designer, photographer, writer, retired sommelier, music producer, performer, sound design educator, mixing and recording audio engineer with a passion for the imagination, communication, and sensory exploration." />
         <Banner text="I'm currently studying frontend development at Hyper Island." />
+
         <Section page="me" image="odin" text="" height={80} />
-        <Banner text="I'm curious about the truth of things." />
+        <section>
+          <div className="info">
+            <h2>
+              Statistically, I have
+              {` ~` + (81.69 * 365 - durationCalc()).toFixed(0) + ` days left.`}
+            </h2>
+          </div>
+        </section>
+        <Banner text="I'm making them count." />
+        <section>
+          <div className="info">
+            <a
+              className="github-contributions"
+              href="https://github.com/iseneld"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <img
+                src="https://ghchart.rshah.org/iseneld"
+                alt="My github contributions over the last year"
+              />
+            </a>
+          </div>
+        </section>
         <Section page="me" image="ljus" height={79} />
-        <Banner text="I see myth and art as sciences of mind." />
+        <Banner text="I'm fascinated by the truth of things." />
         <Section page="me" image="tooweirdtolive" height={79} />
-        <Banner text="Through our imagination, we enter and create higher realities." />
+        <Banner text="To me, art is a science of the mind." />
+        <Banner text="Through creativity, we reshape reality with our dreams." />
         <Section page="me" image="edh" text="" height={80} />
-        <Banner text="Oh, I also play EDH." />
+        <Banner text="I mostly play EDH tho! 🧙‍♂️✨" />
 
         <Banner
           text="Find me online:"
