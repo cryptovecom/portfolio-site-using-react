@@ -15,8 +15,8 @@ export default function Words() {
         <section>
           <div className="info">
             <h2>
-              These are condensed insights from{" "}
-              {durationCalcYears("January 11, 2011 12:40:00 GMT", 0)} years of
+              Here are condensed insights from{" "}
+              {durationCalcYears("January 11, 2011 12:40:00 GMT", 2)} years of
               journaling.
             </h2>
           </div>
@@ -33,11 +33,11 @@ export default function Words() {
         <Banner text="The surest way to predict the future is to create it." />
         <Banner text="Innovation happens at the speed of trust." />
         <Banner text="If you want something quickly, you're easier to manipulate." />
-        <Banner text="Consistency compounds." />
+        <Banner text="Understand compounding." />
         <Banner text="Iteration outperforms design." />
         <Banner text="Progress is propelled by problems. " />
         <Banner text="Being wrong means you've grown." />
-        <Banner text="All mistakes can be good mistakes, if you learn." />
+        <Banner text="All mistakes can be good, if you learn." />
         <Banner text="Thrive in volatility." />
         <Banner text="No risk, no story." />
         <Banner
@@ -58,28 +58,23 @@ export default function Words() {
         <Banner text="To understand your mind, observe it." />
         <Banner text="You are an illusion of yourself." />
         <Banner text="Identify with your ignorance." />
-        <Banner text="Knowledge is limited. Ignorance is boundless." />
-        {/* <Banner text="Determinism cures hatred." /> */}
         <Banner text="There is no free will." />
-        <Banner text="We do not control, we react." />
+        {/* <Banner text="We do not control, we react." /> */}
         <Banner text="Pain and pleasure steers us." />
         <Banner text="You're not experiencing. You are the experience." />
-        <Banner text="Life is meaningless. This is not a problem, it's an opportunity." />
+        <Banner text="Life is meaningless. That is an opportunity." />
         <Banner text="Sacrifice creates meaning." />
         <Banner text="Choose what to suffer for." />
-        {/* <Banner text="Honor is an underrated virtue." /> */}
-        {/* <Banner text="Make promises and keep them." /> */}
-        <Banner text="Imagine, then create." />
-        <Banner text="Imagination makes us human." />
-        {/* <Banner text="Everything we hold dear sprouts from our imagination." /> */}
-        {/* <Banner text="Imagination is the miracle." /> */}
-        <Banner text="Nature does not care about our hopes and dreams. It wants to eat us." />
+        <Section image="16" height={79} />
         <Banner text="The universe is an answer to scientific questions." />
-        <Banner text="Meaning arises from the mind." />
-        <Banner text="Consciousness is a controlled hallucination." />
+        <Banner text="Nature does not care about ideas." />
+        <Banner text="Imagination makes us human." />
+        {/* <Banner text="Imagination is the miracle." /> */}
+        {/* <Banner text="Nature does not care about our hopes and dreams. It wants to eat us." /> */}
+        <Banner text="Meaning arises only from the mind." />
         <Banner text="Attention is psychedelic." />
-        <Banner text="Am I authentic or insane?" />
-        <Banner text="We adapt to function." />
+        <Section image="15" height={89} />
+        <Banner text="Consciousness is a controlled hallucination." />
         <Banner text="The difference between genius and insanity is measured in success." />
         <Banner text="Sanity is a matter of degree." />
         <Banner
