@@ -48,4 +48,33 @@ header {
       }
     }
   }
+
+  &:hover, &:focus, &:active {
+    .hover-menu {
+      transform: translateY(0rem);
+    }
+  }
+}
+
+.hover-menu {
+  border-bottom: 1rem solid var(--color-dark);
+  padding: 2rem;
+  width: 100%;
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+
+  position: absolute;
+  top: 0;
+
+  background-color: var(--color-white);
+
+  transform: translateY(-12rem);
+  transition: all 1s ease;
+
+  h2 {
+    font-size: calc(var(--base-font-size) * 0.8);
+  }
 }

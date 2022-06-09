@@ -13,14 +13,23 @@ export default function Header() {
             <li>
               <Link to="/music">👂</Link>
             </li>
-
-            {/* <li>
-              <Link to="/words">🧠</Link>
-            </li> */}
-            {/* <li>
-              <Link to="/streaming">🤖</Link>
-            </li> */}
-            {/* <li><Link to="/log"> </Link></li> */}
+          </ul>
+        </nav>
+        <nav className="hover-menu">
+          <h2>🗺️</h2>
+          <ul>
+            <li>
+              <Link to="/photo">Photo</Link>
+            </li>
+            <li>
+              <Link to="/music">Music</Link>
+            </li>
+            <li>
+              <Link to="/words">Words</Link>
+            </li>
+            <li>
+              <Link to="/about">Me</Link>
+            </li>
           </ul>
         </nav>
       </header>

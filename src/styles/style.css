@@ -1036,6 +1036,41 @@ header ul li a:hover {
   transition: var(--speed-fast);
 }
 
+header:hover .hover-menu, header:focus .hover-menu, header:active .hover-menu {
+  -webkit-transform: translateY(0rem);
+          transform: translateY(0rem);
+}
+
+.hover-menu {
+  border-bottom: 1rem solid var(--color-dark);
+  padding: 2rem;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  position: absolute;
+  top: 0;
+  background-color: var(--color-white);
+  -webkit-transform: translateY(-12rem);
+          transform: translateY(-12rem);
+  -webkit-transition: all 1s ease;
+  transition: all 1s ease;
+}
+
+.hover-menu h2 {
+  font-size: calc(var(--base-font-size) * 0.8);
+}
+
 .log__cards {
   display: -webkit-box;
   display: -ms-flexbox;
