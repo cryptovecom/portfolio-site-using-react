@@ -51,14 +51,15 @@ header {
 
   &:hover, &:focus, &:active {
     .hover-menu {
+      visibility: visible;
       transform: translateY(0rem);
     }
   }
 }
 
 .hover-menu {
+  visibility: hidden;
   border-bottom: 1rem solid var(--color-dark);
-  padding: 2rem;
   width: 100%;
 
   display: flex;
@@ -74,7 +75,11 @@ header {
   transform: translateY(-12rem);
   transition: all 1s ease;
 
-  h2 {
-    font-size: calc(var(--base-font-size) * 0.8);
+  li {
+    padding-left: .25rem;
+
+    a {
+      border-radius: 1rem;
+    }
   }
 }

@@ -16,16 +16,16 @@ export default function Header() {
           </ul>
         </nav>
         <nav className="hover-menu">
-          <h2>🗺️</h2>
+          <Link to="/">🏠</Link>
           <ul>
             <li>
-              <Link to="/photo">Photo</Link>
+              <Link to="/music">Ear</Link>
             </li>
             <li>
-              <Link to="/music">Music</Link>
+              <Link to="/photo">Eye</Link>
             </li>
             <li>
-              <Link to="/words">Words</Link>
+              <Link to="/words">Mind</Link>
             </li>
             <li>
               <Link to="/about">Me</Link>

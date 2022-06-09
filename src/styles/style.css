@@ -1037,13 +1037,14 @@ header ul li a:hover {
 }
 
 header:hover .hover-menu, header:focus .hover-menu, header:active .hover-menu {
+  visibility: visible;
   -webkit-transform: translateY(0rem);
           transform: translateY(0rem);
 }
 
 .hover-menu {
+  visibility: hidden;
   border-bottom: 1rem solid var(--color-dark);
-  padding: 2rem;
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1067,8 +1068,12 @@ header:hover .hover-menu, header:focus .hover-menu, header:active .hover-menu {
   transition: all 1s ease;
 }
 
-.hover-menu h2 {
-  font-size: calc(var(--base-font-size) * 0.8);
+.hover-menu li {
+  padding-left: .25rem;
+}
+
+.hover-menu li a {
+  border-radius: 1rem;
 }
 
 .log__cards {
