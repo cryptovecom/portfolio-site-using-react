@@ -411,9 +411,14 @@ export default function Streaming() {
               )}
             </div>
             {loading && (
-              <h3 style={{ color: "white", padding: "1rem" }}>
-                Audio loading...
-              </h3>
+              <>
+                <img
+                  src="./loading.svg"
+                  alt="Audio is loading"
+                  width="180"
+                  id="loading-anim"
+                />
+              </>
             )}
             <ul className="streaming__results">
               {search

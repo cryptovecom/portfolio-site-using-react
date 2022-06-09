@@ -621,6 +621,10 @@ section.blog-post {
   font-weight: normal;
 }
 
+#loading-anim {
+  margin: 2rem auto;
+}
+
 .streaming__results {
   display: -webkit-box;
   display: -ms-flexbox;
