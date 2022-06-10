@@ -76,12 +76,29 @@ header {
 
   transform: translateY(-12rem);
   transition: all var(--speed-fast) cubic-bezier(.25,.29,.85,.2);
+}
 
-  // li {
-  //   padding-left: .25rem;
+@media all and (max-width: $tablet) {
 
-  //   a {
-  //     border-radius: 1rem;
-  //   }
-  // }
+  @keyframes menu-entry {
+    from {transform: translateY(-12rem);}
+    to {transform: translateY(0rem);}
+  }
+
+  .hover-menu {
+    animation-name: menu-entry;
+    animation-delay: 2s;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+    animation-timing-function: cubic-bezier(.9,.49,.95,.65);
+    visibility: visible;
+    // transform: translateY(0rem);
+  }
+  
+
+  header {
+    &:hover, &:focus, &:active {
+      transform: none;
+    }
+  }
 }
