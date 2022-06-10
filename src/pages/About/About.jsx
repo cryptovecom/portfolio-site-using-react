@@ -22,8 +22,12 @@ export default function Me(props) {
 
         <Banner text="Now, I'm an independent entrepreneur, software designer, photographer, writer, retired sommelier, music producer, performer, sound design educator, mixing and recording audio engineer with a passion for the imagination, communication, and sensory exploration." />
         <Banner text="I'm currently studying frontend development at Hyper Island." />
-
         <Section page="me" image="odin" text="" height={80} />
+        <Banner text="I'm fascinated by the truth of things." />
+        <Section page="me" image="ljus" height={79} />
+        <Banner text="To me, art is a science of the mind." />
+        <Banner text="Through creativity, we reshape reality with our dreams." />
+        <Section page="me" image="tooweirdtolive" height={79} />
         <section>
           <div className="info">
             <h2>
@@ -48,13 +52,8 @@ export default function Me(props) {
             </a>
           </div>
         </section>
-        <Section page="me" image="ljus" height={79} />
-        <Banner text="I'm fascinated by the truth of things." />
-        <Section page="me" image="tooweirdtolive" height={79} />
-        <Banner text="To me, art is a science of the mind." />
-        <Banner text="Through creativity, we reshape reality with our dreams." />
         <Section page="me" image="edh" text="" height={80} />
-        <Banner text="I mostly play EDH tho! 🧙‍♂️✨" />
+        <Banner text="... mostly by playing EDH! 🧙‍♂️✨" />
 
         <Banner
           text="Find me online:"
