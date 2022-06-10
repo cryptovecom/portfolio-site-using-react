@@ -8,16 +8,16 @@ export default function Header() {
         <nav>
           <ul>
             <li>
-              <Link to="/photo">👁️</Link>
-            </li>
-            <li>
-              <Link to="/music">👂</Link>
+              <Link to="/about">🦄</Link>
             </li>
           </ul>
         </nav>
         <nav className="hover-menu">
-          <Link to="/">🏠</Link>
+          <Link to="/">Menu</Link>
           <ul>
+            <li>
+              <Link to="/">🏡</Link>
+            </li>
             <li>
               <Link to="/music">👂</Link>
             </li>
