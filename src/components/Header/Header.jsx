@@ -19,16 +19,16 @@ export default function Header() {
           <Link to="/">🏠</Link>
           <ul>
             <li>
-              <Link to="/music">Ear</Link>
+              <Link to="/music">👂</Link>
             </li>
             <li>
-              <Link to="/photo">Eye</Link>
+              <Link to="/photo">👁️</Link>
             </li>
             <li>
-              <Link to="/words">Mind</Link>
+              <Link to="/words">📓</Link>
             </li>
             <li>
-              <Link to="/about">Me</Link>
+              <Link to="/about">🙋‍♂️</Link>
             </li>
           </ul>
         </nav>

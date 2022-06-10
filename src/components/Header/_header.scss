@@ -77,11 +77,11 @@ header {
   transform: translateY(-12rem);
   transition: all var(--speed-slow) cubic-bezier(.25,.29,.85,.2);
 
-  li {
-    padding-left: .25rem;
+  // li {
+  //   padding-left: .25rem;
 
-    a {
-      border-radius: 1rem;
-    }
-  }
+  //   a {
+  //     border-radius: 1rem;
+  //   }
+  // }
 }

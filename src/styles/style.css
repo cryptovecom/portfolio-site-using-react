@@ -1070,14 +1070,6 @@ header:hover .hover-menu, header:focus .hover-menu, header:active .hover-menu {
   transition: all var(--speed-slow) cubic-bezier(0.25, 0.29, 0.85, 0.2);
 }
 
-.hover-menu li {
-  padding-left: .25rem;
-}
-
-.hover-menu li a {
-  border-radius: 1rem;
-}
-
 .log__cards {
   display: -webkit-box;
   display: -ms-flexbox;
