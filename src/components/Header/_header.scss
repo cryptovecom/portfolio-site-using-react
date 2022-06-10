@@ -53,6 +53,8 @@ header {
     .hover-menu {
       visibility: visible;
       transform: translateY(0rem);
+
+      transition: all var(--speed-slow) cubic-bezier(.07,.67,.27,.99);
     }
   }
 }
@@ -73,7 +75,7 @@ header {
   background-color: var(--color-white);
 
   transform: translateY(-12rem);
-  transition: all 1s ease;
+  transition: all var(--speed-slow) cubic-bezier(.25,.29,.85,.2);
 
   li {
     padding-left: .25rem;

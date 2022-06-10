@@ -1040,6 +1040,8 @@ header:hover .hover-menu, header:focus .hover-menu, header:active .hover-menu {
   visibility: visible;
   -webkit-transform: translateY(0rem);
           transform: translateY(0rem);
+  -webkit-transition: all var(--speed-slow) cubic-bezier(0.07, 0.67, 0.27, 0.99);
+  transition: all var(--speed-slow) cubic-bezier(0.07, 0.67, 0.27, 0.99);
 }
 
 .hover-menu {
@@ -1064,8 +1066,8 @@ header:hover .hover-menu, header:focus .hover-menu, header:active .hover-menu {
   background-color: var(--color-white);
   -webkit-transform: translateY(-12rem);
           transform: translateY(-12rem);
-  -webkit-transition: all 1s ease;
-  transition: all 1s ease;
+  -webkit-transition: all var(--speed-slow) cubic-bezier(0.25, 0.29, 0.85, 0.2);
+  transition: all var(--speed-slow) cubic-bezier(0.25, 0.29, 0.85, 0.2);
 }
 
 .hover-menu li {
