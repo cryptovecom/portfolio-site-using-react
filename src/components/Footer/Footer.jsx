@@ -18,17 +18,6 @@ function Footer(listItems) {
           />
         </a>
         <a
-          href="https://www.instagram.com/micheliseneld"
-          target="_blank"
-          rel="noreferrer"
-        >
-          <img
-            src="./images/icons/instagram.png"
-            alt="Instagram logo"
-            className="tech-icon"
-          />
-        </a>
-        <a
           href="https://www.linkedin.com/in/micheliseneld/"
           target="_blank"
           rel="noreferrer"
@@ -47,28 +36,6 @@ function Footer(listItems) {
           <img
             src="./images/icons/patreon.png"
             alt="Patreon logo"
-            className="tech-icon"
-          />
-        </a>
-        <a
-          href="https://twitter.com/micheliseneld"
-          target="_blank"
-          rel="noreferrer"
-        >
-          <img
-            src="./images/icons/twitter.png"
-            alt="Twitter logo"
-            className="tech-icon"
-          />
-        </a>
-        <a
-          href="https://www.facebook.com/micheliseneld/"
-          target="_blank"
-          rel="noreferrer"
-        >
-          <img
-            src="./images/icons/facebook.png"
-            alt="Facebook logo"
             className="tech-icon"
           />
         </a>
