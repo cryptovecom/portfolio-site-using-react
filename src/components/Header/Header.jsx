@@ -16,20 +16,21 @@ export default function Header() {
           <Link to="/">Menu</Link>
           <ul>
             <li>
+              <Link to="/about">🧙</Link>
+            </li>
+            {/* <li>
               <Link to="/">🏡</Link>
-            </li>
-            <li>
-              <Link to="/music">👂</Link>
-            </li>
+            </li> */}
             <li>
               <Link to="/photo">👁️</Link>
             </li>
             <li>
+              <Link to="/music">👂</Link>
+            </li>
+
+            {/* <li>
               <Link to="/words">📓</Link>
-            </li>
-            <li>
-              <Link to="/about">🙋‍♂️</Link>
-            </li>
+            </li> */}
           </ul>
         </nav>
       </header>
