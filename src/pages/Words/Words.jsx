@@ -23,23 +23,22 @@ export default function Words() {
         </section>
         <Banner text="Each line has at some point changed my life." />
         <Banner
-          text="First, slow down."
+          text="Slow down."
           stylez={{
             backgroundColor: "var(--color-blood)",
             color: "var(--color-white)",
           }}
         />
-        {/* <Banner text="Creativity brings order to chaos." /> */}
-        <Banner text="The surest way to predict the future is to create it." />
-        <Banner text="Innovation happens at the speed of trust." />
         <Banner text="If you want something quickly, you're easier to manipulate." />
         <Banner text="Understand compounding." />
         <Banner text="Iteration outperforms design." />
-        <Banner text="Progress is propelled by problems. " />
         <Banner text="Being wrong means you've grown." />
+        <Banner text="Progress is propelled by problems. " />
         <Banner text="All mistakes can be good, if you learn." />
-        <Banner text="Thrive in volatility." />
+        <Banner text="The surest way to predict the future is to create it." />
+        <Banner text="Innovation happens at the speed of trust." />
         <Banner text="No risk, no story." />
+        <Banner text="Thrive in volatility." />
         <Banner
           text="Fail fast."
           stylez={{
@@ -121,8 +120,7 @@ export default function Words() {
         <Banner text="Our dreams reshape the world." />
         <Banner text="Mystics call it alchemy." />
         <Section page="me" image="floor-3" height={79} />
-        <Banner text="The ground beneath me connects to the entire planet." />
-        <Banner text="I'm a leaf on a tree. A conscious flame, dancing infernally across the surface of the sun." />
+        <Banner text="The ground beneath me connects to the entire planet. I'm a leaf on a tree. A conscious flame, dancing infernally across the surface of the sun." />
         <Section page="me" image="floor-4" height={79} />
         <Banner text="That's why we don't die, you see. Rather, the swan song that is our conscious experience fades into silence as we merge with the rest of this burning orb while the ripples of our deeds continues to reverberate like the wind of a butterfly." />
       </main>
