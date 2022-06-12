@@ -114,7 +114,6 @@ export default function Words() {
         <Banner text="Consciousness is energy experiencing itself." />
         <Banner text="By energy, I mean the scientific kind that powers everything." />
         <Banner text="That means my body is made of the same stuff as my imagination." />
-        {/* <Banner text="I am a swirling mist able to dream about what doesn't exist, yet the dreams exist vividly in my mind made of the same energy as matter." /> */}
         <Section page="me" image="floor-2" height={79} />
         <Banner text="Imagination then shapes reality through creative action." />
         <Banner text="Our dreams reshape the world." />
