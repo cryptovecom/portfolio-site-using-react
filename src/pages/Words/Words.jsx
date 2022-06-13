@@ -22,6 +22,7 @@ export default function Words() {
           </div>
         </section>
         <Banner text="Each line has at some point changed my life." />
+        <Section image={13} height={49} />
         <Banner
           text="Slow down."
           stylez={{
@@ -46,7 +47,7 @@ export default function Words() {
             color: "var(--color-white)",
           }}
         />
-        <Section image="4" height={89} />
+        <Section image="4" height={79} />
         <Banner
           text="Read slow."
           stylez={{
@@ -64,7 +65,7 @@ export default function Words() {
         <Banner text="Life is meaningless. That is an opportunity." />
         <Banner text="Sacrifice creates meaning." />
         <Banner text="Choose what to suffer for." />
-        <Section image="16" height={79} />
+        <Section image="16" height={69} />
         <Banner text="The universe is an answer to scientific questions." />
         <Banner text="Nature does not care about ideas." />
         <Banner text="Imagination makes us human." />
@@ -72,7 +73,7 @@ export default function Words() {
         {/* <Banner text="Nature does not care about our hopes and dreams. It wants to eat us." /> */}
         <Banner text="Meaning arises only from the mind." />
         <Banner text="Attention is psychedelic." />
-        <Section image="15" height={89} />
+        <Section image="15" height={69} />
         <Banner text="Consciousness is a controlled hallucination." />
         <Banner text="The difference between genius and insanity is measured in success." />
         <Banner text="Sanity is a matter of degree." />
@@ -83,33 +84,6 @@ export default function Words() {
             color: "var(--color-white)",
           }}
         />
-        <section className="respond">
-          <section className="banner banner__blog">
-            <h1 className="dragon-text">Free will is an illusion</h1>
-          </section>
-          <section className="link-list">
-            <nav>
-              <ul>
-                <NavLink
-                  text="My application to Hyper Island"
-                  to="/blog/hi-application"
-                  blob="3 MIN READ"
-                />
-                <NavLink
-                  text="Imagination is the key"
-                  to="/blog/imagination"
-                  blob="3 MIN READ"
-                />
-              </ul>
-            </nav>
-          </section>
-        </section>
-        <nav className="link-list">
-          <ul style={{ borderTop: "1rem solid var(--color-dark)" }}>
-            <NavLink text="Go back" to="/about" />
-          </ul>
-        </nav>
-        <ToTop />
         <Section page="me" image="floor-1" height={79} />
         <Banner text="Consciousness is energy experiencing itself." />
         <Banner text="By energy, I mean the scientific kind that powers everything." />
@@ -122,6 +96,32 @@ export default function Words() {
         <Banner text="The ground beneath me connects to the entire planet. I'm a leaf on a tree. A conscious flame, dancing infernally across the surface of the sun." />
         <Section page="me" image="floor-4" height={79} />
         <Banner text="That's why we don't die, you see. Rather, the swan song that is our conscious experience fades into silence as we merge with the rest of this burning orb while the ripples of our deeds continues to reverberate like the wind of a butterfly." />
+        <section className="respond">
+          <section className="banner banner__blog">
+            <h1 className="dragon-text">Free will is an illusion</h1>
+          </section>
+          <section className="link-list">
+            <nav>
+              <ul>
+                <NavLink
+                  text="Imagination is the key"
+                  to="/blog/imagination"
+                  blob="3 MIN READ"
+                />
+                <NavLink
+                  text="My application to Hyper Island"
+                  to="/blog/hi-application"
+                  blob="3 MIN READ"
+                />
+              </ul>
+            </nav>
+          </section>
+        </section>
+        <nav className="link-list">
+          <ul style={{ borderTop: "1rem solid var(--color-dark)" }}>
+            <NavLink text="Go back" to="/about" />
+          </ul>
+        </nav>
       </main>
     </>
   );
