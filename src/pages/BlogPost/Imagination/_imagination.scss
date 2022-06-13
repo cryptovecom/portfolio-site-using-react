@@ -16,16 +16,6 @@
 
     p {
       font-size: var(--h5);
-
-      @keyframes where {
-        from {filter: blur(0rem);}
-        to {filter: blur(4rem);}
-      }
-
-      &.where {
-        animation: where 1.618s ease-in infinite alternate;
-        font-weight: bold;
-      }
     }
   }
 
