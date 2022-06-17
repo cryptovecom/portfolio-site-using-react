@@ -13,7 +13,7 @@ export default function Header() {
           </ul>
         </nav>
         <nav className="hover-menu">
-          <Link to="/">Menu</Link>
+          <Link to="/">ᚨ</Link>
           <ul>
             <li>
               <Link to="/about">🧙</Link>

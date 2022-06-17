@@ -36,7 +36,7 @@ export default function Me(props) {
             </h2>
           </div>
         </section>
-        <Banner text="I'm making them count." />
+        <Banner text="I'm making them count by learning and creating." />
         <section>
           <div className="info">
             <a
@@ -53,7 +53,7 @@ export default function Me(props) {
           </div>
         </section>
         <Section page="me" image="edh" text="" height={80} />
-        <Banner text="... mostly by playing EDH! 🧙‍♂️✨" />
+        <Banner text="... and playing EDH! 🧙‍♂️✨" />
 
         <Banner
           text="Find me online:"
@@ -103,10 +103,14 @@ export default function Me(props) {
               text="Vivino"
               url="https://www.vivino.com/users/micheliseneld"
             />
-            <NavLink text="🧠" to="/words" />
           </ul>
         </nav>
         <Section page="me" image="beard" height={89} />
+        <nav className="link-list">
+          <ul style={{ borderTop: "1rem solid var(--color-dark)" }}>
+            <NavLink text="Read my mind" to="/words" />
+          </ul>
+        </nav>
       </main>
     </>
   );

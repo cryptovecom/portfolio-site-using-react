@@ -1059,8 +1059,8 @@ header:hover .hover-menu, header:focus .hover-menu, header:active .hover-menu {
   background-color: var(--color-white);
   -webkit-transform: translateY(-12rem);
           transform: translateY(-12rem);
-  -webkit-transition: all var(--speed-fast) cubic-bezier(0.25, 0.29, 0.85, 0.2);
-  transition: all var(--speed-fast) cubic-bezier(0.25, 0.29, 0.85, 0.2);
+  -webkit-transition: all calc(var(--speed-slow) * 1.2) cubic-bezier(0.25, 0.29, 0.85, 0.2);
+  transition: all calc(var(--speed-slow) * 1.2) cubic-bezier(0.25, 0.29, 0.85, 0.2);
 }
 
 @media all and (max-width: 64rem) {
