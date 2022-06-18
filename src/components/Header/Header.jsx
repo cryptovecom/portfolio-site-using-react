@@ -18,9 +18,6 @@ export default function Header() {
             <li>
               <Link to="/about">🧙</Link>
             </li>
-            {/* <li>
-              <Link to="/">🏡</Link>
-            </li> */}
             <li>
               <Link to="/photo">👁️</Link>
             </li>
