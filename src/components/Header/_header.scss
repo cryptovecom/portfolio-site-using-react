@@ -75,7 +75,8 @@ header {
   background-color: var(--color-white);
 
   transform: translateY(-12rem);
-  transition: all calc(var(--speed-slow) * 1.2) cubic-bezier(.25,.29,.85,.2);
+  transition: all calc(var(--speed-slow) * 1.5) ease-in;
+  transition-delay: 1s;
 }
 
 @media all and (max-width: $tablet) {
