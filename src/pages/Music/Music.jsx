@@ -73,6 +73,12 @@ export default function Music(props) {
             </h2>
           </div>
         </section>
+        <nav className="link-list">
+          <ul style={{ borderTop: "1rem solid var(--color-dark)" }}>
+            <NavLink text="Observe with me" to="/photo" />
+            <NavLink text="Read my mind" to="/words" />
+          </ul>
+        </nav>
       </main>
     </>
   );

@@ -2,6 +2,7 @@ import ProgressBar from "../../components/ProgressBar";
 
 // COMPONENTS
 import Banner from "../../components/Banner";
+import NavLink from "../../components/NavLink";
 import Section from "../../components/Section";
 
 export default function Photo(props) {
@@ -46,6 +47,12 @@ export default function Photo(props) {
             </h2>
           </div>
         </section>
+        <nav className="link-list">
+          <ul style={{ borderTop: "1rem solid var(--color-dark)" }}>
+            <NavLink text="Can you hear what I hear?" to="/music" />
+            <NavLink text="Read my mind" to="/words" />
+          </ul>
+        </nav>
       </main>
     </>
   );

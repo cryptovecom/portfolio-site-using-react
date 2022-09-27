@@ -109,6 +109,7 @@ export default function Me(props) {
         <nav className="link-list">
           <ul style={{ borderTop: "1rem solid var(--color-dark)" }}>
             <NavLink text="Read my mind" to="/words" />
+            <NavLink text="See through my eyes" to="/photo" />
           </ul>
         </nav>
       </main>
