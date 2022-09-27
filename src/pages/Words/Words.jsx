@@ -67,7 +67,7 @@ export default function Words() {
         <Section image="16" height={69} />
         <Banner text="The universe is an answer to scientific questions." />
         <Banner text="Nature does not care about ideas." />
-        <Banner text="Imagination makes us human." />
+        <Banner text="Ideas makes us human." />
         {/* <Banner text="Imagination is the miracle." /> */}
         {/* <Banner text="Nature does not care about our hopes and dreams. It wants to eat us." /> */}
         <Banner text="Meaning arises only from the mind." />

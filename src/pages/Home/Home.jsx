@@ -50,8 +50,9 @@ export default function Home(props) {
           <nav className="link-list">
             <ul>
               <NavLink text="About me" to="/about" />
-              <NavLink text="A full-stack project" to="/streaming" />
-              {/* <NavLink text="Words" to="/words" /> */}
+              <NavLink text="Sound" to="/music" />
+              {/* <NavLink text="A full-stack project" to="/streaming" /> */}
+              <NavLink text="Photography" to="/photo" />
             </ul>
           </nav>
         </section>
