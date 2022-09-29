@@ -107,7 +107,11 @@ export default function Imagination() {
             We know that dreams are as real as our love and passion. <br />
             It’s the only thing that is truly ours.
           </p>
-          <p>All we need is to close our eyes, focus, and we’re there.</p>
+          <p>
+            All we need is to close our eyes, focus, and we’re there. <br />
+            In the generative dimension. <br />
+            Lush and eternal.
+          </p>
           <p>
             Love and light, <br /> Michel Iseneld
           </p>
