@@ -49,7 +49,7 @@ export default function Photo(props) {
         </section>
         <nav className="link-list">
           <ul style={{ borderTop: "1rem solid var(--color-dark)" }}>
-            <NavLink text="Can you hear what I hear?" to="/music" />
+            <NavLink text="Listen" to="/music" />
             <NavLink text="Read my mind" to="/words" />
           </ul>
         </nav>

@@ -71,8 +71,9 @@ export default function Words() {
         {/* <Banner text="Imagination is the miracle." /> */}
         {/* <Banner text="Nature does not care about our hopes and dreams. It wants to eat us." /> */}
         <Banner text="Meaning arises only from the mind." />
-        <Banner text="Attention is psychedelic." />
         <Section image="15" height={69} />
+        <Banner text="Focus is a source of happiness." />
+        <Banner text="Attention is psychedelic." />
         <Banner text="Consciousness is a controlled hallucination." />
         <Banner text="The difference between genius and insanity is measured in success." />
         <Banner text="Sanity is a matter of degree." />
