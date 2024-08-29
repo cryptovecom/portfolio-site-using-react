@@ -2,8 +2,6 @@
 
 I am continously refactoring and upgrading this project as I learn new technologies and methods.
 
-It is published to [https://micheliseneld.com](https://micheliseneld.com)
-
 ## Tech Stack
 - React 
   - create-react-app
